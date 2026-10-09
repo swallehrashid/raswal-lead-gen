@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #021422;
+  --color-navy-700: #0b2a40;
+  --color-navy-500: #1d4560;
+  --color-gold: #d4970f;
+  --color-gold-100: #fbf1d9;
+  --color-cyan: #3a95c2;
+  --color-cyan-100: #e2f1f8;
+  --color-ink: #0b1b2b;
+  --color-paper: #f6f5f1;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html, body, #root { min-height: 100%; }
+body { background: var(--color-paper); color: var(--color-ink); -webkit-tap-highlight-color: transparent; }
+.safe-bottom { padding-bottom: max(env(safe-area-inset-bottom), 0.5rem); }
+textarea { field-sizing: content; }

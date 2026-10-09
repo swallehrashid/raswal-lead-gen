@@ -143,6 +143,13 @@ async def _render(shots: list[Shot], concurrency: int) -> None:
         sem = asyncio.Semaphore(concurrency)
 
         async def one(s: Shot) -> None:
+            for attempt in range(2):          # one retry: a busy runner occasionally times out
+                await attempt_one(s)
+                if s.png:
+                    return
+                log.warning("retrying render for %s (attempt %d failed)", s.key, attempt + 1)
+
+        async def attempt_one(s: Shot) -> None:
             async with sem:
                 ctx = await browser.new_context(viewport={"width": s.width, "height": s.height},
                                                 device_scale_factor=s.scale, is_mobile=s.mobile, has_touch=s.mobile)
@@ -157,6 +164,7 @@ async def _render(shots: list[Shot], concurrency: int) -> None:
                             s.blocked.append(url)
                             await route.abort()
 
+                    s.blocked.clear()
                     await page.route("**/*", block)
                     await page.set_content(s.html, wait_until="load", timeout=30_000)
                     await page.evaluate("document.fonts.ready.then(() => true)")

@@ -44,6 +44,7 @@ class NightlyOptions:
     offline: bool = False
     no_db: bool = False
     out_dir: Path = OUT_DIR
+    store: object | None = None          # inject a store (tests / export-mock)
 
     @classmethod
     def from_args(cls, a) -> NightlyOptions:
@@ -84,6 +85,23 @@ class RunContext:
         self.errors.append({"stage": stage, "place_id": place_id, "error": msg[:500]})
 
 
+def apply_dashboard_settings(cfg: Config, settings: dict) -> Config:
+    """Dashboard edits win for daily targets (Settings screen)."""
+    targets = settings.get("daily_targets")
+    if not isinstance(targets, dict):
+        return cfg
+    cfg = cfg.model_copy(deep=True)
+    cfg.scoring.selection.targets = {t: int(targets.get(t, v)) for t, v in cfg.scoring.selection.targets.items()}
+    return cfg
+
+
+def paused_by_dashboard(settings: dict, d: date) -> str | None:
+    for p in settings.get("pause_list") or []:
+        if str(p.get("start", "")) <= d.isoformat() <= str(p.get("end", "")):
+            return p.get("note") or "pause"
+    return None
+
+
 def required_env(opts: NightlyOptions) -> list[str]:
     if opts.offline:
         return []
@@ -99,10 +117,14 @@ def run_nightly(cfg: Config, env: Env, opts: NightlyOptions) -> RunResult:
     t0 = time.monotonic()
     env.require(*required_env(opts))                 # fail fast, listing every missing variable at once
     files_dir = opts.out_dir / "offline_storage" if opts.offline and not opts.dry_run else None
-    store = build_store(env, offline=opts.offline, dry_run=opts.dry_run, no_db=opts.no_db, files_dir=files_dir)
+    store = opts.store or build_store(env, offline=opts.offline, dry_run=opts.dry_run, no_db=opts.no_db,
+                                      files_dir=files_dir)
     now = datetime.now(timezone.utc)
     list_date = resolve_list_date(cfg, opts.list_date)
+    cfg = apply_dashboard_settings(cfg, store.get_settings())
     plan = make_plan(cfg, store, list_date=list_date, subcategory=opts.subcategory)
+    if not plan.skip_reason and (p := paused_by_dashboard(store.get_settings(), list_date)):
+        plan.skip_reason = f"{list_date} is paused in the dashboard ({p})"
     sub_key = plan.subcategory.key if plan.subcategory else None
     if plan.skip_reason:
         log.info("No list for %s: %s", plan.list_date, plan.skip_reason)

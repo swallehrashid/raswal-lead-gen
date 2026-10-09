@@ -91,3 +91,22 @@ Small ambiguities resolved during the build. One line each: what and why.
 - The heartbeat uses `curl` against the REST API (no Python install), so it takes seconds of Actions time.
 - The dashboard deploy uses FTPS by default; the workflow comment says how to switch to plain FTP if Nova Host refuses TLS.
 - Dry runs upload `out/` (CSV, rendered teasers, log) as a 7-day artifact. Live runs upload only the log, keeping phone lists out of artifacts.
+
+## M6–M8: dashboard, follow-ups, demo queue, stats, retention
+- The dashboard is React 19 + TypeScript + Vite 8 + Tailwind 4 + vite-plugin-pwa, with React Router (BrowserRouter; the `.htaccess` SPA fallback makes deep links work on Nova Host).
+- One `Api` interface has two implementations. Supabase is used when `VITE_SUPABASE_URL` is set at build time; otherwise a mock is used. The mock reads `public/mock/dataset.json`, generated from the pipeline fixtures by `python -m pipeline export-mock` (a simulated week, "today" = Fri 16 Oct 2026), and keeps your clicks in localStorage. A live build deletes `dist/mock/`.
+- All state transitions are pure functions (`src/lib/actions.ts`, unit-tested) used by both implementations. Supabase's trigger logs status changes; the mock imitates the trigger.
+- Working days are computed in the browser with a TypeScript twin of the Python code, tested on the same vectors. Pauses added in the dashboard also move follow-up dates.
+- The phone flow (Share image + caption) is offered when the browser can share files (Android Chrome, installed PWA); otherwise the WhatsApp Web flow. A toggle switches between them.
+- Copy image converts the JPEG to PNG through a canvas (the Clipboard API reliably supports only PNG).
+- Marking FU2 sent sets `no_response`, so the sequence ends there (§12.6). A later reply can still be logged.
+- A snooze that comes due appears in Follow-ups; marking it done sets the lead back to `replied`.
+- "Not now" defaults to a check-back on Mon 4 Jan 2027 (the brief suggests January).
+- Daily targets and the pause list set in the dashboard are read by the next nightly run: targets override `scoring.yaml`, and a paused list date is skipped like a holiday. The demo cap is dashboard-only.
+- The Demo queue fills today's slots (3 website + 3 content, minus demos already sent today) oldest first; the rest show "tomorrow" with the holding reply.
+- The lead pack ZIP holds `lead-pack.json`, `logo.png`, `hero.jpg` and `teaser.jpg`. In the ZIP's JSON, logo/hero point at the bundled files; the copied JSON uses 1-hour signed URLs.
+- The Stats funnel is computed from the events log and checked against lead timestamps (the screen says whether they match, and a test asserts it on the mock data). Breakdowns are tables with rates, not charts.
+- Supabase DB/storage size comes from a `usage_stats()` RPC (admin-only, security definer) that sums `storage.objects` sizes.
+- The PWA service worker caches only the app shell; Supabase data is never cached.
+- `.htaccess` forces HTTPS, rewrites to `index.html`, sends `noindex` and security headers (CSP allows only self and `*.supabase.co`), and never caches `index.html`/`sw.js`.
+- Teaser renders retry once before counting as failed (a busy runner can time out).

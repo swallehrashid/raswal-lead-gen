@@ -69,3 +69,14 @@ def test_cli_exit_code_and_message(capsys, monkeypatch):
     assert main(["nightly", "--dry-run", "--subcategory", "property_agency"]) == 2
     err = capsys.readouterr().err
     assert "GOOGLE_PLACES_API_KEY" in err and "SETUP_CHECKLIST.md" in err
+
+
+def test_dashboard_targets_and_pause_apply(cfg, tmp_path):
+    store = MemoryStore()
+    store.tables["settings"]["daily_targets"] = {"key": "daily_targets", "value": {"web": 5, "content": 2}}
+    r = run_nightly(cfg, Env(), opts(tmp_path, dry_run=False, store=store))
+    assert r.stats["shipped_web"] == 5 and r.stats["shipped_content"] == 2
+    pause = [{"start": "2026-10-13", "end": "2026-10-13", "note": "funeral"}]
+    store.tables["settings"]["pause_list"] = {"key": "pause_list", "value": pause}
+    r = run_nightly(cfg, Env(), opts(tmp_path, dry_run=False, store=store, list_date=date(2026, 10, 13), subcategory=None))
+    assert r.status == "skipped" and "funeral" in r.skipped_reason
