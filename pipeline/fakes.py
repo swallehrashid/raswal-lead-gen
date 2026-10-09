@@ -109,7 +109,9 @@ class FixtureFetcher:
         final = with_scheme(url, scheme)
         if e.get("https") == "ssl_error":
             final = with_scheme(url, "http")
-        html = self._render(e["file"], e, h) if e.get("file") else ""
+        path = url.split(h, 1)[-1]
+        file = e.get("blog") if e.get("blog") and any(w in path for w in ("/blog", "/news")) else e.get("file")
+        html = self._render(file, e, h) if file else ""
         return FetchResult(url=url, final_url=final, status_code=e.get("status", 200), html=html,
                            redirect_chain=[url] if final == url else [url, final],
                            headers={"content-type": "text/html; charset=utf-8"})

@@ -14,6 +14,7 @@ from pathlib import Path
 from pipeline.budget import Budget
 from pipeline.clients import Clients, build_clients
 from pipeline.discover import discover
+from pipeline.enrich import enrich
 from pipeline.gates import ORDER, cheap_gates
 from pipeline.models import Candidate
 from pipeline.normalise import normalise
@@ -141,14 +142,10 @@ def _run_stages(ctx: RunContext) -> RunResult:
     passed = [c for c in cands if not c.gate_codes]
     log.info("gates: %d of %d candidates passed", len(passed), len(cands))
 
-    # ---- later stages (M2+) plug in here
-    enriched: list[Candidate] = []
+    # ---- enrich: site audit + PSI for the top `enrich_limit` by pre-score
+    enriched = enrich(passed, cfg, ctx.clients.fetcher, ctx.clients.psi, ctx.budget, store, ctx.now,
+                      limit=opts.limit, sleep=(lambda s: None) if opts.offline else None)
     selected: list[Candidate] = []
-    try:
-        from pipeline import stages  # noqa: F401
-        enriched, selected = stages.after_gates(ctx, cands, passed)
-    except ImportError:
-        pass
 
     # ---- persist + report
     gate_counts = Counter(code for c in cands for code in c.gate_codes)
@@ -165,11 +162,6 @@ def _run_stages(ctx: RunContext) -> RunResult:
     store.save_candidates(cands, ctx.run_id, plan.list_date)
     store.save_leads(selected, plan.list_date)
     teaser_files: dict[str, str] = {}
-    try:
-        from pipeline import stages
-        teaser_files = stages.after_save(ctx, selected)
-    except ImportError:
-        pass
     csv_path = None
     if opts.dry_run or opts.offline:
         csv_path = write_csv(cands, opts.out_dir, plan.list_date, sub.key, teaser_files)

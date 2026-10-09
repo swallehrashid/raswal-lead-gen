@@ -36,3 +36,16 @@ Small ambiguities resolved during the build. One line each: what and why.
 - Brand "Tile & Carpet" is stored as "tile and carpet centre" (the chain's full name), because "centre" alone is a dealer word that would let the chain through.
 - When Places returns both formats, the international phone number is parsed first.
 - Fixture review times are shifted relative to 2026-10-09, so offline runs look the same on any date.
+
+## M2: site audit, PSI, brand assets
+- Classification runs in two steps: fetch and parse (none/social/dead/insecure/free_builder are decided here), then weak/good once PSI has run. If PSI fails or the budget is spent, weak/good is decided from the other five signals.
+- "Default hosting page" markers (cPanel, Nova Host, "Default Web Site Page") only count on pages with under 1,500 characters of text, so a footer credit on a real site doesn't mark it dead. "Coming soon" keeps the brief's under-2 KB rule.
+- `Index of /` only counts when it's the page title.
+- A `*.business.site` website URL, or any redirect into one, is `dead` without a fetch.
+- A Wix/WordPress site on its own domain is classified normally (often `weak`), not `free_builder`. `free_builder` is only for free subdomains (wixsite.com etc.).
+- The blog/news page is fetched only for sites still in the running for weak/good, and only when a same-host link exists.
+- Every PSI attempt (including the retry) counts against the PSI budget. Results are cached per registered domain for 30 days in `psi_cache`.
+- Current-site screenshots (`current/{place_id}.jpg`) and brand files are uploaded only for finalists and reserves, which are the only ones the dashboard shows. That keeps storage small.
+- Brand assets (logo, colours, hero) are fetched only for finalists and reserves (≤ 40/night), not for all 150 audited sites.
+- SVG logos are skipped (Pillow can't read them); the teaser then shows a wordmark. `og:image` is accepted as a hero at any size; other `<img>` heroes need ≥ 1000 px width.
+- Colour extraction also drops grey colours and any colour under 2% of the logo's pixels, so anti-aliasing noise isn't picked as the brand colour.

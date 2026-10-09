@@ -50,7 +50,7 @@ coming_soon_markers:
   "site is under maintenance": "a 'maintenance' page"
 coming_soon_max_text_chars: 2000
 # A default-page marker only counts when the page is small (avoid matching e.g. a footer credit).
-default_page_max_text_chars: 3000
+default_page_max_text_chars: 1500
 default_page_markers: [cpanel, nova host, default web site page]
 
 error_markers:                    # how the fact describes fetch failures
