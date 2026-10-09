@@ -156,7 +156,39 @@ class FixturePsi:
 
 # ---------------------------------------------------------------- Gemini
 
+THEMES = [  # keyword in review → (theme, paraphrase, poster line)
+    ("viewing", "fast viewings", "A reviewer mentioned how quickly you arranged a viewing", "Book a viewing on WhatsApp"),
+    ("deposit", "smooth move-in", "A reviewer said the whole process was smooth, deposit included", "Smooth, honest lettings"),
+    ("title", "titles delivered", "A buyer said their title deed was ready as promised", "Genuine plots, clear titles"),
+    ("site visit", "organised site visits", "A buyer praised how well organised the site visit was", "Book a free site visit"),
+    ("finishing", "neat finishing", "A client praised the neat finishing on their house", "Neat work, finished on time"),
+    ("renovation", "clean renovations", "A client said the renovation was clean and tidy", "Renovations done right"),
+    ("progress photos", "progress updates", "A client valued the weekly progress photos while abroad", "Weekly progress updates"),
+    ("delivered", "fast delivery", "A customer said you delivered to their site the same day", "Delivery to your site"),
+    ("tiles", "helpful advice", "A customer said your staff helped them pick the right tiles", "Ask us what you need"),
+    ("paint", "quick colour mixing", "A customer liked how quickly you mix paint colours", "Colours mixed while you wait"),
+    ("gauge", "accurate quotes", "A customer said the gauge was exactly as quoted", "Get a roofing quote on WhatsApp"),
+    ("fabricated", "strong fabrication", "A client praised the strong gate and grill work", "Gates and grills built to last"),
+    ("whatsapp", "responsive on WhatsApp", "A reviewer said you answer on WhatsApp even at weekends", "Chat with us on WhatsApp"),
+    ("professional", "professional team", "A reviewer described your team as very professional", "A team you can rely on"),
+]
+PAINS = [
+    ("online", "hard to find online", "A reviewer said it was hard to find your details online", "website"),
+    ("photos", "no photos to browse", "A reviewer wished they could see photos before visiting", "website"),
+    ("price", "no price list", "A customer said prices aren't listed anywhere", "website"),
+    ("portfolio", "no portfolio", "A client said it was hard to see your past projects", "website"),
+    ("respond", "slow responses", "A reviewer mentioned waiting a while for a response", "none"),
+]
+
+
 class FixtureLlm:
+    """Synthesises Gemini-shaped JSON from the prompt context (deterministic).
+
+    A fixture file tests/fixtures/gemini/<place_id>.json, if present, is returned instead.
+    Every 5th business (by place_id) gets a first answer that breaks a rule (a link), so
+    the retry path runs offline; every 11th breaks it twice, exercising the fallback.
+    """
+
     model = "fixture-gemini"
 
     def __init__(self, cfg, fixtures: Path = FIXTURES_DIR):
@@ -165,4 +197,57 @@ class FixtureLlm:
         self.calls: list[dict[str, Any]] = []
 
     def generate_json(self, system: str, prompt: str, schema: type, *, context: dict[str, Any]) -> dict[str, Any]:
-        raise NotImplementedError("FixtureLlm is implemented in M4")
+        self.calls.append(context)
+        f = self.dir / f"{context['place_id']}.json"
+        if f.exists():
+            return json.loads(f.read_text(encoding="utf-8"))
+        h = sum(map(ord, context["place_id"]))
+        attempt = context.get("attempt", 0)
+        broken = (h % 5 == 0 and attempt == 0) or h % 11 == 0
+        return self._synth(context, broken)
+
+    def _synth(self, ctx: dict[str, Any], broken: bool) -> dict[str, Any]:
+        reviews = ctx["reviews"]
+        review_facts, posters = [], []
+        for r in reviews:
+            low = r["text"].lower()
+            if (r.get("rating") or 5) >= 4:
+                for kw, theme, para, poster in THEMES:
+                    if kw in low and all(rf["theme"] != theme for rf in review_facts):
+                        review_facts.append({"review_index": r["index"], "theme": theme, "sentiment": "positive",
+                                             "paraphrase": para, "addressable_by": "none"})
+                        posters.append(poster)
+                        break
+            else:
+                for kw, theme, para, fix in PAINS:
+                    if kw in low:
+                        review_facts.append({"review_index": r["index"], "theme": theme, "sentiment": "negative",
+                                             "paraphrase": para, "addressable_by": fix})
+                        break
+            if len(review_facts) == 3:
+                break
+        facts = {f["id"]: f for f in ctx["facts"]}
+        ids = list(facts) + [f"R{i}" for i in range(1, len(review_facts) + 1)]
+        texts = {**{k: v["text"] for k, v in facts.items()},
+                 **{f"R{i}": rf["paraphrase"] + "." for i, rf in enumerate(review_facts, start=1)}}
+        variants = []
+        for i in range(2):
+            open_id = ctx["opening"][i] if ctx["opening"][i] in facts else ids[0]
+            second = next((x for x in ids if x != open_id and x != ctx["opening"][1 - i]), None)
+            greet = (f"Habari {ctx['business']}" if ctx["swahili"][i] else f"Hi {ctx['business']} team") + (
+                " 👋" if i == 0 else ".")
+            body = texts[open_id]
+            used = [open_id]
+            msg = f"{greet} {body} {ctx['bridge']} {ctx['questions'][i % len(ctx['questions'])]}"
+            if second and len(msg) + len(ctx["signoff"]) < 330:
+                msg = f"{greet} {body} {texts[second]} {ctx['bridge']} {ctx['questions'][i % len(ctx['questions'])]}"
+                used.append(second)
+            if ctx["swahili"][i]:
+                msg += " Asante!"
+            if len(msg) + len(ctx["signoff"]) + 1 < 280:
+                msg += " It only takes a minute to look through, and you can tell me what you would change."
+            if broken and i == 0:
+                msg += " See https://raswaltechsolutions.com"
+            variants.append({"message": f"{msg}\n{ctx['signoff']}", "used_fact_ids": used})
+        posters = (posters + ctx["generic_poster_lines"])[:3]
+        return {"review_facts": review_facts, "variants": variants, "poster_lines": posters}

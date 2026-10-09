@@ -60,3 +60,20 @@ Small ambiguities resolved during the build. One line each: what and why.
 - `GOOD_SITE` is only claimed when PSI performance ≥ 70 and the copyright year is current or last year, since the fact text says "loads fast" and "looks current".
 - `SLOW_MOBILE` is a web-track fact only (content leads have good sites by definition). LCP is rounded to whole seconds in the text ("about 8s"); the exact value is in the evidence.
 - `MANAGES_LISTINGS` is only produced for subcategories with `manages_listings_is_positive` (property agencies).
+
+## M4: facts, Gemini drafting, validator, fallback
+- Added `addressable_by` (website | content | none) to the Gemini review-theme schema. §11.3 says pain themes are kept only if a website or content would plausibly fix them; this lets the model say which.
+- Review themes get ids R1–R3 in the order Gemini lists them, and variants may cite them. Invalid themes (bad index, reviewer name, verbatim copy, a number, "several" with one review, over 12 words) are dropped, and any variant citing one fails validation.
+- `REVIEW_THEME` is strong when positive, not generic (`generic_themes` in scoring.yaml) and at least 4 words. `REVIEW_PAIN` is strong when it's fixable by this lead's track.
+- Reviewer names are never sent to Gemini; only the numbered review texts are. The validator still checks for names (full name, or a capitalised first/last name of 3+ letters).
+- "6 or more consecutive words copied" is checked on lowercased word 6-grams (`review_copy_max_words: 5`).
+- Number check: every number in the message (excluding the sign-off) must appear in the text or evidence of a cited fact, or in the business/area name. 4.6 and 4,6 are treated as the same number.
+- Domain check: the only domain allowed is the lead's own (their website host, the final URL host, or their free-builder host). Any `http(s)://` or `www.` link is rejected even for their own site, because the first message has no links.
+- Money: KES/Ksh/Shs, "30k", "/-", "bob" and currency symbols are rejected. The word "prices" is allowed (one of the brief's examples uses it).
+- ★ isn't counted as an emoji (it's part of the rating fact).
+- Swahili touch is decided per variant with a deterministic RNG (seeded by place_id) at `swahili_touch_rate`. The stored flag reflects what the final message actually contains.
+- Retry: one retry with the validator errors appended. Valid variants from either attempt are kept and the rest come from the fallback. Each Gemini attempt (and each per-minute 429 retry, up to 3) counts against the nightly Gemini budget.
+- A daily-quota 429, or a 401/403/404 (bad key or model), trips a circuit breaker: the rest of the night uses fallback messages and no more calls are made.
+- `variant_source` on the lead is the source of the variant currently chosen; each variant also stores its own source. The dashboard updates it when you pick B.
+- Poster lines from Gemini must have ≤ 10 words, no domain/URL/money, no numbers outside the facts, and no reviewer names. Rejected lines are replaced by the subcategory's generic lines.
+- The fixture Gemini client synthesises answers from the prompt context; a fifth of businesses get a broken first answer (retry path) and about a tenth fail twice (fallback path), so offline runs exercise everything.

@@ -1,0 +1,8 @@
+{
+  "review_facts": [],
+  "variants": [
+    {"message": "Hi Kilima Homes team! Check out https://kilima.raswaltechsolutions.com for a revolutionary new site, only KES 30,000 this week!\n— Swalleh, Raswal Tech Solutions", "used_fact_ids": []},
+    {"message": "Hi Kilima Homes team.", "used_fact_ids": ["F9"]}
+  ],
+  "poster_lines": ["Only KES 30,000!", "Visit kilima.co.ke", "Rated 5 stars by 300 clients"]
+}

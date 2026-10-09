@@ -14,6 +14,7 @@ from pathlib import Path
 from pipeline.budget import Budget
 from pipeline.clients import Clients, build_clients
 from pipeline.discover import discover
+from pipeline.draft import Drafter, make_draft_finalizer
 from pipeline.enrich import enrich
 from pipeline.facts import build_facts
 from pipeline.gates import ORDER, cheap_gates
@@ -23,7 +24,7 @@ from pipeline.plan import Plan, make_plan, resolve_list_date
 from pipeline.report import write_csv
 from pipeline.score import score_candidate
 from pipeline.seed import DASHBOARD_OWNED_KEYS, settings_payload
-from pipeline.select import deterministic_finalize, select
+from pipeline.select import select
 from pipeline.settings import OUT_DIR, Config, Env
 from pipeline.store import build_store
 
@@ -74,6 +75,7 @@ class RunContext:
     run_id: str | None
     now: datetime
     errors: list[dict] = field(default_factory=list)
+    drafter: object | None = None
 
     def error(self, stage: str, exc: BaseException | str, place_id: str | None = None) -> None:
         msg = str(exc) if isinstance(exc, str) else f"{type(exc).__name__}: {exc}"
@@ -130,8 +132,10 @@ def run_nightly(cfg: Config, env: Env, opts: NightlyOptions) -> RunResult:
 
 
 def make_finalizer(ctx: RunContext):
-    """Called by select() for each accepted candidate. Returns False → NO_HOOK."""
-    return deterministic_finalize
+    """Called by select() for each accepted candidate: drafts it. Returns False → NO_HOOK."""
+    ctx.drafter = Drafter(ctx.cfg, ctx.clients.llm, ctx.budget,
+                          sleep=(lambda s: None) if ctx.opts.offline else time.sleep)
+    return make_draft_finalizer(ctx.cfg, ctx.drafter, ctx.now)
 
 
 def prepare_assets(ctx: RunContext, selected: list[Candidate]) -> None:

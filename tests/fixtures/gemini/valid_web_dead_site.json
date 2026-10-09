@@ -1,0 +1,11 @@
+{
+  "review_facts": [
+    {"review_index": 1, "theme": "fast viewings", "sentiment": "positive", "paraphrase": "Several reviews mention how quickly you arrange viewings", "addressable_by": "none"},
+    {"review_index": 3, "theme": "units hard to find", "sentiment": "negative", "paraphrase": "A reviewer struggled to find your available units online", "addressable_by": "website"}
+  ],
+  "variants": [
+    {"message": "Habari Kilima Homes 👋 I tried kilimahomes.co.ke from your Google listing and it's showing an 'account suspended' page, which is a shame when reviewers praise how quickly you arrange viewings. I put together a quick preview of how Kilima Homes' website could look. It's in the image. Want me to send you the live preview link?\n— Swalleh, Raswal Tech Solutions", "used_fact_ids": ["F1", "R1"]},
+    {"message": "Hi Kilima Homes team. A reviewer mentioned struggling to find your available units online, and right now the website on your Google listing shows an 'account suspended' page. I put together a quick preview of how Kilima Homes' website could look. It's in the image. Should I send the full preview?\n— Swalleh, Raswal Tech Solutions", "used_fact_ids": ["R2", "F1"]}
+  ],
+  "poster_lines": ["Book a viewing on WhatsApp", "Viewings arranged quickly", "New listings every week"]
+}
