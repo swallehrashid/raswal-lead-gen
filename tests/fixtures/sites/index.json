@@ -1,0 +1,1275 @@
+{
+ "acaciapropertyagents.com": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Acacia Property Agents",
+  "phone": "0740 409315",
+  "logo_colour": "#D35400"
+ },
+ "amanipropertyconsultan.co.ke": {
+  "kind": "insecure",
+  "file": "insecure_http_only.html",
+  "psi": "medium",
+  "https": "ssl_error",
+  "logo": true,
+  "name": "Amani Property Consultants",
+  "phone": "0722 381992",
+  "logo_colour": "#C0392B"
+ },
+ "baharirealty.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Bahari Realty",
+  "phone": "0717 286723",
+  "logo_colour": "#B7950B"
+ },
+ "barakaplotskitengela.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Baraka Plots Kitengela",
+  "phone": "0702 993838",
+  "logo_colour": "#C0392B"
+ },
+ "barakapropertiesltd.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Baraka Properties Ltd",
+  "phone": "0745 848212",
+  "logo_colour": "#D35400"
+ },
+ "batiimaraltd.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Bati Imara Ltd",
+  "phone": "0113 210454",
+  "logo_colour": "#7D3C98"
+ },
+ "bidiibuildingmaterials.co.ke": {
+  "kind": "weak_wix",
+  "file": "weak_wix_slow.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Bidii Building Materials",
+  "phone": "0745 839772",
+  "logo_colour": "#B7950B"
+ },
+ "bomaconstructionltd.com": {
+  "kind": "insecure",
+  "file": "insecure_http_only.html",
+  "psi": "medium",
+  "https": "ssl_error",
+  "logo": true,
+  "name": "Boma Construction Ltd",
+  "phone": "0717 492250",
+  "logo_colour": "#B7950B"
+ },
+ "bombaplumbingcentre.com": {
+  "kind": "weak_wix",
+  "file": "weak_wix_slow.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Bomba Plumbing Centre",
+  "phone": "0723 724508",
+  "logo_colour": "#117A65"
+ },
+ "chemchemiplots.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Chemchemi Plots",
+  "phone": "0768 491505",
+  "logo_colour": "#B7950B"
+ },
+ "chumaborasteel.com": {
+  "kind": "dead_500",
+  "status": 503,
+  "file": "error_503.html",
+  "name": "Chuma Bora Steel",
+  "phone": "0722 337579"
+ },
+ "chumafabricators.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Chuma Fabricators",
+  "phone": "0729 764240",
+  "logo_colour": "#1E8449"
+ },
+ "chumasafiwelders.ke": {
+  "kind": "dead_500",
+  "status": 503,
+  "file": "error_503.html",
+  "name": "Chuma Safi Welders",
+  "phone": "0724 545804"
+ },
+ "crownpaintskenya.com": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Crown Paints Kenya",
+  "phone": "0100 866170",
+  "logo_colour": "#7D3C98"
+ },
+ "dariinteriorsfitout.com": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Dari Interiors & Fit-Out",
+  "phone": "0740 649953",
+  "logo_colour": "#1E8449"
+ },
+ "dariroofingsystems.ke": {
+  "kind": "insecure",
+  "file": "insecure_http_only.html",
+  "psi": "medium",
+  "https": "ssl_error",
+  "logo": true,
+  "name": "Dari Roofing Systems",
+  "phone": "0727 900212",
+  "logo_colour": "#B7950B"
+ },
+ "diralandcompany.co.ke": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Dira Land Company",
+  "phone": "0740 404150",
+  "logo_colour": "#1E8449"
+ },
+ "dirishabuilders.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Dirisha Builders",
+  "phone": "0706 962526",
+  "logo_colour": "#2E4053"
+ },
+ "embakasisteelworks.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Embakasi Steel Works",
+  "phone": "0790 464040"
+ },
+ "faharirealty.com": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Fahari Realty",
+  "phone": "0796 211202"
+ },
+ "fanakalandcompany.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Fanaka Land Company",
+  "phone": "0723 567906",
+  "logo_colour": "#0E6BA8"
+ },
+ "farajapropertymanagers.co.ke": {
+  "kind": "dead_bizsite",
+  "redirect_to": "https://farajapropertymanagers.business.site/",
+  "error_after_redirect": "dns",
+  "name": "Faraja Property Managers",
+  "phone": "0723 654946"
+ },
+ "fundisuppliesltd.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Fundi Supplies Ltd",
+  "phone": "0110 305379",
+  "logo_colour": "#7D3C98"
+ },
+ "gardencitylettings.com": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Garden City Lettings",
+  "phone": "0110 498042"
+ },
+ "hakilandinvestments.co.ke": {
+  "kind": "dead_expired",
+  "file": "parked_expired.html",
+  "name": "Haki Land Investments",
+  "phone": "0796 147519"
+ },
+ "hassconsultrealestate.co.ke": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "HassConsult Real Estate",
+  "phone": "0723 493779",
+  "logo_colour": "#0E6BA8"
+ },
+ "hekimarealestatedevelo.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Hekima Real Estate Developers",
+  "phone": "0727 046645",
+  "logo_colour": "#117A65"
+ },
+ "hillcrestpropertymanag.co.ke": {
+  "kind": "dead_500",
+  "status": 503,
+  "file": "error_503.html",
+  "name": "Hillcrest Property Managers",
+  "phone": "0706 181828"
+ },
+ "imarapropertyservices.com": {
+  "kind": "dead_soon",
+  "file": "coming_soon.html",
+  "name": "Imara Property Services",
+  "phone": "0702 463050"
+ },
+ "imarasteelsuppliers.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Imara Steel Suppliers",
+  "phone": "0100 674985"
+ },
+ "jamiihousingagents.com": {
+  "kind": "dead_default",
+  "file": "hosting_default.html",
+  "name": "Jamii Housing Agents",
+  "phone": "0733 081920"
+ },
+ "jengaimaracontractors.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Jenga Imara Contractors",
+  "phone": "0729 367803"
+ },
+ "jengocontractors.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Jengo Contractors",
+  "phone": "0113 056324",
+  "logo_colour": "#1E8449"
+ },
+ "jiranipropertyservices.ke": {
+  "kind": "dead_expired",
+  "file": "parked_expired.html",
+  "name": "Jirani Property Services",
+  "phone": "0790 614632"
+ },
+ "jklbuilders.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "JKL Builders",
+  "phone": "0796 621940",
+  "logo_colour": "#B7950B"
+ },
+ "juakaliplotsltd.co.ke": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Jua Kali Plots Ltd",
+  "phone": "0745 904565"
+ },
+ "jujaroadhardware.co.ke": {
+  "kind": "dead_expired",
+  "file": "parked_expired.html",
+  "name": "Juja Road Hardware",
+  "phone": "0722 416091"
+ },
+ "jujaroofingcentre.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Juja Roofing Centre",
+  "phone": "0113 945073",
+  "logo_colour": "#C0392B"
+ },
+ "kahawapainthouse.ke": {
+  "kind": "dead_expired",
+  "file": "parked_expired.html",
+  "name": "Kahawa Paint House",
+  "phone": "0724 646102"
+ },
+ "kalisteelfabricators.com": {
+  "kind": "insecure",
+  "file": "insecure_http_only.html",
+  "psi": "medium",
+  "https": "ssl_error",
+  "logo": true,
+  "name": "Kali Steel Fabricators",
+  "phone": "0768 497879",
+  "logo_colour": "#C0392B"
+ },
+ "kanaanlandinvestments.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Kanaan Land Investments",
+  "phone": "0733 169961",
+  "logo_colour": "#D35400"
+ },
+ "kazisafirenovations.co.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Kazi Safi Renovations",
+  "phone": "0729 087518",
+  "logo_colour": "#B7950B"
+ },
+ "kejahunterskenya.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Keja Hunters Kenya",
+  "phone": "0702 784607",
+  "logo_colour": "#D35400"
+ },
+ "kenyahomescentre.com": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Kenya Homes Centre",
+  "phone": "020 4595779",
+  "logo_colour": "#D35400"
+ },
+ "keshoboradevelopers.ke": {
+  "kind": "weak_wix",
+  "file": "weak_wix_slow.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Kesho Bora Developers",
+  "phone": "0712 262252",
+  "logo_colour": "#2E4053"
+ },
+ "kifarurealty.co.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Kifaru Realty",
+  "phone": "0790 408035",
+  "logo_colour": "#D35400"
+ },
+ "kifunikoroofing.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Kifuniko Roofing",
+  "phone": "0768 849998",
+  "logo_colour": "#C0392B"
+ },
+ "kijanihomeslettings.com": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Kijani Homes & Lettings",
+  "phone": "0724 674437",
+  "logo_colour": "#7D3C98"
+ },
+ "kilelelandcompany.co.ke": {
+  "kind": "dead_expired",
+  "file": "parked_expired.html",
+  "name": "Kilele Land Company",
+  "phone": "0733 662417"
+ },
+ "kipandepropertymanager.co.ke": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Kipande Property Managers",
+  "phone": "0721 908877"
+ },
+ "kisimadevelopers.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Kisima Developers",
+  "phone": "0723 558992",
+  "logo_colour": "#D35400"
+ },
+ "kitorealtors.co.ke": {
+  "kind": "weak_thin",
+  "file": "weak_thin.html",
+  "psi": "medium",
+  "logo": false,
+  "name": "Kito Realtors",
+  "phone": "0724 124965"
+ },
+ "kiunzicontractors.ke": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Kiunzi Contractors",
+  "phone": "0702 616344",
+  "logo_colour": "#D35400"
+ },
+ "kivukoproperties.co.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Kivuko Properties",
+  "phone": "0111 461251",
+  "logo_colour": "#C0392B"
+ },
+ "kiwangocontractors.co.ke": {
+  "kind": "insecure",
+  "file": "insecure_http_only.html",
+  "psi": "medium",
+  "https": "ssl_error",
+  "logo": true,
+  "name": "Kiwango Contractors",
+  "phone": "0733 989633",
+  "logo_colour": "#2E4053"
+ },
+ "knightfrankkenya.com": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Knight Frank Kenya",
+  "phone": "0729 761670",
+  "logo_colour": "#117A65"
+ },
+ "kutarenovations.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Kuta Renovations",
+  "phone": "0790 960862",
+  "logo_colour": "#B7950B"
+ },
+ "mabatiexpress.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Mabati Express",
+  "phone": "0768 373849"
+ },
+ "mabatirollingmills.ke": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Mabati Rolling Mills",
+  "phone": "0723 498435",
+  "logo_colour": "#1E8449"
+ },
+ "mabatiyetu.com": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Mabati Yetu",
+  "phone": "0113 679041",
+  "logo_colour": "#7D3C98"
+ },
+ "majimazuriagencies.com": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Maji Mazuri Agencies",
+  "phone": "0717 137058",
+  "logo_colour": "#2E4053"
+ },
+ "makaoborarealty.co.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Makao Bora Realty",
+  "phone": "0724 655821",
+  "logo_colour": "#7D3C98"
+ },
+ "malighafisupplies.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Malighafi Supplies",
+  "phone": "0727 275297",
+  "logo_colour": "#0E6BA8"
+ },
+ "malisafilandcompany.com": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Mali Safi Land Company",
+  "phone": "0100 914058",
+  "logo_colour": "#C0392B"
+ },
+ "mapatodevelopers.co.ke": {
+  "kind": "weak_wix",
+  "file": "weak_wix_slow.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Mapato Developers",
+  "phone": "0100 785509",
+  "logo_colour": "#1E8449"
+ },
+ "mapemalettings.co.ke": {
+  "kind": "dead_404",
+  "file": "error_404.html",
+  "status": 404,
+  "name": "Mapema Lettings",
+  "phone": "0733 847009"
+ },
+ "mashambaboraltd.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Mashamba Bora Ltd",
+  "phone": "0724 170652",
+  "logo_colour": "#B7950B"
+ },
+ "mavunoplotsltd.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Mavuno Plots Ltd",
+  "phone": "0727 561043",
+  "logo_colour": "#0E6BA8"
+ },
+ "mawecontractors.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Mawe Contractors",
+  "phone": "0796 402498",
+  "logo_colour": "#1E8449"
+ },
+ "mbaomawefitout.ke": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Mbao & Mawe Fit-Out",
+  "phone": "0717 613395"
+ },
+ "metrolettingsbureau.com": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Metro Lettings Bureau",
+  "phone": "020 3610707"
+ },
+ "mferejiplumbingsupplie.com": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Mfereji Plumbing Supplies",
+  "phone": "0790 373284"
+ },
+ "mfumobuildersltd.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Mfumo Builders Ltd",
+  "phone": "0712 396592",
+  "logo_colour": "#7D3C98"
+ },
+ "milelelandltd.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Milele Land Ltd",
+  "phone": "0790 376833"
+ },
+ "miziziproperties.com": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Mizizi Properties",
+  "phone": "0702 019379",
+  "logo_colour": "#2E4053"
+ },
+ "mjengomastersltd.ke": {
+  "kind": "dead_soon",
+  "file": "coming_soon.html",
+  "name": "Mjengo Masters Ltd",
+  "phone": "0111 427648"
+ },
+ "mjenzihardware.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Mjenzi Hardware",
+  "phone": "0733 726554",
+  "logo_colour": "#1E8449"
+ },
+ "mlangocontractors.co.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Mlango Contractors",
+  "phone": "0724 473016",
+  "logo_colour": "#C0392B"
+ },
+ "mlimalandcompany.com": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Mlima Land Company",
+  "phone": "0717 599374",
+  "logo_colour": "#0E6BA8"
+ },
+ "mlimanirealestate.co.ke": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Mlimani Real Estate",
+  "phone": "0796 729152",
+  "logo_colour": "#C0392B"
+ },
+ "msingibuildingsupplies.ke": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Msingi Building Supplies",
+  "phone": "0111 941704"
+ },
+ "msingiconstructionltd.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Msingi Construction Ltd",
+  "phone": "0729 622005",
+  "logo_colour": "#1E8449"
+ },
+ "mvuaroofingkenya.ke": {
+  "kind": "weak_thin",
+  "file": "weak_thin.html",
+  "psi": "medium",
+  "logo": false,
+  "name": "Mvua Roofing Kenya",
+  "phone": "0706 252461"
+ },
+ "mvulerealtors.ke": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Mvule Realtors",
+  "phone": "0729 459834",
+  "logo_colour": "#117A65"
+ },
+ "mwalimubuilders.ke": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Mwalimu Builders",
+  "phone": "0100 067778"
+ },
+ "mwambalandltd.com": {
+  "kind": "insecure",
+  "file": "insecure_http_only.html",
+  "psi": "medium",
+  "https": "ssl_error",
+  "logo": true,
+  "name": "Mwamba Land Ltd",
+  "phone": "0100 851076",
+  "logo_colour": "#117A65"
+ },
+ "mwambaroofingsolutions.co.ke": {
+  "kind": "weak_thin",
+  "file": "weak_thin.html",
+  "psi": "medium",
+  "logo": false,
+  "name": "Mwamba Roofing Solutions",
+  "phone": "0757 237940"
+ },
+ "mwangazarealty.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Mwangaza Realty",
+  "phone": "0706 706756",
+  "logo_colour": "#117A65"
+ },
+ "nchiyetuplots.co.ke": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Nchi Yetu Plots",
+  "phone": "0110 239315"
+ },
+ "ngazibuilders.com": {
+  "kind": "weak_thin",
+  "file": "weak_thin.html",
+  "psi": "medium",
+  "logo": false,
+  "name": "Ngazi Builders",
+  "phone": "0717 769764"
+ },
+ "nguvuhardware.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Nguvu Hardware",
+  "phone": "0745 293697",
+  "logo_colour": "#7D3C98"
+ },
+ "nguzoconstruction.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Nguzo Construction",
+  "phone": "0724 032576",
+  "logo_colour": "#1E8449"
+ },
+ "nguzosteelltd.ke": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Nguzo Steel Ltd",
+  "phone": "0113 693767"
+ },
+ "nyotalettingsltd.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Nyota Lettings Ltd",
+  "phone": "0757 731191",
+  "logo_colour": "#C0392B"
+ },
+ "nyotasteelhardware.co.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Nyota Steel & Hardware",
+  "phone": "0745 499007",
+  "logo_colour": "#0E6BA8"
+ },
+ "nyumbaboraagencies.com": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Nyumba Bora Agencies",
+  "phone": "0796 927752",
+  "logo_colour": "#1E8449"
+ },
+ "nyumbasafirenovations.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Nyumba Safi Renovations",
+  "phone": "0727 043375"
+ },
+ "optivengroup.co.ke": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Optiven Group",
+  "phone": "0733 269210",
+  "logo_colour": "#B7950B"
+ },
+ "paaboraroofing.co.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Paa Bora Roofing",
+  "phone": "0757 233277",
+  "logo_colour": "#B7950B"
+ },
+ "paaleturoofing.com": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Paa Letu Roofing",
+  "phone": "0740 092744"
+ },
+ "paasafiroofing.co.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Paa Safi Roofing",
+  "phone": "0733 608498",
+  "logo_colour": "#D35400"
+ },
+ "pamgoldingpropertieske.com": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Pam Golding Properties Kenya",
+  "phone": "0757 230482",
+  "logo_colour": "#7D3C98"
+ },
+ "pandalandinvestments.com": {
+  "kind": "dead_expired",
+  "file": "parked_expired.html",
+  "name": "Panda Land Investments",
+  "phone": "0702 744330"
+ },
+ "pembepropertymanagers.co.ke": {
+  "kind": "weak_wix",
+  "file": "weak_wix_slow.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Pembe Property Managers",
+  "phone": "0100 961878",
+  "logo_colour": "#117A65"
+ },
+ "plotwisekenya.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Plotwise Kenya",
+  "phone": "0100 346714",
+  "logo_colour": "#B7950B"
+ },
+ "primekeysproperties.com": {
+  "kind": "dead_forsale",
+  "file": "parked_for_sale.html",
+  "name": "Prime Keys Properties",
+  "phone": "0768 363506"
+ },
+ "quickfixlettings.co.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Quickfix Lettings",
+  "phone": "0790 432892",
+  "logo_colour": "#0E6BA8"
+ },
+ "rafikiestateagents.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Rafiki Estate Agents",
+  "phone": "0110 445622",
+  "logo_colour": "#1E8449"
+ },
+ "ramanibuilders.com": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Ramani Builders",
+  "phone": "0702 345504",
+  "logo_colour": "#7D3C98"
+ },
+ "rangiborapaints.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Rangi Bora Paints",
+  "phone": "0722 082055",
+  "logo_colour": "#D35400"
+ },
+ "rangipaintcentre.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Rangi Paint Centre",
+  "phone": "0717 737187",
+  "logo_colour": "#0E6BA8"
+ },
+ "riverbankrealtors.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Riverbank Realtors",
+  "phone": "0111 469950",
+  "logo_colour": "#D35400"
+ },
+ "sakafuboratiles.co.ke": {
+  "kind": "dead_expired",
+  "file": "parked_expired.html",
+  "name": "Sakafu Bora Tiles",
+  "phone": "0722 772751"
+ },
+ "sakafuinteriors.com": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Sakafu Interiors",
+  "phone": "0706 752967",
+  "logo_colour": "#7D3C98"
+ },
+ "sautihomes.com": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Sauti Homes",
+  "phone": "0702 150892",
+  "logo_colour": "#117A65"
+ },
+ "savannapropertymanager.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Savanna Property Managers",
+  "phone": "0722 159415"
+ },
+ "shambayetuinvestments.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Shamba Yetu Investments",
+  "phone": "0722 655731"
+ },
+ "sifadevelopers.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Sifa Developers",
+  "phone": "0729 743983",
+  "logo_colour": "#2E4053"
+ },
+ "simamadevelopers.com": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Simama Developers",
+  "phone": "0768 070537",
+  "logo_colour": "#7D3C98"
+ },
+ "simbahomesagency.ke": {
+  "kind": "weak_wix",
+  "file": "weak_wix_slow.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Simba Homes Agency",
+  "phone": "0110 776428",
+  "logo_colour": "#C0392B"
+ },
+ "simbasteelsupplies.co.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Simba Steel Supplies",
+  "phone": "0724 311751",
+  "logo_colour": "#C0392B"
+ },
+ "simbatilescentre.com": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Simba Tiles Centre",
+  "phone": "0733 681054",
+  "logo_colour": "#D35400"
+ },
+ "simiticonstruction.ke": {
+  "kind": "weak_thin",
+  "file": "weak_thin.html",
+  "psi": "medium",
+  "logo": false,
+  "name": "Simiti Construction",
+  "phone": "0702 482435"
+ },
+ "starlightpropertiesken.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Starlight Properties Kenya",
+  "phone": "0740 667059",
+  "logo_colour": "#0E6BA8"
+ },
+ "taifalanddevelopers.wixsite.com": {
+  "kind": "free_wix",
+  "file": "free_builder_wixsite.html",
+  "psi": "medium",
+  "logo": true,
+  "name": "Taifa Land Developers",
+  "phone": "0796 921823",
+  "logo_colour": "#C0392B"
+ },
+ "thikaroadhardware.co.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Thika Road Hardware",
+  "phone": "0727 190250",
+  "logo_colour": "#1E8449"
+ },
+ "tileandcarpetcentre.com": {
+  "kind": "good_video",
+  "file": "good_with_video.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Tile and Carpet Centre",
+  "phone": "0110 270647",
+  "logo_colour": "#117A65"
+ },
+ "tileroofmasters.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Tile Roof Masters",
+  "phone": "0723 568924",
+  "logo_colour": "#C0392B"
+ },
+ "tileworldruiru.co.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Tile World Ruiru",
+  "phone": "0722 544903",
+  "logo_colour": "#B7950B"
+ },
+ "tulivuhomesagency.co.ke": {
+  "kind": "insecure",
+  "file": "insecure_http_only.html",
+  "psi": "medium",
+  "https": "ssl_error",
+  "logo": true,
+  "name": "Tulivu Homes Agency",
+  "phone": "0757 232795",
+  "logo_colour": "#2E4053"
+ },
+ "twendehardware.com": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Twende Hardware",
+  "phone": "0723 531092",
+  "logo_colour": "#B7950B"
+ },
+ "twigalettings.co.ke": {
+  "kind": "dead_dns",
+  "error": "dns",
+  "name": "Twiga Lettings",
+  "phone": "0727 087199"
+ },
+ "ufunditoolshardware.com": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Ufundi Tools & Hardware",
+  "phone": "0110 371938",
+  "logo_colour": "#2E4053"
+ },
+ "uimarabuilders.co.ke": {
+  "kind": "dead_soon",
+  "file": "coming_soon.html",
+  "name": "Uimara Builders",
+  "phone": "0113 517098"
+ },
+ "ujenziborabuilders.co.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Ujenzi Bora Builders",
+  "phone": "0796 174780",
+  "logo_colour": "#D35400"
+ },
+ "upanaconstruction.com": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Upana Construction",
+  "phone": "0722 113701"
+ },
+ "upendoproperties.com": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Upendo Properties",
+  "phone": "0717 851123",
+  "logo_colour": "#B7950B"
+ },
+ "upeolandinvestments.co.ke": {
+  "kind": "good_nosocial",
+  "file": "good_no_social.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "name": "Upeo Land Investments",
+  "phone": "0757 436712",
+  "logo_colour": "#B7950B"
+ },
+ "upeporoofing.ke": {
+  "kind": "good_fbonly",
+  "file": "good_fb_only.html",
+  "psi": "medium_good",
+  "logo": true,
+  "og": false,
+  "name": "Upepo Roofing",
+  "phone": "0110 507605",
+  "logo_colour": "#D35400"
+ },
+ "urbannestrealty.co.ke": {
+  "kind": "dead_index",
+  "file": "index_of.html",
+  "name": "Urban Nest Realty",
+  "phone": "0729 529071"
+ },
+ "usernameinvestments.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Username Investments",
+  "phone": "0733 482025",
+  "logo_colour": "#117A65"
+ },
+ "utulivudevelopers.ke": {
+  "kind": "weak_old",
+  "file": "weak_old_desktop.html",
+  "psi": "slow",
+  "logo": true,
+  "name": "Utulivu Developers",
+  "phone": "0706 666695",
+  "logo_colour": "#C0392B"
+ },
+ "uwanjalandltd.co.ke": {
+  "kind": "insecure",
+  "file": "insecure_http_only.html",
+  "psi": "medium",
+  "https": "ssl_error",
+  "logo": true,
+  "name": "Uwanja Land Ltd",
+  "phone": "0723 508948",
+  "logo_colour": "#1E8449"
+ },
+ "vunalandcompany.co.ke": {
+  "kind": "dead_suspended",
+  "file": "parked_suspended.html",
+  "name": "Vuna Land Company",
+  "phone": "0111 542959"
+ },
+ "zawadihardware.co.ke": {
+  "kind": "good_wp",
+  "file": "good_wordpress.html",
+  "psi": "fast",
+  "logo": true,
+  "og": true,
+  "blog": "blog_stale.html",
+  "name": "Zawadi Hardware",
+  "phone": "0724 421658",
+  "logo_colour": "#D35400"
+ },
+ "zurinyumbaltd.ke": {
+  "kind": "dead_expired",
+  "file": "parked_expired.html",
+  "name": "Zuri Nyumba Ltd",
+  "phone": "0745 408032"
+ }
+}

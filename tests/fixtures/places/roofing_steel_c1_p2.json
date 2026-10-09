@@ -1,0 +1,1564 @@
+{
+ "places": [
+  {
+   "id": "ChIJyoD9STg6OIRTs7b3ofYeIDp",
+   "displayName": {
+    "text": "Chuma Safi Welders",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kariobangi North Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.250308,
+    "longitude": 36.891635
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9731476925498048427",
+   "nationalPhoneNumber": "0724 545804",
+   "internationalPhoneNumber": "+254 724 545804",
+   "websiteUri": "http://www.chumasafiwelders.ke/",
+   "rating": 4.3,
+   "userRatingCount": 31,
+   "reviews": [
+    {
+     "name": "places/ChIJyoD9STg6OIRTs7b3ofYeIDp/reviews/r602815542",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/247081959509020207700/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-30T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r602815542"
+    },
+    {
+     "name": "places/ChIJyoD9STg6OIRTs7b3ofYeIDp/reviews/r428163900",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/633660844896701613713/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-16T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r428163900"
+    },
+    {
+     "name": "places/ChIJyoD9STg6OIRTs7b3ofYeIDp/reviews/r319412165",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/957323657304350038741/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-21T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r319412165"
+    },
+    {
+     "name": "places/ChIJyoD9STg6OIRTs7b3ofYeIDp/reviews/r258165039",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/111740001374919749690/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-08T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r258165039"
+    },
+    {
+     "name": "places/ChIJyoD9STg6OIRTs7b3ofYeIDp/reviews/r762120107",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/134404411989618053585/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-24T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r762120107"
+    }
+   ]
+  },
+  {
+   "id": "ChIJdaQrx17nbQ0j2DGN1r4TTEx",
+   "displayName": {
+    "text": "Juja Roofing Centre",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Mombasa Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.320946,
+    "longitude": 36.856608
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=7699895961390650856",
+   "nationalPhoneNumber": "0113 945073",
+   "internationalPhoneNumber": "+254 113 945073",
+   "websiteUri": "https://jujaroofingcentre.wixsite.com/home",
+   "rating": 4.6,
+   "userRatingCount": 212,
+   "reviews": [
+    {
+     "name": "places/ChIJdaQrx17nbQ0j2DGN1r4TTEx/reviews/r739050912",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/792362334844807181965/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r739050912"
+    },
+    {
+     "name": "places/ChIJdaQrx17nbQ0j2DGN1r4TTEx/reviews/r813767776",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/421960017023369454571/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-04T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r813767776"
+    },
+    {
+     "name": "places/ChIJdaQrx17nbQ0j2DGN1r4TTEx/reviews/r198695818",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/395861309541980064593/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-26T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r198695818"
+    },
+    {
+     "name": "places/ChIJdaQrx17nbQ0j2DGN1r4TTEx/reviews/r479004460",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/696407191828041273611/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-15T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r479004460"
+    },
+    {
+     "name": "places/ChIJdaQrx17nbQ0j2DGN1r4TTEx/reviews/r749927968",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/652884466339144950043/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-22T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r749927968"
+    }
+   ]
+  },
+  {
+   "id": "ChIJYQir_YFCxggIGg2jDW-kzLF",
+   "displayName": {
+    "text": "Kifuniko Roofing",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.253839,
+    "longitude": 36.894611
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=4443622869366615115",
+   "nationalPhoneNumber": "0768 849998",
+   "internationalPhoneNumber": "+254 768 849998",
+   "websiteUri": "http://www.kifunikoroofing.co.ke/",
+   "rating": 4.4,
+   "userRatingCount": 93,
+   "reviews": [
+    {
+     "name": "places/ChIJYQir_YFCxggIGg2jDW-kzLF/reviews/r985057588",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/434912331764921450165/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-27T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r985057588"
+    },
+    {
+     "name": "places/ChIJYQir_YFCxggIGg2jDW-kzLF/reviews/r244789373",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/972032085840392265886/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-05T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r244789373"
+    },
+    {
+     "name": "places/ChIJYQir_YFCxggIGg2jDW-kzLF/reviews/r330562948",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/452370900077756287174/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-16T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r330562948"
+    },
+    {
+     "name": "places/ChIJYQir_YFCxggIGg2jDW-kzLF/reviews/r549675379",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/753378510958522971411/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-07T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r549675379"
+    },
+    {
+     "name": "places/ChIJYQir_YFCxggIGg2jDW-kzLF/reviews/r538934863",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 4,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/661113091077339780250/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-29T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r538934863"
+    }
+   ]
+  },
+  {
+   "id": "ChIJvxHs9UWqK9x-2N_NlJMZ0JQ",
+   "displayName": {
+    "text": "Pembe Fabrication Works",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Enterprise Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.306316,
+    "longitude": 36.841504
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2153530135318580773",
+   "nationalPhoneNumber": "0100 818950",
+   "internationalPhoneNumber": "+254 100 818950",
+   "rating": 4.1,
+   "userRatingCount": 212,
+   "reviews": [
+    {
+     "name": "places/ChIJvxHs9UWqK9x-2N_NlJMZ0JQ/reviews/r640169789",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/666315680899262370388/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-12T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r640169789"
+    },
+    {
+     "name": "places/ChIJvxHs9UWqK9x-2N_NlJMZ0JQ/reviews/r925797097",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/121601596661454266548/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-22T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r925797097"
+    },
+    {
+     "name": "places/ChIJvxHs9UWqK9x-2N_NlJMZ0JQ/reviews/r589723407",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/338430916626787620963/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-02T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r589723407"
+    },
+    {
+     "name": "places/ChIJvxHs9UWqK9x-2N_NlJMZ0JQ/reviews/r570820111",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Delivery took an extra day but the roofing sheets were good.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Delivery took an extra day but the roofing sheets were good.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/243327818688322114389/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-16T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r570820111"
+    },
+    {
+     "name": "places/ChIJvxHs9UWqK9x-2N_NlJMZ0JQ/reviews/r975588819",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 4,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/907069992745614662856/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r975588819"
+    }
+   ]
+  },
+  {
+   "id": "ChIJHIgvZ_oKJPlpv3viwmuUgaB",
+   "displayName": {
+    "text": "Paa Bora Roofing",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kirinyaga Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.274451,
+    "longitude": 36.822497
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=6710298776633366100",
+   "nationalPhoneNumber": "0757 233277",
+   "internationalPhoneNumber": "+254 757 233277",
+   "websiteUri": "https://paaboraroofing.co.ke/",
+   "rating": 4.9,
+   "userRatingCount": 76,
+   "reviews": [
+    {
+     "name": "places/ChIJHIgvZ_oKJPlpv3viwmuUgaB/reviews/r236048483",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/805448186702173621376/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-30T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r236048483"
+    },
+    {
+     "name": "places/ChIJHIgvZ_oKJPlpv3viwmuUgaB/reviews/r238297749",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/614998985886864339541/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-20T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r238297749"
+    },
+    {
+     "name": "places/ChIJHIgvZ_oKJPlpv3viwmuUgaB/reviews/r444713703",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/991262297228276477405/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-26T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r444713703"
+    },
+    {
+     "name": "places/ChIJHIgvZ_oKJPlpv3viwmuUgaB/reviews/r925227924",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/144539534353952540050/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-28T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r925227924"
+    },
+    {
+     "name": "places/ChIJHIgvZ_oKJPlpv3viwmuUgaB/reviews/r964740256",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/237667724837098084017/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-02T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r964740256"
+    }
+   ]
+  },
+  {
+   "id": "ChIJOsH-LPmaS8BSXtmtr4OuuGh",
+   "displayName": {
+    "text": "Small Welding Shop",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.250698,
+    "longitude": 36.889016
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5555037643322425124",
+   "nationalPhoneNumber": "0717 920767",
+   "internationalPhoneNumber": "+254 717 920767",
+   "rating": 4.5,
+   "userRatingCount": 4,
+   "reviews": [
+    {
+     "name": "places/ChIJOsH-LPmaS8BSXtmtr4OuuGh/reviews/r202741083",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/248234625400692552480/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-26T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r202741083"
+    },
+    {
+     "name": "places/ChIJOsH-LPmaS8BSXtmtr4OuuGh/reviews/r820155770",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/992363481396325991823/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-18T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r820155770"
+    },
+    {
+     "name": "places/ChIJOsH-LPmaS8BSXtmtr4OuuGh/reviews/r115202079",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/519086358688996211479/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r115202079"
+    },
+    {
+     "name": "places/ChIJOsH-LPmaS8BSXtmtr4OuuGh/reviews/r881688562",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/707604781260199547047/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-02T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r881688562"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ9aoz8OLdBXyiKJWVQm5lWHY",
+   "displayName": {
+    "text": "Safal MRM Kenya",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Old Mombasa Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.3228,
+    "longitude": 36.864878
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9681587363680859984",
+   "nationalPhoneNumber": "0727 116439",
+   "internationalPhoneNumber": "+254 727 116439",
+   "rating": 4.5,
+   "userRatingCount": 180,
+   "reviews": [
+    {
+     "name": "places/ChIJ9aoz8OLdBXyiKJWVQm5lWHY/reviews/r594080849",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/219144017693902776541/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r594080849"
+    },
+    {
+     "name": "places/ChIJ9aoz8OLdBXyiKJWVQm5lWHY/reviews/r874757554",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/125173943281598689971/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-27T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r874757554"
+    },
+    {
+     "name": "places/ChIJ9aoz8OLdBXyiKJWVQm5lWHY/reviews/r192884647",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/412400343738759917740/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-22T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r192884647"
+    },
+    {
+     "name": "places/ChIJ9aoz8OLdBXyiKJWVQm5lWHY/reviews/r208055310",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/859016221345694568077/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-05T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r208055310"
+    },
+    {
+     "name": "places/ChIJ9aoz8OLdBXyiKJWVQm5lWHY/reviews/r362504389",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/948984539859200778519/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-13T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r362504389"
+    }
+   ]
+  },
+  {
+   "id": "ChIJWRrnIY-wpc7SBE7y5UFy1ue",
+   "displayName": {
+    "text": "Nyota Steel & Hardware",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Thika Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.217413,
+    "longitude": 36.891941
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3553831083900945790",
+   "nationalPhoneNumber": "0745 499007",
+   "internationalPhoneNumber": "+254 745 499007",
+   "websiteUri": "http://www.nyotasteelhardware.co.ke/",
+   "rating": 4.9,
+   "userRatingCount": 76,
+   "reviews": [
+    {
+     "name": "places/ChIJWRrnIY-wpc7SBE7y5UFy1ue/reviews/r818376280",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/164474564995040946648/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-13T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r818376280"
+    },
+    {
+     "name": "places/ChIJWRrnIY-wpc7SBE7y5UFy1ue/reviews/r100894566",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/582875108574823390449/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-30T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r100894566"
+    },
+    {
+     "name": "places/ChIJWRrnIY-wpc7SBE7y5UFy1ue/reviews/r962040001",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/456539564944273243601/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-26T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r962040001"
+    },
+    {
+     "name": "places/ChIJWRrnIY-wpc7SBE7y5UFy1ue/reviews/r411188436",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/242216627118124960012/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-12T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r411188436"
+    },
+    {
+     "name": "places/ChIJWRrnIY-wpc7SBE7y5UFy1ue/reviews/r482325006",
+     "relativePublishTimeDescription": "11 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/868107146815304507622/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-10-29T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r482325006"
+    }
+   ]
+  },
+  {
+   "id": "ChIJVVi93Vlwc1tFAdqWvrWDfkw",
+   "displayName": {
+    "text": "Imara Steel Suppliers",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Old Mombasa Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.32445,
+    "longitude": 36.870475
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=1706123147811911329",
+   "nationalPhoneNumber": "0100 674985",
+   "internationalPhoneNumber": "+254 100 674985",
+   "websiteUri": "https://imarasteelsuppliers.co.ke/",
+   "rating": 4.3,
+   "userRatingCount": 260,
+   "reviews": [
+    {
+     "name": "places/ChIJVVi93Vlwc1tFAdqWvrWDfkw/reviews/r969006156",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/590957075850301447094/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-27T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r969006156"
+    },
+    {
+     "name": "places/ChIJVVi93Vlwc1tFAdqWvrWDfkw/reviews/r237371071",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/367197341870018083193/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-21T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r237371071"
+    },
+    {
+     "name": "places/ChIJVVi93Vlwc1tFAdqWvrWDfkw/reviews/r410167584",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/288155286592659423042/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-21T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r410167584"
+    },
+    {
+     "name": "places/ChIJVVi93Vlwc1tFAdqWvrWDfkw/reviews/r488213862",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/352533756332768562597/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-16T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r488213862"
+    },
+    {
+     "name": "places/ChIJVVi93Vlwc1tFAdqWvrWDfkw/reviews/r104622203",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/372617086390614184756/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-11T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r104622203"
+    }
+   ]
+  },
+  {
+   "id": "ChIJXVrYsZobFilf49Bk_UrR_ld",
+   "displayName": {
+    "text": "Mvua Roofing Kenya",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.317284,
+    "longitude": 36.90793
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=1376655498209225865",
+   "nationalPhoneNumber": "0706 252461",
+   "internationalPhoneNumber": "+254 706 252461",
+   "websiteUri": "https://mvuaroofingkenya.ke/",
+   "rating": 4.6,
+   "userRatingCount": 31,
+   "reviews": [
+    {
+     "name": "places/ChIJXVrYsZobFilf49Bk_UrR_ld/reviews/r650563941",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/224709178548909258163/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-01T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r650563941"
+    },
+    {
+     "name": "places/ChIJXVrYsZobFilf49Bk_UrR_ld/reviews/r520134742",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/163286458620627027657/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-03T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r520134742"
+    },
+    {
+     "name": "places/ChIJXVrYsZobFilf49Bk_UrR_ld/reviews/r632710908",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/202050300004059477437/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-15T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r632710908"
+    },
+    {
+     "name": "places/ChIJXVrYsZobFilf49Bk_UrR_ld/reviews/r665414665",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/113025428566677278853/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-29T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r665414665"
+    },
+    {
+     "name": "places/ChIJXVrYsZobFilf49Bk_UrR_ld/reviews/r734255392",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/690763771220431611411/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-30T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r734255392"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ_rqSZa-l0JvqgdobD75OCyy",
+   "displayName": {
+    "text": "Tile Roof Masters",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kirinyaga Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.27666,
+    "longitude": 36.826157
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8974780978028244252",
+   "nationalPhoneNumber": "0723 568924",
+   "internationalPhoneNumber": "+254 723 568924",
+   "websiteUri": "https://tileroofmasters.co.ke/",
+   "rating": 4.4,
+   "userRatingCount": 212,
+   "reviews": [
+    {
+     "name": "places/ChIJ_rqSZa-l0JvqgdobD75OCyy/reviews/r154563776",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/113643036539079097754/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-20T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r154563776"
+    },
+    {
+     "name": "places/ChIJ_rqSZa-l0JvqgdobD75OCyy/reviews/r996623601",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/193232901327922279890/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-18T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r996623601"
+    },
+    {
+     "name": "places/ChIJ_rqSZa-l0JvqgdobD75OCyy/reviews/r571927402",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/917892191034474948213/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-03T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r571927402"
+    },
+    {
+     "name": "places/ChIJ_rqSZa-l0JvqgdobD75OCyy/reviews/r588534749",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/582716621202189996303/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-15T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r588534749"
+    },
+    {
+     "name": "places/ChIJ_rqSZa-l0JvqgdobD75OCyy/reviews/r369596012",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/475214427201800775066/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-22T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r369596012"
+    }
+   ]
+  },
+  {
+   "id": "ChIJLY4kS9vtipbY77ZPYe2yr5W",
+   "displayName": {
+    "text": "Nguzo Steel Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kamiti Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.192478,
+    "longitude": 36.917252
+   },
+   "types": [
+    "roofing_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "roofing_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8214132921420442689",
+   "nationalPhoneNumber": "0113 693767",
+   "internationalPhoneNumber": "+254 113 693767",
+   "websiteUri": "https://nguzosteelltd.ke/",
+   "rating": 4.8,
+   "userRatingCount": 212,
+   "reviews": [
+    {
+     "name": "places/ChIJLY4kS9vtipbY77ZPYe2yr5W/reviews/r153998238",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Helpful team, they came to measure the roof and gave an accurate quote.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/319767825908476627455/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-11T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r153998238"
+    },
+    {
+     "name": "places/ChIJLY4kS9vtipbY77ZPYe2yr5W/reviews/r849303792",
+     "relativePublishTimeDescription": "11 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Steel was genuine and well priced compared to other suppliers on Mombasa Road.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/351580159777527674281/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-10-30T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r849303792"
+    },
+    {
+     "name": "places/ChIJLY4kS9vtipbY77ZPYe2yr5W/reviews/r772032372",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They fabricated our gate and window grills, strong work and finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/382389472036466870171/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-29T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r772032372"
+    },
+    {
+     "name": "places/ChIJLY4kS9vtipbY77ZPYe2yr5W/reviews/r850352310",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought mabati for my house, the gauge was exactly as quoted and they delivered to Juja the next day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/356939019321433383740/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-29T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r850352310"
+    },
+    {
+     "name": "places/ChIJLY4kS9vtipbY77ZPYe2yr5W/reviews/r488623884",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very good quality roofing sheets and the colours are as shown. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/444288763406553787697/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-22T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r488623884"
+    }
+   ]
+  }
+ ]
+}

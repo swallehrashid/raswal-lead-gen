@@ -1,0 +1,2637 @@
+{
+ "places": [
+  {
+   "id": "ChIJyoVQPEZJWDyk5HJtZDc8-bY",
+   "displayName": {
+    "text": "Jengo Contractors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Runda Dr, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.220002,
+    "longitude": 36.80022
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3664143974601738828",
+   "nationalPhoneNumber": "0113 056324",
+   "internationalPhoneNumber": "+254 113 056324",
+   "websiteUri": "https://jengocontractors.co.ke/",
+   "rating": 4.1,
+   "userRatingCount": 93,
+   "reviews": [
+    {
+     "name": "places/ChIJyoVQPEZJWDyk5HJtZDc8-bY/reviews/r261790976",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/166962815498953580269/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-04T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r261790976"
+    },
+    {
+     "name": "places/ChIJyoVQPEZJWDyk5HJtZDc8-bY/reviews/r143715858",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/696935067821104637786/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-23T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r143715858"
+    },
+    {
+     "name": "places/ChIJyoVQPEZJWDyk5HJtZDc8-bY/reviews/r883451004",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/453930937433890941585/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-12T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r883451004"
+    },
+    {
+     "name": "places/ChIJyoVQPEZJWDyk5HJtZDc8-bY/reviews/r424639397",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/182793535911689001100/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-17T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r424639397"
+    },
+    {
+     "name": "places/ChIJyoVQPEZJWDyk5HJtZDc8-bY/reviews/r685360801",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 4,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/705967199078990594208/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r685360801"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ0POC-ndybViQajF033mY6Wd",
+   "displayName": {
+    "text": "Paa Fit-Out Interiors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Ngong Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.307523,
+    "longitude": 36.782334
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=4135304378159266464",
+   "nationalPhoneNumber": "0110 520702",
+   "internationalPhoneNumber": "+254 110 520702",
+   "rating": 4.6,
+   "userRatingCount": 47,
+   "reviews": [
+    {
+     "name": "places/ChIJ0POC-ndybViQajF033mY6Wd/reviews/r106736668",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/229074877677055433982/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-05T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r106736668"
+    },
+    {
+     "name": "places/ChIJ0POC-ndybViQajF033mY6Wd/reviews/r110739363",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/276617762180254604842/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-23T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r110739363"
+    },
+    {
+     "name": "places/ChIJ0POC-ndybViQajF033mY6Wd/reviews/r973645873",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/246717653523472924331/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-04T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r973645873"
+    },
+    {
+     "name": "places/ChIJ0POC-ndybViQajF033mY6Wd/reviews/r900788176",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/329133669565391219466/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-04T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r900788176"
+    },
+    {
+     "name": "places/ChIJ0POC-ndybViQajF033mY6Wd/reviews/r483320243",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/219703377838247971779/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-24T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r483320243"
+    }
+   ]
+  },
+  {
+   "id": "ChIJolclz-npSulZ-c9EVIOL8Mp",
+   "displayName": {
+    "text": "Nyumba Safi Renovations",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Mugoya Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.313989,
+    "longitude": 36.832175
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2136987117813273768",
+   "nationalPhoneNumber": "0727 043375",
+   "internationalPhoneNumber": "+254 727 043375",
+   "websiteUri": "https://nyumbasafirenovations.co.ke/",
+   "rating": 4.8,
+   "userRatingCount": 76,
+   "reviews": [
+    {
+     "name": "places/ChIJolclz-npSulZ-c9EVIOL8Mp/reviews/r890500071",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/388888534289424398733/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-10T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r890500071"
+    },
+    {
+     "name": "places/ChIJolclz-npSulZ-c9EVIOL8Mp/reviews/r161006950",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/195474663725979025887/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-11T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r161006950"
+    },
+    {
+     "name": "places/ChIJolclz-npSulZ-c9EVIOL8Mp/reviews/r843130022",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/255200921810116321198/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-03T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r843130022"
+    },
+    {
+     "name": "places/ChIJolclz-npSulZ-c9EVIOL8Mp/reviews/r899364385",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/848532355656463146751/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-29T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r899364385"
+    },
+    {
+     "name": "places/ChIJolclz-npSulZ-c9EVIOL8Mp/reviews/r192576182",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/794989561582215617558/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-10T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r192576182"
+    }
+   ]
+  },
+  {
+   "id": "ChIJwEUXWzlPcIg_eYYGFie_cZF",
+   "displayName": {
+    "text": "Boma Construction Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Muhoho Ave, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.312954,
+    "longitude": 36.824833
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8934637746250118820",
+   "nationalPhoneNumber": "0717 492250",
+   "internationalPhoneNumber": "+254 717 492250",
+   "websiteUri": "http://www.bomaconstructionltd.com/",
+   "rating": 4.1,
+   "userRatingCount": 58,
+   "reviews": [
+    {
+     "name": "places/ChIJwEUXWzlPcIg_eYYGFie_cZF/reviews/r782389190",
+     "relativePublishTimeDescription": "11 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/119843783912908202196/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-13T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r782389190"
+    },
+    {
+     "name": "places/ChIJwEUXWzlPcIg_eYYGFie_cZF/reviews/r376503406",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/809703578468529775195/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-16T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r376503406"
+    },
+    {
+     "name": "places/ChIJwEUXWzlPcIg_eYYGFie_cZF/reviews/r826353987",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/325650175845949182903/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-30T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r826353987"
+    },
+    {
+     "name": "places/ChIJwEUXWzlPcIg_eYYGFie_cZF/reviews/r191702087",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/302406725926977872348/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-22T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r191702087"
+    },
+    {
+     "name": "places/ChIJwEUXWzlPcIg_eYYGFie_cZF/reviews/r860133995",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/185849192261351704411/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-23T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r860133995"
+    }
+   ]
+  },
+  {
+   "id": "ChIJzQKTLgpFbJzRBjpM75blq-D",
+   "displayName": {
+    "text": "Mawe Contractors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Thika Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.228959,
+    "longitude": 36.889654
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9737869899118530170",
+   "nationalPhoneNumber": "0796 402498",
+   "internationalPhoneNumber": "+254 796 402498",
+   "websiteUri": "https://mawecontractors.wixsite.com/home",
+   "rating": 4.1,
+   "userRatingCount": 124,
+   "reviews": [
+    {
+     "name": "places/ChIJzQKTLgpFbJzRBjpM75blq-D/reviews/r125912377",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/801883150956158238663/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-24T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r125912377"
+    },
+    {
+     "name": "places/ChIJzQKTLgpFbJzRBjpM75blq-D/reviews/r411538364",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 4,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/694675112938296173763/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-26T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r411538364"
+    },
+    {
+     "name": "places/ChIJzQKTLgpFbJzRBjpM75blq-D/reviews/r765285176",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/936213565378735372412/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-20T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r765285176"
+    },
+    {
+     "name": "places/ChIJzQKTLgpFbJzRBjpM75blq-D/reviews/r272742131",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/803349198415328292818/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-09T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r272742131"
+    },
+    {
+     "name": "places/ChIJzQKTLgpFbJzRBjpM75blq-D/reviews/r115622974",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/468845579641586128530/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-10T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r115622974"
+    }
+   ]
+  },
+  {
+   "id": "ChIJub3wuCD8I1Ih_8pLvNeWMCd",
+   "displayName": {
+    "text": "Mbao & Mawe Fit-Out",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Lenana Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.292992,
+    "longitude": 36.787482
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5580736547650501152",
+   "nationalPhoneNumber": "0717 613395",
+   "internationalPhoneNumber": "+254 717 613395",
+   "websiteUri": "http://mbaomawefitout.ke/",
+   "rating": 4.9,
+   "userRatingCount": 260,
+   "reviews": [
+    {
+     "name": "places/ChIJub3wuCD8I1Ih_8pLvNeWMCd/reviews/r216655234",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/850148541205376144719/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-15T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r216655234"
+    },
+    {
+     "name": "places/ChIJub3wuCD8I1Ih_8pLvNeWMCd/reviews/r875700081",
+     "relativePublishTimeDescription": "3 days ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/447864071917775617401/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-06T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r875700081"
+    },
+    {
+     "name": "places/ChIJub3wuCD8I1Ih_8pLvNeWMCd/reviews/r747356793",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/410039389447878974978/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-12T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r747356793"
+    },
+    {
+     "name": "places/ChIJub3wuCD8I1Ih_8pLvNeWMCd/reviews/r274117169",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/584974456169317489529/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-23T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r274117169"
+    },
+    {
+     "name": "places/ChIJub3wuCD8I1Ih_8pLvNeWMCd/reviews/r144654253",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/417974174375016560081/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-27T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r144654253"
+    }
+   ]
+  },
+  {
+   "id": "ChIJFklbtInGMn_ZVo7I-X1z8AO",
+   "displayName": {
+    "text": "Sakafu Interiors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Mpaka Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.274066,
+    "longitude": 36.800195
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3708456285705128818",
+   "nationalPhoneNumber": "0706 752967",
+   "internationalPhoneNumber": "+254 706 752967",
+   "websiteUri": "https://sakafuinteriors.com/",
+   "rating": 4.3,
+   "userRatingCount": 260,
+   "reviews": [
+    {
+     "name": "places/ChIJFklbtInGMn_ZVo7I-X1z8AO/reviews/r911086644",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/829194827285829390007/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-31T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r911086644"
+    },
+    {
+     "name": "places/ChIJFklbtInGMn_ZVo7I-X1z8AO/reviews/r567426634",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/419112757128383037170/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-19T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r567426634"
+    },
+    {
+     "name": "places/ChIJFklbtInGMn_ZVo7I-X1z8AO/reviews/r803360256",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/405847235639222649044/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-14T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r803360256"
+    },
+    {
+     "name": "places/ChIJFklbtInGMn_ZVo7I-X1z8AO/reviews/r232660847",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Good work but it was hard to see examples of their previous projects before hiring them.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good work but it was hard to see examples of their previous projects before hiring them.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/353146602628114406759/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-15T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r232660847"
+    },
+    {
+     "name": "places/ChIJFklbtInGMn_ZVo7I-X1z8AO/reviews/r809150826",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/231074072355435624689/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-24T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r809150826"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ9iYxIHiTdD2OMpkokV5XbuH",
+   "displayName": {
+    "text": "Kiunzi Contractors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Waiyaki Way, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.272011,
+    "longitude": 36.810466
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3690189045419974585",
+   "nationalPhoneNumber": "0702 616344",
+   "internationalPhoneNumber": "+254 702 616344",
+   "websiteUri": "http://www.kiunzicontractors.ke/",
+   "rating": 4.5,
+   "userRatingCount": 38,
+   "reviews": [
+    {
+     "name": "places/ChIJ9iYxIHiTdD2OMpkokV5XbuH/reviews/r693721573",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/403976142644099299569/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-24T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r693721573"
+    },
+    {
+     "name": "places/ChIJ9iYxIHiTdD2OMpkokV5XbuH/reviews/r822662782",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/506946482267586285672/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-29T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r822662782"
+    },
+    {
+     "name": "places/ChIJ9iYxIHiTdD2OMpkokV5XbuH/reviews/r302106635",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/606594873915837869954/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-14T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r302106635"
+    },
+    {
+     "name": "places/ChIJ9iYxIHiTdD2OMpkokV5XbuH/reviews/r970955978",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Wish they had a portfolio online, I only hired them because a friend referred me.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Wish they had a portfolio online, I only hired them because a friend referred me.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/899651006080595506066/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-11T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r970955978"
+    },
+    {
+     "name": "places/ChIJ9iYxIHiTdD2OMpkokV5XbuH/reviews/r210670250",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/419343232566014417798/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-17T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r210670250"
+    }
+   ]
+  },
+  {
+   "id": "ChIJyh7znayWJQqhnAI65c9LHNT",
+   "displayName": {
+    "text": "Kona Renovations",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Langata South Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.319819,
+    "longitude": 36.706472
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5993553857984411542",
+   "nationalPhoneNumber": "0796 495566",
+   "internationalPhoneNumber": "+254 796 495566",
+   "rating": 4.3,
+   "userRatingCount": 38,
+   "reviews": [
+    {
+     "name": "places/ChIJyh7znayWJQqhnAI65c9LHNT/reviews/r147589800",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 4,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/299650251662520598446/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-03T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r147589800"
+    },
+    {
+     "name": "places/ChIJyh7znayWJQqhnAI65c9LHNT/reviews/r236571826",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/651420582206134321739/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-19T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r236571826"
+    },
+    {
+     "name": "places/ChIJyh7znayWJQqhnAI65c9LHNT/reviews/r462288441",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/391591732249628561292/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-28T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r462288441"
+    },
+    {
+     "name": "places/ChIJyh7znayWJQqhnAI65c9LHNT/reviews/r669476339",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/754775262981118613361/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-14T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r669476339"
+    },
+    {
+     "name": "places/ChIJyh7znayWJQqhnAI65c9LHNT/reviews/r745461362",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/653278083092448181418/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-30T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r745461362"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ6VrG4Q36tAoMbR5nZfc_n9l",
+   "displayName": {
+    "text": "Ujenzi Bora Builders",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Thika Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.21495,
+    "longitude": 36.893085
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=1077630829059257010",
+   "nationalPhoneNumber": "0796 174780",
+   "internationalPhoneNumber": "+254 796 174780",
+   "websiteUri": "http://www.ujenziborabuilders.co.ke/",
+   "rating": 4.5,
+   "userRatingCount": 124,
+   "reviews": [
+    {
+     "name": "places/ChIJ6VrG4Q36tAoMbR5nZfc_n9l/reviews/r122612798",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/773253058222648376112/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-12T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r122612798"
+    },
+    {
+     "name": "places/ChIJ6VrG4Q36tAoMbR5nZfc_n9l/reviews/r336360821",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/701819483401822563945/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-31T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r336360821"
+    },
+    {
+     "name": "places/ChIJ6VrG4Q36tAoMbR5nZfc_n9l/reviews/r546965117",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/956529437105006413851/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-20T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r546965117"
+    },
+    {
+     "name": "places/ChIJ6VrG4Q36tAoMbR5nZfc_n9l/reviews/r733848182",
+     "relativePublishTimeDescription": "a year ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/502800956037390004614/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-09-03T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r733848182"
+    },
+    {
+     "name": "places/ChIJ6VrG4Q36tAoMbR5nZfc_n9l/reviews/r587493211",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/829237569571912425758/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-19T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r587493211"
+    }
+   ]
+  },
+  {
+   "id": "ChIJOTlt-dDBP8nFwvA7wBOBhhx",
+   "displayName": {
+    "text": "Mlango Contractors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kindaruma Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.29425,
+    "longitude": 36.784169
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2438137137921034319",
+   "nationalPhoneNumber": "0724 473016",
+   "internationalPhoneNumber": "+254 724 473016",
+   "websiteUri": "https://mlangocontractors.co.ke/",
+   "rating": 4.6,
+   "userRatingCount": 31,
+   "reviews": [
+    {
+     "name": "places/ChIJOTlt-dDBP8nFwvA7wBOBhhx/reviews/r851661766",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/679738075588662816708/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-06T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r851661766"
+    },
+    {
+     "name": "places/ChIJOTlt-dDBP8nFwvA7wBOBhhx/reviews/r921012273",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/755399578896918896169/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-13T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r921012273"
+    },
+    {
+     "name": "places/ChIJOTlt-dDBP8nFwvA7wBOBhhx/reviews/r645480387",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/703107970965679078405/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-05T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r645480387"
+    },
+    {
+     "name": "places/ChIJOTlt-dDBP8nFwvA7wBOBhhx/reviews/r623308552",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/703508957944744799931/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-07T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r623308552"
+    },
+    {
+     "name": "places/ChIJOTlt-dDBP8nFwvA7wBOBhhx/reviews/r792488309",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/516136480745200484746/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-23T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r792488309"
+    }
+   ]
+  },
+  {
+   "id": "ChIJRiYXMGfOKQOUTbdDm3mEmeN",
+   "displayName": {
+    "text": "Nairobi County Public Works",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Moi Ave, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.277264,
+    "longitude": 36.813974
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2521480527899097060",
+   "nationalPhoneNumber": "0712 792379",
+   "internationalPhoneNumber": "+254 712 792379",
+   "rating": 4.5,
+   "userRatingCount": 40,
+   "reviews": [
+    {
+     "name": "places/ChIJRiYXMGfOKQOUTbdDm3mEmeN/reviews/r163067880",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/986885962911950280100/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-01T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r163067880"
+    },
+    {
+     "name": "places/ChIJRiYXMGfOKQOUTbdDm3mEmeN/reviews/r444269155",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/156764978017862425403/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-21T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r444269155"
+    },
+    {
+     "name": "places/ChIJRiYXMGfOKQOUTbdDm3mEmeN/reviews/r308166462",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/396466206321964982051/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-01T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r308166462"
+    },
+    {
+     "name": "places/ChIJRiYXMGfOKQOUTbdDm3mEmeN/reviews/r759849362",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/466444389806912577754/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-14T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r759849362"
+    },
+    {
+     "name": "places/ChIJRiYXMGfOKQOUTbdDm3mEmeN/reviews/r425559120",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/839940492464912336888/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r425559120"
+    }
+   ]
+  },
+  {
+   "id": "ChIJlXXzjRghAwTZQVSgAqyVKdx",
+   "displayName": {
+    "text": "Kazi Safi Renovations",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Ngong Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.29594,
+    "longitude": 36.770124
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=6745820398038033296",
+   "nationalPhoneNumber": "0729 087518",
+   "internationalPhoneNumber": "+254 729 087518",
+   "websiteUri": "http://www.kazisafirenovations.co.ke/",
+   "rating": 4.6,
+   "userRatingCount": 47,
+   "reviews": [
+    {
+     "name": "places/ChIJlXXzjRghAwTZQVSgAqyVKdx/reviews/r483545375",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/942841013240717004240/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-15T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r483545375"
+    },
+    {
+     "name": "places/ChIJlXXzjRghAwTZQVSgAqyVKdx/reviews/r377236719",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/947269375080673105264/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-12T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r377236719"
+    },
+    {
+     "name": "places/ChIJlXXzjRghAwTZQVSgAqyVKdx/reviews/r811908516",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/828165041203084853903/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-22T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r811908516"
+    },
+    {
+     "name": "places/ChIJlXXzjRghAwTZQVSgAqyVKdx/reviews/r319935024",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/336592882856802316122/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-24T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r319935024"
+    },
+    {
+     "name": "places/ChIJlXXzjRghAwTZQVSgAqyVKdx/reviews/r688608246",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/216812908880096575881/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-03T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r688608246"
+    }
+   ]
+  },
+  {
+   "id": "ChIJae3lx3zNeKRn1DIje8xbJpz",
+   "displayName": {
+    "text": "Mwalimu Builders",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.320278,
+    "longitude": 36.895777
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8771225498553700624",
+   "nationalPhoneNumber": "0100 067778",
+   "internationalPhoneNumber": "+254 100 067778",
+   "websiteUri": "https://mwalimubuilders.ke/",
+   "rating": 4.5,
+   "userRatingCount": 58,
+   "reviews": [
+    {
+     "name": "places/ChIJae3lx3zNeKRn1DIje8xbJpz/reviews/r989198317",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/828669166647062831080/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r989198317"
+    },
+    {
+     "name": "places/ChIJae3lx3zNeKRn1DIje8xbJpz/reviews/r433173829",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/433742630441933129242/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-31T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r433173829"
+    },
+    {
+     "name": "places/ChIJae3lx3zNeKRn1DIje8xbJpz/reviews/r602216516",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/580909510670427505108/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-01T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r602216516"
+    },
+    {
+     "name": "places/ChIJae3lx3zNeKRn1DIje8xbJpz/reviews/r188763716",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/134395378152926438443/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-18T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r188763716"
+    },
+    {
+     "name": "places/ChIJae3lx3zNeKRn1DIje8xbJpz/reviews/r575954221",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Wish they had a portfolio online, I only hired them because a friend referred me.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Wish they had a portfolio online, I only hired them because a friend referred me.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/923910704400924630404/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-26T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r575954221"
+    }
+   ]
+  },
+  {
+   "id": "ChIJil-s1lAvITNWyyhe0d1-Clq",
+   "displayName": {
+    "text": "Tausi Builders",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Mpaka Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.266672,
+    "longitude": 36.801079
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2403424516483798082",
+   "nationalPhoneNumber": "0724 351906",
+   "internationalPhoneNumber": "+254 724 351906",
+   "rating": 4.8,
+   "userRatingCount": 14,
+   "reviews": [
+    {
+     "name": "places/ChIJil-s1lAvITNWyyhe0d1-Clq/reviews/r223613308",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/526535525538558044954/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-05T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r223613308"
+    },
+    {
+     "name": "places/ChIJil-s1lAvITNWyyhe0d1-Clq/reviews/r695070644",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/279001445803719202493/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-05T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r695070644"
+    },
+    {
+     "name": "places/ChIJil-s1lAvITNWyyhe0d1-Clq/reviews/r289670045",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/363717953259769037757/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-30T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r289670045"
+    },
+    {
+     "name": "places/ChIJil-s1lAvITNWyyhe0d1-Clq/reviews/r259483365",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/712276237995425356277/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-02T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r259483365"
+    },
+    {
+     "name": "places/ChIJil-s1lAvITNWyyhe0d1-Clq/reviews/r260786884",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Wish they had a portfolio online, I only hired them because a friend referred me.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Wish they had a portfolio online, I only hired them because a friend referred me.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/608197726121215528286/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-01T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r260786884"
+    }
+   ]
+  },
+  {
+   "id": "ChIJoAbSrVnR63RaEOj-javTWzA",
+   "displayName": {
+    "text": "Kipimo Construction",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Dagoretti Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.312249,
+    "longitude": 36.712304
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8636999681110904275",
+   "nationalPhoneNumber": "0790 818200",
+   "internationalPhoneNumber": "+254 790 818200",
+   "rating": 4.1,
+   "userRatingCount": 76,
+   "reviews": [
+    {
+     "name": "places/ChIJoAbSrVnR63RaEOj-javTWzA/reviews/r455500181",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/390206242986207596689/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-27T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r455500181"
+    },
+    {
+     "name": "places/ChIJoAbSrVnR63RaEOj-javTWzA/reviews/r685388093",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/496265133019866393059/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-22T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r685388093"
+    },
+    {
+     "name": "places/ChIJoAbSrVnR63RaEOj-javTWzA/reviews/r895048833",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/387622468111361799148/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-14T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r895048833"
+    },
+    {
+     "name": "places/ChIJoAbSrVnR63RaEOj-javTWzA/reviews/r126511158",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/618541334525555675727/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-22T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r126511158"
+    },
+    {
+     "name": "places/ChIJoAbSrVnR63RaEOj-javTWzA/reviews/r200218159",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/175661565418610248180/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-14T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r200218159"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ7OVSGrZYiwz1u0fWWWsPh9N",
+   "displayName": {
+    "text": "Mfumo Builders Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Lenana Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.280465,
+    "longitude": 36.778523
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8498669034661116333",
+   "nationalPhoneNumber": "0712 396592",
+   "internationalPhoneNumber": "+254 712 396592",
+   "websiteUri": "https://mfumobuildersltd.ke/",
+   "rating": 4.9,
+   "userRatingCount": 38,
+   "reviews": [
+    {
+     "name": "places/ChIJ7OVSGrZYiwz1u0fWWWsPh9N/reviews/r492249710",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/349696848213476104679/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r492249710"
+    },
+    {
+     "name": "places/ChIJ7OVSGrZYiwz1u0fWWWsPh9N/reviews/r201510984",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/690693726141308006814/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-26T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r201510984"
+    },
+    {
+     "name": "places/ChIJ7OVSGrZYiwz1u0fWWWsPh9N/reviews/r115956139",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/751692726777355592012/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-17T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r115956139"
+    },
+    {
+     "name": "places/ChIJ7OVSGrZYiwz1u0fWWWsPh9N/reviews/r422604935",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/915506398167382904693/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-19T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r422604935"
+    },
+    {
+     "name": "places/ChIJ7OVSGrZYiwz1u0fWWWsPh9N/reviews/r172633689",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/750907757129686238988/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-14T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r172633689"
+    }
+   ]
+  },
+  {
+   "id": "ChIJZ0_0B-pOvj_vPCs2ovp09bW",
+   "displayName": {
+    "text": "China Road and Bridge Corporation",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Upper Hill Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.292435,
+    "longitude": 36.811257
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8463601891734497418",
+   "nationalPhoneNumber": "0706 287005",
+   "internationalPhoneNumber": "+254 706 287005",
+   "rating": 4.5,
+   "userRatingCount": 150,
+   "reviews": [
+    {
+     "name": "places/ChIJZ0_0B-pOvj_vPCs2ovp09bW/reviews/r561001326",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/527316032343484279905/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r561001326"
+    },
+    {
+     "name": "places/ChIJZ0_0B-pOvj_vPCs2ovp09bW/reviews/r515123476",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/850097088628368373801/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-27T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r515123476"
+    },
+    {
+     "name": "places/ChIJZ0_0B-pOvj_vPCs2ovp09bW/reviews/r469275317",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/570342096044404306681/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-29T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r469275317"
+    },
+    {
+     "name": "places/ChIJZ0_0B-pOvj_vPCs2ovp09bW/reviews/r270949436",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/594413222703216016595/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-10T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r270949436"
+    },
+    {
+     "name": "places/ChIJZ0_0B-pOvj_vPCs2ovp09bW/reviews/r113347024",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/756938196645412653722/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-14T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r113347024"
+    }
+   ]
+  },
+  {
+   "id": "ChIJr44h7T4MyFGiuAFveGvzvAA",
+   "displayName": {
+    "text": "Low Score Builders",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Embakasi Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.309419,
+    "longitude": 36.893197
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5913127801153215443",
+   "nationalPhoneNumber": "0757 164027",
+   "internationalPhoneNumber": "+254 757 164027",
+   "rating": 3.1,
+   "userRatingCount": 19,
+   "reviews": [
+    {
+     "name": "places/ChIJr44h7T4MyFGiuAFveGvzvAA/reviews/r932648128",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/759524260784415552327/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-12T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r932648128"
+    },
+    {
+     "name": "places/ChIJr44h7T4MyFGiuAFveGvzvAA/reviews/r266485464",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 2,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/213281041321298955781/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-30T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r266485464"
+    },
+    {
+     "name": "places/ChIJr44h7T4MyFGiuAFveGvzvAA/reviews/r348682536",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/847578253260545908465/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-14T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r348682536"
+    },
+    {
+     "name": "places/ChIJr44h7T4MyFGiuAFveGvzvAA/reviews/r870292950",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 3,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/424079917606939381553/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-06T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r870292950"
+    },
+    {
+     "name": "places/ChIJr44h7T4MyFGiuAFveGvzvAA/reviews/r876055251",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 2,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/593925940070288896464/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r876055251"
+    }
+   ]
+  },
+  {
+   "id": "ChIJZAw7a5KE1nSxF3IlJf4YCe1",
+   "displayName": {
+    "text": "Tofali Construction Company",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kindaruma Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.305435,
+    "longitude": 36.782207
+   },
+   "types": [
+    "general_contractor",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "general_contractor",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=6330934175556161918",
+   "nationalPhoneNumber": "0722 523492",
+   "internationalPhoneNumber": "+254 722 523492",
+   "rating": 4.6,
+   "userRatingCount": 93,
+   "reviews": [
+    {
+     "name": "places/ChIJZAw7a5KE1nSxF3IlJf4YCe1/reviews/r998874704",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional contractors, they shared progress photos every week while we were abroad.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/422034089468204137131/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-15T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r998874704"
+    },
+    {
+     "name": "places/ChIJZAw7a5KE1nSxF3IlJf4YCe1/reviews/r242822143",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They built our four bedroom house in Ruiru and the finishing is very neat. Finished on time.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/153752199695182457648/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-20T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r242822143"
+    },
+    {
+     "name": "places/ChIJZAw7a5KE1nSxF3IlJf4YCe1/reviews/r531352323",
+     "relativePublishTimeDescription": "11 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They handled the approvals and the build. Neat work and honest about costs.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/624112738277923327301/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-10-22T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r531352323"
+    },
+    {
+     "name": "places/ChIJZAw7a5KE1nSxF3IlJf4YCe1/reviews/r842548292",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Did a full kitchen renovation for us, clean work and they left the site tidy every day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/375265706874405829205/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-31T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r842548292"
+    },
+    {
+     "name": "places/ChIJZAw7a5KE1nSxF3IlJf4YCe1/reviews/r174574038",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The foreman was always on site and the quality of the masonry is excellent.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/335989065227608424211/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-15T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r174574038"
+    }
+   ]
+  }
+ ],
+ "nextPageToken": "fixture:construction_c1_p2"
+}

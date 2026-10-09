@@ -176,6 +176,8 @@ class Candidate:
     variant_source: str | None = None
     teaser_jpeg: bytes | None = None
     teaser_path: str | None = None
+    logo_path: str | None = None
+    hero_path: str | None = None
     lead_id: str | None = None
     evaluation_id: str | None = None
 

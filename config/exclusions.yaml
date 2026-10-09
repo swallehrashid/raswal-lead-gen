@@ -22,7 +22,7 @@ brands:
   - crown paints
   - basco
   - sadolin
-  - tile and carpet
+  - tile and carpet centre     # the full chain name: "centre" alone would count as a dealer word
   # international contractors
   - china road and bridge
   - china wu yi
@@ -50,6 +50,9 @@ excluded_types:
   - school
   - church
   - local_government_office
+
+# Place types that mark a listing as a building (used for the shared-phone rule, §7.5)
+building_types: [apartment_building, apartment_complex, condominium_complex, housing_complex]
 
 # BUILDING_NOT_BUSINESS: name matches a building word AND has no business word.
 # "estate" counts as a building word unless the name also contains agent/agents.
@@ -80,5 +83,19 @@ business_words:
   - limited
   - enterprises
   - company
+  # added (see docs/DECISIONS.md): common Kenyan trade words the brief's list misses
+  - real estate
+  - lettings
+  - letting
+  - agencies
+  - property managers
+  - consultants
+  - services
+  - supplies
+  - suppliers
+  - interiors
+  - renovations
+  - fabricators
+  - tiles
 
 gov_ngo_words: [county, government, ministry, authority, board, ngo, church, mosque, parish, diocese, cathedral, national housing corporation, kenya urban roads, kenya rural roads, kenha, kura, kerra, nca, nema]

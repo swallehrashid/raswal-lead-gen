@@ -1,0 +1,2486 @@
+{
+ "places": [
+  {
+   "id": "ChIJbvpXAZrVeDxv99PBP4bVnkN",
+   "displayName": {
+    "text": "Jipange Property Agents",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Ngong Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.3102,
+    "longitude": 36.78498
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=4476621109073937462",
+   "nationalPhoneNumber": "0790 891090",
+   "internationalPhoneNumber": "+254 790 891090"
+  },
+  {
+   "id": "ChIJdftOXZ6PS0rWYm718sA7zlE",
+   "displayName": {
+    "text": "Old Town Realtors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "3rd Parklands Ave, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.25271,
+    "longitude": 36.826281
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3678849757393049074",
+   "nationalPhoneNumber": "0768 769737",
+   "internationalPhoneNumber": "+254 768 769737",
+   "rating": 4.3,
+   "userRatingCount": 26,
+   "reviews": [
+    {
+     "name": "places/ChIJdftOXZ6PS0rWYm718sA7zlE/reviews/r285872001",
+     "relativePublishTimeDescription": "a year ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/974483596313675720561/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-02-06T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r285872001"
+    },
+    {
+     "name": "places/ChIJdftOXZ6PS0rWYm718sA7zlE/reviews/r189589719",
+     "relativePublishTimeDescription": "a year ago",
+     "rating": 4,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/928890728719516970594/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-07-04T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r189589719"
+    },
+    {
+     "name": "places/ChIJdftOXZ6PS0rWYm718sA7zlE/reviews/r749659548",
+     "relativePublishTimeDescription": "a year ago",
+     "rating": 4,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/707756828081733858685/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-05-06T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r749659548"
+    },
+    {
+     "name": "places/ChIJdftOXZ6PS0rWYm718sA7zlE/reviews/r981354429",
+     "relativePublishTimeDescription": "a year ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/977398363127455093116/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-03-02T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r981354429"
+    },
+    {
+     "name": "places/ChIJdftOXZ6PS0rWYm718sA7zlE/reviews/r732079699",
+     "relativePublishTimeDescription": "a year ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/847758068994706678988/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-08-15T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r732079699"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ-vdNRYdrASmtEstiTsqzTR6",
+   "displayName": {
+    "text": "Upendo Properties",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Waiyaki Way, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.273277,
+    "longitude": 36.810517
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9612681270362085060",
+   "nationalPhoneNumber": "0717 851123",
+   "internationalPhoneNumber": "+254 717 851123",
+   "websiteUri": "http://upendoproperties.com/",
+   "rating": 4.7,
+   "userRatingCount": 58,
+   "reviews": [
+    {
+     "name": "places/ChIJ-vdNRYdrASmtEstiTsqzTR6/reviews/r871162418",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/175945674308851964579/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-18T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r871162418"
+    },
+    {
+     "name": "places/ChIJ-vdNRYdrASmtEstiTsqzTR6/reviews/r727334775",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/326781753646622161016/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-01T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r727334775"
+    },
+    {
+     "name": "places/ChIJ-vdNRYdrASmtEstiTsqzTR6/reviews/r375694974",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Took long to respond to my enquiry, but once they did the viewing was fine.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Took long to respond to my enquiry, but once they did the viewing was fine.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/870275741543637619193/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-07T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r375694974"
+    },
+    {
+     "name": "places/ChIJ-vdNRYdrASmtEstiTsqzTR6/reviews/r122451186",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/837856628496432751462/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-04T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r122451186"
+    },
+    {
+     "name": "places/ChIJ-vdNRYdrASmtEstiTsqzTR6/reviews/r752069966",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/561227161575404282756/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-08T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r752069966"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ23V8eUWt9baFnOB_KNOrUTt",
+   "displayName": {
+    "text": "Nyota Lettings Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kiambu Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.213613,
+    "longitude": 36.820412
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2523782432365479943",
+   "nationalPhoneNumber": "0757 731191",
+   "internationalPhoneNumber": "+254 757 731191",
+   "websiteUri": "https://nyotalettingsltd.wixsite.com/home",
+   "rating": 4.8,
+   "userRatingCount": 47,
+   "reviews": [
+    {
+     "name": "places/ChIJ23V8eUWt9baFnOB_KNOrUTt/reviews/r784458484",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/913496857298522141276/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-01T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r784458484"
+    },
+    {
+     "name": "places/ChIJ23V8eUWt9baFnOB_KNOrUTt/reviews/r632576147",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/101376067320224393641/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-29T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r632576147"
+    },
+    {
+     "name": "places/ChIJ23V8eUWt9baFnOB_KNOrUTt/reviews/r612912321",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/448989945862066815984/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-10T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r612912321"
+    },
+    {
+     "name": "places/ChIJ23V8eUWt9baFnOB_KNOrUTt/reviews/r119778377",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/457072024912209153863/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r119778377"
+    },
+    {
+     "name": "places/ChIJ23V8eUWt9baFnOB_KNOrUTt/reviews/r233876844",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/780736514270689059497/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-31T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r233876844"
+    }
+   ]
+  },
+  {
+   "id": "ChIJV7z4BWRd4M5eZ60r25yONgw",
+   "displayName": {
+    "text": "Sauti Homes",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Othaya Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.283982,
+    "longitude": 36.782097
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2140761853731281073",
+   "nationalPhoneNumber": "0702 150892",
+   "internationalPhoneNumber": "+254 702 150892",
+   "websiteUri": "https://sautihomes.com/",
+   "rating": 4.8,
+   "userRatingCount": 22,
+   "reviews": [
+    {
+     "name": "places/ChIJV7z4BWRd4M5eZ60r25yONgw/reviews/r185742318",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/297501080116145080944/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-04T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r185742318"
+    },
+    {
+     "name": "places/ChIJV7z4BWRd4M5eZ60r25yONgw/reviews/r685752511",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/387966588693754595850/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-26T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r685752511"
+    },
+    {
+     "name": "places/ChIJV7z4BWRd4M5eZ60r25yONgw/reviews/r313740119",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/715559474676167890111/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-22T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r313740119"
+    },
+    {
+     "name": "places/ChIJV7z4BWRd4M5eZ60r25yONgw/reviews/r592699477",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/834560140034900228776/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-23T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r592699477"
+    },
+    {
+     "name": "places/ChIJV7z4BWRd4M5eZ60r25yONgw/reviews/r844825377",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/652446733637825698816/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-31T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r844825377"
+    }
+   ]
+  },
+  {
+   "id": "ChIJHdNGpUo8r1OFcruNosjTES9",
+   "displayName": {
+    "text": "Nairobi County Housing Department",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Tom Mboya St, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.294556,
+    "longitude": 36.826697
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2532502330236202450",
+   "nationalPhoneNumber": "0790 774561",
+   "internationalPhoneNumber": "+254 790 774561",
+   "rating": 4.5,
+   "userRatingCount": 35,
+   "reviews": [
+    {
+     "name": "places/ChIJHdNGpUo8r1OFcruNosjTES9/reviews/r913115625",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/413083475398225212544/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-02T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r913115625"
+    },
+    {
+     "name": "places/ChIJHdNGpUo8r1OFcruNosjTES9/reviews/r790781851",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/438608652424778803921/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-11T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r790781851"
+    },
+    {
+     "name": "places/ChIJHdNGpUo8r1OFcruNosjTES9/reviews/r861840825",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/781203144724638722185/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-17T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r861840825"
+    },
+    {
+     "name": "places/ChIJHdNGpUo8r1OFcruNosjTES9/reviews/r182150396",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/281193518761288492023/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r182150396"
+    },
+    {
+     "name": "places/ChIJHdNGpUo8r1OFcruNosjTES9/reviews/r374502389",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/875560542330234006632/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-03T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r374502389"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ9jSfVg99HAWv2tfYMLyFE-F",
+   "displayName": {
+    "text": "Quickfix Lettings",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Mugoya Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.308678,
+    "longitude": 36.823707
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=6989589117470540717",
+   "nationalPhoneNumber": "0790 432892",
+   "internationalPhoneNumber": "+254 790 432892",
+   "websiteUri": "http://www.quickfixlettings.co.ke/",
+   "rating": 2.9,
+   "userRatingCount": 33,
+   "reviews": [
+    {
+     "name": "places/ChIJ9jSfVg99HAWv2tfYMLyFE-F/reviews/r569253022",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/208574868228647766739/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-02T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r569253022"
+    },
+    {
+     "name": "places/ChIJ9jSfVg99HAWv2tfYMLyFE-F/reviews/r564026010",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 3,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/615896437005348567992/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r564026010"
+    },
+    {
+     "name": "places/ChIJ9jSfVg99HAWv2tfYMLyFE-F/reviews/r529396747",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/767074382075900219940/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-22T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r529396747"
+    },
+    {
+     "name": "places/ChIJ9jSfVg99HAWv2tfYMLyFE-F/reviews/r152470642",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 2,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/358741468495523968476/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-17T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r152470642"
+    },
+    {
+     "name": "places/ChIJ9jSfVg99HAWv2tfYMLyFE-F/reviews/r224767693",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 4,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/252634787735218502821/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-25T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r224767693"
+    }
+   ]
+  },
+  {
+   "id": "ChIJseDTuMDLNfkqZevZjaF3Zx4",
+   "displayName": {
+    "text": "Pembe Property Managers",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Mpaka Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.275974,
+    "longitude": 36.814025
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8483252219245405770",
+   "nationalPhoneNumber": "0100 961878",
+   "internationalPhoneNumber": "+254 100 961878",
+   "websiteUri": "http://www.pembepropertymanagers.co.ke/",
+   "rating": 4.8,
+   "userRatingCount": 38,
+   "reviews": [
+    {
+     "name": "places/ChIJseDTuMDLNfkqZevZjaF3Zx4/reviews/r984040135",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 3,
+     "text": {
+      "text": "I wish they posted photos of the houses somewhere, wasted a trip to see a unit that was already taken.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "I wish they posted photos of the houses somewhere, wasted a trip to see a unit that was already taken.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/332440044646999903673/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-18T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r984040135"
+    },
+    {
+     "name": "places/ChIJseDTuMDLNfkqZevZjaF3Zx4/reviews/r526267996",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/874218464152710568182/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-17T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r526267996"
+    },
+    {
+     "name": "places/ChIJseDTuMDLNfkqZevZjaF3Zx4/reviews/r681453587",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/175058312657550404894/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-01T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r681453587"
+    },
+    {
+     "name": "places/ChIJseDTuMDLNfkqZevZjaF3Zx4/reviews/r497805406",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/943404952131105455355/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-12T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r497805406"
+    },
+    {
+     "name": "places/ChIJseDTuMDLNfkqZevZjaF3Zx4/reviews/r506471986",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/303952908274652185284/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-17T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r506471986"
+    }
+   ]
+  },
+  {
+   "id": "ChIJYPdxVXIZH1RdeDnzKdEsAP4",
+   "displayName": {
+    "text": "Riverbank Realtors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kindaruma Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.300314,
+    "longitude": 36.774644
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5713304998080167503",
+   "nationalPhoneNumber": "0111 469950",
+   "internationalPhoneNumber": "+254 111 469950",
+   "websiteUri": "http://riverbankrealtors.co.ke/",
+   "rating": 4.7,
+   "userRatingCount": 76,
+   "reviews": [
+    {
+     "name": "places/ChIJYPdxVXIZH1RdeDnzKdEsAP4/reviews/r216071469",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/950519425154148331598/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-30T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r216071469"
+    },
+    {
+     "name": "places/ChIJYPdxVXIZH1RdeDnzKdEsAP4/reviews/r889767270",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 3,
+     "text": {
+      "text": "I wish they posted photos of the houses somewhere, wasted a trip to see a unit that was already taken.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "I wish they posted photos of the houses somewhere, wasted a trip to see a unit that was already taken.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/689001529046155036391/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-23T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r889767270"
+    },
+    {
+     "name": "places/ChIJYPdxVXIZH1RdeDnzKdEsAP4/reviews/r974437045",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/237178843521872532406/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-20T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r974437045"
+    },
+    {
+     "name": "places/ChIJYPdxVXIZH1RdeDnzKdEsAP4/reviews/r864576113",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/928781253609781857344/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-05T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r864576113"
+    },
+    {
+     "name": "places/ChIJYPdxVXIZH1RdeDnzKdEsAP4/reviews/r326401323",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/495074123878354398021/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-15T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r326401323"
+    }
+   ]
+  },
+  {
+   "id": "ChIJhbIAU1NMaAHlcXT3Co5u2_O",
+   "displayName": {
+    "text": "Pam Golding Properties Kenya",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Karen Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.313889,
+    "longitude": 36.698052
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2102261265699484485",
+   "nationalPhoneNumber": "0757 230482",
+   "internationalPhoneNumber": "+254 757 230482",
+   "websiteUri": "https://pamgoldingpropertieske.com/",
+   "rating": 4.5,
+   "userRatingCount": 145,
+   "reviews": [
+    {
+     "name": "places/ChIJhbIAU1NMaAHlcXT3Co5u2_O/reviews/r538017848",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/674932576925716005138/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-31T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r538017848"
+    },
+    {
+     "name": "places/ChIJhbIAU1NMaAHlcXT3Co5u2_O/reviews/r592067658",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/560259922815614494657/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-12T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r592067658"
+    },
+    {
+     "name": "places/ChIJhbIAU1NMaAHlcXT3Co5u2_O/reviews/r710669761",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/804165373462379220810/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r710669761"
+    },
+    {
+     "name": "places/ChIJhbIAU1NMaAHlcXT3Co5u2_O/reviews/r335752449",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/805384235105790024228/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-30T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r335752449"
+    },
+    {
+     "name": "places/ChIJhbIAU1NMaAHlcXT3Co5u2_O/reviews/r479710021",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/212547046694112507398/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-18T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r479710021"
+    }
+   ]
+  },
+  {
+   "id": "ChIJw5uATjrXw_Uv8_PsAw4EsN_",
+   "displayName": {
+    "text": "Urban Nest Realty",
+    "languageCode": "en"
+   },
+   "formattedAddress": "3rd Parklands Ave, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.260984,
+    "longitude": 36.816669
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8257817563114792964",
+   "nationalPhoneNumber": "0729 529071",
+   "internationalPhoneNumber": "+254 729 529071",
+   "websiteUri": "https://urbannestrealty.co.ke/",
+   "rating": 4.6,
+   "userRatingCount": 58,
+   "reviews": [
+    {
+     "name": "places/ChIJw5uATjrXw_Uv8_PsAw4EsN_/reviews/r711114853",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/525028797248329881862/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-07T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r711114853"
+    },
+    {
+     "name": "places/ChIJw5uATjrXw_Uv8_PsAw4EsN_/reviews/r806513371",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/267820303230803912602/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-29T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r806513371"
+    },
+    {
+     "name": "places/ChIJw5uATjrXw_Uv8_PsAw4EsN_/reviews/r402764555",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/502454830417304351367/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-22T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r402764555"
+    },
+    {
+     "name": "places/ChIJw5uATjrXw_Uv8_PsAw4EsN_/reviews/r374528219",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/320440383996034955188/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-16T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r374528219"
+    },
+    {
+     "name": "places/ChIJw5uATjrXw_Uv8_PsAw4EsN_/reviews/r764123055",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/852194732585497829957/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-08T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r764123055"
+    }
+   ]
+  },
+  {
+   "id": "ChIJAi_ddUG0TwWtrejyeeX4-Qq",
+   "displayName": {
+    "text": "Kilima Homes Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Ring Rd Westlands, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.2573,
+    "longitude": 36.804996
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9417101888678113941",
+   "nationalPhoneNumber": "0100 992485",
+   "internationalPhoneNumber": "+254 100 992485",
+   "rating": 4.5,
+   "userRatingCount": 9,
+   "reviews": [
+    {
+     "name": "places/ChIJAi_ddUG0TwWtrejyeeX4-Qq/reviews/r503308725",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/176527597259736992301/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-24T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r503308725"
+    },
+    {
+     "name": "places/ChIJAi_ddUG0TwWtrejyeeX4-Qq/reviews/r947063945",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/536502403172489425795/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-28T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r947063945"
+    },
+    {
+     "name": "places/ChIJAi_ddUG0TwWtrejyeeX4-Qq/reviews/r867400532",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/203034447621296370585/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-25T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r867400532"
+    },
+    {
+     "name": "places/ChIJAi_ddUG0TwWtrejyeeX4-Qq/reviews/r973076561",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/944808758252244372182/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-21T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r973076561"
+    },
+    {
+     "name": "places/ChIJAi_ddUG0TwWtrejyeeX4-Qq/reviews/r645791353",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/302653913545580681156/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r645791353"
+    }
+   ]
+  },
+  {
+   "id": "ChIJTaWPop5YzMPEkAlbLPLkcwq",
+   "displayName": {
+    "text": "Mwangaza Realty",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Argwings Kodhek Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.298176,
+    "longitude": 36.78204
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=4952975205268556910",
+   "nationalPhoneNumber": "0706 706756",
+   "internationalPhoneNumber": "+254 706 706756",
+   "websiteUri": "http://mwangazarealty.co.ke/",
+   "rating": 4.2,
+   "userRatingCount": 212,
+   "reviews": [
+    {
+     "name": "places/ChIJTaWPop5YzMPEkAlbLPLkcwq/reviews/r347350351",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/881939128235929945305/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-15T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r347350351"
+    },
+    {
+     "name": "places/ChIJTaWPop5YzMPEkAlbLPLkcwq/reviews/r622966423",
+     "relativePublishTimeDescription": "11 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/242023730186322715255/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-10-29T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r622966423"
+    },
+    {
+     "name": "places/ChIJTaWPop5YzMPEkAlbLPLkcwq/reviews/r885497873",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/363785369681002426068/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-10T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r885497873"
+    },
+    {
+     "name": "places/ChIJTaWPop5YzMPEkAlbLPLkcwq/reviews/r417720912",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/840062405222928528461/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-22T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r417720912"
+    },
+    {
+     "name": "places/ChIJTaWPop5YzMPEkAlbLPLkcwq/reviews/r353376937",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/143742514658391256987/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-06T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r353376937"
+    }
+   ]
+  },
+  {
+   "id": "ChIJmSRokxBVS9Y_7lA767cSZGp",
+   "displayName": {
+    "text": "National Housing Corporation",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Moi Ave, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.279222,
+    "longitude": 36.813545
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9150447984930102627",
+   "nationalPhoneNumber": "020 4565256",
+   "internationalPhoneNumber": "+254 20 4565256",
+   "rating": 4.5,
+   "userRatingCount": 210,
+   "reviews": [
+    {
+     "name": "places/ChIJmSRokxBVS9Y_7lA767cSZGp/reviews/r887802503",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/795857605109694970498/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-06T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r887802503"
+    },
+    {
+     "name": "places/ChIJmSRokxBVS9Y_7lA767cSZGp/reviews/r324707532",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/705731578773910455269/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-25T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r324707532"
+    },
+    {
+     "name": "places/ChIJmSRokxBVS9Y_7lA767cSZGp/reviews/r820091159",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/998994179416606395888/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r820091159"
+    },
+    {
+     "name": "places/ChIJmSRokxBVS9Y_7lA767cSZGp/reviews/r518481423",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/790645413812794710461/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-11T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r518481423"
+    },
+    {
+     "name": "places/ChIJmSRokxBVS9Y_7lA767cSZGp/reviews/r228179181",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/206492997941848140409/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-19T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r228179181"
+    }
+   ]
+  },
+  {
+   "id": "ChIJjwHclV6UGZB46VpZ9SL5Bcp",
+   "displayName": {
+    "text": "Knight Frank Kenya",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Matumbato Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.295411,
+    "longitude": 36.812826
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=1425645252601693172",
+   "nationalPhoneNumber": "0729 761670",
+   "internationalPhoneNumber": "+254 729 761670",
+   "websiteUri": "https://knightfrankkenya.com/",
+   "rating": 4.5,
+   "userRatingCount": 310,
+   "reviews": [
+    {
+     "name": "places/ChIJjwHclV6UGZB46VpZ9SL5Bcp/reviews/r864741342",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/285412620472877626880/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r864741342"
+    },
+    {
+     "name": "places/ChIJjwHclV6UGZB46VpZ9SL5Bcp/reviews/r223408063",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/370541801097199470750/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-31T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r223408063"
+    },
+    {
+     "name": "places/ChIJjwHclV6UGZB46VpZ9SL5Bcp/reviews/r842680196",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/717239244432967691981/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-27T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r842680196"
+    },
+    {
+     "name": "places/ChIJjwHclV6UGZB46VpZ9SL5Bcp/reviews/r515135748",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/596163678369727144719/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-31T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r515135748"
+    },
+    {
+     "name": "places/ChIJjwHclV6UGZB46VpZ9SL5Bcp/reviews/r638538390",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/806890819249173487148/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-25T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r638538390"
+    }
+   ]
+  },
+  {
+   "id": "ChIJh2yIw0Jzj_VbHwXjXfQyTXI",
+   "displayName": {
+    "text": "Jirani Property Services",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Thika Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.215803,
+    "longitude": 36.899935
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8329070389283665097",
+   "nationalPhoneNumber": "0790 614632",
+   "internationalPhoneNumber": "+254 790 614632",
+   "websiteUri": "http://www.jiranipropertyservices.ke/",
+   "rating": 4.9,
+   "userRatingCount": 58,
+   "reviews": [
+    {
+     "name": "places/ChIJh2yIw0Jzj_VbHwXjXfQyTXI/reviews/r109655565",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/262915452866305298243/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-05T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r109655565"
+    },
+    {
+     "name": "places/ChIJh2yIw0Jzj_VbHwXjXfQyTXI/reviews/r803654386",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/139059801638301824960/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-01T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r803654386"
+    },
+    {
+     "name": "places/ChIJh2yIw0Jzj_VbHwXjXfQyTXI/reviews/r938352123",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/901871699570724613487/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-14T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r938352123"
+    },
+    {
+     "name": "places/ChIJh2yIw0Jzj_VbHwXjXfQyTXI/reviews/r259409694",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/162281979671599362012/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-02T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r259409694"
+    },
+    {
+     "name": "places/ChIJh2yIw0Jzj_VbHwXjXfQyTXI/reviews/r303262547",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/860621516133843928490/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-20T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r303262547"
+    }
+   ]
+  },
+  {
+   "id": "ChIJyuxA-vw0MrjAJrJ2SqIuzE7",
+   "displayName": {
+    "text": "BuyRentKenya Office",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Waiyaki Way, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.266251,
+    "longitude": 36.803721
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2136724676517183083",
+   "nationalPhoneNumber": "0100 604056",
+   "internationalPhoneNumber": "+254 100 604056",
+   "websiteUri": "https://www.buyrentkenya.com/",
+   "rating": 4.5,
+   "userRatingCount": 40,
+   "reviews": [
+    {
+     "name": "places/ChIJyuxA-vw0MrjAJrJ2SqIuzE7/reviews/r305862215",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/106676575061190672143/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-03T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r305862215"
+    },
+    {
+     "name": "places/ChIJyuxA-vw0MrjAJrJ2SqIuzE7/reviews/r319788018",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/626609886150201776616/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-23T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r319788018"
+    },
+    {
+     "name": "places/ChIJyuxA-vw0MrjAJrJ2SqIuzE7/reviews/r961559788",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/924799583820313380363/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-09T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r961559788"
+    },
+    {
+     "name": "places/ChIJyuxA-vw0MrjAJrJ2SqIuzE7/reviews/r711452005",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/302423876650028008831/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-13T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r711452005"
+    },
+    {
+     "name": "places/ChIJyuxA-vw0MrjAJrJ2SqIuzE7/reviews/r658833893",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/416908139871892975280/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r658833893"
+    }
+   ]
+  },
+  {
+   "id": "ChIJnKxWRLWglQ7XxiCKSXoxV8T",
+   "displayName": {
+    "text": "Dalali Halisi",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kapiti Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.320593,
+    "longitude": 36.837845
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=7814557092332522086",
+   "nationalPhoneNumber": "0723 199400",
+   "internationalPhoneNumber": "+254 723 199400",
+   "rating": 5.0,
+   "userRatingCount": 3,
+   "reviews": [
+    {
+     "name": "places/ChIJnKxWRLWglQ7XxiCKSXoxV8T/reviews/r483919324",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/821733950105861236393/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r483919324"
+    },
+    {
+     "name": "places/ChIJnKxWRLWglQ7XxiCKSXoxV8T/reviews/r432883691",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Honest agents, no hidden fees. They explained the lease clearly before I signed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/769158894168467931464/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-22T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r432883691"
+    },
+    {
+     "name": "places/ChIJnKxWRLWglQ7XxiCKSXoxV8T/reviews/r574755921",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/731224308025700605811/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-12T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r574755921"
+    }
+   ]
+  },
+  {
+   "id": "ChIJCps6T2lkiCsf4f0FRk0KzK8",
+   "displayName": {
+    "text": "Tujenge Realtors",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kindaruma Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.301892,
+    "longitude": 36.78202
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9923719490475321094",
+   "nationalPhoneNumber": "0113 359384",
+   "internationalPhoneNumber": "+254 113 359384",
+   "rating": 4.6,
+   "userRatingCount": 167,
+   "reviews": [
+    {
+     "name": "places/ChIJCps6T2lkiCsf4f0FRk0KzK8/reviews/r751795411",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/768888716241655027484/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-04T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r751795411"
+    },
+    {
+     "name": "places/ChIJCps6T2lkiCsf4f0FRk0KzK8/reviews/r906848672",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/857338390224937653645/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-26T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r906848672"
+    },
+    {
+     "name": "places/ChIJCps6T2lkiCsf4f0FRk0KzK8/reviews/r563025340",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 3,
+     "text": {
+      "text": "I wish they posted photos of the houses somewhere, wasted a trip to see a unit that was already taken.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "I wish they posted photos of the houses somewhere, wasted a trip to see a unit that was already taken.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/927713291142903629578/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-16T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r563025340"
+    },
+    {
+     "name": "places/ChIJCps6T2lkiCsf4f0FRk0KzK8/reviews/r105563847",
+     "relativePublishTimeDescription": "3 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Found my two bedroom in Kilimani through them and the whole process was smooth, deposit refunded on time when I moved.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/967976470075032844969/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-05T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r105563847"
+    },
+    {
+     "name": "places/ChIJCps6T2lkiCsf4f0FRk0KzK8/reviews/r968052399",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/590046260797914690382/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-20T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r968052399"
+    }
+   ]
+  },
+  {
+   "id": "ChIJAbxmFuLH9ENQO3ZbO35lcvm",
+   "displayName": {
+    "text": "Capital Realty Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Upper Hill Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.290897,
+    "longitude": 36.808029
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9450707060088152579",
+   "nationalPhoneNumber": "020 3688612",
+   "internationalPhoneNumber": "+254 20 3688612",
+   "rating": 4.5,
+   "userRatingCount": 54,
+   "reviews": [
+    {
+     "name": "places/ChIJAbxmFuLH9ENQO3ZbO35lcvm/reviews/r663616009",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Quick viewings and they answer on WhatsApp even on weekends.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/647118144347167872967/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-19T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r663616009"
+    },
+    {
+     "name": "places/ChIJAbxmFuLH9ENQO3ZbO35lcvm/reviews/r391858373",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They arranged a viewing the same afternoon I called. Very responsive team.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/462707369744896469407/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-16T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r391858373"
+    },
+    {
+     "name": "places/ChIJAbxmFuLH9ENQO3ZbO35lcvm/reviews/r878231667",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The agent was patient and showed us four houses in one day. Highly recommend for anyone house hunting.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/950415769612099033051/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-02T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r878231667"
+    },
+    {
+     "name": "places/ChIJAbxmFuLH9ENQO3ZbO35lcvm/reviews/r210164144",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They manage our block and repairs are always sorted quickly. Tenants are happy.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/581292824252918154557/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-21T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r210164144"
+    },
+    {
+     "name": "places/ChIJAbxmFuLH9ENQO3ZbO35lcvm/reviews/r862528315",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Very professional, helped me find a bedsitter within my budget in two days.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/201645225021063736745/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r862528315"
+    }
+   ]
+  }
+ ],
+ "nextPageToken": "fixture:property_agency_c2_p2"
+}

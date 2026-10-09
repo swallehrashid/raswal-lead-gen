@@ -100,6 +100,7 @@ class ExclusionsConfig(_M):
     dealer_words: list[str]
     portals: Portals
     excluded_types: list[str]
+    building_types: list[str]
     building_words: list[str]
     building_word_exceptions: dict[str, list[str]] = {}
     business_words: list[str]
@@ -292,7 +293,7 @@ class RenderBudget(_M):
 class Retention(_M):
     places_raw_days: int
     files_days: int
-    keep_files_statuses: list[str]
+    purge_files_statuses: list[str]
     db_cap_mb: int
     storage_cap_mb: int
 

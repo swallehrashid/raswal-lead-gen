@@ -1,0 +1,2639 @@
+{
+ "places": [
+  {
+   "id": "ChIJ5FZ5hi_Ys5DOLsCmPjnznuS",
+   "displayName": {
+    "text": "Ngong Plots Office",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Ngong Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.291374,
+    "longitude": 36.778234
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=7064693936680466256",
+   "nationalPhoneNumber": "020 4576994",
+   "internationalPhoneNumber": "+254 20 4576994",
+   "rating": 4.5,
+   "userRatingCount": 17,
+   "reviews": [
+    {
+     "name": "places/ChIJ5FZ5hi_Ys5DOLsCmPjnznuS/reviews/r925246172",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/372301525520447429430/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-16T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r925246172"
+    },
+    {
+     "name": "places/ChIJ5FZ5hi_Ys5DOLsCmPjnznuS/reviews/r756897468",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/662840505055029270634/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-11T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r756897468"
+    },
+    {
+     "name": "places/ChIJ5FZ5hi_Ys5DOLsCmPjnznuS/reviews/r690880476",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/368894474977874470539/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-07T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r690880476"
+    },
+    {
+     "name": "places/ChIJ5FZ5hi_Ys5DOLsCmPjnznuS/reviews/r535214041",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/229484179681720759163/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-08T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r535214041"
+    },
+    {
+     "name": "places/ChIJ5FZ5hi_Ys5DOLsCmPjnznuS/reviews/r316231458",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/663713446522627364912/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r316231458"
+    }
+   ]
+  },
+  {
+   "id": "ChIJtt1YslCt5SYkV2M9cujJ3E8",
+   "displayName": {
+    "text": "Ruiru Gardens",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kasarani-Mwiki Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.229399,
+    "longitude": 36.882257
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=7990333149410585200",
+   "nationalPhoneNumber": "0100 704868",
+   "internationalPhoneNumber": "+254 100 704868",
+   "rating": 4.5,
+   "userRatingCount": 22,
+   "reviews": [
+    {
+     "name": "places/ChIJtt1YslCt5SYkV2M9cujJ3E8/reviews/r899647616",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/306822932377578514390/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-14T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r899647616"
+    },
+    {
+     "name": "places/ChIJtt1YslCt5SYkV2M9cujJ3E8/reviews/r519958886",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/684885101341588463608/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-14T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r519958886"
+    },
+    {
+     "name": "places/ChIJtt1YslCt5SYkV2M9cujJ3E8/reviews/r877762963",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/870136870787167684736/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r877762963"
+    },
+    {
+     "name": "places/ChIJtt1YslCt5SYkV2M9cujJ3E8/reviews/r136506412",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/137406209534066840857/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-08T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r136506412"
+    },
+    {
+     "name": "places/ChIJtt1YslCt5SYkV2M9cujJ3E8/reviews/r878085891",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/504130040157600224382/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-19T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r878085891"
+    }
+   ]
+  },
+  {
+   "id": "ChIJucsXCHsgFPVuyYUXQzai5M7",
+   "displayName": {
+    "text": "Mashamba Bora Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Upper Hill Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.304163,
+    "longitude": 36.823858
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2123480903928550146",
+   "nationalPhoneNumber": "0724 170652",
+   "internationalPhoneNumber": "+254 724 170652",
+   "websiteUri": "https://mashambaboraltd.wixsite.com/home",
+   "rating": 4.9,
+   "userRatingCount": 22,
+   "reviews": [
+    {
+     "name": "places/ChIJucsXCHsgFPVuyYUXQzai5M7/reviews/r549818676",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/716222158519691188280/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-22T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r549818676"
+    },
+    {
+     "name": "places/ChIJucsXCHsgFPVuyYUXQzai5M7/reviews/r488532438",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/937596721237972384402/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-17T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r488532438"
+    },
+    {
+     "name": "places/ChIJucsXCHsgFPVuyYUXQzai5M7/reviews/r565841462",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/191040229246612085933/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-13T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r565841462"
+    },
+    {
+     "name": "places/ChIJucsXCHsgFPVuyYUXQzai5M7/reviews/r287681922",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/512098913781815216755/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-17T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r287681922"
+    },
+    {
+     "name": "places/ChIJucsXCHsgFPVuyYUXQzai5M7/reviews/r586346928",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/936320184379176759746/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-05T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r586346928"
+    }
+   ]
+  },
+  {
+   "id": "ChIJisRDeSH5VlM9WRqdnDs6zFD",
+   "displayName": {
+    "text": "Fanaka Land Company",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kirichwa Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.284221,
+    "longitude": 36.793703
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=7511310014672636677",
+   "nationalPhoneNumber": "0723 567906",
+   "internationalPhoneNumber": "+254 723 567906",
+   "websiteUri": "http://www.fanakalandcompany.co.ke/",
+   "rating": 4.8,
+   "userRatingCount": 167,
+   "reviews": [
+    {
+     "name": "places/ChIJisRDeSH5VlM9WRqdnDs6zFD/reviews/r991127930",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/136007033947674399871/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-05T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r991127930"
+    },
+    {
+     "name": "places/ChIJisRDeSH5VlM9WRqdnDs6zFD/reviews/r409062422",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/874627334676510927165/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-27T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r409062422"
+    },
+    {
+     "name": "places/ChIJisRDeSH5VlM9WRqdnDs6zFD/reviews/r172014429",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/301829773899135566251/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-21T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r172014429"
+    },
+    {
+     "name": "places/ChIJisRDeSH5VlM9WRqdnDs6zFD/reviews/r930319019",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/561219610023924995951/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-12T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r930319019"
+    },
+    {
+     "name": "places/ChIJisRDeSH5VlM9WRqdnDs6zFD/reviews/r793377528",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/218174727945955036925/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-27T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r793377528"
+    }
+   ]
+  },
+  {
+   "id": "ChIJB5yydHhuizp8XxUfuDs6Eay",
+   "displayName": {
+    "text": "Chemchemi Plots",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.321451,
+    "longitude": 36.890578
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=4019068087276723804",
+   "nationalPhoneNumber": "0768 491505",
+   "internationalPhoneNumber": "+254 768 491505",
+   "websiteUri": "http://chemchemiplots.co.ke/",
+   "rating": 4.8,
+   "userRatingCount": 47,
+   "reviews": [
+    {
+     "name": "places/ChIJB5yydHhuizp8XxUfuDs6Eay/reviews/r433797093",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/157501715182704372723/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-02T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r433797093"
+    },
+    {
+     "name": "places/ChIJB5yydHhuizp8XxUfuDs6Eay/reviews/r531557399",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/406786701552979823489/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-01T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r531557399"
+    },
+    {
+     "name": "places/ChIJB5yydHhuizp8XxUfuDs6Eay/reviews/r824778727",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/340761524285214637091/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-30T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r824778727"
+    },
+    {
+     "name": "places/ChIJB5yydHhuizp8XxUfuDs6Eay/reviews/r577433977",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/249918100788500524222/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-23T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r577433977"
+    },
+    {
+     "name": "places/ChIJB5yydHhuizp8XxUfuDs6Eay/reviews/r191226194",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/163814422580233088704/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r191226194"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ8qaxc82rnAb6DiX-KcRZgYZ",
+   "displayName": {
+    "text": "Baraka Plots Kitengela",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Ragati Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.297591,
+    "longitude": 36.813386
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=7125856286829718050",
+   "nationalPhoneNumber": "0702 993838",
+   "internationalPhoneNumber": "+254 702 993838",
+   "websiteUri": "http://www.barakaplotskitengela.co.ke/",
+   "rating": 4.9,
+   "userRatingCount": 14,
+   "reviews": [
+    {
+     "name": "places/ChIJ8qaxc82rnAb6DiX-KcRZgYZ/reviews/r395706096",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/232105066624043174745/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-24T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r395706096"
+    },
+    {
+     "name": "places/ChIJ8qaxc82rnAb6DiX-KcRZgYZ/reviews/r191276035",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/977580680441252445869/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-25T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r191276035"
+    },
+    {
+     "name": "places/ChIJ8qaxc82rnAb6DiX-KcRZgYZ/reviews/r431819408",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/769935142602780287978/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-24T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r431819408"
+    },
+    {
+     "name": "places/ChIJ8qaxc82rnAb6DiX-KcRZgYZ/reviews/r832008715",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/669347876838163450060/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-14T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r832008715"
+    },
+    {
+     "name": "places/ChIJ8qaxc82rnAb6DiX-KcRZgYZ/reviews/r322159340",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/310782678521569047820/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-07T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r322159340"
+    }
+   ]
+  },
+  {
+   "id": "ChIJyn8m3F3OchR9KCm7uKtPS1_",
+   "displayName": {
+    "text": "Sifa Developers",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Argwings Kodhek Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.295223,
+    "longitude": 36.794234
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=1590457196164634667",
+   "nationalPhoneNumber": "0729 743983",
+   "internationalPhoneNumber": "+254 729 743983",
+   "websiteUri": "https://sifadevelopers.wixsite.com/home",
+   "rating": 4.5,
+   "userRatingCount": 38,
+   "reviews": [
+    {
+     "name": "places/ChIJyn8m3F3OchR9KCm7uKtPS1_/reviews/r206031554",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/743797625996714732694/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-02T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r206031554"
+    },
+    {
+     "name": "places/ChIJyn8m3F3OchR9KCm7uKtPS1_/reviews/r159440071",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/626242576596680004268/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-23T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r159440071"
+    },
+    {
+     "name": "places/ChIJyn8m3F3OchR9KCm7uKtPS1_/reviews/r965314437",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/307825592601628831702/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-05T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r965314437"
+    },
+    {
+     "name": "places/ChIJyn8m3F3OchR9KCm7uKtPS1_/reviews/r210268098",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/546703906358687402421/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-29T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r210268098"
+    },
+    {
+     "name": "places/ChIJyn8m3F3OchR9KCm7uKtPS1_/reviews/r913222057",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/613514126447230731020/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-19T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r913222057"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ72MRYqCzxLZTosq8FU4Qy9H",
+   "displayName": {
+    "text": "Kesho Bora Developers",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Argwings Kodhek Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.28791,
+    "longitude": 36.77469
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9077203745869661194",
+   "nationalPhoneNumber": "0712 262252",
+   "internationalPhoneNumber": "+254 712 262252",
+   "websiteUri": "https://keshoboradevelopers.ke/",
+   "rating": 4.8,
+   "userRatingCount": 14,
+   "reviews": [
+    {
+     "name": "places/ChIJ72MRYqCzxLZTosq8FU4Qy9H/reviews/r743548233",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/189844991210695860462/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-06T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r743548233"
+    },
+    {
+     "name": "places/ChIJ72MRYqCzxLZTosq8FU4Qy9H/reviews/r799828347",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/399934716851886798550/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-24T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r799828347"
+    },
+    {
+     "name": "places/ChIJ72MRYqCzxLZTosq8FU4Qy9H/reviews/r963593638",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/962942693011151817050/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-24T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r963593638"
+    },
+    {
+     "name": "places/ChIJ72MRYqCzxLZTosq8FU4Qy9H/reviews/r642746686",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/519672432784734126994/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-30T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r642746686"
+    },
+    {
+     "name": "places/ChIJ72MRYqCzxLZTosq8FU4Qy9H/reviews/r560014074",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/458538487513489379860/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-17T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r560014074"
+    }
+   ]
+  },
+  {
+   "id": "ChIJeucSGanJwjEOjXe3unHfxzQ",
+   "displayName": {
+    "text": "Small Plots Agency",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.312425,
+    "longitude": 36.893458
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=6008926498504000186",
+   "nationalPhoneNumber": "0100 611089",
+   "internationalPhoneNumber": "+254 100 611089",
+   "rating": 4.5,
+   "userRatingCount": 5,
+   "reviews": [
+    {
+     "name": "places/ChIJeucSGanJwjEOjXe3unHfxzQ/reviews/r223110537",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/989913848750678827056/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-05T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r223110537"
+    },
+    {
+     "name": "places/ChIJeucSGanJwjEOjXe3unHfxzQ/reviews/r589479905",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/782996811445552182015/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-11T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r589479905"
+    },
+    {
+     "name": "places/ChIJeucSGanJwjEOjXe3unHfxzQ/reviews/r727433598",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/923290433576945786615/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r727433598"
+    },
+    {
+     "name": "places/ChIJeucSGanJwjEOjXe3unHfxzQ/reviews/r548759307",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/730772712260222570844/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-02T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r548759307"
+    },
+    {
+     "name": "places/ChIJeucSGanJwjEOjXe3unHfxzQ/reviews/r758907131",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/539449745884034614503/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-14T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r758907131"
+    }
+   ]
+  },
+  {
+   "id": "ChIJLJe6ydQWSB6zKa4M7G2eUFY",
+   "displayName": {
+    "text": "Mavuno Plots Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kindaruma Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.307326,
+    "longitude": 36.78904
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5301158973112517585",
+   "nationalPhoneNumber": "0727 561043",
+   "internationalPhoneNumber": "+254 727 561043",
+   "websiteUri": "https://mavunoplotsltd.ke/",
+   "rating": 4.8,
+   "userRatingCount": 124,
+   "reviews": [
+    {
+     "name": "places/ChIJLJe6ydQWSB6zKa4M7G2eUFY/reviews/r115097306",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/451313899230546827470/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-04T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r115097306"
+    },
+    {
+     "name": "places/ChIJLJe6ydQWSB6zKa4M7G2eUFY/reviews/r234768697",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/797096473137476839096/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r234768697"
+    },
+    {
+     "name": "places/ChIJLJe6ydQWSB6zKa4M7G2eUFY/reviews/r584928685",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/660660376321436772081/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-05T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r584928685"
+    },
+    {
+     "name": "places/ChIJLJe6ydQWSB6zKa4M7G2eUFY/reviews/r532097053",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 3,
+     "text": {
+      "text": "I wish they had a website showing which plots are still available, had to call many times.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "I wish they had a website showing which plots are still available, had to call many times.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/921121984170952563021/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-22T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r532097053"
+    },
+    {
+     "name": "places/ChIJLJe6ydQWSB6zKa4M7G2eUFY/reviews/r677552860",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/471949641448987057730/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-24T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r677552860"
+    }
+   ]
+  },
+  {
+   "id": "ChIJtVIBRMeWmwtqtCiwyjQBJES",
+   "displayName": {
+    "text": "Kanaan Land Investments",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Lenana Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.279609,
+    "longitude": 36.783424
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8734400429046390622",
+   "nationalPhoneNumber": "0733 169961",
+   "internationalPhoneNumber": "+254 733 169961",
+   "websiteUri": "http://kanaanlandinvestments.co.ke/",
+   "rating": 4.3,
+   "userRatingCount": 47,
+   "reviews": [
+    {
+     "name": "places/ChIJtVIBRMeWmwtqtCiwyjQBJES/reviews/r171362237",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/577136552993791064805/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-16T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r171362237"
+    },
+    {
+     "name": "places/ChIJtVIBRMeWmwtqtCiwyjQBJES/reviews/r219997162",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/387739627704524314785/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-09T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r219997162"
+    },
+    {
+     "name": "places/ChIJtVIBRMeWmwtqtCiwyjQBJES/reviews/r967123033",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/792681282672890410292/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r967123033"
+    },
+    {
+     "name": "places/ChIJtVIBRMeWmwtqtCiwyjQBJES/reviews/r217003835",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/444012532257431759250/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-09T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r217003835"
+    },
+    {
+     "name": "places/ChIJtVIBRMeWmwtqtCiwyjQBJES/reviews/r168228676",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/971619732050066897583/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-04T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r168228676"
+    }
+   ]
+  },
+  {
+   "id": "ChIJiTs4MorEu-RjfYMmBJ0XyS_",
+   "displayName": {
+    "text": "Panda Land Investments",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kindaruma Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.307961,
+    "longitude": 36.777135
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=1925024623967240945",
+   "nationalPhoneNumber": "0702 744330",
+   "internationalPhoneNumber": "+254 702 744330",
+   "websiteUri": "http://pandalandinvestments.com/",
+   "rating": 4.5,
+   "userRatingCount": 58,
+   "reviews": [
+    {
+     "name": "places/ChIJiTs4MorEu-RjfYMmBJ0XyS_/reviews/r216008123",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/569744634460915272903/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-30T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r216008123"
+    },
+    {
+     "name": "places/ChIJiTs4MorEu-RjfYMmBJ0XyS_/reviews/r755936783",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/505472511129850183275/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-04T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r755936783"
+    },
+    {
+     "name": "places/ChIJiTs4MorEu-RjfYMmBJ0XyS_/reviews/r963689215",
+     "relativePublishTimeDescription": "a year ago",
+     "rating": 3,
+     "text": {
+      "text": "Could not find much information about their projects online before visiting the office.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Could not find much information about their projects online before visiting the office.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/571127826753187362772/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-10-06T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r963689215"
+    },
+    {
+     "name": "places/ChIJiTs4MorEu-RjfYMmBJ0XyS_/reviews/r263786920",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/671671582279075025782/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-14T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r263786920"
+    },
+    {
+     "name": "places/ChIJiTs4MorEu-RjfYMmBJ0XyS_/reviews/r210136698",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/135774022263197698069/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-01T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r210136698"
+    }
+   ]
+  },
+  {
+   "id": "ChIJICn3LNyzyRbMWrupTVlaMnb",
+   "displayName": {
+    "text": "Username Investments",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Tom Mboya St, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.287954,
+    "longitude": 36.826241
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9157531503158720813",
+   "nationalPhoneNumber": "0733 482025",
+   "internationalPhoneNumber": "+254 733 482025",
+   "websiteUri": "http://usernameinvestments.ke/",
+   "rating": 4.5,
+   "userRatingCount": 640,
+   "reviews": [
+    {
+     "name": "places/ChIJICn3LNyzyRbMWrupTVlaMnb/reviews/r599523240",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/941244639687291881823/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-13T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r599523240"
+    },
+    {
+     "name": "places/ChIJICn3LNyzyRbMWrupTVlaMnb/reviews/r143752718",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/368374500503955110790/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-01T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r143752718"
+    },
+    {
+     "name": "places/ChIJICn3LNyzyRbMWrupTVlaMnb/reviews/r540076090",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/587625745611461802802/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-04T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r540076090"
+    },
+    {
+     "name": "places/ChIJICn3LNyzyRbMWrupTVlaMnb/reviews/r969726484",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/949370127996573420706/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-05T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r969726484"
+    },
+    {
+     "name": "places/ChIJICn3LNyzyRbMWrupTVlaMnb/reviews/r456242653",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/835679936412203387547/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r456242653"
+    }
+   ]
+  },
+  {
+   "id": "ChIJTDQ2VQxLQ3gg46xRXzygdc8",
+   "displayName": {
+    "text": "Vuna Land Company",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Dagoretti Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.322362,
+    "longitude": 36.698213
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5092100567986861689",
+   "nationalPhoneNumber": "0111 542959",
+   "internationalPhoneNumber": "+254 111 542959",
+   "websiteUri": "http://vunalandcompany.co.ke/",
+   "rating": 4.6,
+   "userRatingCount": 124,
+   "reviews": [
+    {
+     "name": "places/ChIJTDQ2VQxLQ3gg46xRXzygdc8/reviews/r348507314",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/654144279120714243984/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-27T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r348507314"
+    },
+    {
+     "name": "places/ChIJTDQ2VQxLQ3gg46xRXzygdc8/reviews/r838557437",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/260011744693156935751/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-23T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r838557437"
+    },
+    {
+     "name": "places/ChIJTDQ2VQxLQ3gg46xRXzygdc8/reviews/r342493650",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/882131120148176550079/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-26T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r342493650"
+    },
+    {
+     "name": "places/ChIJTDQ2VQxLQ3gg46xRXzygdc8/reviews/r777262609",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/892075312193325769572/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r777262609"
+    },
+    {
+     "name": "places/ChIJTDQ2VQxLQ3gg46xRXzygdc8/reviews/r238041533",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/170994973636375281075/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-11T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r238041533"
+    }
+   ]
+  },
+  {
+   "id": "ChIJyQRw9YtRr9ZCP2n0pmJThpp",
+   "displayName": {
+    "text": "Taifa Land Developers",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Karen Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.315656,
+    "longitude": 36.696501
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5847659591396951468",
+   "nationalPhoneNumber": "0796 921823",
+   "internationalPhoneNumber": "+254 796 921823",
+   "websiteUri": "https://taifalanddevelopers.wixsite.com/home",
+   "rating": 4.3,
+   "userRatingCount": 31,
+   "reviews": [
+    {
+     "name": "places/ChIJyQRw9YtRr9ZCP2n0pmJThpp/reviews/r931646652",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 4,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/603828272468258902339/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-30T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r931646652"
+    },
+    {
+     "name": "places/ChIJyQRw9YtRr9ZCP2n0pmJThpp/reviews/r381503344",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/117250906695559850142/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-19T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r381503344"
+    },
+    {
+     "name": "places/ChIJyQRw9YtRr9ZCP2n0pmJThpp/reviews/r402121833",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/183912944476676802315/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-23T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r402121833"
+    },
+    {
+     "name": "places/ChIJyQRw9YtRr9ZCP2n0pmJThpp/reviews/r501455900",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/106654289524442508773/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-26T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r501455900"
+    },
+    {
+     "name": "places/ChIJyQRw9YtRr9ZCP2n0pmJThpp/reviews/r201393714",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/371422937283797905087/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-05T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r201393714"
+    }
+   ]
+  },
+  {
+   "id": "ChIJygf0sf1Q9eopkJTVM5n9q9G",
+   "displayName": {
+    "text": "Kenya Land Board Office",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Moi Ave, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.289747,
+    "longitude": 36.831804
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=4702977077007592895",
+   "nationalPhoneNumber": "0723 552903",
+   "internationalPhoneNumber": "+254 723 552903",
+   "rating": 4.5,
+   "userRatingCount": 60,
+   "reviews": [
+    {
+     "name": "places/ChIJygf0sf1Q9eopkJTVM5n9q9G/reviews/r682401142",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/772822318397128079488/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-23T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r682401142"
+    },
+    {
+     "name": "places/ChIJygf0sf1Q9eopkJTVM5n9q9G/reviews/r686650096",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/690709993168655594839/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-09T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r686650096"
+    },
+    {
+     "name": "places/ChIJygf0sf1Q9eopkJTVM5n9q9G/reviews/r663630098",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/314051237199085986265/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-26T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r663630098"
+    },
+    {
+     "name": "places/ChIJygf0sf1Q9eopkJTVM5n9q9G/reviews/r230767936",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/436029713301091825385/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r230767936"
+    },
+    {
+     "name": "places/ChIJygf0sf1Q9eopkJTVM5n9q9G/reviews/r397286372",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/801288672818944193179/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-18T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r397286372"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ9_KU9ELyU3XmlCBTFEg3ZbE",
+   "displayName": {
+    "text": "Optiven Group",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Waiyaki Way, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.276944,
+    "longitude": 36.806728
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5067457812965479921",
+   "nationalPhoneNumber": "0733 269210",
+   "internationalPhoneNumber": "+254 733 269210",
+   "websiteUri": "http://optivengroup.co.ke/",
+   "rating": 4.5,
+   "userRatingCount": 900,
+   "reviews": [
+    {
+     "name": "places/ChIJ9_KU9ELyU3XmlCBTFEg3ZbE/reviews/r422381220",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/736703222553320372952/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r422381220"
+    },
+    {
+     "name": "places/ChIJ9_KU9ELyU3XmlCBTFEg3ZbE/reviews/r280980234",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/956285333284913673107/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-04T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r280980234"
+    },
+    {
+     "name": "places/ChIJ9_KU9ELyU3XmlCBTFEg3ZbE/reviews/r243649867",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/631899975634406321891/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-18T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r243649867"
+    },
+    {
+     "name": "places/ChIJ9_KU9ELyU3XmlCBTFEg3ZbE/reviews/r130819726",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/160583256275213316715/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-15T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r130819726"
+    },
+    {
+     "name": "places/ChIJ9_KU9ELyU3XmlCBTFEg3ZbE/reviews/r420442885",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/144994812199701557908/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-14T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r420442885"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ9OSlW7z0Knqh7KmCbS1ClIn",
+   "displayName": {
+    "text": "Mizizi Properties",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Thika Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.224461,
+    "longitude": 36.8979
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=6199964917013897815",
+   "nationalPhoneNumber": "0702 019379",
+   "internationalPhoneNumber": "+254 702 019379",
+   "websiteUri": "https://miziziproperties.com/",
+   "rating": 4.7,
+   "userRatingCount": 47,
+   "reviews": [
+    {
+     "name": "places/ChIJ9OSlW7z0Knqh7KmCbS1ClIn/reviews/r203025952",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/336256796511064091223/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-14T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r203025952"
+    },
+    {
+     "name": "places/ChIJ9OSlW7z0Knqh7KmCbS1ClIn/reviews/r514831169",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/800656695943230567462/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-10T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r514831169"
+    },
+    {
+     "name": "places/ChIJ9OSlW7z0Knqh7KmCbS1ClIn/reviews/r308596145",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/583435065330869338147/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-21T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r308596145"
+    },
+    {
+     "name": "places/ChIJ9OSlW7z0Knqh7KmCbS1ClIn/reviews/r943756039",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/779018071714794379492/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-27T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r943756039"
+    },
+    {
+     "name": "places/ChIJ9OSlW7z0Knqh7KmCbS1ClIn/reviews/r378268580",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/137437133028313427051/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-22T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r378268580"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ6XmOefwo56gvA0w3XdrYwiy",
+   "displayName": {
+    "text": "Simama Developers",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Lenana Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.294748,
+    "longitude": 36.779441
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=8064285125209658465",
+   "nationalPhoneNumber": "0768 070537",
+   "internationalPhoneNumber": "+254 768 070537",
+   "websiteUri": "http://simamadevelopers.com/",
+   "rating": 4.4,
+   "userRatingCount": 38,
+   "reviews": [
+    {
+     "name": "places/ChIJ6XmOefwo56gvA0w3XdrYwiy/reviews/r863067867",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/399910181348024761336/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-02T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r863067867"
+    },
+    {
+     "name": "places/ChIJ6XmOefwo56gvA0w3XdrYwiy/reviews/r891405429",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/284388331331428774432/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-17T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r891405429"
+    },
+    {
+     "name": "places/ChIJ6XmOefwo56gvA0w3XdrYwiy/reviews/r925918203",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/601637122496282094977/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-05T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r925918203"
+    },
+    {
+     "name": "places/ChIJ6XmOefwo56gvA0w3XdrYwiy/reviews/r819404847",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 4,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/357923724362671151223/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-10T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r819404847"
+    },
+    {
+     "name": "places/ChIJ6XmOefwo56gvA0w3XdrYwiy/reviews/r288052640",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/717655250599633519839/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-14T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r288052640"
+    }
+   ]
+  },
+  {
+   "id": "ChIJMgqwPt2mwG1sEYEEkvPJZIy",
+   "displayName": {
+    "text": "Bonde Properties",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Ragati Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.30054,
+    "longitude": 36.824864
+   },
+   "types": [
+    "real_estate_agency",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "real_estate_agency",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9667554356388133348",
+   "nationalPhoneNumber": "0722 682478",
+   "internationalPhoneNumber": "+254 722 682478",
+   "rating": 4.6,
+   "userRatingCount": 38,
+   "reviews": [
+    {
+     "name": "places/ChIJMgqwPt2mwG1sEYEEkvPJZIy/reviews/r104664101",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Transparent process, they took us through the search at the lands office before payment.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/942306734964106634192/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-02T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r104664101"
+    },
+    {
+     "name": "places/ChIJMgqwPt2mwG1sEYEEkvPJZIy/reviews/r277706186",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Flexible payment plan and they kept updating me until I got my title.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/896002808692534421193/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-18T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r277706186"
+    },
+    {
+     "name": "places/ChIJMgqwPt2mwG1sEYEEkvPJZIy/reviews/r969463153",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "The site visit was well organised, they picked us from town and showed us the beacons.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/981453377701604102803/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-24T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r969463153"
+    },
+    {
+     "name": "places/ChIJMgqwPt2mwG1sEYEEkvPJZIy/reviews/r436026238",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Bought a plot in Kitengela with them, title deed was ready as promised. Genuine company.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/706399208703136199761/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-03T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r436026238"
+    },
+    {
+     "name": "places/ChIJMgqwPt2mwG1sEYEEkvPJZIy/reviews/r570259339",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Office staff are welcoming and explain every step. I've bought two plots with them now.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/685762204472901256962/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-09T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r570259339"
+    }
+   ]
+  }
+ ]
+}

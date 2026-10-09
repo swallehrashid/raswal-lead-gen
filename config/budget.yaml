@@ -43,6 +43,8 @@ render:
 retention:
   places_raw_days: 30
   files_days: 30
-  keep_files_statuses: [interested, demo_queued, demo_sent, negotiating, won]
+  # teaser / current-site / brand files are deleted after files_days for leads in these statuses
+  # (everything else, e.g. sent, replied, interested and later, keeps its files)
+  purge_files_statuses: [skipped, no_response, lost, opted_out, shortlisted, reserve, no_whatsapp]
   db_cap_mb: 400
   storage_cap_mb: 800

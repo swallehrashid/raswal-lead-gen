@@ -1,0 +1,2677 @@
+{
+ "places": [
+  {
+   "id": "ChIJhzUeuxhaH_0JBCqFuuEn0pC",
+   "displayName": {
+    "text": "Rangi Paint Centre",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Mombasa Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.333526,
+    "longitude": 36.856701
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=6860959643191374699",
+   "nationalPhoneNumber": "0717 737187",
+   "internationalPhoneNumber": "+254 717 737187",
+   "websiteUri": "http://rangipaintcentre.co.ke/",
+   "rating": 4.5,
+   "userRatingCount": 175,
+   "reviews": [
+    {
+     "name": "places/ChIJhzUeuxhaH_0JBCqFuuEn0pC/reviews/r738847555",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/727393211662098805851/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-09T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r738847555"
+    },
+    {
+     "name": "places/ChIJhzUeuxhaH_0JBCqFuuEn0pC/reviews/r840843849",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/378794108300780231933/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-06T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r840843849"
+    },
+    {
+     "name": "places/ChIJhzUeuxhaH_0JBCqFuuEn0pC/reviews/r841056530",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/414155910191833725043/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-30T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r841056530"
+    },
+    {
+     "name": "places/ChIJhzUeuxhaH_0JBCqFuuEn0pC/reviews/r399956699",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/400564353941524289536/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-28T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r399956699"
+    },
+    {
+     "name": "places/ChIJhzUeuxhaH_0JBCqFuuEn0pC/reviews/r198429301",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/245196223937581393542/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-30T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r198429301"
+    }
+   ]
+  },
+  {
+   "id": "ChIJFvsv2veeIHUPuqi6RswE5fq",
+   "displayName": {
+    "text": "Ufundi Tools & Hardware",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Ngong Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.304606,
+    "longitude": 36.775938
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5635340480271452149",
+   "nationalPhoneNumber": "0110 371938",
+   "internationalPhoneNumber": "+254 110 371938",
+   "websiteUri": "http://ufunditoolshardware.com/",
+   "rating": 4.8,
+   "userRatingCount": 48,
+   "reviews": [
+    {
+     "name": "places/ChIJFvsv2veeIHUPuqi6RswE5fq/reviews/r232129603",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Joy Atieno",
+      "uri": "https://www.google.com/maps/contrib/870064850980979511298/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-03T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r232129603"
+    },
+    {
+     "name": "places/ChIJFvsv2veeIHUPuqi6RswE5fq/reviews/r868734824",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/413545869005545126738/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-11T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r868734824"
+    },
+    {
+     "name": "places/ChIJFvsv2veeIHUPuqi6RswE5fq/reviews/r888356397",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/367037899172773632749/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-14T07:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r888356397"
+    },
+    {
+     "name": "places/ChIJFvsv2veeIHUPuqi6RswE5fq/reviews/r376381853",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/944034496980720440004/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-05T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r376381853"
+    },
+    {
+     "name": "places/ChIJFvsv2veeIHUPuqi6RswE5fq/reviews/r135494022",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/294920993826578206495/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-31T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r135494022"
+    }
+   ]
+  },
+  {
+   "id": "ChIJe2wd-hQR5DFNpGNS6AiF_b8",
+   "displayName": {
+    "text": "Wekeza Hardware",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Thika Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.17891,
+    "longitude": 36.926009
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=7135546158046403717",
+   "nationalPhoneNumber": "0768 063016",
+   "internationalPhoneNumber": "+254 768 063016",
+   "rating": 4.2,
+   "userRatingCount": 130,
+   "reviews": [
+    {
+     "name": "places/ChIJe2wd-hQR5DFNpGNS6AiF_b8/reviews/r769182904",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/612463347729323008918/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-24T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r769182904"
+    },
+    {
+     "name": "places/ChIJe2wd-hQR5DFNpGNS6AiF_b8/reviews/r297923052",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Long queue on Saturday but they eventually served me well.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Long queue on Saturday but they eventually served me well.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/814373793759707147994/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-07T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r297923052"
+    },
+    {
+     "name": "places/ChIJe2wd-hQR5DFNpGNS6AiF_b8/reviews/r640451812",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/671358755158101865915/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-04T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r640451812"
+    },
+    {
+     "name": "places/ChIJe2wd-hQR5DFNpGNS6AiF_b8/reviews/r511598114",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/811685798284824572113/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-13T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r511598114"
+    },
+    {
+     "name": "places/ChIJe2wd-hQR5DFNpGNS6AiF_b8/reviews/r676258210",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 4,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/945953833961891081753/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-30T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r676258210"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ11jZPbvS45-J0yf6T3EqrZS",
+   "displayName": {
+    "text": "Tile World Ruiru",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.264157,
+    "longitude": 36.876231
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3123759460230000940",
+   "nationalPhoneNumber": "0722 544903",
+   "internationalPhoneNumber": "+254 722 544903",
+   "websiteUri": "http://tileworldruiru.co.ke/",
+   "rating": 4.2,
+   "userRatingCount": 130,
+   "reviews": [
+    {
+     "name": "places/ChIJ11jZPbvS45-J0yf6T3EqrZS/reviews/r243011100",
+     "relativePublishTimeDescription": "4 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/161547093662772767093/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-09T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r243011100"
+    },
+    {
+     "name": "places/ChIJ11jZPbvS45-J0yf6T3EqrZS/reviews/r359484298",
+     "relativePublishTimeDescription": "5 days ago",
+     "rating": 4,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/765970010942182736253/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-04T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r359484298"
+    },
+    {
+     "name": "places/ChIJ11jZPbvS45-J0yf6T3EqrZS/reviews/r323306913",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/523968906078236702918/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-05T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r323306913"
+    },
+    {
+     "name": "places/ChIJ11jZPbvS45-J0yf6T3EqrZS/reviews/r919626524",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 4,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/846425268068174818179/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-13T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r919626524"
+    },
+    {
+     "name": "places/ChIJ11jZPbvS45-J0yf6T3EqrZS/reviews/r494809199",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/134845973040962505765/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-22T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r494809199"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ9h3eUzhYIx0Fq4Uo3HWTfKw",
+   "displayName": {
+    "text": "Baraka Hardware & Electricals",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kangemi Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.260009,
+    "longitude": 36.756312
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3576277063832189968",
+   "nationalPhoneNumber": "0796 345358",
+   "internationalPhoneNumber": "+254 796 345358",
+   "rating": 4.5,
+   "userRatingCount": 48,
+   "reviews": [
+    {
+     "name": "places/ChIJ9h3eUzhYIx0Fq4Uo3HWTfKw/reviews/r890281600",
+     "relativePublishTimeDescription": "2 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/834232331997579795528/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-07T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r890281600"
+    },
+    {
+     "name": "places/ChIJ9h3eUzhYIx0Fq4Uo3HWTfKw/reviews/r800575546",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Prices are not displayed anywhere so you have to ask for everything.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Prices are not displayed anywhere so you have to ask for everything.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/726118842060860750735/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-02T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r800575546"
+    },
+    {
+     "name": "places/ChIJ9h3eUzhYIx0Fq4Uo3HWTfKw/reviews/r746596155",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/420227635445337588886/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-31T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r746596155"
+    },
+    {
+     "name": "places/ChIJ9h3eUzhYIx0Fq4Uo3HWTfKw/reviews/r996104918",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/682267873242100676024/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-27T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r996104918"
+    },
+    {
+     "name": "places/ChIJ9h3eUzhYIx0Fq4Uo3HWTfKw/reviews/r531127639",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/960411971065160202971/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-19T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r531127639"
+    }
+   ]
+  },
+  {
+   "id": "ChIJjwI-yEUS4RB1CzM5s3oChGp",
+   "displayName": {
+    "text": "Pamoja Hardware Githurai",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.246596,
+    "longitude": 36.883454
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3194220711432457255",
+   "nationalPhoneNumber": "0706 292293",
+   "internationalPhoneNumber": "+254 706 292293",
+   "websiteUri": "https://web.facebook.com/pamojahardwaregithurai",
+   "rating": 4.6,
+   "userRatingCount": 90,
+   "reviews": [
+    {
+     "name": "places/ChIJjwI-yEUS4RB1CzM5s3oChGp/reviews/r688042508",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/329225378652641719409/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-28T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r688042508"
+    },
+    {
+     "name": "places/ChIJjwI-yEUS4RB1CzM5s3oChGp/reviews/r222586766",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/732900008071876345865/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-30T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r222586766"
+    },
+    {
+     "name": "places/ChIJjwI-yEUS4RB1CzM5s3oChGp/reviews/r635768748",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/164525171094313306770/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-01T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r635768748"
+    },
+    {
+     "name": "places/ChIJjwI-yEUS4RB1CzM5s3oChGp/reviews/r876413223",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Peter Mwangi",
+      "uri": "https://www.google.com/maps/contrib/818893596015564524274/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-26T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r876413223"
+    },
+    {
+     "name": "places/ChIJjwI-yEUS4RB1CzM5s3oChGp/reviews/r432800712",
+     "relativePublishTimeDescription": "11 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/343497980927821124264/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-10-23T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r432800712"
+    }
+   ]
+  },
+  {
+   "id": "ChIJnQAieIljTqJsoXrIyqXQalE",
+   "displayName": {
+    "text": "Rangi Bora Paints",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Embakasi Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.32643,
+    "longitude": 36.894216
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2710952964723291253",
+   "nationalPhoneNumber": "0722 082055",
+   "internationalPhoneNumber": "+254 722 082055",
+   "websiteUri": "https://rangiborapaints.wixsite.com/home",
+   "rating": 4.4,
+   "userRatingCount": 130,
+   "reviews": [
+    {
+     "name": "places/ChIJnQAieIljTqJsoXrIyqXQalE/reviews/r857831677",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/547570611621651252643/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-04T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r857831677"
+    },
+    {
+     "name": "places/ChIJnQAieIljTqJsoXrIyqXQalE/reviews/r717503834",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/191972586155780624851/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-05T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r717503834"
+    },
+    {
+     "name": "places/ChIJnQAieIljTqJsoXrIyqXQalE/reviews/r155765654",
+     "relativePublishTimeDescription": "5 days ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/256513649964208638922/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-04T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r155765654"
+    },
+    {
+     "name": "places/ChIJnQAieIljTqJsoXrIyqXQalE/reviews/r945047062",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 4,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/525356366998052862847/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-22T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r945047062"
+    },
+    {
+     "name": "places/ChIJnQAieIljTqJsoXrIyqXQalE/reviews/r700199557",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Prices are not displayed anywhere so you have to ask for everything.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Prices are not displayed anywhere so you have to ask for everything.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/199518936447607783932/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-10T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r700199557"
+    }
+   ]
+  },
+  {
+   "id": "ChIJmD6S4TwlT4D-i2wS0B8Ajpx",
+   "displayName": {
+    "text": "Imara Hardware Kariobangi",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kangemi Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.27108,
+    "longitude": 36.741474
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=2832866716465173105",
+   "nationalPhoneNumber": "0768 945264",
+   "internationalPhoneNumber": "+254 768 945264",
+   "rating": 4.6,
+   "userRatingCount": 35,
+   "reviews": [
+    {
+     "name": "places/ChIJmD6S4TwlT4D-i2wS0B8Ajpx/reviews/r246017914",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/747762014183796540045/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-22T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r246017914"
+    },
+    {
+     "name": "places/ChIJmD6S4TwlT4D-i2wS0B8Ajpx/reviews/r636370314",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/621917118898842695070/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-05T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r636370314"
+    },
+    {
+     "name": "places/ChIJmD6S4TwlT4D-i2wS0B8Ajpx/reviews/r319368235",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/717125283967010581255/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-30T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r319368235"
+    },
+    {
+     "name": "places/ChIJmD6S4TwlT4D-i2wS0B8Ajpx/reviews/r161814521",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Had to call to check if they had stock before driving there, wish I could check online.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Had to call to check if they had stock before driving there, wish I could check online.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/823400801030627143612/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-08T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r161814521"
+    },
+    {
+     "name": "places/ChIJmD6S4TwlT4D-i2wS0B8Ajpx/reviews/r129517819",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/458414075414822404289/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-22T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r129517819"
+    }
+   ]
+  },
+  {
+   "id": "ChIJePDKPlIXmm8XxkHs0ATaU8w",
+   "displayName": {
+    "text": "Twende Hardware",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kahawa Sukari Ave, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.174461,
+    "longitude": 36.917744
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=4584181876138918263",
+   "nationalPhoneNumber": "0723 531092",
+   "internationalPhoneNumber": "+254 723 531092",
+   "websiteUri": "http://twendehardware.com/",
+   "rating": 4.4,
+   "userRatingCount": 130,
+   "reviews": [
+    {
+     "name": "places/ChIJePDKPlIXmm8XxkHs0ATaU8w/reviews/r375800821",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/378305092853260974981/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-26T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r375800821"
+    },
+    {
+     "name": "places/ChIJePDKPlIXmm8XxkHs0ATaU8w/reviews/r952352446",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Purity Moraa",
+      "uri": "https://www.google.com/maps/contrib/666949778574185805344/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-18T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r952352446"
+    },
+    {
+     "name": "places/ChIJePDKPlIXmm8XxkHs0ATaU8w/reviews/r405514569",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/546362521222401403660/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-12T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r405514569"
+    },
+    {
+     "name": "places/ChIJePDKPlIXmm8XxkHs0ATaU8w/reviews/r229126678",
+     "relativePublishTimeDescription": "2 days ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/970544205682420780949/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-07T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r229126678"
+    },
+    {
+     "name": "places/ChIJePDKPlIXmm8XxkHs0ATaU8w/reviews/r176462541",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 4,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/593410706312688206223/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-03T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r176462541"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ39YuBwvaiid3qHDz5kkzhGA",
+   "displayName": {
+    "text": "Kahawa Paint House",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kindaruma Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.291844,
+    "longitude": 36.782657
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3558978032058377214",
+   "nationalPhoneNumber": "0724 646102",
+   "internationalPhoneNumber": "+254 724 646102",
+   "websiteUri": "https://kahawapainthouse.ke/",
+   "rating": 4.6,
+   "userRatingCount": 22,
+   "reviews": [
+    {
+     "name": "places/ChIJ39YuBwvaiid3qHDz5kkzhGA/reviews/r830578414",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/767310424126408639149/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-06T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r830578414"
+    },
+    {
+     "name": "places/ChIJ39YuBwvaiid3qHDz5kkzhGA/reviews/r184299137",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/199656354855989728071/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-30T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r184299137"
+    },
+    {
+     "name": "places/ChIJ39YuBwvaiid3qHDz5kkzhGA/reviews/r624417848",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/772779658026369344509/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-08T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r624417848"
+    },
+    {
+     "name": "places/ChIJ39YuBwvaiid3qHDz5kkzhGA/reviews/r767955436",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/161746487857580959976/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-14T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r767955436"
+    },
+    {
+     "name": "places/ChIJ39YuBwvaiid3qHDz5kkzhGA/reviews/r683922422",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/621056645857338221133/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-27T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r683922422"
+    }
+   ]
+  },
+  {
+   "id": "ChIJmvzZb6KVqYtILlbpW0rvuBm",
+   "displayName": {
+    "text": "Thika Road Hardware",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Embakasi Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.320398,
+    "longitude": 36.891495
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=1084954668401028503",
+   "nationalPhoneNumber": "0727 190250",
+   "internationalPhoneNumber": "+254 727 190250",
+   "websiteUri": "http://thikaroadhardware.co.ke/",
+   "rating": 4.8,
+   "userRatingCount": 130,
+   "reviews": [
+    {
+     "name": "places/ChIJmvzZb6KVqYtILlbpW0rvuBm/reviews/r769753026",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/560938434083480320373/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-10T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r769753026"
+    },
+    {
+     "name": "places/ChIJmvzZb6KVqYtILlbpW0rvuBm/reviews/r348905183",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/417813520096096157913/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-25T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r348905183"
+    },
+    {
+     "name": "places/ChIJmvzZb6KVqYtILlbpW0rvuBm/reviews/r659150430",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/879043035103821465503/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-13T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r659150430"
+    },
+    {
+     "name": "places/ChIJmvzZb6KVqYtILlbpW0rvuBm/reviews/r938555931",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/207855267342080844952/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-10T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r938555931"
+    },
+    {
+     "name": "places/ChIJmvzZb6KVqYtILlbpW0rvuBm/reviews/r118319137",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/609481495061081679860/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-15T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r118319137"
+    }
+   ]
+  },
+  {
+   "id": "ChIJlxfbQy4I2m2ZxMZSXLRh3BW",
+   "displayName": {
+    "text": "Crown Paints Dealer Githurai",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Kamiti Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.198373,
+    "longitude": 36.905068
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5082455379537645276",
+   "nationalPhoneNumber": "0733 967552",
+   "internationalPhoneNumber": "+254 733 967552",
+   "rating": 4.5,
+   "userRatingCount": 45,
+   "reviews": [
+    {
+     "name": "places/ChIJlxfbQy4I2m2ZxMZSXLRh3BW/reviews/r649475653",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/737207489952260255554/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-26T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r649475653"
+    },
+    {
+     "name": "places/ChIJlxfbQy4I2m2ZxMZSXLRh3BW/reviews/r520487625",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/262079607576045494358/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-19T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r520487625"
+    },
+    {
+     "name": "places/ChIJlxfbQy4I2m2ZxMZSXLRh3BW/reviews/r416001476",
+     "relativePublishTimeDescription": "6 days ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/423342001492764997903/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-03T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r416001476"
+    },
+    {
+     "name": "places/ChIJlxfbQy4I2m2ZxMZSXLRh3BW/reviews/r449089538",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/407531406740956801617/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-23T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r449089538"
+    },
+    {
+     "name": "places/ChIJlxfbQy4I2m2ZxMZSXLRh3BW/reviews/r471742104",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/144871357861461136825/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r471742104"
+    }
+   ]
+  },
+  {
+   "id": "ChIJbBC_bYxGAlTYp90Kkbj7-gr",
+   "displayName": {
+    "text": "Mwangaza Hardware",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Racecourse Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.280716,
+    "longitude": 36.819375
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=6713288331181242768",
+   "nationalPhoneNumber": "0712 808582",
+   "internationalPhoneNumber": "+254 712 808582",
+   "rating": 4.4,
+   "userRatingCount": 130,
+   "reviews": [
+    {
+     "name": "places/ChIJbBC_bYxGAlTYp90Kkbj7-gr/reviews/r802496649",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Prices are not displayed anywhere so you have to ask for everything.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Prices are not displayed anywhere so you have to ask for everything.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/740976131850403096484/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-13T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r802496649"
+    },
+    {
+     "name": "places/ChIJbBC_bYxGAlTYp90Kkbj7-gr/reviews/r956124770",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/147746110359997064416/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-30T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r956124770"
+    },
+    {
+     "name": "places/ChIJbBC_bYxGAlTYp90Kkbj7-gr/reviews/r313118685",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/874223484076648180924/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-01T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r313118685"
+    },
+    {
+     "name": "places/ChIJbBC_bYxGAlTYp90Kkbj7-gr/reviews/r966100832",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/676522042843782154347/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-13T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r966100832"
+    },
+    {
+     "name": "places/ChIJbBC_bYxGAlTYp90Kkbj7-gr/reviews/r910807250",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/533881572950563358095/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-08T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r910807250"
+    }
+   ]
+  },
+  {
+   "id": "ChIJiw6vfuEzqtI8Yqf-RvXG2zX",
+   "displayName": {
+    "text": "Old Kirinyaga Hardware",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Racecourse Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.28189,
+    "longitude": 36.828736
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9695399247905186127",
+   "nationalPhoneNumber": "020 4423452",
+   "internationalPhoneNumber": "+254 20 4423452",
+   "rating": 4.5,
+   "userRatingCount": 44,
+   "reviews": [
+    {
+     "name": "places/ChIJiw6vfuEzqtI8Yqf-RvXG2zX/reviews/r141623189",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/886641038560944597218/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-21T04:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r141623189"
+    },
+    {
+     "name": "places/ChIJiw6vfuEzqtI8Yqf-RvXG2zX/reviews/r158514968",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Abdi Hassan",
+      "uri": "https://www.google.com/maps/contrib/149933559163074392454/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-24T20:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r158514968"
+    },
+    {
+     "name": "places/ChIJiw6vfuEzqtI8Yqf-RvXG2zX/reviews/r491960473",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/578653812051080933288/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-19T02:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r491960473"
+    },
+    {
+     "name": "places/ChIJiw6vfuEzqtI8Yqf-RvXG2zX/reviews/r313197628",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/155403520087082842147/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-27T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r313197628"
+    },
+    {
+     "name": "places/ChIJiw6vfuEzqtI8Yqf-RvXG2zX/reviews/r724254731",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/500753464368654099232/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-03T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r724254731"
+    }
+   ]
+  },
+  {
+   "id": "ChIJuVVR0ghVcSL8IgAsKHWpp5g",
+   "displayName": {
+    "text": "Kangemi Building Supplies",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Thika Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.198732,
+    "longitude": 36.913953
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=9234903220677080345",
+   "nationalPhoneNumber": "0100 000643",
+   "internationalPhoneNumber": "+254 100 000643",
+   "websiteUri": "https://web.facebook.com/kangemibuildingsupplie",
+   "rating": 4.2,
+   "userRatingCount": 48,
+   "reviews": [
+    {
+     "name": "places/ChIJuVVR0ghVcSL8IgAsKHWpp5g/reviews/r845155696",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 4,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Nancy Jeptoo",
+      "uri": "https://www.google.com/maps/contrib/155310660099722557178/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-05T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r845155696"
+    },
+    {
+     "name": "places/ChIJuVVR0ghVcSL8IgAsKHWpp5g/reviews/r383265282",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 4,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Grace Wambui",
+      "uri": "https://www.google.com/maps/contrib/779881933659655463877/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-01T08:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r383265282"
+    },
+    {
+     "name": "places/ChIJuVVR0ghVcSL8IgAsKHWpp5g/reviews/r842132977",
+     "relativePublishTimeDescription": "2 days ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/311890915878457935426/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-10-07T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r842132977"
+    },
+    {
+     "name": "places/ChIJuVVR0ghVcSL8IgAsKHWpp5g/reviews/r317212055",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/515938299129154579375/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-30T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r317212055"
+    },
+    {
+     "name": "places/ChIJuVVR0ghVcSL8IgAsKHWpp5g/reviews/r720884589",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 4,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/502136039896576694279/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-17T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r720884589"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ3MdHZF_YBSjyS4TtL2Nw__Z",
+   "displayName": {
+    "text": "Kirinyaga Plumbing Supplies",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Likoni Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.315576,
+    "longitude": 36.844323
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5994608258516805136",
+   "nationalPhoneNumber": "0724 545474",
+   "internationalPhoneNumber": "+254 724 545474",
+   "websiteUri": "https://web.facebook.com/kirinyagaplumbingsuppl",
+   "rating": 4.6,
+   "userRatingCount": 90,
+   "reviews": [
+    {
+     "name": "places/ChIJ3MdHZF_YBSjyS4TtL2Nw__Z/reviews/r313394124",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Kevin Mutua",
+      "uri": "https://www.google.com/maps/contrib/166020673104680644442/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-03-11T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r313394124"
+    },
+    {
+     "name": "places/ChIJ3MdHZF_YBSjyS4TtL2Nw__Z/reviews/r865794215",
+     "relativePublishTimeDescription": "3 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Victor Onyango",
+      "uri": "https://www.google.com/maps/contrib/434145573401138991038/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-14T00:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r865794215"
+    },
+    {
+     "name": "places/ChIJ3MdHZF_YBSjyS4TtL2Nw__Z/reviews/r255666532",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/513824916618266860611/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-22T12:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r255666532"
+    },
+    {
+     "name": "places/ChIJ3MdHZF_YBSjyS4TtL2Nw__Z/reviews/r836527203",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/933568807460840687056/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-09T09:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r836527203"
+    },
+    {
+     "name": "places/ChIJ3MdHZF_YBSjyS4TtL2Nw__Z/reviews/r790655746",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/371709299779360081664/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-19T21:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r790655746"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ9rMF-s1OPPL6bBaCKskw6GJ",
+   "displayName": {
+    "text": "Mabomba Plumbing Ltd",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Mombasa Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.315771,
+    "longitude": 36.861515
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5421528457855506831",
+   "nationalPhoneNumber": "0740 706067",
+   "internationalPhoneNumber": "+254 740 706067",
+   "rating": 4.8,
+   "userRatingCount": 48,
+   "reviews": [
+    {
+     "name": "places/ChIJ9rMF-s1OPPL6bBaCKskw6GJ/reviews/r294788645",
+     "relativePublishTimeDescription": "9 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Lucy Akinyi",
+      "uri": "https://www.google.com/maps/contrib/171907932234437267881/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-01-08T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r294788645"
+    },
+    {
+     "name": "places/ChIJ9rMF-s1OPPL6bBaCKskw6GJ/reviews/r230078139",
+     "relativePublishTimeDescription": "11 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Long queue on Saturday but they eventually served me well.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Long queue on Saturday but they eventually served me well.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Faith Njeri",
+      "uri": "https://www.google.com/maps/contrib/411027592813816599922/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-11-08T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r230078139"
+    },
+    {
+     "name": "places/ChIJ9rMF-s1OPPL6bBaCKskw6GJ/reviews/r641322581",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/560167184327544521094/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-30T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r641322581"
+    },
+    {
+     "name": "places/ChIJ9rMF-s1OPPL6bBaCKskw6GJ/reviews/r875782580",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Hassan Omar",
+      "uri": "https://www.google.com/maps/contrib/888853273609574177638/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-06T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r875782580"
+    },
+    {
+     "name": "places/ChIJ9rMF-s1OPPL6bBaCKskw6GJ/reviews/r303871245",
+     "relativePublishTimeDescription": "8 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Brian Otieno",
+      "uri": "https://www.google.com/maps/contrib/867540839137266696634/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-02T10:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r303871245"
+    }
+   ]
+  },
+  {
+   "id": "ChIJ7LDK8NW73UQaMXL43l2lvoL",
+   "displayName": {
+    "text": "Tile and Carpet Centre",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Old Mombasa Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.31615,
+    "longitude": 36.854933
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3171477700530381943",
+   "nationalPhoneNumber": "0110 270647",
+   "internationalPhoneNumber": "+254 110 270647",
+   "websiteUri": "https://tileandcarpetcentre.com/",
+   "rating": 4.5,
+   "userRatingCount": 380,
+   "reviews": [
+    {
+     "name": "places/ChIJ7LDK8NW73UQaMXL43l2lvoL/reviews/r716970825",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Achieng Odhiambo",
+      "uri": "https://www.google.com/maps/contrib/924234585195454026634/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r716970825"
+    },
+    {
+     "name": "places/ChIJ7LDK8NW73UQaMXL43l2lvoL/reviews/r522950442",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/331028182416400260495/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-27T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r522950442"
+    },
+    {
+     "name": "places/ChIJ7LDK8NW73UQaMXL43l2lvoL/reviews/r367277161",
+     "relativePublishTimeDescription": "10 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Wanjiru Kamau",
+      "uri": "https://www.google.com/maps/contrib/898984222081893961115/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2025-12-02T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r367277161"
+    },
+    {
+     "name": "places/ChIJ7LDK8NW73UQaMXL43l2lvoL/reviews/r717720848",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Dennis Kiprop",
+      "uri": "https://www.google.com/maps/contrib/972249725888076622767/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-01T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r717720848"
+    },
+    {
+     "name": "places/ChIJ7LDK8NW73UQaMXL43l2lvoL/reviews/r750717948",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Samuel Kariuki",
+      "uri": "https://www.google.com/maps/contrib/569811213179805213440/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-08T06:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r750717948"
+    }
+   ]
+  },
+  {
+   "id": "ChIJA4JBQ_K1o4qZVb_zd66g3lQ",
+   "displayName": {
+    "text": "Crown Paints Kenya",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Likoni Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.296511,
+    "longitude": 36.842483
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=5783993651990645392",
+   "nationalPhoneNumber": "0100 866170",
+   "internationalPhoneNumber": "+254 100 866170",
+   "websiteUri": "http://www.crownpaintskenya.com/",
+   "rating": 4.5,
+   "userRatingCount": 210,
+   "reviews": [
+    {
+     "name": "places/ChIJA4JBQ_K1o4qZVb_zd66g3lQ/reviews/r859238904",
+     "relativePublishTimeDescription": "4 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Friendly staff, they helped me pick the right tiles and calculated how many boxes I needed.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Daniel Kimani",
+      "uri": "https://www.google.com/maps/contrib/388244329452438060256/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-17T01:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r859238904"
+    },
+    {
+     "name": "places/ChIJA4JBQ_K1o4qZVb_zd66g3lQ/reviews/r513150174",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/777347180066090186418/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-25T03:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r513150174"
+    },
+    {
+     "name": "places/ChIJA4JBQ_K1o4qZVb_zd66g3lQ/reviews/r579056388",
+     "relativePublishTimeDescription": "2 weeks ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Fatuma Ali",
+      "uri": "https://www.google.com/maps/contrib/361733123560169280556/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-20T23:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r579056388"
+    },
+    {
+     "name": "places/ChIJA4JBQ_K1o4qZVb_zd66g3lQ/reviews/r150103092",
+     "relativePublishTimeDescription": "a week ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Esther Wairimu",
+      "uri": "https://www.google.com/maps/contrib/858808627608014201469/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-09-26T19:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r150103092"
+    },
+    {
+     "name": "places/ChIJA4JBQ_K1o4qZVb_zd66g3lQ/reviews/r332996983",
+     "relativePublishTimeDescription": "5 months ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/679781543726094189347/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-05-07T22:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r332996983"
+    }
+   ]
+  },
+  {
+   "id": "ChIJnmHRCLpVtzSuS_r9P1QoRb2",
+   "displayName": {
+    "text": "Kona Tiles",
+    "languageCode": "en"
+   },
+   "formattedAddress": "Outer Ring Rd, Nairobi, Kenya",
+   "location": {
+    "latitude": -1.318137,
+    "longitude": 36.89904
+   },
+   "types": [
+    "hardware_store",
+    "home_goods_store",
+    "store",
+    "point_of_interest",
+    "establishment"
+   ],
+   "primaryType": "hardware_store",
+   "businessStatus": "OPERATIONAL",
+   "googleMapsUri": "https://maps.google.com/?cid=3452448785168480172",
+   "nationalPhoneNumber": "0796 170118",
+   "internationalPhoneNumber": "+254 796 170118",
+   "rating": 4.5,
+   "userRatingCount": 22,
+   "reviews": [
+    {
+     "name": "places/ChIJnmHRCLpVtzSuS_r9P1QoRb2/reviews/r204393881",
+     "relativePublishTimeDescription": "3 months ago",
+     "rating": 5,
+     "text": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "My go-to hardware for building materials, delivery is fast within Ruiru.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mary Nduta",
+      "uri": "https://www.google.com/maps/contrib/863139227066577098719/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-06-16T16:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r204393881"
+    },
+    {
+     "name": "places/ChIJnmHRCLpVtzSuS_r9P1QoRb2/reviews/r492184715",
+     "relativePublishTimeDescription": "6 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Genuine products and they give receipts. Staff know their stuff.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "James Ochieng",
+      "uri": "https://www.google.com/maps/contrib/449482846140529820617/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-04-08T11:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r492184715"
+    },
+    {
+     "name": "places/ChIJnmHRCLpVtzSuS_r9P1QoRb2/reviews/r534314776",
+     "relativePublishTimeDescription": "2 months ago",
+     "rating": 5,
+     "text": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Good stock of paint and they mix colours quickly. Fair prices.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Ian Waweru",
+      "uri": "https://www.google.com/maps/contrib/568915062069927287046/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-07-24T17:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r534314776"
+    },
+    {
+     "name": "places/ChIJnmHRCLpVtzSuS_r9P1QoRb2/reviews/r826900161",
+     "relativePublishTimeDescription": "a month ago",
+     "rating": 5,
+     "text": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "They have almost everything for plumbing and the prices are fair. Delivered to my site the same day.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Mercy Chebet",
+      "uri": "https://www.google.com/maps/contrib/558687882538368392771/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-08-29T18:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r826900161"
+    },
+    {
+     "name": "places/ChIJnmHRCLpVtzSuS_r9P1QoRb2/reviews/r773780225",
+     "relativePublishTimeDescription": "7 months ago",
+     "rating": 3,
+     "text": {
+      "text": "Prices are not displayed anywhere so you have to ask for everything.",
+      "languageCode": "en"
+     },
+     "originalText": {
+      "text": "Prices are not displayed anywhere so you have to ask for everything.",
+      "languageCode": "en"
+     },
+     "authorAttribution": {
+      "displayName": "Collins Kipchumba",
+      "uri": "https://www.google.com/maps/contrib/184254574690073597116/reviews",
+      "photoUri": "https://lh3.googleusercontent.com/a/fixture=s128-c0x00000000-cc-rp-mo"
+     },
+     "publishTime": "2026-02-13T05:00:00.000000Z",
+     "flagContentUri": "https://www.google.com/local/review/rap/report?postId=fixture",
+     "googleMapsUri": "https://www.google.com/maps/reviews/data=fixture-r773780225"
+    }
+   ]
+  }
+ ],
+ "nextPageToken": "fixture:hardware_supplies_c1_p2"
+}
