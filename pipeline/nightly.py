@@ -15,12 +15,15 @@ from pipeline.budget import Budget
 from pipeline.clients import Clients, build_clients
 from pipeline.discover import discover
 from pipeline.enrich import enrich
+from pipeline.facts import build_facts
 from pipeline.gates import ORDER, cheap_gates
 from pipeline.models import Candidate
 from pipeline.normalise import normalise
 from pipeline.plan import Plan, make_plan, resolve_list_date
 from pipeline.report import write_csv
+from pipeline.score import score_candidate
 from pipeline.seed import DASHBOARD_OWNED_KEYS, settings_payload
+from pipeline.select import deterministic_finalize, select
 from pipeline.settings import OUT_DIR, Config, Env
 from pipeline.store import build_store
 
@@ -126,6 +129,52 @@ def run_nightly(cfg: Config, env: Env, opts: NightlyOptions) -> RunResult:
     return result
 
 
+def make_finalizer(ctx: RunContext):
+    """Called by select() for each accepted candidate. Returns False → NO_HOOK."""
+    return deterministic_finalize
+
+
+def prepare_assets(ctx: RunContext, selected: list[Candidate]) -> None:
+    """Brand assets + storage paths for finalists and reserves (≤ 40/night)."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    from pipeline.brand import find_brand_assets
+    from pipeline.utils.text import slugify
+
+    def one(c: Candidate) -> None:
+        try:
+            if c.audit and c.audit.html:
+                find_brand_assets(c.audit, ctx.clients.fetcher, ctx.cfg)
+        except Exception as e:  # noqa: BLE001
+            ctx.error("brand", e, c.place_id)
+
+    with ThreadPoolExecutor(max_workers=ctx.cfg.budget.site_fetch.concurrency) as pool:
+        list(pool.map(one, selected))
+    for c in selected:
+        c.slug = slugify(c.name_norm)
+        a = c.audit
+        if a and a.psi_screenshot:
+            a.current_screenshot_path = f"current/{c.place_id}.jpg"
+        if a and a.logo_bytes:
+            c.logo_path = f"brand/{c.place_id}/logo.png"
+        if a and a.hero_bytes:
+            c.hero_path = f"brand/{c.place_id}/hero.jpg"
+
+
+def upload_assets(ctx: RunContext, selected: list[Candidate]) -> None:
+    for c in selected:
+        a = c.audit
+        try:
+            if a and a.psi_screenshot and a.current_screenshot_path:
+                ctx.store.upload(a.current_screenshot_path, a.psi_screenshot, "image/jpeg")
+            if a and a.logo_bytes and c.logo_path:
+                ctx.store.upload(c.logo_path, a.logo_bytes, "image/png")
+            if a and a.hero_bytes and c.hero_path:
+                ctx.store.upload(c.hero_path, a.hero_bytes, "image/jpeg")
+        except Exception as e:  # noqa: BLE001
+            ctx.error("upload", e, c.place_id)
+
+
 def _run_stages(ctx: RunContext) -> RunResult:
     cfg, opts, plan, store = ctx.cfg, ctx.opts, ctx.plan, ctx.store
     sub = plan.subcategory
@@ -145,7 +194,16 @@ def _run_stages(ctx: RunContext) -> RunResult:
     # ---- enrich: site audit + PSI for the top `enrich_limit` by pre-score
     enriched = enrich(passed, cfg, ctx.clients.fetcher, ctx.clients.psi, ctx.budget, store, ctx.now,
                       limit=opts.limit, sleep=(lambda s: None) if opts.offline else None)
-    selected: list[Candidate] = []
+
+    # ---- deterministic facts + scores, then selection (drafting happens inside `finalize`)
+    for c in enriched:
+        c.facts = build_facts(c, cfg, ctx.now)
+        score_candidate(c, cfg, ctx.now)
+    selection = select(enriched, cfg, finalize=make_finalizer(ctx))
+    selected = selection.all
+
+    # ---- assets for finalists + reserves: brand, storage paths
+    prepare_assets(ctx, selected)
 
     # ---- persist + report
     gate_counts = Counter(code for c in cands for code in c.gate_codes)
@@ -161,6 +219,7 @@ def _run_stages(ctx: RunContext) -> RunResult:
     }
     store.save_candidates(cands, ctx.run_id, plan.list_date)
     store.save_leads(selected, plan.list_date)
+    upload_assets(ctx, selected)
     teaser_files: dict[str, str] = {}
     csv_path = None
     if opts.dry_run or opts.offline:

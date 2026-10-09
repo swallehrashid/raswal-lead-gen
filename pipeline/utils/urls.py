@@ -6,7 +6,8 @@ from urllib.parse import urlsplit
 
 import tldextract
 
-_extract = tldextract.TLDExtract(suffix_list_urls=(), cache_dir=None)
+# include_psl_private_domains: acme.wixsite.com and bob.blogspot.com are separate sites, not "wixsite.com"
+_extract = tldextract.TLDExtract(suffix_list_urls=(), cache_dir=None, include_psl_private_domains=True)
 
 
 def ensure_scheme(url: str) -> str:

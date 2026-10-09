@@ -49,3 +49,14 @@ Small ambiguities resolved during the build. One line each: what and why.
 - Brand assets (logo, colours, hero) are fetched only for finalists and reserves (≤ 40/night), not for all 150 audited sites.
 - SVG logos are skipped (Pillow can't read them); the teaser then shows a wordmark. `og:image` is accepted as a hero at any size; other `<img>` heroes need ≥ 1000 px width.
 - Colour extraction also drops grey colours and any colour under 2% of the logo's pixels, so anti-aliasing noise isn't picked as the brand colour.
+
+## M3: scoring, selection, diversity, reserves
+- Deterministic facts (§11.2) are built before scoring, because hook points and `NO_HOOK` need them. Gemini review facts are added during drafting (M4).
+- A candidate eligible for both tracks (weak, with HTTPS and a viewport) goes to the track where its score clears the threshold by more; ties go to web.
+- `NO_HOOK` is checked during selection, in rank order. A candidate with no strong deterministic fact gets its Gemini call first (a review theme can be a strong fact). If it still has none, it's rejected and the next candidate is taken. This keeps Gemini calls to the people we'd actually ship.
+- The 50% top-hook cap uses the track's target, not the final count (≤ 10 web, ≤ 5 content with the same top fact), so the cap is predictable when fewer qualify.
+- Area and top-hook caps apply to finalists. A candidate that only fails those caps can still be a reserve. Phone/brand/domain uniqueness applies to the whole list, reserves included.
+- Domain uniqueness ignores leads with no site or a social page as their site. Free-builder sites are told apart by full host (`acme.wixsite.com`), using the public-suffix list's private section. The PSI cache uses the same key.
+- `GOOD_SITE` is only claimed when PSI performance ≥ 70 and the copyright year is current or last year, since the fact text says "loads fast" and "looks current".
+- `SLOW_MOBILE` is a web-track fact only (content leads have good sites by definition). LCP is rounded to whole seconds in the text ("about 8s"); the exact value is in the evidence.
+- `MANAGES_LISTINGS` is only produced for subcategories with `manages_listings_is_positive` (property agencies).
