@@ -225,7 +225,8 @@ class Drafter:
         self.stats["llm_ok" if c.variant_source == "llm" else "fallback"] += 1
         lines = [ln.strip() for ln in (out.poster_lines if out else []) if validate_poster_line(ln.strip(), ctx)]
         generic = cfg.subcategories[c.subcategory].generic_poster_lines
-        c.poster_lines = (lines + [g for g in generic if g not in lines])[:3]
+        seen: set[str] = set()
+        c.poster_lines = [ln for ln in lines + generic if not (ln.lower() in seen or seen.add(ln.lower()))][:3]
         for v in c.variants:
             if v.errors:
                 log.warning("%s: variant still has validator errors: %s", c.name, v.errors)

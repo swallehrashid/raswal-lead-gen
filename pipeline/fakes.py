@@ -159,7 +159,7 @@ class FixturePsi:
 THEMES = [  # keyword in review → (theme, paraphrase, poster line)
     ("viewing", "fast viewings", "A reviewer mentioned how quickly you arranged a viewing", "Book a viewing on WhatsApp"),
     ("deposit", "smooth move-in", "A reviewer said the whole process was smooth, deposit included", "Smooth, honest lettings"),
-    ("title", "titles delivered", "A buyer said their title deed was ready as promised", "Genuine plots, clear titles"),
+    ("title", "titles delivered", "A buyer said their title deed was ready as promised", "Ask us about title deeds"),
     ("site visit", "organised site visits", "A buyer praised how well organised the site visit was", "Book a free site visit"),
     ("finishing", "neat finishing", "A client praised the neat finishing on their house", "Neat work, finished on time"),
     ("renovation", "clean renovations", "A client said the renovation was clean and tidy", "Renovations done right"),

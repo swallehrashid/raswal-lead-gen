@@ -77,3 +77,17 @@ Small ambiguities resolved during the build. One line each: what and why.
 - `variant_source` on the lead is the source of the variant currently chosen; each variant also stores its own source. The dashboard updates it when you pick B.
 - Poster lines from Gemini must have ≤ 10 words, no domain/URL/money, no numbers outside the facts, and no reviewer names. Rejected lines are replaced by the subcategory's generic lines.
 - The fixture Gemini client synthesises answers from the prompt context; a fifth of businesses get a broken first answer (retry path) and about a tenth fail twice (fallback path), so offline runs exercise everything.
+
+## M5: teasers, storage upload, nightly workflow
+- Templates link the shared files (`../../shared/fonts.css`, `tokens.css`, `lead.js`) with relative paths, and the renderer inlines all of them (CSS, JS, images, CSS `url()`). The rendered page is fully self-contained, and the files still open directly in a browser.
+- `window.LEAD` carries the §13.1 fields plus optional extras (`ink`, `bg`, `cta`, `nav`, `subcategory`, `track`) that templates may ignore.
+- Every network request from a template is blocked and logged with the template name, and a test asserts all 20 templates render with zero requests.
+- Fonts are Montserrat 700/800 and Inter 400/600 (SIL OFL, latin subsets) as base64 `woff2`. The same families in `.woff` are used by Pillow for the composite labels.
+- The composite adds a "WEBSITE PREVIEW" / "SAMPLE POSTS" label and an "A new website for {Business}" / "Post ideas for {Business}" heading to fill the free space. Neither makes a claim. "In your colours" was avoided because a lead without a logo gets the template's default palette.
+- Removed claims from config copy that appears on every teaser: "Verified listings", "genuine title deeds", "New listings every week" and "New stock this week" were replaced with neutral lines.
+- Lead ids are generated before saving, so the teaser path `teasers/{list_date}/{lead_id}.jpg` is known when the lead row is written.
+- Teasers render finalists first, then reserves (≤ 40/night). If rendering fails, the lead still ships without a teaser, the error goes to `runs.errors`, and `python -m pipeline rerender --lead-id` fixes it later.
+- JPEG quality starts at 82 and steps down by 4 (minimum 60) until the file is ≤ 350 KB. Typical teasers are 90–130 KB.
+- The heartbeat uses `curl` against the REST API (no Python install), so it takes seconds of Actions time.
+- The dashboard deploy uses FTPS by default; the workflow comment says how to switch to plain FTP if Nova Host refuses TLS.
+- Dry runs upload `out/` (CSV, rendered teasers, log) as a 7-day artifact. Live runs upload only the log, keeping phone lists out of artifacts.

@@ -6,6 +6,7 @@ from __future__ import annotations
 import logging
 import time
 import traceback
+import uuid
 from collections import Counter
 from dataclasses import dataclass, field
 from datetime import date, datetime, timezone
@@ -155,6 +156,7 @@ def prepare_assets(ctx: RunContext, selected: list[Candidate]) -> None:
     with ThreadPoolExecutor(max_workers=ctx.cfg.budget.site_fetch.concurrency) as pool:
         list(pool.map(one, selected))
     for c in selected:
+        c.lead_id = c.lead_id or str(uuid.uuid4())
         c.slug = slugify(c.name_norm)
         a = c.audit
         if a and a.psi_screenshot:
@@ -165,10 +167,41 @@ def prepare_assets(ctx: RunContext, selected: list[Candidate]) -> None:
             c.hero_path = f"brand/{c.place_id}/hero.jpg"
 
 
+def render_and_store_teasers(ctx: RunContext, selected: list[Candidate]) -> dict[str, str]:
+    """Render teasers (finalists first, then reserves). Dry/offline runs also write them to out/teasers/."""
+    if ctx.opts.no_render or not selected:
+        return {}
+    from pipeline.teaser import render_teasers
+
+    order = sorted(selected, key=lambda c: (c.selection != "finalist", c.track, c.rank or 0))
+    try:
+        jpegs = render_teasers(order, ctx.cfg)
+    except Exception as e:  # noqa: BLE001  - never lose the list because rendering broke
+        ctx.error("render", e)
+        return {}
+    files: dict[str, str] = {}
+    local = ctx.opts.dry_run or ctx.opts.offline
+    out = ctx.opts.out_dir / "teasers" / ctx.plan.list_date.isoformat()
+    for c in selected:
+        if c.place_id not in jpegs:
+            ctx.error("render", "no teaser rendered", c.place_id)
+            continue
+        c.teaser_jpeg = jpegs[c.place_id]
+        c.teaser_path = f"teasers/{ctx.plan.list_date.isoformat()}/{c.lead_id}.jpg"
+        if local:
+            out.mkdir(parents=True, exist_ok=True)
+            f = out / f"{c.track}-{c.rank:02d}-{c.selection}-{c.slug}.jpg"
+            f.write_bytes(c.teaser_jpeg)
+            files[c.place_id] = str(f.relative_to(ctx.opts.out_dir))
+    return files
+
+
 def upload_assets(ctx: RunContext, selected: list[Candidate]) -> None:
     for c in selected:
         a = c.audit
         try:
+            if c.teaser_jpeg and c.teaser_path:
+                ctx.store.upload(c.teaser_path, c.teaser_jpeg, "image/jpeg")
             if a and a.psi_screenshot and a.current_screenshot_path:
                 ctx.store.upload(a.current_screenshot_path, a.psi_screenshot, "image/jpeg")
             if a and a.logo_bytes and c.logo_path:
@@ -206,8 +239,9 @@ def _run_stages(ctx: RunContext) -> RunResult:
     selection = select(enriched, cfg, finalize=make_finalizer(ctx))
     selected = selection.all
 
-    # ---- assets for finalists + reserves: brand, storage paths
+    # ---- assets for finalists + reserves: brand, storage paths, teasers
     prepare_assets(ctx, selected)
+    teaser_files = render_and_store_teasers(ctx, selected)
 
     # ---- persist + report
     gate_counts = Counter(code for c in cands for code in c.gate_codes)
@@ -224,7 +258,6 @@ def _run_stages(ctx: RunContext) -> RunResult:
     store.save_candidates(cands, ctx.run_id, plan.list_date)
     store.save_leads(selected, plan.list_date)
     upload_assets(ctx, selected)
-    teaser_files: dict[str, str] = {}
     csv_path = None
     if opts.dry_run or opts.offline:
         csv_path = write_csv(cands, opts.out_dir, plan.list_date, sub.key, teaser_files)

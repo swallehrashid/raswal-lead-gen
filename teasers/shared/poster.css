@@ -1,0 +1,47 @@
+/* Placeholder social posters, rendered at 1080×1350. Replace with your poster templates. */
+html, body { width: 1080px; height: 1350px; overflow: hidden; }
+.poster { position: relative; width: 1080px; height: 1350px; overflow: hidden; display: flex; flex-direction: column; }
+.poster .top { display: flex; align-items: center; justify-content: space-between; padding: 70px 80px 0; }
+.poster .logo { display: flex; align-items: center; height: 96px; }
+.poster .logo img { height: 96px; width: auto; border-radius: 18px; }
+.poster .logo .wordmark { font-size: 40px; }
+.poster .area { border-radius: 999px; padding: 14px 26px; font-weight: 600; font-size: 26px; }
+.poster .big { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.035em; line-height: 1.02; }
+.poster .foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; padding: 0 80px 70px;
+  font-weight: 600; font-size: 30px; }
+.poster .wa { display: inline-flex; align-items: center; gap: 16px; border-radius: 999px; padding: 20px 34px; }
+.poster .wa::before { content: ""; width: 30px; height: 30px; border-radius: 50%; background: #25D366; }
+.poster .art { position: absolute; pointer-events: none; }
+
+/* poster 1: bold statement on brand primary */
+.p1 { background: var(--brand-primary); color: #fff; }
+.p1 .logo .wordmark { color: #fff; }
+.p1 .area { background: rgba(255, 255, 255, .14); color: #fff; }
+.p1 .big { font-size: 112px; padding: 0 80px; margin-top: 170px; max-width: 980px; }
+.p1 .rule { width: 160px; height: 14px; border-radius: 8px; background: var(--brand-accent); margin: 60px 80px 0; }
+.p1 .wa { background: #fff; color: var(--brand-ink); }
+.p1 .art { right: -60px; bottom: 120px; width: 620px; opacity: .16; }
+
+/* poster 2: photo band + line on light background */
+.p2 { background: var(--brand-bg); color: var(--brand-ink); }
+.p2 .logo .wordmark { color: var(--brand-primary); }
+.p2 .area { background: color-mix(in srgb, var(--brand-accent) 22%, #fff); color: var(--brand-ink); }
+.p2 .photo { margin: 60px 80px 0; height: 600px; border-radius: 40px; background-size: cover; background-position: center;
+  position: relative; overflow: hidden; }
+.p2 .photo.no-hero { background: linear-gradient(140deg, var(--brand-primary), color-mix(in srgb, var(--brand-primary) 50%, var(--brand-accent))); }
+.p2 .photo .art { inset: auto 0 0 0; width: 100%; height: 80%; }
+.p2 .photo.has-hero .art { display: none; }
+.p2 .big { font-size: 78px; padding: 56px 80px 0; color: var(--brand-primary); }
+.p2 .wa { background: var(--brand-primary); color: #fff; }
+
+/* poster 3: call to action on accent */
+.p3 { background: var(--brand-accent); color: var(--brand-ink); }
+.p3 .logo .wordmark { color: var(--brand-ink); }
+.p3 .area { background: rgba(255, 255, 255, .7); color: var(--brand-ink); }
+.p3 .panel { margin: 120px 80px 0; background: #fff; border-radius: 44px; padding: 70px 64px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, .18); }
+.p3 .kicker { font-weight: 600; font-size: 30px; color: color-mix(in srgb, var(--brand-ink) 60%, transparent); }
+.p3 .big { font-size: 90px; color: var(--brand-primary); margin: 22px 0 34px; }
+.p3 .phone { font-family: var(--font-display); font-weight: 800; font-size: 64px; color: var(--brand-ink); }
+.p3 .wa { background: var(--brand-primary); color: #fff; }
+.p3 .art { left: -40px; bottom: -40px; width: 520px; opacity: .22; }

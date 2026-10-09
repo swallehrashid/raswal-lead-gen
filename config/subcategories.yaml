@@ -4,6 +4,8 @@
 # and (optionally) `template`. Nothing in code refers to these names.
 #   template: folder name under teasers/web/ and teasers/content/ (defaults to the key)
 #
+# headline / subline / generic_poster_lines must make NO claims (brief §13.1): no "verified",
+# "genuine", "best", "new stock", counts or prices. They appear on every teaser for this subcategory.
 # list_day: the weekday the list is SENT (mon..fri). Sunday night builds Monday's list.
 # area_set: which tier-1 area list from areas.yaml to use (tier 2/3 are shared by all).
 
@@ -22,12 +24,12 @@ subcategories:
       - "property management company in {area}"
       - "letting agents {area}"
     headline: "Homes to rent & buy in {area}"
-    subline: "Verified listings, easy viewings and quick answers on WhatsApp."
+    subline: "Homes to rent and buy, with viewings you can book on WhatsApp."
     cta: "Book a viewing"
     nav: ["Rent", "Buy", "Manage my property", "Contact"]
     generic_poster_lines:
       - "Book a viewing on WhatsApp"
-      - "New listings every week"
+      - "Homes to rent and buy"
       - "Talk to us about managing your property"
     default_palette: {primary: "#0F3D5E", accent: "#D4970F", ink: "#0B1B2B", bg: "#F7F5F0"}
 
@@ -45,7 +47,7 @@ subcategories:
       - "real estate developers {area}"
       - "plots for sale {area}"
     headline: "Plots for sale around {area}"
-    subline: "Clear process, genuine title deeds and site visits you can book today."
+    subline: "See available plots and book a site visit on WhatsApp."
     cta: "Book a site visit"
     nav: ["Projects", "Site visits", "How buying works", "Contact"]
     generic_poster_lines:
@@ -97,7 +99,7 @@ subcategories:
     nav: ["Products", "Delivery areas", "Price list", "Contact"]
     generic_poster_lines:
       - "Order on WhatsApp"
-      - "New stock this week"
+      - "Ask us what's in stock"
       - "Ask about delivery to your site"
     default_palette: {primary: "#9A2A1D", accent: "#D4970F", ink: "#1F0E0B", bg: "#F7F4F1"}
 

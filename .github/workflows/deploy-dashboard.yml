@@ -1,0 +1,64 @@
+name: Deploy dashboard
+
+# Builds the static dashboard and uploads dist/ to the Nova Host subdomain folder over FTP(S).
+on:
+  push:
+    branches: [main]
+    paths: ["dashboard/**", ".github/workflows/deploy-dashboard.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-dashboard
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: dashboard
+    env:
+      VITE_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      VITE_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      FTP_SERVER: ${{ secrets.FTP_SERVER }}
+      FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+      FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      FTP_DIR: ${{ secrets.FTP_DIR }}
+    steps:
+      - name: Check secrets
+        shell: bash
+        working-directory: .
+        run: |
+          missing=0
+          for v in VITE_SUPABASE_URL:SUPABASE_URL:§4 VITE_SUPABASE_ANON_KEY:SUPABASE_ANON_KEY:§4 FTP_SERVER:FTP_SERVER:§5 FTP_USERNAME:FTP_USERNAME:§5 FTP_PASSWORD:FTP_PASSWORD:§5 FTP_DIR:FTP_DIR:§5; do
+            IFS=: read -r env secret section <<< "$v"
+            if [[ -z "${!env}" ]]; then echo "::error::Missing secret $secret (docs/SETUP_CHECKLIST.md $section)"; missing=1; fi
+          done
+          exit $missing
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: dashboard/package-lock.json
+
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
+      - name: Upload to Nova Host
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_DIR }}
+          local-dir: dashboard/dist/
+          protocol: ftps          # change to "ftp" if Nova Host rejects FTPS (see docs/STATUS.md)
+          dangerous-clean-slate: false
