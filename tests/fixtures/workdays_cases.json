@@ -1,0 +1,14 @@
+{
+  "_comment": "Shared vectors for pipeline/utils/dates.py and dashboard/src/lib/workdays.ts. Calendar = config/calendar.yaml.",
+  "cases": [
+    {"name": "FU1 across Mashujaa Day", "start": "2026-10-16", "n": 3, "pauses_block_followups": true, "expect": "2026-10-22"},
+    {"name": "FU2 across Mashujaa Day", "start": "2026-10-16", "n": 8, "pauses_block_followups": true, "expect": "2026-10-29"},
+    {"name": "+1 from the day before Mashujaa Day", "start": "2026-10-19", "n": 1, "pauses_block_followups": true, "expect": "2026-10-21"},
+    {"name": "weekend skipped", "start": "2026-10-09", "n": 1, "pauses_block_followups": true, "expect": "2026-10-12"},
+    {"name": "FU1 into the December break", "start": "2026-12-17", "n": 3, "pauses_block_followups": true, "expect": "2027-01-05"},
+    {"name": "FU2 across the December break", "start": "2026-12-16", "n": 8, "pauses_block_followups": true, "expect": "2027-01-11"},
+    {"name": "FU1 across Christmas (holidays only)", "start": "2026-12-22", "n": 3, "pauses_block_followups": false, "expect": "2026-12-28"},
+    {"name": "+1 from Christmas Eve (holidays only)", "start": "2026-12-24", "n": 1, "pauses_block_followups": false, "expect": "2026-12-28"},
+    {"name": "across New Year (holidays only)", "start": "2026-12-31", "n": 1, "pauses_block_followups": false, "expect": "2027-01-04"}
+  ]
+}

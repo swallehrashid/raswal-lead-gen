@@ -1,0 +1,113 @@
+# Website audit rules (brief §9). Extend the marker lists as you meet new parked/default pages.
+
+user_agent: "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+
+social_as_site_hosts: [facebook.com, fb.com, fb.me, instagram.com, tiktok.com, linktr.ee, wa.me, api.whatsapp.com, x.com, twitter.com, maps.google.com, maps.app.goo.gl, goo.gl, g.page, g.co]
+social_as_site_google_paths: ["/maps"]            # google.com/maps/...
+platform_names:                                     # host → name used in the SOCIAL_AS_SITE fact
+  facebook.com: Facebook
+  fb.com: Facebook
+  fb.me: Facebook
+  instagram.com: Instagram
+  tiktok.com: TikTok
+  linktr.ee: Linktree
+  wa.me: WhatsApp
+  api.whatsapp.com: WhatsApp
+  x.com: X
+  twitter.com: X
+  maps.google.com: Google Maps
+  maps.app.goo.gl: Google Maps
+  goo.gl: Google Maps
+  g.page: Google Maps
+  g.co: Google Maps
+  google.com: Google Maps
+
+dead_redirect_hosts: [business.site]              # Google Business Profile sites (shut down 2024)
+parking_hosts: [sedoparking.com, parkingcrew.net, dan.com, afternic.com, hugedomains.com, bodis.com, above.com]
+
+# Markers in page text (lowercase). value = how the fact describes the page.
+parked_markers:
+  "account suspended": "an 'account suspended' page"
+  "account has been suspended": "an 'account suspended' page"
+  "this account has been suspended": "an 'account suspended' page"
+  "domain for sale": "a 'domain for sale' page"
+  "buy this domain": "a 'domain for sale' page"
+  "this domain is for sale": "a 'domain for sale' page"
+  "this domain has expired": "a 'domain expired' page"
+  "domain has expired": "a 'domain expired' page"
+  "renew this domain": "a 'domain expired' page"
+  "default web site page": "the hosting company's default page"
+  "cpanel": "the hosting company's default page"
+  "parked free of charge with hostinger": "the hosting company's default page"
+  "this domain is parked": "a parked-domain page"
+  "nova host": "the hosting company's default page"
+  "index of /": "an empty 'Index of /' file listing"
+# Only counts as dead when the page has little text (under coming_soon_max_text_chars).
+coming_soon_markers:
+  "coming soon": "a 'coming soon' page"
+  "under construction": "an 'under construction' page"
+  "launching soon": "a 'coming soon' page"
+  "site is under maintenance": "a 'maintenance' page"
+coming_soon_max_text_chars: 2000
+# A default-page marker only counts when the page is small (avoid matching e.g. a footer credit).
+default_page_max_text_chars: 3000
+default_page_markers: [cpanel, nova host, default web site page]
+
+error_markers:                    # how the fact describes fetch failures
+  dns: "a 'site can't be reached' error"
+  connect: "a 'site can't be reached' error"
+  timeout: "a page that never finishes loading"
+  ssl: "a security error"
+  too_many_redirects: "a 'too many redirects' error"
+  status_4xx: "a '{status} not found' error"
+  status_5xx: "a server error"
+  business_site: "an error (it points to an old Google Business Profile site, which Google shut down)"
+  other: "an error"
+
+free_builder_hosts:
+  wixsite.com: Wix
+  wix.com: Wix
+  wordpress.com: WordPress.com
+  blogspot.com: Blogger
+  weebly.com: Weebly
+  weeblysite.com: Weebly
+  godaddysites.com: GoDaddy
+  site123.me: SITE123
+  webnode.page: Webnode
+  webnode.com: Webnode
+  jimdosite.com: Jimdo
+  jimdofree.com: Jimdo
+  strikingly.com: Strikingly
+  mystrikingly.com: Strikingly
+  square.site: Square
+  carrd.co: Carrd
+  netlify.app: Netlify
+  vercel.app: Vercel
+  github.io: GitHub Pages
+  000webhostapp.com: 000webhost
+  business.site: Google
+
+platform_markers:
+  Wix: [static.wixstatic.com, "wix.com website builder", "_wixcss"]
+  WordPress: [wp-content/, wp-includes/, 'name="generator" content="wordpress']
+  Squarespace: [static1.squarespace.com, squarespace-cdn.com]
+  Webflow: [data-wf-site, webflow.js, website-files.com]
+  Shopify: [cdn.shopify.com, shopify.theme]
+
+social_hosts:
+  facebook: [facebook.com, fb.com, fb.me]
+  instagram: [instagram.com]
+  tiktok: [tiktok.com]
+  youtube: [youtube.com, youtu.be]
+  linkedin: [linkedin.com]
+  x: [x.com, twitter.com]
+social_ignore_paths: [/sharer, /share, /intent, /plugins, /dialog]
+
+video_embed_hosts: [youtube.com/embed, youtube-nocookie.com, player.vimeo.com, tiktok.com/embed, youtu.be]
+whatsapp_link_markers: [wa.me/, api.whatsapp.com, "whatsapp://", web.whatsapp.com, chat.whatsapp.com]
+blog_link_words: [blog, news, articles, insights, updates, journal]
+
+# Brand assets (§9.4)
+logo_min_px: 96
+hero_min_width_px: 1000
+max_image_candidates: 4

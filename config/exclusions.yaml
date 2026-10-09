@@ -1,0 +1,84 @@
+# Hard-gate word lists (brief §8). All matching is case-insensitive on the normalised name
+# (lowercase, punctuation stripped, "&" → "and"), on whole words.
+
+# Large brands. Extend freely. A brand match is allowed only if the REST of the name
+# (after removing the brand phrase) contains one of dealer_words.
+brands:
+  # large agencies and developers
+  - knight frank
+  - hassconsult
+  - pam golding
+  - lloyd masika
+  - cytonn
+  - optiven
+  - username investments
+  - centum
+  - superior homes
+  - tatu city
+  # manufacturers and brands
+  - mabati rolling mills
+  - safal
+  - devki
+  - crown paints
+  - basco
+  - sadolin
+  - tile and carpet
+  # international contractors
+  - china road and bridge
+  - china wu yi
+
+dealer_words: [dealer, dealers, stockist, stockists, distributor, distributors, agent, agents, hardware, centre, center, shop, depot, enterprises]
+
+# Listing portals and classifieds: matched on name words or website domain.
+portals:
+  names: [buyrentkenya, property24, jiji, pigiame, kenya property centre, propertypro, hauzisha, airbnb, booking com, olx]
+  domains: [buyrentkenya.com, property24.co.ke, jiji.co.ke, pigiame.co.ke, kenyapropertycentre.com, propertypro.co.ke, hauzisha.co.ke, airbnb.com, booking.com, olx.co.ke]
+
+excluded_types:
+  - apartment_building
+  - apartment_complex
+  - condominium_complex
+  - housing_complex
+  - lodging
+  - hotel
+  - motel
+  - guest_house
+  - hostel
+  - bed_and_breakfast
+  - extended_stay_hotel
+  - shopping_mall
+  - school
+  - church
+  - local_government_office
+
+# BUILDING_NOT_BUSINESS: name matches a building word AND has no business word.
+# "estate" counts as a building word unless the name also contains agent/agents.
+building_words: [apartment, apartments, court, heights, residence, residences, residency, suites, tower, towers, villa, villas, garden, gardens, plaza, mall, estate]
+building_word_exceptions:
+  estate: [agent, agents]
+business_words:
+  - agency
+  - agents
+  - realty
+  - realtors
+  - properties
+  - property management
+  - homes ltd
+  - investments
+  - land
+  - developers
+  - construction
+  - builders
+  - contractors
+  - hardware
+  - steel
+  - roofing
+  - mabati
+  - paints
+  - plumbing
+  - ltd
+  - limited
+  - enterprises
+  - company
+
+gov_ngo_words: [county, government, ministry, authority, board, ngo, church, mosque, parish, diocese, cathedral, national housing corporation, kenya urban roads, kenya rural roads, kenha, kura, kerra, nca, nema]

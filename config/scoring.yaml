@@ -1,0 +1,100 @@
+# Gates, scoring, thresholds and selection (brief §7, §8, §10). Tune weekly, 1–2 changes at a time.
+
+dedupe:
+  near_duplicate_ratio: 92        # rapidfuzz ratio on name_norm
+  near_duplicate_km: 2.0
+  shared_phone_min_listings: 3    # §7.5: same mobile on ≥3 building-like listings → one agent lead
+  # Previously listed leads (skipped / no_whatsapp, or listed recently) are not re-listed.
+  relist_cooldown_days: 60
+  never_relist_statuses: [skipped, no_whatsapp]
+
+gates:
+  min_rating: 3.5
+  dormant_days: 365
+  accepted_phone_types: [MOBILE, FIXED_LINE_OR_MOBILE]
+  # min_reviews is per subcategory in subcategories.yaml
+
+# Pre-score orders gate-passers for enrichment (reviews, recency, rating). Uses the
+# ability/activity/reputation bands below, without pain or hook.
+enrich_limit: 150
+
+review_bands:                     # ability-to-pay points by review count (website track)
+  - {min: 8,   max: 19,   points: 8}
+  - {min: 20,  max: 49,   points: 14}
+  - {min: 50,  max: 149,  points: 20}
+  - {min: 150, max: 400,  points: 25}
+  - {min: 401, max: null, points: 15}   # probably large
+
+ability:
+  premium_or_growth_area: 4
+  multi_branch_or_listings: 4     # branch_count ≥ 2 or manages_listings ≥ 3
+  multi_branch_min: 2
+  manages_listings_min: 3
+  cap: 25
+  content_multiplier: 1.4         # content track: same bands ×1.4
+  content_cap: 35
+
+activity_bands:                   # newest review age in days → points
+  - {max_days: 30,  points: 20}
+  - {max_days: 90,  points: 14}
+  - {max_days: 180, points: 8}
+  - {max_days: 365, points: 3}
+
+reputation_bands:                 # rating → points
+  - {min: 4.5, points: 10}
+  - {min: 4.0, points: 7}
+  - {min: 3.5, points: 3}
+
+web:
+  pain:
+    dead: 35
+    social_as_site: 30
+    insecure: 28
+    free_builder: 25
+    weak: 20
+    none: 18
+  hook_points:                    # strong facts → points
+    - {min_strong: 3, points: 10}
+    - {min_strong: 2, points: 6}
+    - {min_strong: 1, points: 3}
+  min_score: 65
+
+content:
+  gap:
+    no_social_links: 22
+    no_instagram_or_tiktok: 14
+    no_video_bonus: 5
+    stale_blog_bonus: 5
+    stale_blog_months: 6
+    cap: 30
+  hook_points:
+    - {min_strong: 2, points: 5}
+    - {min_strong: 1, points: 3}
+  min_score: 62
+  social_state_bonus: {none: 5, stale: 5, active: 0}   # dashboard-only display adjustment
+  social_state_skip: [polished]
+
+# site_status = weak needs at least `min_signals` of these (brief §9.2)
+weak_site:
+  min_signals: 2
+  psi_perf_below: 50
+  copyright_age_years: 3          # copyright_year ≤ current year − 3
+  min_words: 300
+
+facts:
+  slow_mobile_strong_lcp_s: 6.0
+  slow_mobile_min_lcp_s: 4.0      # below this, no SLOW_MOBILE fact
+  no_site_strong_reviews: 30
+  recent_reviews_days: 90
+  recent_reviews_min: 2
+  high_rating_min: 4.5
+  high_rating_min_reviews: 15
+  good_site_min_perf: 70
+  # Review themes are "specific" (strong) unless the theme is one of these generic ones
+  generic_themes: [good service, great service, friendly staff, nice, good, great, excellent, recommended, professional]
+
+selection:
+  targets: {web: 20, content: 10}
+  reserves: {web: 5, content: 5}
+  max_per_area_per_track: 4
+  max_top_hook_share: 0.5         # of the track TARGET (so the cap is predictable)

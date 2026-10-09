@@ -1,0 +1,112 @@
+# Message rules, fact texts, fallbacks, follow-ups and quick replies (brief §11, §12).
+# Follow-up templates and quick replies are copied to Supabase `settings` on the first run;
+# after that, edits made in the dashboard win.
+
+signoff: "— Swalleh, Raswal Tech Solutions"
+length: {min: 280, max: 480}
+max_emoji: 1
+swahili_touch_rate: 0.3
+review_copy_max_words: 5          # 6 or more consecutive words copied from a review → reject
+paraphrase_max_words: 12
+
+greetings:
+  english: "Hi {business} team 👋"
+  english_plain: "Hi {business} team."
+  swahili: "Habari {business} 👋"
+  swahili_plain: "Habari {business}."
+
+bridges:
+  web: "I put together a quick preview of how {business_possessive} website could look. It's in the image."
+  content: "I mocked up a few posts in your colours. Have a look."
+
+questions:
+  web: ["Want me to send you the live preview link?", "Should I send the full preview?"]
+  content: ["Should I send you the full set?", "Want me to send the full preview?"]
+
+swahili_closers: ["Asante!", "Karibu!"]
+
+banned_phrases:
+  - revolutionary
+  - skyrocket
+  - game-changer
+  - game changer
+  - dear sir
+  - dear madam
+  - sir/madam
+  - i noticed you need
+  - limited time
+  - act now
+  - hurry
+  - discount
+  - "% off"
+  - offer ends
+  - guaranteed
+  - cheap
+  - best price
+  - free website
+  - click here
+
+# Deterministic fact catalogue (§11.2). The LLM may rephrase but not change the claim.
+# Placeholders are filled from the fact's evidence.
+fact_texts:
+  SITE_DEAD: "{domain}, the website on your Google listing, isn't loading. It shows {marker}."
+  SOCIAL_AS_SITE: "The Website button on your Google listing opens your {platform} page."
+  SITE_INSECURE: "Chrome shows a 'Not secure' warning on {domain}."
+  FREE_BUILDER: "Your site runs on a free {builder} address ({host})."
+  SLOW_MOBILE: "{domain} takes about {lcp}s to load on a phone."
+  NO_VIEWPORT: "{domain} isn't set up for phones; it shows the desktop layout shrunk down."
+  OLD_COPYRIGHT: "Your site footer still says © {year}."
+  NO_WHATSAPP_BUTTON: "There's no WhatsApp button on {domain}."
+  NO_SITE_HIGH_REVIEWS: "{n} Google reviews, but no website on your listing."
+  RECENT_REVIEWS: "At least {k} new Google reviews in the last 3 months."
+  HIGH_RATING: "{rating}★ from {n} reviews."
+  MANAGES_LISTINGS: "Your number is on {n} property listings on Google Maps."
+  BRANCHES: "{n} branches on Google Maps."
+  GOOD_SITE: "Your website is solid: it loads fast on mobile and looks current."
+  NO_SOCIAL_LINKS: "Your website doesn't link to any social pages."
+  NO_VIDEO: "There's no video anywhere on your site."
+  STALE_BLOG: "The latest post on your news page is from {month_year}."
+
+# Order used to pick the "top hook" when strengths tie (strongest first).
+fact_priority: [SITE_DEAD, SOCIAL_AS_SITE, SITE_INSECURE, FREE_BUILDER, NO_SITE_HIGH_REVIEWS, REVIEW_PAIN, REVIEW_THEME, NO_SOCIAL_LINKS, SLOW_MOBILE, NO_VIEWPORT, OLD_COPYRIGHT, NO_WHATSAPP_BUTTON, MANAGES_LISTINGS, BRANCHES, RECENT_REVIEWS, HIGH_RATING, GOOD_SITE, NO_VIDEO, STALE_BLOG]
+
+# Deterministic fallback (§12.5): used when the LLM output fails validation twice, the
+# Gemini budget is spent, or --no-llm. {observation} is the fact text, lightly adapted.
+# {extra} is a second fact, added only when needed to reach the minimum length.
+fallback:
+  default_web: "{greeting} {observation} {extra}I put together a quick preview of how {business_possessive} website could look. It's in the image, with your name and colours. {question}\n{signoff}"
+  default_content: "{greeting} {observation} {extra}I mocked up a few posts in your colours for {business}. Have a look at the image. {question}\n{signoff}"
+  by_code:
+    SITE_DEAD: "{greeting} I tried {domain} from your Google listing and it isn't loading; it shows {marker}. {extra}I put together a quick preview of how {business_possessive} website could look. It's in the image. {question}\n{signoff}"
+    SOCIAL_AS_SITE: "{greeting} The Website button on your Google listing opens your {platform} page, so people searching on Google can't see much about {business}. {extra}I mocked up what a proper {business} site could look like (in the image). {question}\n{signoff}"
+    NO_SITE_HIGH_REVIEWS: "{greeting} {business} has {n} Google reviews, but there's no website on your listing to send people to. {extra}I put together a preview of how a {business} website could look. It's in the image. {question}\n{signoff}"
+    NO_SOCIAL_LINKS: "{greeting} Your website doesn't link to any social pages, which is where a lot of people scroll before they call. {extra}I mocked up a few posts in your colours for {business}. Have a look at the image. {question}\n{signoff}"
+  # Used to pad a short fallback (generic, makes no specific claim).
+  filler:
+    web: "Most people check a business on their phone before they call, so it helps to have a page that shows your work clearly. "
+    content: "Regular posts are an easy way to stay in front of people who are comparing options. "
+
+# Follow-ups (§12.6). {weekday} = weekday of the first message.
+followups:
+  fu1: "Hi {business} team, just checking you saw the preview I sent on {weekday}? Happy to share the live link; it takes a minute to look through. — Swalleh"
+  fu2_web: "Hi {business} team, one last note from me. If a website isn't a priority right now, the preview is yours to keep. If you'd like, I can send the live version so you can click through it on your phone. If now isn't the right time, no problem at all, I won't keep messaging. — Swalleh"
+  fu2_content: "Hi {business} team, one last note from me. I can send the full sample set (posters and a short video idea) so you can see how it would look on your pages week to week. If now isn't the right time, no problem at all, I won't keep messaging. — Swalleh"
+  demo_fu1: "Hi {business} team, did you get a chance to open the preview link? Happy to change anything you'd like to see. — Swalleh"
+  demo_fu2: "Hi {business} team, just following up on the preview. Shall we go ahead, or is there anything you'd like adjusted first? — Swalleh"
+
+# Quick replies (§12.7). action: what the dashboard does when you use it.
+quick_replies:
+  - {key: price_web, label: "How much? (website)", text: "Websites like the preview start from KES 30,000 depending on pages and features. Should I send the live preview first so you can see exactly what you'd get?"}
+  - {key: price_content, label: "How much? (content)", text: "Content packages start from KES 6,000 a month, or per piece. Want to see the full sample set first?"}
+  - {key: who, label: "Who is this?", text: "I'm Swalleh from Raswal Tech Solutions, a web and content studio in Nairobi. I found {business} on Google Maps; your number is on the listing. If you'd prefer I don't message again, just say so."}
+  - {key: has_provider, label: "We already have someone", text: "Great, glad you're covered. Keep the preview, and all the best!", action: lost_has_provider}
+  - {key: not_now, label: "Not now", text: "No problem at all. Should I check back in January?", action: snooze}
+  - {key: stop, label: "Stop / not interested", text: "Sorry for the bother, I won't message again.", action: opt_out}
+  - {key: holding, label: "Demo tomorrow (over cap)", text: "Thanks! I'll have it ready for you tomorrow morning."}
+
+# Few-shot examples for the prompt (§12.4, fictional businesses).
+examples:
+  - "Habari Kilima Homes 👋 I tried kilimahomes.co.ke from your Google listing and it's showing an \"account suspended\" page, which is a shame with 62 reviews mostly praising your viewings. I put together a quick preview of how Kilima Homes' site could look (in the image). Want me to send you the live link?\n— Swalleh, Raswal Tech Solutions"
+  - "Hi Mwangaza Hardware team. The Website button on your Google listing opens your Facebook page, so people searching \"hardware Ruiru\" can't see your stock or prices. I mocked up what a Mwangaza Hardware site with WhatsApp ordering could look like (attached). Should I send the full preview?\n— Swalleh, Raswal Tech Solutions"
+  - "Hi Tausi Builders team 👋 87 Google reviews and several mention how neat your finishing is, but there's no website to show that work. I put together a preview of a Tausi Builders portfolio site (in the image). Want me to send you the live link?\n— Swalleh, Raswal Tech Solutions"
+  - "Hi Savanna Plots team. Your website is genuinely solid and fast on mobile, but it doesn't link to any social pages, which is where most plot buyers scroll. I made a few sample posts in your colours (attached). Should I send you the full set, including a short video?\n— Swalleh, Raswal Tech Solutions"

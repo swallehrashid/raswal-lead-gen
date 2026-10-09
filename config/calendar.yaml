@@ -1,0 +1,42 @@
+# Send days, holidays and pauses (brief §16.1, DAILY_PLAYBOOK §9).
+# Working days = send_days that are not holidays and not inside a pause.
+# Follow-up dates (FU1 = +3, FU2 = +8 working days) skip holidays and pauses.
+
+timezone: Africa/Nairobi
+send_days: [mon, tue, wed, thu, fri]
+
+# Kenyan public holidays. Verify against the Kenya Gazette each year; Islamic holidays move.
+holidays:
+  - {date: 2026-10-10, name: Utamaduni / Moi Day}
+  - {date: 2026-10-20, name: Mashujaa Day}
+  - {date: 2026-12-12, name: Jamhuri Day}
+  - {date: 2026-12-25, name: Christmas Day}
+  - {date: 2026-12-26, name: Boxing Day}
+  - {date: 2027-01-01, name: New Year's Day}
+  - {date: 2027-03-26, name: Good Friday}
+  - {date: 2027-03-29, name: Easter Monday}
+  - {date: 2027-05-01, name: Labour Day}
+  - {date: 2027-06-01, name: Madaraka Day}
+  - {date: 2027-10-11, name: Utamaduni / Moi Day (observed)}
+  - {date: 2027-10-20, name: Mashujaa Day}
+  - {date: 2027-12-13, name: Jamhuri Day (observed)}
+  - {date: 2027-12-27, name: Christmas Day (observed)}
+
+# No new lists and no follow-ups inside a pause (demos and replies only).
+pauses:
+  - {start: 2026-12-21, end: 2027-01-01, name: December break}
+pauses_block_followups: true
+
+followups:
+  fu1_working_days: 3
+  fu2_working_days: 8
+  demo_fu_working_days: [1, 4]
+
+pacing:
+  max_per_hour: 15
+  batch_windows:
+    - {start: "09:30", end: "11:00"}
+    - {start: "14:00", end: "15:30"}
+
+demo_cap: {web: 3, content: 3}
+same_day_demo_cutoff: "17:00"

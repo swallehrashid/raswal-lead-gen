@@ -1,0 +1,14 @@
+# Minimal Supabase CLI project config. `supabase link --project-ref <ref>` then
+# `supabase db push --include-seed` applies migrations/ and seed.sql to the linked project.
+project_id = "raswal-leadgen"
+
+[db]
+major_version = 17
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[auth]
+site_url = "https://leads.raswaltechsolutions.com"
+additional_redirect_urls = ["http://localhost:5173"]

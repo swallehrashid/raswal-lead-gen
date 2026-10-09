@@ -1,0 +1,8 @@
+{
+  "name": "verify-migrations",
+  "private": true,
+  "type": "module",
+  "description": "Applies supabase/migrations + seed.sql to PGlite (in-process Postgres) with Supabase auth/storage stubs, then checks RLS.",
+  "scripts": { "verify": "node verify.mjs" },
+  "dependencies": { "@electric-sql/pglite": "0.5.8" }
+}

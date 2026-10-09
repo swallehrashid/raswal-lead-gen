@@ -1,0 +1,48 @@
+# API caps (brief §2.1, §6.4). These are hard stops in code. Also set the Google Cloud quota
+# (SETUP_CHECKLIST §2: Text Search requests/day = 45) as a second safety net.
+
+places:
+  calls_per_night: 40
+  calls_per_month: 900
+  dry_run_calls: 5                # --dry-run default unless --max-places-calls overrides
+  target_raw: 350                 # stop discovery after this many unique NEW candidates
+  page_size: 20
+  max_pages_per_cell: 3
+  next_page_min_new_ratio: 0.5    # fetch page 2/3 only if previous page's new ratio ≥ this
+  exhausted_new_ratio: 0.2        # a run below this counts toward exhaustion
+  exhausted_after_runs: 2
+  sku: text_search_enterprise_atmosphere
+
+psi:
+  calls_per_night: 150
+  concurrency: 4
+  attempts: 2
+  cache_days: 30
+  timeout_s: 90
+
+gemini:
+  calls_per_night: 60
+  rpm: 6
+  temperature: 0.7
+  timeout_s: 60
+
+site_fetch:
+  concurrency: 8
+  timeout_s: 15
+  max_redirects: 5
+  max_bytes: 3000000
+  blog_fetch: true
+
+render:
+  concurrency: 3
+  max_per_night: 40
+  jpeg_quality: 82
+  jpeg_min_quality: 60
+  max_kb: 350
+
+retention:
+  places_raw_days: 30
+  files_days: 30
+  keep_files_statuses: [interested, demo_queued, demo_sent, negotiating, won]
+  db_cap_mb: 400
+  storage_cap_mb: 800

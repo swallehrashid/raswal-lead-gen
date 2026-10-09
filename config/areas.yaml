@@ -1,0 +1,66 @@
+# Search areas (brief §5.1). Centres are approximate; radius_m is the Places locationBias circle.
+#
+# tier 1 areas belong to one or more `sets` (subcategories.yaml → area_set picks the set).
+# tier 2 and 3 areas are used by every subcategory once its tier-1 cells are exhausted.
+# Tier 3 is only used when that subcategory has tier3_enabled: true.
+#
+# flags: premium / growth → +4 ability-to-pay points (brief §10.2).
+# assign_max_km: a business is assigned to the nearest area centre within this distance,
+# otherwise to the area of the search cell that found it.
+
+assign_max_km: 12
+
+areas:
+  # ---------- Tier 1: Nairobi core (property & land offices; also construction) ----------
+  - {name: Westlands,        lat: -1.2676, lng: 36.8108, radius_m: 2500, tier: 1, sets: [property], flags: [premium]}
+  - {name: Parklands,        lat: -1.2615, lng: 36.8170, radius_m: 2000, tier: 1, sets: [property], flags: [premium]}
+  - {name: Kilimani,         lat: -1.2900, lng: 36.7840, radius_m: 2000, tier: 1, sets: [property], flags: [premium]}
+  - {name: Kileleshwa,       lat: -1.2810, lng: 36.7790, radius_m: 2000, tier: 1, sets: [property], flags: [premium]}
+  - {name: Lavington,        lat: -1.2770, lng: 36.7690, radius_m: 2500, tier: 1, sets: [property], flags: [premium]}
+  - {name: Upper Hill,       lat: -1.2990, lng: 36.8150, radius_m: 1800, tier: 1, sets: [property], flags: [premium]}
+  - {name: Nairobi CBD,      lat: -1.2864, lng: 36.8232, radius_m: 1500, tier: 1, sets: [property], flags: []}
+  - {name: Ngong Road,       lat: -1.3005, lng: 36.7800, radius_m: 3000, tier: 1, sets: [property, hardware], flags: [premium]}
+  - {name: Karen,            lat: -1.3197, lng: 36.7073, radius_m: 4000, tier: 1, sets: [property], flags: [premium]}
+  - {name: Lang'ata,         lat: -1.3416, lng: 36.7530, radius_m: 3000, tier: 1, sets: [property], flags: []}
+  - {name: South B,          lat: -1.3100, lng: 36.8350, radius_m: 1800, tier: 1, sets: [property], flags: []}
+  - {name: South C,          lat: -1.3190, lng: 36.8270, radius_m: 1800, tier: 1, sets: [property], flags: []}
+  - {name: Kasarani,         lat: -1.2200, lng: 36.8920, radius_m: 3500, tier: 1, sets: [property, hardware], flags: [growth]}
+  - {name: Embakasi,         lat: -1.3200, lng: 36.9000, radius_m: 3500, tier: 1, sets: [property, hardware], flags: []}
+  - {name: Runda,            lat: -1.2200, lng: 36.8100, radius_m: 2500, tier: 1, sets: [property], flags: [premium]}
+
+  # ---------- Tier 1: Nairobi core (hardware, roofing & steel) ----------
+  - {name: Kirinyaga Road,   lat: -1.2800, lng: 36.8250, radius_m: 1000, tier: 1, sets: [hardware], flags: []}
+  - {name: Industrial Area,  lat: -1.3050, lng: 36.8500, radius_m: 2500, tier: 1, sets: [hardware], flags: []}
+  - {name: Mombasa Road,     lat: -1.3250, lng: 36.8600, radius_m: 3500, tier: 1, sets: [hardware], flags: []}
+  - {name: Kariobangi,       lat: -1.2560, lng: 36.8850, radius_m: 2000, tier: 1, sets: [hardware], flags: []}
+  - {name: Kangemi,          lat: -1.2640, lng: 36.7470, radius_m: 2000, tier: 1, sets: [hardware], flags: []}
+  - {name: Githurai,         lat: -1.2030, lng: 36.9120, radius_m: 2500, tier: 1, sets: [hardware], flags: [growth]}
+  - {name: Kahawa,           lat: -1.1830, lng: 36.9230, radius_m: 2500, tier: 1, sets: [hardware], flags: [growth]}
+
+  # ---------- Tier 2: Nairobi metro ----------
+  - {name: Ruaka,            lat: -1.2090, lng: 36.7770, radius_m: 2500, tier: 2, sets: [], flags: [growth]}
+  - {name: Kiambu Road,      lat: -1.2050, lng: 36.8400, radius_m: 3500, tier: 2, sets: [], flags: [premium, growth]}
+  - {name: Ruiru,            lat: -1.1460, lng: 36.9600, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
+  - {name: Juja,             lat: -1.1020, lng: 37.0140, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
+  - {name: Thika,            lat: -1.0333, lng: 37.0693, radius_m: 5000, tier: 2, sets: [], flags: []}
+  - {name: Kikuyu,           lat: -1.2460, lng: 36.6630, radius_m: 4000, tier: 2, sets: [], flags: []}
+  - {name: Limuru,           lat: -1.1130, lng: 36.6420, radius_m: 4000, tier: 2, sets: [], flags: []}
+  - {name: Syokimau,         lat: -1.3700, lng: 36.9350, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
+  - {name: Athi River,       lat: -1.4560, lng: 36.9780, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
+  - {name: Kitengela,        lat: -1.4730, lng: 36.9600, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
+  - {name: Isinya,           lat: -1.6700, lng: 36.8380, radius_m: 5000, tier: 2, sets: [], flags: []}
+  - {name: Rongai,           lat: -1.3960, lng: 36.7600, radius_m: 3500, tier: 2, sets: [], flags: [growth]}
+  - {name: Ngong,            lat: -1.3530, lng: 36.6680, radius_m: 3500, tier: 2, sets: [], flags: []}
+  - {name: Kiserian,         lat: -1.4250, lng: 36.6830, radius_m: 3500, tier: 2, sets: [], flags: []}
+  - {name: Kamulu,           lat: -1.3110, lng: 37.0390, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
+
+  # ---------- Tier 3: other towns (only with tier3_enabled) ----------
+  - {name: Nakuru,           lat: -0.3031, lng: 36.0800, radius_m: 8000, tier: 3, sets: [], flags: []}
+  - {name: Mombasa,          lat: -4.0435, lng: 39.6682, radius_m: 8000, tier: 3, sets: [], flags: []}
+  - {name: Kisumu,           lat: -0.0917, lng: 34.7680, radius_m: 8000, tier: 3, sets: [], flags: []}
+  - {name: Eldoret,          lat:  0.5143, lng: 35.2698, radius_m: 8000, tier: 3, sets: [], flags: []}
+  - {name: Nyeri,            lat: -0.4201, lng: 36.9476, radius_m: 6000, tier: 3, sets: [], flags: []}
+  - {name: Machakos,         lat: -1.5177, lng: 37.2634, radius_m: 6000, tier: 3, sets: [], flags: []}
+  - {name: Naivasha,         lat: -0.7167, lng: 36.4333, radius_m: 6000, tier: 3, sets: [], flags: []}
+  - {name: Nanyuki,          lat:  0.0167, lng: 37.0667, radius_m: 6000, tier: 3, sets: [], flags: []}
+  - {name: Meru,             lat:  0.0500, lng: 37.6500, radius_m: 6000, tier: 3, sets: [], flags: []}

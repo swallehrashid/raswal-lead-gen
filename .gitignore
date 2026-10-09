@@ -1,0 +1,25 @@
+# secrets
+.env
+.env.*
+!.env.example
+dashboard/.env.local
+dashboard/.env.*.local
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# outputs
+out/
+
+# node
+node_modules/
+dashboard/dist/
+
+# editors / OS
+.DS_Store
+.idea/
+*.swp
