@@ -415,3 +415,57 @@ def render_teasers(cands: list[Candidate], cfg) -> dict[str, bytes]:
             log.error("composite failed for %s: %s", c.name, e)
     log.info("teasers: rendered %d of %d", len(out), len(cands))
     return out
+
+
+# ---------------------------------------------------------------- ad-mockup teaser (ads pivot)
+
+AD_DIR = TEASERS_DIR / "ad"
+AD_DIRECTION = "d1"           # d1 Golden Hour · d2 Studio · d3 Two phones (set at approval gate G0)
+
+
+def _ad_photo(subcategory: str, name: str) -> str | None:
+    f = AD_DIR / "photos" / subcategory / name
+    return _b64(f.read_bytes(), "image/jpeg") if f.exists() else None
+
+
+def ad_lead_payload(c: Candidate, cfg) -> dict:
+    """window.LEAD for the ad mockup: their name/logo/colours on an illustrative sponsored post."""
+    sub = cfg.subcategories[c.subcategory]
+    pal = sub.ad_palette or {}
+    colours = (c.audit.colours if c.audit else {}) or {}
+    return {
+        "business_name": c.display_name,
+        "area": c.area,
+        "subcategory": c.subcategory,
+        "logo_data_url": _b64(c.audit.logo_bytes if c.audit else None, "image/png"),
+        "primary": colours.get("primary") or pal.get("primary"),
+        "accent": colours.get("accent") or pal.get("accent"),
+        "ad_primary": pal.get("primary"),
+        "ad_accent": pal.get("accent"),
+        "ad_bg_data_url": _ad_photo(c.subcategory, "bg.jpg"),
+        "ad_post_data_url": _ad_photo(c.subcategory, "post.jpg"),
+        "ad": sub.ad_teaser,
+    }
+
+
+def render_ad_teasers(cands: list[Candidate], cfg, direction: str | None = None) -> dict[str, bytes]:
+    """One 1080x1350 JPEG (<= render.max_kb) per candidate. Returns place_id → bytes (failures omitted)."""
+    rc = cfg.budget.render
+    cands = cands[: rc.max_per_night]
+    path = AD_DIR / (direction or AD_DIRECTION) / "index.html"
+    if not path.exists():
+        log.error("missing ad teaser template: %s", path)
+        return {}
+    base = inline_template(path)
+    shots = [Shot(c.place_id, inject_lead(base, ad_lead_payload(c, cfg)), 1080, 1350) for c in cands]
+    render_shots(shots, rc.concurrency)
+    out: dict[str, bytes] = {}
+    for s in shots:
+        if not s.png:
+            continue
+        try:
+            out[s.key] = to_jpeg(Image.open(io.BytesIO(s.png)), cfg)
+        except Exception as e:  # noqa: BLE001
+            log.error("ad teaser encode failed for %s: %s", s.key, e)
+    log.info("ad teasers: rendered %d of %d", len(out), len(cands))
+    return out

@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../shared/fonts.css"><link rel="stylesheet" href="../ad.css">
+<style>
+/* D1 · Golden Hour: full-bleed photo, tilted phone with their sponsored post, enquiries floating in */
+.bg { filter: saturate(1.1) contrast(1.05); transform: scale(1.04); }
+.shade { position: absolute; inset: 0; background:
+  linear-gradient(90deg, rgba(4,10,7,.86) 0%, rgba(4,10,7,.56) 50%, rgba(4,10,7,.18) 100%),
+  linear-gradient(0deg, rgba(4,10,7,.92) 0%, rgba(4,10,7,0) 40%),
+  radial-gradient(900px 600px at 82% 38%, rgba(255,200,110,.22), transparent 70%); }
+.headline { position: absolute; left: 68px; top: 84px; width: 600px; }
+.kicker { position: absolute; left: 70px; top: 50px; }
+.phone { left: 612px; top: 250px; transform: perspective(1900px) rotateY(-17deg) rotateX(5deg) rotateZ(2.4deg); }
+.b1 { left: 68px; top: 560px; }
+.b2 { left: 120px; top: 760px; transform: scale(.96); }
+.b3 { left: 68px; top: 950px; transform: scale(.92); opacity: .94; }
+</style></head><body>
+<div class="stage">
+  <div class="bg"></div><div class="shade"></div>
+  <div class="kicker">Ad mockup · <span data-ad="area"></span></div>
+  <h1 class="headline">Your next buyers, straight to your <em>WhatsApp.</em></h1>
+  <div data-ad="bubbles"></div>
+  <div class="phone" data-ad="phone-ad"></div>
+  <div class="foot"><div><div class="for">Made for <b data-ad="name" data-fit="60"></b></div><div class="note">Illustration: your ad could look like this.</div></div>
+    <div class="raswal"><i>R</i>RASWAL</div></div>
+</div>
+<script src="../ad.js"></script></body></html>

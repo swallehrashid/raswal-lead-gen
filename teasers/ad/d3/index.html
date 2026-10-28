@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../shared/fonts.css"><link rel="stylesheet" href="../ad.css">
+<style>
+/* D3 · Two phones: the buyer sees the ad on the left, the enquiry lands in WhatsApp on the right */
+.bg { filter: blur(14px) saturate(1.1) brightness(.7); transform: scale(1.12); }
+.shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(4,10,7,.8) 0%, rgba(4,10,7,.5) 45%, rgba(4,10,7,.88) 100%); }
+.glow { position: absolute; left: 140px; top: 400px; width: 800px; height: 800px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 38%, transparent), transparent 62%); filter: blur(30px); }
+.headline { position: absolute; left: 68px; top: 84px; width: 940px; font-size: 76px; }
+.kicker { position: absolute; left: 70px; top: 50px; }
+.pa { left: 70px; top: 372px; transform: perspective(1900px) rotateY(15deg) rotateZ(-3deg); }
+.pb { left: 610px; top: 442px; transform: perspective(1900px) rotateY(-15deg) rotateZ(2.5deg) scale(.94); }
+.path { position: absolute; inset: 0; width: 1080px; height: 1350px; pointer-events: none; }
+.tag { position: absolute; font: 700 20px Montserrat, Inter, sans-serif; letter-spacing: 3px; text-transform: uppercase; color: #fff; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.35); border-radius: 99px; padding: 10px 18px; backdrop-filter: blur(10px); }
+.tag.l { left: 120px; top: 330px; } .tag.r { left: 640px; top: 388px; color: #b8ffd6; }
+.foot { bottom: 34px; }
+</style></head><body>
+<div class="stage">
+  <div class="bg"></div><div class="shade"></div><div class="glow"></div>
+  <div class="kicker">Ad mockup · <span data-ad="area"></span></div>
+  <h1 class="headline">Your next buyers, straight to your <em>WhatsApp.</em></h1>
+  <div class="tag l">1 · They see your ad</div><div class="tag r">2 · They message you</div>
+  <svg class="path" viewBox="0 0 1080 1350"><defs><filter id="gl"><feGaussianBlur stdDeviation="5"/></filter></defs>
+    <path d="M430 1010 C 560 1090, 640 880, 720 700" fill="none" stroke="#25D366" stroke-width="12" opacity=".5" filter="url(#gl)"/>
+    <path d="M430 1010 C 560 1090, 640 880, 720 700" fill="none" stroke="#9dffc4" stroke-width="3.5" stroke-dasharray="3 14" stroke-linecap="round"/>
+    <circle cx="430" cy="1010" r="9" fill="#25D366"/><circle cx="720" cy="700" r="9" fill="#25D366"/></svg>
+  <div class="phone pa" data-ad="phone-ad"></div>
+  <div class="phone pb" data-ad="phone-chat"></div>
+  <div class="foot"><div><div class="for">Made for <b data-ad="name" data-fit="60"></b></div><div class="note">Illustration: your ad could look like this.</div></div>
+    <div class="raswal"><i>R</i>RASWAL</div></div>
+</div>
+<script src="../ad.js"></script></body></html>

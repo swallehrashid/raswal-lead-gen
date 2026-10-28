@@ -58,6 +58,7 @@ class Subcategory(_M):
     default_palette: Palette
     ad_hero: str = ""
     ad_palette: dict[str, str] = {}
+    ad_teaser: dict[str, Any] = {}
 
 
 # ---------------------------------------------------------------- areas

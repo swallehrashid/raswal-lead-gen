@@ -36,6 +36,14 @@ subcategories:
     default_palette: {primary: "#0F3D5E", accent: "#D4970F", ink: "#0B1B2B", bg: "#F7F5F0"}
     ad_hero: key
     ad_palette: {primary: "#0F2A44", accent: "#C8A04A", bg: "#F7F4EE", muted: "#5B6B7C", ink: "#0A1420"}
+    ad_teaser:
+      post_headline: "NEW THIS WEEK IN {area}"
+      badge: "2BR from KES 85K/mo"
+      seal: "VIEWINGS DAILY"
+      chips: ["Backup water", "Secure parking"]
+      caption: "Fresh listings in {area}. Book a viewing on WhatsApp today."
+      bubbles: ["Hi! Is the 2BR in {area} still available?", "Can I view it on Saturday?", "What's the deposit?"]
+      chats: [["Mercy A.", "Is the 2BR still available?"], ["Kevin O.", "Can I view it on Saturday?"], ["Faith N.", "What's the deposit?"]]
 
   land_developers:
     label: Land & developers
@@ -64,6 +72,14 @@ subcategories:
     default_palette: {primary: "#1F5135", accent: "#D4970F", ink: "#14231A", bg: "#F6F4EC"}
     ad_hero: beacon
     ad_palette: {primary: "#0E4D3A", accent: "#D4A537", bg: "#F6F1E4", muted: "#B5532E", ink: "#0B1A14"}
+    ad_teaser:                    # copy on the first-touch ad mockup (an illustration, labelled as one)
+      post_headline: "PLOTS IN {area}"
+      badge: "From KES 750K"
+      seal: "READY TITLE"
+      chips: ["Free site visit", "Instalments"]
+      caption: "Own land in {area}. Deposit from KES 100K, pay over 12 months. Free site visit every Saturday."
+      bubbles: ["Hi! Is the {area} plot still available?", "Can I book Saturday's site visit?", "Do you accept instalments?"]
+      chats: [["Mercy A.", "Is the plot still available?"], ["Kevin O.", "Can I book Saturday's site visit?"], ["Faith N.", "Do you accept instalments?"]]
 
   construction:
     label: Construction

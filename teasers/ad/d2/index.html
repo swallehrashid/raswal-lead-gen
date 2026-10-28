@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../shared/fonts.css"><link rel="stylesheet" href="../ad.css">
+<style>
+/* D2 · Studio: dark keynote product shot, floating phone with floor reflection, bubbles orbiting, gold dust */
+.stage { background: radial-gradient(900px 760px at 50% 50%, color-mix(in srgb, var(--primary) 85%, #1b3a2e) 0%, color-mix(in srgb, var(--primary) 35%, #04090a) 55%, #03060a 100%); }
+.bg { opacity: .34; filter: blur(5px) saturate(1.25) brightness(1.1); mix-blend-mode: luminosity; }
+.rim { position: absolute; left: 90px; top: 330px; width: 900px; height: 900px; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 55%, transparent) 0%, transparent 60%); filter: blur(24px); }
+.ring { position: absolute; left: 90px; top: 520px; width: 900px; height: 360px; border-radius: 50%; border: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); transform: rotate(-9deg); opacity: .6; }
+.headline { position: absolute; left: 70px; right: 70px; top: 78px; text-align: center; font-size: 70px; }
+.kicker { position: absolute; left: 0; right: 0; top: 46px; text-align: center; }
+.phone { left: 340px; top: 350px; transform: perspective(2000px) rotateY(-8deg) rotateX(4deg); -webkit-box-reflect: below 18px linear-gradient(transparent 84%, rgba(255,255,255,.16)); }
+.b1 { left: 22px; top: 470px; max-width: 322px; font-size: 25px; padding: 16px 20px 18px; z-index: 4; }
+.b2 { left: 742px; top: 640px; max-width: 322px; font-size: 25px; padding: 16px 20px 18px; z-index: 4; }
+.b3 { left: 22px; top: 800px; max-width: 322px; font-size: 25px; padding: 16px 20px 18px; z-index: 4; }
+[data-dust] { position: absolute; inset: 0; }
+.foot { justify-content: center; text-align: center; flex-direction: column; gap: 16px; bottom: 26px; z-index: 6; }
+.foot .for { max-width: 900px; }
+</style></head><body>
+<div class="stage">
+  <div class="bg"></div><div class="rim"></div><div class="ring"></div><div data-dust="46"></div>
+  <div class="kicker">Ad mockup · <span data-ad="area"></span></div>
+  <h1 class="headline">Your next buyers, straight to your <em>WhatsApp.</em></h1>
+  <div class="phone" data-ad="phone-ad"></div>
+  <div data-ad="bubbles"></div>
+  <div class="foot"><div class="for">Made for <b data-ad="name" data-fit="60"></b><div class="note">Illustration: your ad could look like this.</div></div></div>
+</div>
+<script src="../ad.js"></script></body></html>
