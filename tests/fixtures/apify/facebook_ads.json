@@ -1,0 +1,49 @@
+[
+ {
+  "adArchiveID": "111",
+  "pageName": "Fanaka Real Estate",
+  "startDate": "2026-08-01",
+  "snapshot": {
+   "link_url": "https://wa.me/254722000111?text=Hi",
+   "cta_type": "WHATSAPP_MESSAGE",
+   "body": {
+    "text": "Plots in Juja from KES 450K. Ready title."
+   }
+  }
+ },
+ {
+  "adArchiveID": "112",
+  "pageName": "Fanaka Real Estate",
+  "startDate": "2026-10-20",
+  "snapshot": {
+   "link_url": "https://api.whatsapp.com/send?phone=0722000111",
+   "cta_type": "WHATSAPP_MESSAGE",
+   "body": {
+    "text": "Site visit every Saturday."
+   }
+  }
+ },
+ {
+  "adArchiveID": "113",
+  "pageName": "Kings Developers Ltd",
+  "start_date": 1760000000,
+  "snapshot": {
+   "link_url": "https://kingsdevelopers.co.ke/plots",
+   "cta_type": "LEARN_MORE",
+   "body": {
+    "text": "Ruiru plots"
+   }
+  }
+ },
+ {
+  "adArchiveID": "114",
+  "snapshot": {}
+ },
+ {
+  "ad_archive_id": "115",
+  "page_name": "Soil Merchants KE",
+  "snapshot": {
+   "link_url": "https://wa.me/254700555666"
+  }
+ }
+]

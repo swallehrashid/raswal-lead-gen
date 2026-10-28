@@ -293,8 +293,20 @@ class Retention(_M):
     storage_cap_mb: int
 
 
+class ApifyBudget(_M):
+    max_ads_per_week: int = 4000
+    max_usd_per_month: float = 10
+    instagram_per_night: int = 60
+    fresh_days: int = 8             # the ad index counts as current for this long
+    actor_ads: str = "apify~facebook-ads-scraper"
+    actor_instagram: str = "apify~instagram-profile-scraper"
+    queries: list[str] = []
+    timeout_s: int = 300
+
+
 class BudgetConfig(_M):
     places: PlacesBudget
+    apify: ApifyBudget = ApifyBudget()
     psi: PsiBudget
     gemini: GeminiBudget
     site_fetch: SiteFetch
@@ -446,6 +458,7 @@ def load_config(config_dir: Path = CONFIG_DIR) -> Config:
 ENV_VARS: dict[str, tuple[str, bool]] = {
     "GOOGLE_PLACES_API_KEY": ("§2 Google Cloud: Places API + PageSpeed Insights", True),
     "PSI_API_KEY": ("§2 Google Cloud: Places API + PageSpeed Insights", True),
+    "APIFY_TOKEN": ("§7 Apify (optional: ad-library + Instagram signals)", True),
     "GEMINI_API_KEY": ("§3 Gemini API", True),
     "GEMINI_MODEL": ("§3 Gemini API", False),
     "SUPABASE_URL": ("§4 Supabase", False),
@@ -485,6 +498,7 @@ def load_dotenv(path: Path = ROOT / ".env") -> None:
 class Env(BaseModel):
     google_places_api_key: str | None = None
     psi_api_key: str | None = None
+    apify_token: str | None = None
     gemini_api_key: str | None = None
     gemini_model: str = DEFAULT_GEMINI_MODEL
     supabase_url: str | None = None
@@ -497,6 +511,7 @@ class Env(BaseModel):
         return cls(
             google_places_api_key=get("GOOGLE_PLACES_API_KEY"),
             psi_api_key=get("PSI_API_KEY"),
+            apify_token=get("APIFY_TOKEN"),
             gemini_api_key=get("GEMINI_API_KEY"),
             gemini_model=get("GEMINI_MODEL") or DEFAULT_GEMINI_MODEL,
             supabase_url=get("SUPABASE_URL"),
@@ -509,7 +524,8 @@ class Env(BaseModel):
             raise MissingSecrets(missing)
 
     def secret_values(self) -> list[str]:
-        vals = [self.google_places_api_key, self.psi_api_key, self.gemini_api_key, self.supabase_service_role_key]
+        vals = [self.google_places_api_key, self.psi_api_key, self.apify_token, self.gemini_api_key,
+                self.supabase_service_role_key]
         vals.append(os.environ.get("SUPABASE_ANON_KEY"))
         return [v for v in vals if v and len(v) >= 8]
 

@@ -81,6 +81,7 @@ class RunContext:
     errors: list[dict] = field(default_factory=list)
     drafter: object | None = None
     places: dict[str, object] = field(default_factory=dict)       # subcategory → places client
+    env: Env | None = None
 
     def error(self, stage: str, exc: BaseException | str, place_id: str | None = None) -> None:
         msg = str(exc) if isinstance(exc, str) else f"{type(exc).__name__}: {exc}"
@@ -161,7 +162,7 @@ def run_nightly(cfg: Config, env: Env, opts: NightlyOptions) -> RunResult:
                   else clients.places) for k in sub_keys}
     budget = Budget.from_config(cfg, store, day.list_date, places_override=opts.max_places_calls, dry_run=opts.dry_run)
     run_ids = {k: store.start_run(day.list_date, k, opts.dry_run) for k in sub_keys}
-    ctx = RunContext(cfg, opts, day, clients, budget, store, run_ids, now, mix, places=places)
+    ctx = RunContext(cfg, opts, day, clients, budget, store, run_ids, now, mix, places=places, env=env)
     try:
         store.mirror_settings(settings_payload(cfg), DASHBOARD_OWNED_KEYS)
         result = _run_stages(ctx)
@@ -300,6 +301,16 @@ def _run_stages(ctx: RunContext) -> RunResult:
     enriched = enrich(passed, cfg, ctx.clients.fetcher, ctx.clients.psi, ctx.budget, store, ctx.now,
                       limit=opts.limit, sleep=(lambda s: None) if opts.offline else None,
                       places=ctx.clients.places)
+
+    # ---- ad-library index + Instagram activity (optional signals; 'unknown' without data)
+    from pipeline.adlib import apply_ads_index, apply_instagram
+    try:
+        log.info("ad index: %s", apply_ads_index(enriched, store, cfg, ctx.now.date()))
+        if not opts.offline and ctx.env is not None:
+            ranked = sorted(enriched, key=lambda c: -c.pre_score)
+            log.info("instagram checked: %d", apply_instagram(ranked, cfg, ctx.env, ctx.now.date()))
+    except Exception as e:  # noqa: BLE001 - signals are optional; never lose the list over them
+        ctx.error("adlib", e)
 
     # ---- deterministic facts + scores, then selection (drafting happens inside `finalize`)
     for c in enriched:

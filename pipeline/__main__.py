@@ -8,6 +8,7 @@
   python -m pipeline generate [--lead-id ID] [--track web|pilot] [--limit N] [--dry-run] [--final --offer FILE]
   python -m pipeline cells    --subcategory KEY
   python -m pipeline usage
+  python -m pipeline adlib-sync
   python -m pipeline heartbeat
   python -m pipeline purge
   python -m pipeline gen-seed
@@ -67,6 +68,7 @@ def build_parser() -> argparse.ArgumentParser:
     c.add_argument("--offline", action="store_true")
 
     sub.add_parser("usage", help="API usage this month")
+    sub.add_parser("adlib-sync", help="weekly: scrape Kenyan active ads (Apify) into ad_library_ads")
     sub.add_parser("heartbeat", help="one trivial Supabase query (keeps the free project awake)")
     sub.add_parser("purge", help="retention purge (also runs at the end of every nightly)")
     sub.add_parser("gen-seed", help="regenerate supabase/seed.sql from config")
@@ -102,6 +104,11 @@ def main(argv: list[str] | None = None) -> int:
         if args.cmd == "usage":
             from pipeline.commands import show_usage
             return show_usage(cfg, env)
+        if args.cmd == "adlib-sync":
+            from pipeline.adlib import sync
+            from pipeline.commands import _live_store
+            print(sync(cfg, env, _live_store(env)))
+            return 0
         if args.cmd == "heartbeat":
             from pipeline.commands import heartbeat
             return heartbeat(cfg, env)

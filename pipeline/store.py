@@ -136,6 +136,17 @@ class MemoryStore:
     def usage_rows(self, month: str) -> list[dict]:
         return [{"month": m, "api": a, "sku": s, "count": n} for (m, a, s), n in self.usage.items() if m == month]
 
+    def upsert_ads(self, rows: list[dict]) -> None:
+        for r in rows:
+            prev = self.tables["ad_library_ads"].get(r["ad_archive_id"], {})
+            now = _now().isoformat()
+            self.tables["ad_library_ads"][r["ad_archive_id"]] = {**prev, **r, "first_seen_at": prev.get("first_seen_at") or now,
+                                                                  "last_seen_at": now}
+
+    def load_ad_library(self, fresh_days: int) -> list[dict]:
+        since = (_now() - timedelta(days=fresh_days)).isoformat()
+        return [r for r in self.tables["ad_library_ads"].values() if r["last_seen_at"] >= since]
+
     def get_psi_cache(self, domain: str, max_age_days: int) -> dict | None:
         row = self.tables["psi_cache"].get(domain)
         if row and datetime.fromisoformat(row["fetched_at"]) >= _now() - timedelta(days=max_age_days):
@@ -327,7 +338,7 @@ class DryRunStore:
         # reads go to the real store
         if name in {"load_known_place_ids", "load_gate_context", "load_cells", "get_usage", "get_psi_cache",
                     "get_settings", "get_lead_bundle", "download", "usage_rows", "latest_places_raw",
-                    "leads_by_status"}:
+                    "leads_by_status", "load_ad_library"}:
             return getattr(self.inner, name)
         # everything else is a write: keep it in memory only
         return getattr(self._mem, name)
@@ -388,6 +399,16 @@ class SupabaseStore:
 
     def usage_rows(self, month: str) -> list[dict]:
         return self._t("api_usage").select("*").eq("month", month).execute().data or []
+
+    def upsert_ads(self, rows: list[dict]) -> None:
+        now = _now().isoformat()
+        for chunk in self._chunks([{**r, "last_seen_at": now} for r in rows], 200):
+            self._t("ad_library_ads").upsert(chunk, on_conflict="ad_archive_id").execute()
+
+    def load_ad_library(self, fresh_days: int) -> list[dict]:
+        since = (_now() - timedelta(days=fresh_days)).isoformat()
+        cols = "ad_archive_id,page_name_norm,wa_phone_e164,start_date,body,cta_type,link_url,last_seen_at"
+        return self._all("ad_library_ads", cols, lambda q: q.gte("last_seen_at", since))
 
     def get_psi_cache(self, domain: str, max_age_days: int) -> dict | None:
         since = (_now() - timedelta(days=max_age_days)).isoformat()

@@ -51,3 +51,15 @@ retention:
   purge_files_statuses: [skipped, no_response, lost, opted_out, shortlisted, reserve, no_whatsapp]
   db_cap_mb: 400
   storage_cap_mb: 800
+
+# Apify (optional; needs APIFY_TOKEN). Meta's own Ad Library API doesn't cover Kenyan commercial ads, so a weekly
+# scrape of the public Ad Library (no login) feeds the "is this business already advertising?" signal.
+apify:
+  max_ads_per_week: 4000
+  max_usd_per_month: 10
+  instagram_per_night: 60
+  fresh_days: 8
+  actor_ads: apify~facebook-ads-scraper
+  actor_instagram: apify~instagram-profile-scraper
+  timeout_s: 300
+  queries: ["plots for sale", "land for sale", "ready title", "site visit", "acres", "apartments for rent", "house for rent", "real estate"]
