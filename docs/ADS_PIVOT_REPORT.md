@@ -3,27 +3,36 @@
 Executor: Sonnet 5.5. Plan: `/home/swalleh/Content/RASWAL-ADS-PIVOT-EXECUTION.md`.
 
 ## Swalleh's open USER ACTIONS (P9)
-- ⬜ 1. Meta Business Portfolio for Raswal, verified; note the 16-digit Portfolio ID
-- ⬜ 2. Ad account in the portfolio (KES if offered)
-- ⬜ 3. Working payment method + backup (virtual USD card); second ad account ready
-- ⬜ 4. Raswal's own FB Page + Instagram + WhatsApp Business on the dedicated outreach number
-- ⬜ 5. Warm-up click-to-WhatsApp ad for Raswal itself (KES 1–2k)
-- ⬜ 6. M-Pesa till/paybill for client ad budgets
-- ⬜ 7. Apify account + `APIFY_TOKEN` in `.env` and GitHub secret; $10/month limit
-- ⬜ 8. Google Flow images from `raswal-pipeline/ads/assets/flow-prompts.md` (written; 16 land + 16 agency images, save into `land/final/` and `agency/final/`)
-- ⬜ 9. Record the 4 access-guide screen recordings (P8.3)
-- ⬜ 10. Tell Sonnet the outreach WhatsApp number (needed for P2.1 `outreach_whatsapp` setting)
-- ⬜ 11. Confirm wildcard HTTPS on a brand-new slug after the first pilot deploy
+Monday works without any of these (see "What still works if you do nothing"); do them in this order for the best results.
+- ⬜ 1. **GitHub → Actions → Nightly → Run workflow** with *dry run* ticked (and "max places calls" 5). I couldn't trigger it (no `gh` here). It proves the nightly runs on GitHub with the new daily mix. Also check **CI** is green on the latest commit.
+- ⬜ 2. Meta Business Portfolio for Raswal, verified; write down the 16-digit Portfolio ID and paste it into `docs/pilot-kit/03-access-guides.md`
+- ⬜ 3. Ad account in the portfolio (KES if offered); working card + a backup (virtual USD card); a second ad account ready
+- ⬜ 4. Raswal's own FB Page + Instagram + WhatsApp Business on +254 114 129 809, linked to the Page
+- ⬜ 5. Warm-up click-to-WhatsApp ad for Raswal itself (KES 1-2k): it teaches the flow and warms the ad account
+- ⬜ 6. M-Pesa till/paybill for client ad budgets (always prepaid before spending)
+- ⬜ 7. Apify (optional): token into `.env` and the GitHub secret `APIFY_TOKEN`, $10/month limit (SETUP_CHECKLIST §7). Without it every lead's "already advertising?" stays "unknown"; use the Ad Library link on each card.
+- ⬜ 8. Record the 4 access-guide screen recordings from the scripts in `docs/pilot-kit/03-access-guides.md`
+- ⬜ 9. Confirm wildcard HTTPS on a brand-new slug: open the first real plan link on your phone. If it shows a certificate warning, put Cloudflare in front (free wildcard SSL).
+- ✅ Outreach number saved in settings: 254114129809
+- ✅ Final Flow photos received and used (16 land + 19 agency)
+
+### What still works if you do nothing
+- Monday's outreach: the Sunday-night nightly builds 20 land + 10 agency leads with the new teaser and Kenyan messages; you send from the dashboard as before.
+- A "yes" gets its plan link (`pipeline generate`, run on your PC) and the pilot can start with a screenshot-level manual flow: send the offer form (quick reply), take KES 5,000 by M-Pesa, and run the campaign from any ad account you have (even a personal one) until Raswal's portfolio is verified.
 
 ## Status by phase
 | Phase | State | Note |
 |---|---|---|
 | P0 | ✅ | three repos tagged `pre-ads-pivot`; demo kits archived (they were untracked) |
-| P1 | 🟡 | P1.1 ✅ debug leftovers · P1.2 ✅ content track + demo kits removed · **P1.3 teaser code, P1.4 PSI, P1.5 leftovers DEFERRED** (see deviations) |
-| P2 | 🟡 | P2.1 ✅ migrations applied live · P2.2 ✅ config · P2.3 ✅ daily mix · P2.4 (c) scam + (d) estate filter ✅, **(a) ad-library sync + (b) social activity NOT yet** · P2.5 ✅ ads score (threshold needs live calibration) · P2.6 ✅ messages · P2.7 ✅ copy bank + live DB reseeded · **P2.8 existing 25 leads NOT yet** · **P2.9 push + workflow dry run NOT yet** |
-| P3 | 🟡 | P3.2 ✅ Flow prompt sheet written (USER ACTION 8) · P3.1 winning-ads research, P3.3 prepare.py NOT yet |
-| P4 | 🟡 | 3 directions built, rendered for 4 test brands; **waiting on gate G0** |
-| P5–P10 | ⬜ | |
+| P1 | ✅ | debug leftovers, content track, demo kits, old web/poster teasers removed; PSI switched off (code kept, budget 0, key optional) rather than deleted |
+| P2 | ✅ | migrations live; daily mix; one ads score + angles; Kenyan messages; scam + estate gates; ad-library + Instagram signals (optional Apify); pre-pivot drafts no longer block re-listing; real-name shortening |
+| P3 | ✅ | photos mapped + graded (seams cropped); winning-ads research NOT done (no Apify token): the templates follow the offer elements seen in the Ad Library in the strategy session |
+| P4 | ✅ | teaser wired: land d1, agency d3 (my choice; one config line each) |
+| P5 | ✅ | engine + 6 templates rendered at final quality; QA tool passes |
+| P6 | ✅ | pitch page + `build_pilot.py` + `generate` wiring |
+| P7 | ✅ | dashboard: Plans, Pilots, daily mix, outreach number, ad-aware cards, funnel stage |
+| P8 | ✅ | `docs/pilot-kit/` |
+| P10 | see Live checks | `scripts/e2e.py` |
 
 ## Approval log
 | Gate | Item | Version | Date | Swalleh's notes |
@@ -38,6 +47,14 @@ Executor: Sonnet 5.5. Plan: `/home/swalleh/Content/RASWAL-ADS-PIVOT-EXECUTION.md
 | web/content scoring (`web_score`, `content_score`, `content_gap`, `content_eligible`), `web:`/`content:` blocks of `scoring.yaml`, `bridges`, per-track `questions`/`fallback`, `price_web`/`price_content` quick replies, `fu2_web`/`fu2_content`, `list_day`/`subcategory_for_day`, `daily_targets` use | raswal-lead-gen | replaced by the single ads score, angle-based messages and the daily mix | tests rewritten; dashboard follow-ups use `fu2` |
 
 ## Decisions & deviations
+- **No per-video approval gates.** Swalleh asked for everything to be produced end to end ("produce all the 6 videos... then I'll reintroduce Opus to test"), so G1-G6 and G0 were not paused on. The teaser direction was chosen by me (land d1, agency d3); approvals are logged below as "built, awaiting review". Each is easy to change.
+- **Fonts:** Archivo variable, Instrument Serif italic and JetBrains Mono are self-hosted in the video engine and the pitch page.
+- **Video format:** 1080x1920 at 30 fps; final CRF 22 capped at 9 Mbps; audio synthesised per template (log-drum groove for land at 112 BPM, afro-house for agency at 118 BPM), peak about -1 dBFS after AAC, RMS about -14 dBFS.
+- **Photos with outpainting seams** (land: title_folder, whatsapp_hand, agent_portrait, handshake) were cropped to the clean region found by row-step detection and are shown as floating cards over a blurred copy of themselves, never stretched to full frame.
+- **Pitch page videos** are rendered at `web` quality (1 sample, no motion blur, 720x1280) per lead: about 7 minutes per vertical on 8 cores. The *final* Ads Manager files use `--final`.
+- **Unsent pre-pivot drafts** (25 test leads from 27 Oct) are left in the database untouched; config `dedupe.ignore_unsent_before: 2026-10-28` stops them blocking re-listing. A bulk status update of live rows was blocked by the safety classifier and wasn't needed.
+- **`gh` is not installed**, so I pushed to GitHub but could not trigger or read workflow runs (USER ACTION 1).
+- **Keyword-stuffed listing names** ("Avenue Vista Property Center - Houses, Land & Plots for Sale & Rent") are shortened to the part before the separator (`display_name`), found in the live dry run.
 - **P1.3 deferred.** Removing the old web/poster teaser code before the new teaser is wired would leave Sunday's nightly with no working teaser. Old teaser code and `teasers/{web,content,frames}` stay until G0 is approved and `render_teasers` is switched to `render_ad_teasers`; `teaser.py` temporarily renders ads leads with the existing poster set.
 - **P1.4 (PSI removal) deferred.** PSI is wired through ~20 files (budget, enrich, audit, facts `SLOW_MOBILE`, the screenshot used by old teasers, fixtures, tests). Pure cleanup, not on the Sunday critical path; do it after G0 together with P1.3. `PSI_API_KEY` is still required for live runs.
 - **P1.5** is done in code (single `ads` score, no web/content scoring, `track='ads'`) except the leftover `psi`-related config.
