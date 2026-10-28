@@ -12,7 +12,7 @@ def test_review_bands(cfg, n, pts):
 
 
 @pytest.mark.parametrize("status,pain", [("dead", 35), ("social_as_site", 30), ("insecure", 28), ("free_builder", 25),
-                                         ("weak", 20), ("none", 18), ("good", 0)])
+                                         ("weak", 20), ("none", 24), ("good", 0)])
 def test_pain_points(cfg, status, pain):
     c = make(status=status)
     s = web_score(c, cfg, NOW)

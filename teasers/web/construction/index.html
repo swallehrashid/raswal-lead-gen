@@ -4,66 +4,68 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>construction hero</title>
-<!-- PLACEHOLDER template (construction). Contract: brief §13.1 / teasers/README.md.
-     Shared files below are inlined by the renderer, so the rendered page makes no external requests. -->
+<!-- Premium website teaser (construction). Photos are inlined by the renderer; brand is injected per lead. -->
 <link rel="stylesheet" href="../../shared/fonts.css">
 <link rel="stylesheet" href="../../shared/tokens.css">
 <link rel="stylesheet" href="../../shared/web.css">
 <script>
-/* Preview data so this file looks right when opened directly. The renderer injects the real
-   window.LEAD before this runs, so this default is ignored in production. */
 window.LEAD = window.LEAD || {
- "business_name": "Tausi Builders",
- "area": "Ruiru",
- "logo_data_url": null,
- "primary": "#7A3E12",
- "accent": "#3A95C2",
- "ink": "#0B1B2B",
- "bg": "#F7F5F0",
- "hero_image_data_url": null,
- "headline": "Building & renovation in Ruiru",
- "subline": "See our finished projects and get a quote on WhatsApp.",
- "poster_lines": [
-  "Request a site assessment",
-  "Neat work, finished on time",
-  "See our latest projects"
- ],
- "phone_display": "0722 123456",
- "preview_domain": "tausi-builders.raswaltechsolutions.com",
- "cta": "Request a quote",
- "nav": [
-  "Projects",
-  "Services",
-  "Process",
-  "Contact"
- ]
+ "business_name": "Msingi Build", "area": "Kilimani",
+ "logo_data_url": null, "primary": "#273043", "accent": "#D98324", "ink": "#0B1B2B", "bg": "#F7F5F0",
+ "headline": "Building & renovation in Kilimani",
+ "subline": "Quality workmanship, clear quotes, and projects finished on schedule.",
+ "phone_display": "0722 123456", "cta": "Request a quote",
+ "nav": ["Projects", "Services", "Process", "Contact"]
 };
 </script>
 </head>
 <body class="web">
-<header class="nav">
-  <div class="logo" data-lead="logo"></div>
-  <nav class="links"><span data-lead="nav" style="display:contents"></span><span class="nav-cta" data-lead="cta"></span></nav>
-  <div class="menu"><i></i><i></i><i></i></div>
-</header>
 <section class="hero">
-  <div>
-    <span class="eyebrow" data-lead="area"></span>
-    <h1 data-lead="headline"></h1>
-    <p class="sub" data-lead="subline"></p>
-    <div class="ctas"><a class="btn btn-primary" data-lead="cta"></a><a class="btn btn-wa">WhatsApp us</a></div>
-  </div>
-  <div class="hero-card" data-lead="hero">
-    <svg class="art" viewBox="0 0 600 400" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
-  <g fill="#fff"><rect x="90" y="40" width="12" height="360" fill-opacity=".9"/><rect x="90" y="40" width="330" height="12" fill-opacity=".9"/><rect x="380" y="52" width="3" height="120"/></g>
-  <rect x="362" y="170" width="40" height="28" rx="4" style="fill:var(--brand-accent)"/>
-  <g fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="10"><rect x="200" y="200" width="300" height="200"/><path d="M200 266 H500 M200 333 H500 M300 200 V400 M400 200 V400"/></g>
-  <rect x="300" y="333" width="100" height="67" style="fill:var(--brand-accent)"/></svg>
-    <div class="tag"><b data-lead="business_name"></b><span data-lead="area"></span></div>
+  <img class="hero-shot" src="../../shared/photos/construction/hero-desktop.jpg" alt="">
+  <img class="hero-shot mob" src="../../shared/photos/construction/hero-mobile.jpg" alt="">
+  <header class="nav">
+    <div class="logo" data-lead="logo"></div>
+    <nav class="links"><span data-lead="nav" style="display:contents"></span><span class="nav-cta" data-lead="cta"></span></nav>
+    <div class="menu"><i></i><i></i><i></i></div>
+  </header>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow" data-lead="area"></span>
+      <h1 data-lead="headline"></h1>
+      <p class="sub" data-lead="subline"></p>
+      <div class="ctas"><a class="btn btn-primary" data-lead="cta"></a><a class="btn btn-wa">WhatsApp us</a></div>
+      <div class="trust">
+        <div><b>80<span>+</span></b>Projects done</div>
+        <div><b>15<span>yrs</span></b>Experience</div>
+        <div><b>98<span>%</span></b>On schedule</div>
+      </div>
+    </div>
+    <div class="listing">
+      <div class="ph"><img src="../../shared/photos/construction/card1.jpg" alt=""><span class="pin">Completed</span></div>
+      <div class="lb">
+        <div class="t">Kitchen & interior fit-out</div>
+        <div class="m"><span data-lead="area"></span> · finished in 6 weeks</div>
+        <div class="row"><div class="price lbl">Free site visit</div><span class="go">See projects</span></div>
+      </div>
+    </div>
   </div>
 </section>
-<section class="strip">
-  <div class="card"><i></i><span>Projects</span></div><div class="card"><i></i><span>Services</span></div><div class="card"><i></i><span>Process</span></div>
+<section class="featured">
+  <div class="feat-head"><h2>Recent projects</h2><a>View portfolio →</a></div>
+  <div class="cards">
+    <article class="lcard">
+      <div class="ph"><img src="../../shared/photos/construction/card2.jpg" alt=""><span class="tag">Completed</span></div>
+      <div class="b"><div class="t">Full house renovation</div><div class="m"><span data-lead="area"></span> · 3 months</div><div class="price lbl">View project →</div></div>
+    </article>
+    <article class="lcard">
+      <div class="ph"><img src="../../shared/photos/construction/card3.jpg" alt=""><span class="tag">Commercial</span></div>
+      <div class="b"><div class="t">Office fit-out</div><div class="m"><span data-lead="area"></span> · delivered on time</div><div class="price lbl">View project →</div></div>
+    </article>
+    <article class="lcard">
+      <div class="ph"><img src="../../shared/photos/construction/card4.jpg" alt=""><span class="tag">Finishes</span></div>
+      <div class="b"><div class="t">Tiling & joinery</div><div class="m"><span data-lead="area"></span> · premium finish</div><div class="price lbl">View project →</div></div>
+    </article>
+  </div>
 </section>
 <script src="../../shared/lead.js"></script>
 </body>

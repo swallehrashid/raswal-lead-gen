@@ -47,7 +47,7 @@ def test_every_subcategory_has_all_templates(cfg):
 def test_payload_has_contract_fields(cfg):
     lead = lead_payload(sample(cfg), cfg)
     assert CONTRACT_FIELDS <= set(lead)
-    assert lead["preview_domain"] == "kilima-homes-and-lettings.raswaltechsolutions.com"
+    assert lead["preview_domain"] == "kilima-homes-and-lettings.raswaltechsolutions.co.ke"
     assert lead["headline"] == "Homes to rent & buy in Kilimani"
     assert lead["logo_data_url"] is None and lead["primary"].startswith("#")
 

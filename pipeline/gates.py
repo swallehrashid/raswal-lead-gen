@@ -104,8 +104,11 @@ def cheap_gates(c: Candidate, cfg, ctx: GateContext, now: datetime | None = None
         codes.append("GOV_NGO")
     if c.review_count < sub.min_reviews:
         codes.append("TOO_SMALL")
+    # Places API (New) searchText does NOT return the reviews array (only rating +
+    # userRatingCount), so newest_review_at is None for every live lead. Unknown recency
+    # must not mean "dormant" — only reject when we actually have an old newest review.
     newest = c.newest_review_at
-    if newest is None or newest < now - timedelta(days=g.dormant_days):
+    if newest is not None and newest < now - timedelta(days=g.dormant_days):
         codes.append("DORMANT")
     if c.rating is None or c.rating < g.min_rating:
         codes.append("LOW_RATING")

@@ -45,8 +45,12 @@ class Budget:
         # an override can lower the nightly cap, never raise it above the configured nightly cap
         places_night = min(places_night, b.places.calls_per_night)
         month = run_date.strftime("%Y-%m")
+        # Place Details (New) reviews fetch — separate billed SKU, only for gate-passers.
+        details_night = 20 if dry_run else getattr(b.places, "details_per_night", 50)
+        details_month = getattr(b.places, "details_per_month", 1000)
         caps = {
             "places": Cap(places_night, b.places.calls_per_month, b.places.sku),
+            "places_details": Cap(details_night, details_month, "place_details_enterprise"),
             "psi": Cap(b.psi.calls_per_night, None, "runpagespeed"),
             "gemini": Cap(b.gemini.calls_per_night, None, "generate_content"),
         }

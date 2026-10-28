@@ -32,8 +32,8 @@ export function createSupabaseApi(): Api {
       const { data } = sb.auth.onAuthStateChange((_e, s) => cb(s?.user.email ? { email: s.user.email } : null))
       return () => data.subscription.unsubscribe()
     },
-    async signIn(email) {
-      const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: window.location.origin } })
+    async signIn(email, password) {
+      const { error } = await sb.auth.signInWithPassword({ email, password })
       if (error) throw new Error(error.message)
     },
     async signOut() {

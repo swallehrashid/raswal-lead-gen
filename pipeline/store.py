@@ -152,6 +152,10 @@ class MemoryStore:
     def download(self, path: str) -> bytes | None:
         return self.files.get(path)
 
+    def leads_by_status(self, statuses: list[str]) -> list[dict]:
+        rows = [r for r in self.tables["leads"].values() if r.get("status") in set(statuses)]
+        return sorted(rows, key=lambda r: r.get("demo_queued_at") or "")
+
     def latest_places_raw(self, place_id: str) -> dict | None:
         rows = [r for r in self.tables["places_raw"].values() if r["place_id"] == place_id]
         return max(rows, key=lambda r: r["fetched_at"])["payload"] if rows else None
@@ -315,7 +319,8 @@ class DryRunStore:
     def __getattr__(self, name):
         # reads go to the real store
         if name in {"load_known_place_ids", "load_gate_context", "load_cells", "get_usage", "get_psi_cache",
-                    "get_settings", "get_lead_bundle", "download", "usage_rows", "latest_places_raw"}:
+                    "get_settings", "get_lead_bundle", "download", "usage_rows", "latest_places_raw",
+                    "leads_by_status"}:
             return getattr(self.inner, name)
         # everything else is a write: keep it in memory only
         return getattr(self._mem, name)
@@ -471,6 +476,9 @@ class SupabaseStore:
 
     def update_lead(self, lead_id: str, fields: dict) -> None:
         self._t("leads").update({k: _iso(v) for k, v in fields.items()}).eq("id", lead_id).execute()
+
+    def leads_by_status(self, statuses: list[str]) -> list[dict]:
+        return self._all("leads", "*", lambda q: q.in_("status", statuses).order("demo_queued_at"))
 
     def upload(self, path: str, data: bytes, content_type: str) -> str:
         self.client.storage.from_(BUCKET).upload(path, data, {"content-type": content_type, "upsert": "true"})

@@ -4,7 +4,8 @@ import { Button, Card, inputCls } from '../components/ui'
 
 export function Login({ api, denied }: { api: Api; denied?: string }) {
   const [email, setEmail] = useState('')
-  const [sent, setSent] = useState(false)
+  const [password, setPassword] = useState('')
+  const [busy, setBusy] = useState(false)
   const [err, setErr] = useState<string | null>(null)
   return (
     <div className="flex min-h-screen items-center justify-center bg-navy p-4">
@@ -15,24 +16,28 @@ export function Login({ api, denied }: { api: Api; denied?: string }) {
             <p className="mb-4 text-sm text-red-700">{denied} isn't allowed to use this dashboard.</p>
             <Button variant="primary" onClick={() => api.signOut()}>Sign out</Button>
           </>
-        ) : sent ? (
-          <p className="text-sm text-navy/70">Check <b>{email}</b> for the sign-in link. You can close this tab.</p>
         ) : (
           <form className="space-y-3" onSubmit={async (e) => {
             e.preventDefault()
             setErr(null)
+            setBusy(true)
             try {
-              await api.signIn(email.trim())
-              setSent(true)
+              await api.signIn(email.trim(), password)
             } catch (x) {
-              setErr(String(x))
+              setErr(String(x).replace(/^Error:\s*/, ''))
+            } finally {
+              setBusy(false)
             }
           }}>
-            <p className="text-sm text-navy/60">Sign in with a magic link.</p>
+            <p className="text-sm text-navy/60">Sign in to your cockpit.</p>
             <input className={inputCls} type="email" required autoComplete="email" placeholder="you@example.com"
               value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input className={inputCls} type="password" required autoComplete="current-password" placeholder="Password"
+              value={password} onChange={(e) => setPassword(e.target.value)} />
             {err && <p className="text-sm text-red-700">{err}</p>}
-            <Button variant="primary" className="w-full" type="submit">Send link</Button>
+            <Button variant="primary" className="w-full" type="submit" disabled={busy}>
+              {busy ? 'Signing in…' : 'Sign in'}
+            </Button>
           </form>
         )}
       </Card>

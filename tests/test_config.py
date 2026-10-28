@@ -13,7 +13,7 @@ def test_config_loads(cfg):
     assert days == sorted(["mon", "tue", "wed", "thu", "fri"])
     assert cfg.budget.places.calls_per_night == 40
     assert cfg.budget.places.calls_per_month == 900
-    assert cfg.scoring.web.min_score == 65 and cfg.scoring.content.min_score == 62
+    assert cfg.scoring.web.min_score == 38 and cfg.scoring.content.min_score == 42
 
 
 def test_every_subcategory_has_tier1_cells(cfg):

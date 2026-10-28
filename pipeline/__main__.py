@@ -5,6 +5,7 @@
                              [--offline] [--no-db]
   python -m pipeline rerender --lead-id ID          (or --offline [--subcategory KEY])
   python -m pipeline redraft  --lead-id ID
+  python -m pipeline generate [--lead-id ID] [--track web|content] [--limit N] [--dry-run]
   python -m pipeline cells    --subcategory KEY
   python -m pipeline usage
   python -m pipeline heartbeat
@@ -53,6 +54,12 @@ def build_parser() -> argparse.ArgumentParser:
     d.add_argument("--lead-id", required=True)
     d.add_argument("--no-llm", action="store_true")
 
+    g = sub.add_parser("generate", help="build + deploy demos for queued leads, write links back")
+    g.add_argument("--lead-id", help="one lead (any status); default: all status=demo_queued")
+    g.add_argument("--track", choices=["web", "content"], help="only this demo track")
+    g.add_argument("--limit", type=int, help="process at most N queued leads")
+    g.add_argument("--dry-run", action="store_true", help="build locally; no deploy, no DB writes")
+
     c = sub.add_parser("cells", help="show search-cell rotation state")
     c.add_argument("--subcategory", required=True)
     c.add_argument("--offline", action="store_true")
@@ -84,6 +91,9 @@ def main(argv: list[str] | None = None) -> int:
         if args.cmd == "redraft":
             from pipeline.commands import redraft
             return redraft(cfg, env, args)
+        if args.cmd == "generate":
+            from pipeline.generate import generate
+            return generate(cfg, env, args)
         if args.cmd == "cells":
             from pipeline.commands import show_cells
             return show_cells(cfg, env, args)

@@ -21,7 +21,7 @@ export interface Api {
   now(): string
   session(): Promise<SessionInfo | null>
   onAuthChange(cb: (s: SessionInfo | null) => void): () => void
-  signIn(email: string): Promise<void>
+  signIn(email: string, password: string): Promise<void>
   signOut(): Promise<void>
   isAdmin(): Promise<boolean>
 

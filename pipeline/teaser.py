@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import asyncio
 import base64
+import functools
 import io
 import json
 import logging
@@ -29,7 +30,7 @@ log = logging.getLogger(__name__)
 
 W, H = 1080, 1350
 FONT_DIR = TEASERS_DIR / "shared" / "fonts"
-PREVIEW_HOST = "raswaltechsolutions.com"
+PREVIEW_HOST = "raswaltechsolutions.co.ke"
 
 
 # ---------------------------------------------------------------- template preparation
@@ -95,11 +96,21 @@ def _b64(data: bytes | None, mime: str) -> str | None:
     return f"data:{mime};base64,{base64.b64encode(data).decode()}" if data else None
 
 
+@functools.lru_cache(maxsize=1)
+def _poster_extras() -> dict:
+    """Static per-subcategory fields for the premium posters (eyebrows, bubbles, benefits…)."""
+    try:
+        return json.loads((TEASERS_DIR / "content" / "_extras.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+
+
 def lead_payload(c: Candidate, cfg) -> dict:
     sub = cfg.subcategories[c.subcategory]
     pal = sub.default_palette
     colours = (c.audit.colours if c.audit else {}) or {}
-    return {
+    headline = sub.headline.format(area=c.area)
+    payload = {
         "business_name": c.display_name,
         "area": c.area,
         "logo_data_url": _b64(c.audit.logo_bytes if c.audit else None, "image/png"),
@@ -108,9 +119,10 @@ def lead_payload(c: Candidate, cfg) -> dict:
         "ink": pal.ink,
         "bg": pal.bg,
         "hero_image_data_url": _b64(c.audit.hero_bytes if c.audit else None, "image/jpeg"),
-        "headline": sub.headline.format(area=c.area),
+        "headline": headline,
         "subline": sub.subline,
-        "poster_lines": c.poster_lines or sub.generic_poster_lines,
+        # premium poster-1 uses poster_lines[0] as its big line → feed it the subcategory headline
+        "poster_lines": [headline] + list(c.poster_lines or sub.generic_poster_lines),
         "phone_display": phone_display(c.phone_e164),
         "preview_domain": f"{c.slug}.{PREVIEW_HOST}",
         # optional extras (templates may ignore them)
@@ -119,6 +131,10 @@ def lead_payload(c: Candidate, cfg) -> dict:
         "subcategory": c.subcategory,
         "track": c.track,
     }
+    # merge the static premium-poster fields (never override brand / per-lead values)
+    for k, v in _poster_extras().get(c.subcategory, {}).items():
+        payload.setdefault(k, v)
+    return payload
 
 
 # ---------------------------------------------------------------- rendering

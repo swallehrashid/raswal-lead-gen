@@ -70,6 +70,10 @@ export interface Brand {
   hero_path?: string | null
   primary?: string
   accent?: string
+  /** Set by `pipeline generate` (Phase 5) once the demo is built + deployed. */
+  demo_message?: string
+  demo_kind?: 'web' | 'content'
+  demo_generated_at?: string
 }
 
 export interface Lead {

@@ -44,8 +44,11 @@ def test_never_pads(cfg):
 
 
 def test_threshold(cfg):
-    c = ready(make("Under Homes", status="none", reviews=9, rating=3.6, newest_days=300), cfg)
+    # below both thresholds: weak site (low web pain), has socials (no content gap), generic review (no theme)
+    c = ready(make("Under Homes", status="weak", reviews=8, rating=3.5, newest_days=300,
+                   social_links={"instagram": "https://instagram.com/x"}, review_texts=["good service"]), cfg)
     assert c.scores["web"].total < cfg.scoring.web.min_score
+    assert c.scores["content"].total < cfg.scoring.content.min_score
     assert select([c], cfg).all == []
 
 

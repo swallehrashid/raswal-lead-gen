@@ -81,7 +81,6 @@ def test_clean_candidate_passes(cfg):
     (dict(name="Nairobi County Housing", name_norm="nairobi county housing"), "GOV_NGO"),
     (dict(review_count=7), "TOO_SMALL"),
     (dict(reviews=[Review(1, 5, "x", "A", NOW - timedelta(days=400))]), "DORMANT"),
-    (dict(reviews=[]), "DORMANT"),
     (dict(rating=3.4), "LOW_RATING"),
 ])
 def test_each_gate(cfg, kw, code):

@@ -27,7 +27,7 @@ export function buildLeadPack(lead: Lead, urls: { logo?: string | null; hero?: s
     facts: facts.filter((f) => used.size === 0 || used.has(f.id) || f.strength === 'strong').map((f) => ({ code: f.code, text: f.text })),
     review_themes: reviewThemes,
     poster_lines: lead.poster_lines ?? [],
-    preview_domain: `${slug}.raswaltechsolutions.com`,
+    preview_domain: `${slug}.raswaltechsolutions.co.ke`,
   }
 }
 

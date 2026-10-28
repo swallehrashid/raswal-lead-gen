@@ -1,0 +1,177 @@
+{
+  "property_agency": {
+    "eyebrow1": "Property Agency",
+    "vstrip": "For Sale \u00b7 To Let",
+    "p1_pelts": [
+      "Apartments \u00b7 Townhouses",
+      "Viewings every day"
+    ],
+    "eyebrow2": "Enquire in seconds",
+    "p2_big": "Book a viewing",
+    "wa_label": "on WhatsApp",
+    "p2_tag": "Viewing booked \u2713",
+    "p2_bubbles": [
+      {
+        "from": "them",
+        "text": "Hi, is the 2-bedroom still available?"
+      },
+      {
+        "from": "us",
+        "text": "Yes! Viewing tomorrow at 11? \ud83d\udc4d"
+      },
+      {
+        "from": "them",
+        "text": "Perfect, see you then."
+      }
+    ],
+    "eyebrow3": "For landlords",
+    "p3_big1": "We manage",
+    "p3_big2": "your property",
+    "p3_benefits": [
+      "Tenants found & screened",
+      "Rent collected on time",
+      "Repairs & reports handled"
+    ],
+    "badge_sub": "Full property management"
+  },
+  "land_developers": {
+    "eyebrow1": "Land & Developers",
+    "vstrip": "Title ready \u00b7 Site visits",
+    "p1_pelts": [
+      "Serviced \u00b7 Title ready",
+      "Free site visits"
+    ],
+    "eyebrow2": "Visit before you buy",
+    "p2_big": "Book a site visit",
+    "wa_label": "on WhatsApp",
+    "p2_tag": "Visit booked \u2713",
+    "p2_bubbles": [
+      {
+        "from": "them",
+        "text": "Are these plots serviced?"
+      },
+      {
+        "from": "us",
+        "text": "Yes! Free site visit this Saturday? \ud83d\udc4d"
+      },
+      {
+        "from": "them",
+        "text": "Perfect, see you then."
+      }
+    ],
+    "eyebrow3": "Buy with confidence",
+    "p3_big1": "Own land",
+    "p3_big2": "the right way",
+    "p3_benefits": [
+      "Genuine, verified plots",
+      "Clear, ready title deeds",
+      "Guided right to transfer"
+    ],
+    "badge_sub": "Serviced plots & land"
+  },
+  "construction": {
+    "eyebrow1": "Construction",
+    "vstrip": "Build \u00b7 Renovate",
+    "p1_pelts": [
+      "Foundation to finishing",
+      "Free site assessment"
+    ],
+    "eyebrow2": "Free assessment",
+    "p2_big": "Request a quote",
+    "wa_label": "on WhatsApp",
+    "p2_tag": "Quote sent \u2713",
+    "p2_bubbles": [
+      {
+        "from": "them",
+        "text": "Can you build a 3-bedroom?"
+      },
+      {
+        "from": "us",
+        "text": "Yes! Free site assessment this week? \ud83d\udc4d"
+      },
+      {
+        "from": "them",
+        "text": "Great, let's do it."
+      }
+    ],
+    "eyebrow3": "Our work",
+    "p3_big1": "Built to",
+    "p3_big2": "last",
+    "p3_benefits": [
+      "Clear timelines & costs",
+      "Quality at every stage",
+      "From foundation to handover"
+    ],
+    "badge_sub": "Building & renovation"
+  },
+  "hardware_supplies": {
+    "eyebrow1": "Hardware & Supplies",
+    "vstrip": "In stock \u00b7 Delivered",
+    "p1_pelts": [
+      "Cement \u00b7 Paint \u00b7 Tiles",
+      "Delivery to site"
+    ],
+    "eyebrow2": "Order in seconds",
+    "p2_big": "Order now",
+    "wa_label": "on WhatsApp",
+    "p2_tag": "Order placed \u2713",
+    "p2_bubbles": [
+      {
+        "from": "them",
+        "text": "Do you have 10 bags of cement?"
+      },
+      {
+        "from": "us",
+        "text": "Yes! Deliver to your site today? \ud83d\udc4d"
+      },
+      {
+        "from": "them",
+        "text": "Perfect, thanks."
+      }
+    ],
+    "eyebrow3": "To your site",
+    "p3_big1": "Delivered",
+    "p3_big2": "to your site",
+    "p3_benefits": [
+      "Everything in one place",
+      "Quality brands, fair prices",
+      "Fast delivery to site"
+    ],
+    "badge_sub": "Hardware & building materials"
+  },
+  "roofing_steel": {
+    "eyebrow1": "Roofing & Steel",
+    "vstrip": "Gauges \u00b7 Colours",
+    "p1_pelts": [
+      "Every gauge & colour",
+      "Delivery to site"
+    ],
+    "eyebrow2": "Fast quotes",
+    "p2_big": "Get a quote",
+    "wa_label": "on WhatsApp",
+    "p2_tag": "Quote sent \u2713",
+    "p2_bubbles": [
+      {
+        "from": "them",
+        "text": "How much for box profile, gauge 30?"
+      },
+      {
+        "from": "us",
+        "text": "Let's quote you \u2014 deliver to site? \ud83d\udc4d"
+      },
+      {
+        "from": "them",
+        "text": "Yes please."
+      }
+    ],
+    "eyebrow3": "Gauges & colours",
+    "p3_big1": "A roof",
+    "p3_big2": "that lasts",
+    "p3_benefits": [
+      "Every profile & colour",
+      "Gauges that actually last",
+      "Delivered to your site"
+    ],
+    "badge_sub": "Roofing sheets & steel"
+  }
+}

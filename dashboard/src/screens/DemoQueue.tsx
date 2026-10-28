@@ -95,13 +95,29 @@ function DemoCard({ lead, today, holding, onOpen }: { lead: Lead; today: boolean
           <CopyButton size="sm" text={holding} />
         </div>
       )}
-      <div className="flex flex-wrap gap-2">
-        <Button size="sm" onClick={copyJson}>Copy lead pack JSON</Button>
-        <Button size="sm" onClick={downloadZip}>Download ZIP</Button>
-        {lead.business.phone_e164 && <a href={waPhoneLink(lead.business.phone_e164)} target="_blank" rel="noreferrer"><Button size="sm" variant="wa">Open chat</Button></a>}
-      </div>
+      {lead.brand?.demo_generated_at ? (
+        <div className="space-y-2 rounded-xl bg-green-50 p-3">
+          <div className="flex items-center gap-2 text-sm font-semibold text-green-800">
+            <Badge tone="green">✓ Demo generated</Badge>
+            <span className="text-green-900/70">Link is live — send it and mark sent.</span>
+          </div>
+          {lead.brand.demo_message && (
+            <div className="rounded-lg bg-white/70 p-2 text-sm text-navy whitespace-pre-line">{lead.brand.demo_message}</div>
+          )}
+          <div className="flex flex-wrap gap-2">
+            {lead.brand.demo_message && <CopyButton size="sm" text={lead.brand.demo_message} label="Copy message" />}
+            {lead.business.phone_e164 && <a href={waPhoneLink(lead.business.phone_e164)} target="_blank" rel="noreferrer"><Button size="sm" variant="wa">Open chat</Button></a>}
+          </div>
+        </div>
+      ) : (
+        <div className="flex flex-wrap gap-2">
+          <Button size="sm" onClick={copyJson}>Copy lead pack JSON</Button>
+          <Button size="sm" onClick={downloadZip}>Download ZIP</Button>
+          {lead.business.phone_e164 && <a href={waPhoneLink(lead.business.phone_e164)} target="_blank" rel="noreferrer"><Button size="sm" variant="wa">Open chat</Button></a>}
+        </div>
+      )}
       <div className="flex gap-2">
-        <input className={inputCls} placeholder={`https://${lead.slug}.raswaltechsolutions.com`} value={link} onChange={(e) => setLink(e.target.value)} />
+        <input className={inputCls} placeholder={`https://${lead.slug}.raswaltechsolutions.co.ke`} value={link} onChange={(e) => setLink(e.target.value)} />
         {link && <CopyButton size="sm" text={link} label="Copy" />}
       </div>
       <Button variant="gold" className="w-full" onClick={markSent}>Mark demo sent</Button>

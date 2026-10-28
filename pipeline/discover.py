@@ -58,6 +58,18 @@ class LivePlacesClient:
         r.raise_for_status()
         return r.json()
 
+    def place_details(self, place_id: str) -> dict:
+        """Place Details (New) — searchText does not return reviews, so fetch them here.
+        A separate billed request; the caller must pass the budget guard first."""
+        r = self._http.get(
+            f"https://places.googleapis.com/v1/places/{place_id}",
+            headers={"X-Goog-Api-Key": self._key, "X-Goog-FieldMask": "id,reviews"},
+        )
+        if r.status_code >= 400:
+            log.error("Places details error %s: %s", r.status_code, r.text[:300])
+            return {}
+        return r.json()
+
 
 @dataclass
 class DiscoveryResult:

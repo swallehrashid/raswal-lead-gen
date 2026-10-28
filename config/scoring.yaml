@@ -52,12 +52,12 @@ web:
     insecure: 28
     free_builder: 25
     weak: 20
-    none: 18
+    none: 24
   hook_points:                    # strong facts → points
     - {min_strong: 3, points: 10}
     - {min_strong: 2, points: 6}
     - {min_strong: 1, points: 3}
-  min_score: 65
+  min_score: 38
 
 content:
   gap:
@@ -70,7 +70,7 @@ content:
   hook_points:
     - {min_strong: 2, points: 5}
     - {min_strong: 1, points: 3}
-  min_score: 62
+  min_score: 42
   social_state_bonus: {none: 5, stale: 5, active: 0}   # dashboard-only display adjustment
   social_state_skip: [polished]
 

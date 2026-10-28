@@ -252,7 +252,8 @@ def _run_stages(ctx: RunContext) -> RunResult:
 
     # ---- enrich: site audit + PSI for the top `enrich_limit` by pre-score
     enriched = enrich(passed, cfg, ctx.clients.fetcher, ctx.clients.psi, ctx.budget, store, ctx.now,
-                      limit=opts.limit, sleep=(lambda s: None) if opts.offline else None)
+                      limit=opts.limit, sleep=(lambda s: None) if opts.offline else None,
+                      places=ctx.clients.places)
 
     # ---- deterministic facts + scores, then selection (drafting happens inside `finalize`)
     for c in enriched:
