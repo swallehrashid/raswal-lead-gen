@@ -2,23 +2,28 @@
 
 Executor: Sonnet 5.5. Plan: `/home/swalleh/Content/RASWAL-ADS-PIVOT-EXECUTION.md`.
 
-## Swalleh's open USER ACTIONS (P9)
-Monday works without any of these (see "What still works if you do nothing"); do them in this order for the best results.
-- ⬜ 1. **GitHub → Actions → Nightly → Run workflow** with *dry run* ticked (and "max places calls" 5). I couldn't trigger it (no `gh` here). It proves the nightly runs on GitHub with the new daily mix. Also check **CI** is green on the latest commit.
-- ⬜ 2. Meta Business Portfolio for Raswal, verified; write down the 16-digit Portfolio ID and paste it into `docs/pilot-kit/03-access-guides.md`
-- ⬜ 3. Ad account in the portfolio (KES if offered); working card + a backup (virtual USD card); a second ad account ready
-- ⬜ 4. Raswal's own FB Page + Instagram + WhatsApp Business on +254 114 129 809, linked to the Page
-- ⬜ 5. Warm-up click-to-WhatsApp ad for Raswal itself (KES 1-2k): it teaches the flow and warms the ad account
-- ⬜ 6. M-Pesa till/paybill for client ad budgets (always prepaid before spending)
-- ⬜ 7. Apify (optional): token into `.env` and the GitHub secret `APIFY_TOKEN`, $10/month limit (SETUP_CHECKLIST §7). Without it every lead's "already advertising?" stays "unknown"; use the Ad Library link on each card.
-- ⬜ 8. Record the 4 access-guide screen recordings from the scripts in `docs/pilot-kit/03-access-guides.md`
-- ⬜ 9. Confirm wildcard HTTPS on a brand-new slug: open the first real plan link on your phone. If it shows a certificate warning, put Cloudflare in front (free wildcard SSL).
-- ✅ Outreach number saved in settings: 254114129809
-- ✅ Final Flow photos received and used (16 land + 19 agency)
+## Swalleh's open USER ACTIONS (updated 28 Oct, Opus)
+Monday works without any of these (see "What still works if you do nothing").
+- ⬜ 1. **GitHub** (repo `swallehrashid/raswal-lead-gen`): add secret `APIFY_TOKEN`; set secret `GEMINI_MODEL` to `gemini-3.5-flash` or delete it
+  (`gemini-2.5-flash` is retired: every message fell back to the template). Then Actions → Nightly → Run workflow (dry run ✓, max places 5) → green.
+- ⬜ 2. Meta Business Portfolio, verified. Its 16-digit ID is what a client types under Business settings → Partners → "Give a partner access"
+  on the set-up call: that is how Raswal gets to run ads on their Page without passwords.
+- ⬜ 3. Ad account + card (+ backup card), then the KES 1.5k warm-up click-to-WhatsApp ad for Raswal.
+- ✅ 4. Raswal FB Page / Instagram / WhatsApp Business on +254 114 129 809 (Swalleh confirmed).
+- ⬜ 5. M-Pesa till/paybill requested from the bank; until then take the KES 5,000 by M-Pesa Send Money and keep the message as the receipt.
+- ⬜ 6. `CLOUDINARY_URL` into `~/Projects/raswal-lead-gen/.env` (Cloudinary → Settings → API Keys → "API environment variable") so `generate`
+  puts plan videos on the CDN by itself. Without it they are hosted next to the page (works, slower).
+- ⬜ 7. Optional: Gemini billing (Google AI Studio → Billing) for unlimited voice-overs, about US$0.01 per lead. Free: ~10 voiced leads a day,
+  after that plan videos render with music only.
+- ⬜ 8. Cloudflare: import ALL DNS records first (the `*` wildcard, `leads`, mail), SSL mode Full (strict), then switch nameservers.
+- ✅ Access-guide recordings dropped: Swalleh does a live 30-minute set-up call with every client instead.
+- ✅ Wildcard HTTPS verified on brand-new slugs (`*.raswaltechsolutions.co.ke`, Let's Encrypt).
+- ✅ Apify token in `.env` (free plan: weekly ad index 60 ads + 8 Instagram checks a night, ≈ US$1.9 to 27 Nov; research used $1.7).
 
 ### What still works if you do nothing
-- Monday's outreach: the Sunday-night nightly builds 20 land + 10 agency leads with the new teaser and Kenyan messages; you send from the dashboard as before.
-- A "yes" gets its plan link (`pipeline generate`, run on your PC) and the pilot can start with a screenshot-level manual flow: send the offer form (quick reply), take KES 5,000 by M-Pesa, and run the campaign from any ad account you have (even a personal one) until Raswal's portfolio is verified.
+- Sunday 21:30 the nightly builds Monday's 20 land + 10 agency leads (database was cleared on 28 Oct; old data in schema `archive_20261028`).
+- A "yes" gets its plan link: `pipeline generate` on the PC (3 voiced, tailored ads + the horizontal reel page), about 6 minutes per lead.
+- Examples, live: https://fanaka.raswaltechsolutions.co.ke/pilot/ (land) and https://finlay-real-estates.raswaltechsolutions.co.ke/pilot/ (agency).
 
 ## Status by phase
 | Phase | State | Note |

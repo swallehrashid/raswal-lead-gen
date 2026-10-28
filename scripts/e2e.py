@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import io
+import os
 import re
 import subprocess
 import sys
@@ -44,7 +45,10 @@ def write_report() -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip-render", action="store_true", help="reuse the last built pages instead of rendering videos")
+    ap.add_argument("--voice", action="store_true", help="voice the ads too (uses 2 of the free Gemini TTS requests)")
     a = ap.parse_args()
+    if not a.voice:
+        os.environ["RASWAL_NO_VOICE"] = "1"
 
     from PIL import Image
 
