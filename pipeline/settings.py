@@ -132,6 +132,7 @@ class Dedupe(_M):
     shared_phone_min_listings: int
     relist_cooldown_days: int
     never_relist_statuses: list[str]
+    ignore_unsent_before: date | None = None     # unsent leads listed before this date don't block re-listing
 
 
 class Gates(_M):

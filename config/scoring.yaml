@@ -7,6 +7,8 @@ dedupe:
   # Previously listed leads (skipped / no_whatsapp, or listed recently) are not re-listed.
   relist_cooldown_days: 60
   never_relist_statuses: [skipped, no_whatsapp]
+  # The 25 drafts from the website/content era were never sent; the ads pivot starts 2026-10-28.
+  ignore_unsent_before: 2026-10-28
 
 gates:
   min_rating: 3.5

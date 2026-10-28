@@ -259,6 +259,8 @@ def _fill_contacted(ctx: GateContext, cfg, today: date, leads, phone_of) -> None
                 ctx.contacted_phones.add(phone)
             continue
         listed = date.fromisoformat(str(lead["list_date"])[:10])
+        if d.ignore_unsent_before and listed < d.ignore_unsent_before:
+            continue
         if status in d.never_relist_statuses or listed >= cutoff:
             ctx.listed_place_ids.add(pid)
             if phone:
