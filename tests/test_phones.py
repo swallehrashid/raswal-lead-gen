@@ -40,3 +40,12 @@ def test_international_preferred_over_national():
 def test_foreign_landline_not_accepted():
     _, kind = parse_phone("+44 20 7946 0958", None)
     assert kind not in ACCEPTED
+
+
+def test_display_name_drops_keyword_stuffed_tails():
+    from pipeline.utils.text import display_name
+    assert display_name("Avenue Vista Property Center - Houses, Land & Plots for Sale & Rent") == "Avenue Vista Property Center"
+    assert display_name("Kenya Homes | Plots for sale in Kiambu, Ruiru and Thika") == "Kenya Homes"
+    assert display_name("Fanaka Real Estate Limited") == "Fanaka Real Estate"          # short names are left alone
+    assert display_name("A - B") == "A - B"
+    assert display_name("Mwangaza: Land Experts Kenya Plots Available Now Today") == "Mwangaza"

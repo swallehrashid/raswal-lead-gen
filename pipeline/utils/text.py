@@ -75,9 +75,16 @@ def slugify(norm: str, max_len: int = 30) -> str:
 _SUFFIX_RE = re.compile(r"[\s,]*(\(?\s*(?:company|co\.?)?\s*(?:limited|ltd\.?|l\.t\.d\.?)\s*\)?)\s*$", re.I)
 
 
+_TAIL_SEP = re.compile(r"\s+[-–—|:]\s+|\s*[|:]\s+")
+
+
 def display_name(name: str) -> str:
-    """Name used in messages: legal suffix dropped, ALL CAPS fixed. Must appear verbatim."""
+    """Name used in messages: keyword tail dropped, legal suffix dropped, ALL CAPS fixed. Must appear verbatim."""
     s = _WS.sub(" ", (name or "").strip())
+    if len(s) > 34:  # "Avenue Vista Property Center - Houses, Land & Plots…" → "Avenue Vista Property Center"
+        head = _TAIL_SEP.split(s, maxsplit=1)[0].strip(" ,-")
+        if len([c for c in head if c.isalpha()]) >= 6:
+            s = head
     s = _SUFFIX_RE.sub("", s).strip(" ,-") or s
     letters = [c for c in s if c.isalpha()]
     if letters and sum(c.isupper() for c in letters) / len(letters) > 0.8 and len(letters) > 4:
