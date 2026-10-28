@@ -57,6 +57,7 @@ class Subcategory(_M):
     generic_poster_lines: list[str]
     default_palette: Palette
     ad_hero: str = ""
+    ad_direction: str = "d1"          # teaser style: d1 Golden Hour · d2 Studio · d3 Two Phones
     ad_palette: dict[str, str] = {}
     ad_teaser: dict[str, Any] = {}
 

@@ -2,7 +2,7 @@
 #
 # RENAMING: the keys below are working names. To rename one, change the key here
 # and (optionally) `template`. Nothing in code refers to these names.
-#   template: folder name under teasers/web/ and teasers/content/ (defaults to the key)
+#   template: kept for renaming keys; the ad teasers are chosen by ad_direction (d1|d2|d3)
 #
 # headline / subline / generic_poster_lines must make NO claims (brief §13.1): no "verified",
 # "genuine", "best", "new stock", counts or prices. They appear on every teaser for this subcategory.
@@ -35,6 +35,7 @@ subcategories:
       - "Talk to us about managing your property"
     default_palette: {primary: "#0F3D5E", accent: "#D4970F", ink: "#0B1B2B", bg: "#F7F5F0"}
     ad_hero: key
+    ad_direction: d3
     ad_palette: {primary: "#0F2A44", accent: "#C8A04A", bg: "#F7F4EE", muted: "#5B6B7C", ink: "#0A1420"}
     ad_teaser:
       post_headline: "NEW THIS WEEK IN {area}"
@@ -71,6 +72,7 @@ subcategories:
       - "Visit our office before you buy"
     default_palette: {primary: "#1F5135", accent: "#D4970F", ink: "#14231A", bg: "#F6F4EC"}
     ad_hero: beacon
+    ad_direction: d1
     ad_palette: {primary: "#0E4D3A", accent: "#D4A537", bg: "#F6F1E4", muted: "#B5532E", ink: "#0B1A14"}
     ad_teaser:                    # copy on the first-touch ad mockup (an illustration, labelled as one)
       post_headline: "PLOTS IN {area}"
