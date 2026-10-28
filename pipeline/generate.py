@@ -3,8 +3,8 @@
 For each queued lead this:
   1. turns the lead into a brand dict (pipeline.brandpack),
   2. runs the matching builder in the raswal-pipeline repo —
-       web     → build_site.py    (tailors + builds + deploys the website)
-       content → build_content.py (re-voices + renders video + posters + preview page)
+       web   → build_site.py  (tailors + builds + deploys the website, the upsell demo)
+       pilot → build_pilot.py (ads pilot-plan page; arrives in ads-pivot P6)
      both deploy to {slug}.raswaltechsolutions.co.ke,
   3. writes the live demo_link + a ready-to-send WhatsApp message back onto the lead.
 
@@ -12,7 +12,7 @@ The lead stays in status `demo_queued` so it still shows in the dashboard's Demo
 now with the link pre-filled and the message ready; you send it on WhatsApp and tap
 "Mark demo sent". Phase 5 never sends anything itself.
 
-  python -m pipeline generate [--lead-id ID] [--limit N] [--track web|content] [--dry-run]
+  python -m pipeline generate [--lead-id ID] [--limit N] [--track web|pilot] [--dry-run]
 
 --dry-run builds locally without deploying and without writing to Supabase.
 """
@@ -40,29 +40,24 @@ HOST = "raswaltechsolutions.co.ke"
 
 def _demo_message(cfg, name: str, kind: str, link: str) -> str:
     greet = cfg.messaging.greetings.get("english", "Hi {business} team 👋").format(business=name)
-    if kind == "content":
-        body = (f"Here's your preview — a short video plus a few posts in your colours:\n{link}\n"
-                "Have a look and tell me what you think. No obligation at all.")
-    else:
-        body = (f"Here's the free preview I built for {possessive(name)} website — a full site you can "
-                f"click through on your phone:\n{link}\n"
-                "Take a look and tell me what you think. No obligation at all.")
+    body = (f"Here's the free preview I built for {possessive(name)} website — a full site you can "
+            f"click through on your phone:\n{link}\n"
+            "Take a look and tell me what you think. No obligation at all.")
     return f"{greet}\n{body}\n{cfg.messaging.signoff}"
 
 
 def _run_builder(kind: str, subcat: str, brand: dict, *, deploy: bool) -> None:
     """Shell out to the raswal-pipeline builder; raises CalledProcessError on failure."""
-    script = "build_content.py" if kind == "content" else "build_site.py"
+    if kind != "web":
+        raise NotImplementedError(f"no builder for demo kind '{kind}' yet (pilot arrives in ads-pivot P6)")
+    script = "build_site.py"
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
         json.dump(brand, f)
         brand_path = f.name
     env = dict(os.environ)
     cmd = [sys.executable, script, subcat, brand_path]
     if not deploy:
-        if kind == "content":
-            cmd.append("--no-deploy")
-        else:
-            env["RASWAL_NO_DEPLOY"] = "1"
+        env["RASWAL_NO_DEPLOY"] = "1"
     try:
         subprocess.run(cmd, cwd=str(PIPELINE_DIR), env=env, check=True)
     finally:

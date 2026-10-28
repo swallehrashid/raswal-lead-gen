@@ -5,7 +5,7 @@
                              [--offline] [--no-db]
   python -m pipeline rerender --lead-id ID          (or --offline [--subcategory KEY])
   python -m pipeline redraft  --lead-id ID
-  python -m pipeline generate [--lead-id ID] [--track web|content] [--limit N] [--dry-run]
+  python -m pipeline generate [--lead-id ID] [--track web|pilot] [--limit N] [--dry-run]
   python -m pipeline cells    --subcategory KEY
   python -m pipeline usage
   python -m pipeline heartbeat
@@ -56,7 +56,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     g = sub.add_parser("generate", help="build + deploy demos for queued leads, write links back")
     g.add_argument("--lead-id", help="one lead (any status); default: all status=demo_queued")
-    g.add_argument("--track", choices=["web", "content"], help="only this demo track")
+    g.add_argument("--track", choices=["web", "pilot"], help="only this demo kind")
     g.add_argument("--limit", type=int, help="process at most N queued leads")
     g.add_argument("--dry-run", action="store_true", help="build locally; no deploy, no DB writes")
 

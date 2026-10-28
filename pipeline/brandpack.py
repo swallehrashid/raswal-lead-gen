@@ -1,7 +1,7 @@
 """Phase 5 — turn a stored lead into the brand dict the demo builders expect.
 
-`build_site.py <subcat> <brand.json>` and `build_content.py <subcat> <brand.json>`
-(in the raswal-pipeline repo) both read a brand dict with the keys below. A lead only
+`build_site.py <subcat> <brand.json>` and (from ads-pivot P6) `build_pilot.py <subcat> <lead.json>`
+(in the raswal-pipeline repo) read a brand dict with the keys below. A lead only
 carries the real facts we scraped (name, area, phone, colours); the editorial copy
 (tagline, promise, subline, description) is derived here with deterministic, per-vertical
 templates so a demo can be generated with no extra API calls. The baked templates already
