@@ -153,3 +153,12 @@ def test_blocklisted_name_is_scam_risk(cfg):
     c = cand("Bad Plots Ltd", subcategory="land_developers")
     assert "SCAM_RISK" in cheap_gates(c, c2, GateContext(), NOW)
     assert "SCAM_RISK" not in cheap_gates(cand("Good Plots Ltd", subcategory="land_developers"), c2, GateContext(), NOW)
+
+
+FIRM_NAMES = ["Emmaus Affordable Homes and Property", "Mapema luxury homes", "Pearl Housing Co-op", "Zuri Developments"]
+
+
+@pytest.mark.parametrize("name", FIRM_NAMES)
+def test_firms_named_with_homes_property_or_development_are_not_buildings(cfg, name):
+    c = cand(name, subcategory="land_developers", primary_type="service", types=["service"])
+    assert "BUILDING_NOT_BUSINESS" not in cheap_gates(c, cfg, GateContext(), NOW)

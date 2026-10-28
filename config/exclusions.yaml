@@ -98,6 +98,12 @@ business_words:
   - renovations
   - fabricators
   - tiles
+  # added after the live dry run: real developers/agencies named like "X Affordable Homes and Property"
+  - homes
+  - property
+  - housing
+  - development
+  - developments
 
 gov_ngo_words: [county, government, ministry, authority, board, ngo, church, mosque, parish, diocese, cathedral, national housing corporation, kenya urban roads, kenya rural roads, kenha, kura, kerra, nca, nema]
 
