@@ -466,7 +466,7 @@ ENV_VARS: dict[str, tuple[str, bool]] = {
     "SUPABASE_ANON_KEY": ("§4 Supabase", True),
 }
 
-DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
+DEFAULT_GEMINI_MODEL = "gemini-3.5-flash"     # 2.5-flash was retired for new keys (404), Oct 2026
 
 
 class MissingSecrets(SystemExit):

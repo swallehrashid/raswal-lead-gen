@@ -17,7 +17,7 @@ subcategories:
     active: true
     template: property_agency
     area_set: property
-    min_reviews: 8
+    min_reviews: 5                # Oct 2026: small, real agencies (5-7 reviews) are fine pilot prospects
     tier3_enabled: false
     ability_bonus: 0              # brief §10.2: +3 for land_developers / construction
     manages_listings_is_positive: true

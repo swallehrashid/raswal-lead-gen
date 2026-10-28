@@ -80,12 +80,15 @@ def parse_ad(item: dict, query: str = "") -> dict | None:
 
 # ---------------------------------------------------------------- Apify clients
 class ApifyClient:
-    def __init__(self, token: str, timeout: int = 300):
-        self.token, self.timeout = token, timeout
+    def __init__(self, token: str, timeout: int = 300, max_usd_per_run: float | None = None):
+        self.token, self.timeout, self.max_usd = token, timeout, max_usd_per_run
 
     def run(self, actor: str, payload: dict) -> list[dict]:
         url = f"https://api.apify.com/v2/acts/{actor}/run-sync-get-dataset-items"
-        r = httpx.post(url, params={"token": self.token}, json=payload, timeout=self.timeout)
+        params = {"token": self.token}
+        if self.max_usd:                                   # hard cap per run: the free plan is $5/month
+            params["maxTotalChargeUsd"] = f"{self.max_usd:.2f}"
+        r = httpx.post(url, params=params, json=payload, timeout=self.timeout)
         if r.status_code >= 400:
             raise RuntimeError(f"Apify {actor} HTTP {r.status_code}: {r.text[:200]}")
         return r.json()
@@ -98,8 +101,8 @@ def sync(cfg, env, store, *, client=None, today: date | None = None) -> dict:
         if not env.apify_token:
             log.info("adlib-sync skipped: no APIFY_TOKEN")
             return {"status": "skipped", "reason": "no APIFY_TOKEN"}
-        client = ApifyClient(env.apify_token, ab.timeout_s)
-    per_query = max(50, ab.max_ads_per_week // max(1, len(ab.queries)))
+        client = ApifyClient(env.apify_token, ab.timeout_s, ab.max_usd_per_month / 4.3 / max(1, len(ab.queries)))
+    per_query = max(10, ab.max_ads_per_week // max(1, len(ab.queries)))
     rows: dict[str, dict] = {}
     for q in ab.queries:
         try:
@@ -166,7 +169,7 @@ def apply_instagram(cands: list[Candidate], cfg, env, today: date, *, client=Non
     if client is None:
         if not env.apify_token:
             return 0
-        client = ApifyClient(env.apify_token, cfg.budget.apify.timeout_s)
+        client = ApifyClient(env.apify_token, cfg.budget.apify.timeout_s, .05)
     ab = cfg.budget.apify
     cap = limit if limit is not None else ab.instagram_per_night
     todo = [c for c in cands if c.audit and (c.audit.social_links or {}).get("instagram")][:cap]

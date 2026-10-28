@@ -56,11 +56,11 @@ retention:
 # Apify (optional; needs APIFY_TOKEN). Meta's own Ad Library API doesn't cover Kenyan commercial ads, so a weekly
 # scrape of the public Ad Library (no login) feeds the "is this business already advertising?" signal.
 apify:
-  max_ads_per_week: 4000
-  max_usd_per_month: 10
-  instagram_per_night: 60
+  max_ads_per_week: 120          # sized for the free plan ($5/month): ~$0.70/week of ads + ~$0.80/month of Instagram checks
+  max_usd_per_month: 4.5
+  instagram_per_night: 10
   fresh_days: 8
   actor_ads: apify~facebook-ads-scraper
   actor_instagram: apify~instagram-profile-scraper
   timeout_s: 300
-  queries: ["plots for sale", "land for sale", "ready title", "site visit", "acres", "apartments for rent", "house for rent", "real estate"]
+  queries: ["plots for sale", "land for sale", "ready title deed", "apartment for rent", "house for rent"]

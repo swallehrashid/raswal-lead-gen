@@ -79,7 +79,7 @@ def test_clean_candidate_passes(cfg):
     (dict(name="Lenana Court", name_norm="lenana court"), "BUILDING_NOT_BUSINESS"),
     (dict(name="Knight Frank Kenya", name_norm="knight frank kenya"), "BIG_BRAND"),
     (dict(name="Nairobi County Housing", name_norm="nairobi county housing"), "GOV_NGO"),
-    (dict(review_count=7), "TOO_SMALL"),
+    (dict(review_count=4), "TOO_SMALL"),
     (dict(reviews=[Review(1, 5, "x", "A", NOW - timedelta(days=400))]), "DORMANT"),
     (dict(rating=3.4), "LOW_RATING"),
 ])
