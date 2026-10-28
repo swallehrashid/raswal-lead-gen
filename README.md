@@ -24,7 +24,8 @@ cd dashboard && npm install && npm run dev                     # dashboard on mo
 |---|---|
 | `config/*.yaml` | every tunable: queries, areas, weights, thresholds, caps, message rules, holidays |
 | `pipeline/` | the nightly job (`python -m pipeline --help`) |
-| `teasers/` | HTML templates, fonts and device frames for teaser images |
+| `teasers/` | the 3D ad-mockup teaser (3 layouts), fonts and photos |
+| `docs/pilot-kit/` | the 7 docs you use from "yes" to a live ad |
 | `dashboard/` | React + Vite + Tailwind PWA (mock data layer or Supabase) |
 | `supabase/` | migrations, RLS, storage policy, generated `seed.sql` |
 | `scripts/verify-migrations/` | applies the migrations to in-process Postgres and tests RLS |

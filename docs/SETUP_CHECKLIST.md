@@ -126,3 +126,14 @@ Your card is already on file, so the safety caps below are essential.
 | `FTP_USERNAME` | Nova Host (§5) |
 | `FTP_PASSWORD` | Nova Host (§5) |
 | `FTP_DIR` | Nova Host (§5) |
+
+
+## 7. Apify (optional): "already advertising" + Instagram activity
+
+1. Create an account at apify.com, open Settings → API & Integrations, copy the **personal API token**.
+2. Settings → Limits: set a monthly spending limit of **$10**.
+3. Local runs: add `APIFY_TOKEN=...` to `.env`. GitHub: repo → Settings → Secrets → `APIFY_TOKEN`.
+4. First sync: GitHub → Actions → "Ad library sync" → Run workflow (or `python -m pipeline adlib-sync`). It then runs every Sunday 18:00 EAT.
+
+Without a token nothing breaks: every lead's ads status stays "unknown" and you can set it by hand on the review card
+(or check the Ad Library link on the card).
