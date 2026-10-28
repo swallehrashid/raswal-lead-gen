@@ -4,7 +4,7 @@ import { useApp, useData } from '../context'
 import { mb, niceDate } from '../lib/format'
 import { breakdown, DIMENSIONS, funnel, pct, STAGES, stagesFromEvents, stagesFromLead } from '../lib/stats'
 
-const STAGE_LABEL = { sent: 'Sent', replied: 'Replied', interested: 'Interested', demo: 'Demo sent', won: 'Won' }
+const STAGE_LABEL = { sent: 'Sent', replied: 'Replied', interested: 'Interested', demo: 'Plan sent', pilot: 'Pilot started', won: 'Won' }
 
 export function Stats() {
   const { api, settings } = useApp()
@@ -100,7 +100,7 @@ export function Stats() {
                   <td className="px-2">{r.status}{r.skipped_reason ? <div className="text-xs text-navy/50">{r.skipped_reason}</div> : null}</td>
                   <td className="px-2 text-right">{r.raw_candidates}</td>
                   <td className="px-2 text-right">{r.passed_gates}</td>
-                  <td className="px-2 text-right">{r.shipped_web}+{r.shipped_content}</td>
+                  <td className="px-2 text-right">{r.shipped_web}</td>
                   <td className="pl-2 text-xs text-navy/70">{Object.entries(r.gate_counts ?? {}).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([k, v]) => `${k.toLowerCase()} ${v}`).join(' · ')}</td>
                 </tr>
               ))}

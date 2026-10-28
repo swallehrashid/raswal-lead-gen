@@ -21,6 +21,7 @@ export const STATUS_TONE: Record<string, string> = {
   shortlisted: 'cyan', reserve: 'grey', approved: 'gold', skipped: 'grey', sent: 'navy', no_whatsapp: 'grey',
   replied: 'cyan', interested: 'green', demo_queued: 'gold', demo_sent: 'gold', negotiating: 'green', won: 'green',
   lost: 'red', no_response: 'grey', snoozed: 'amber', opted_out: 'red',
+  pilot_onboarding: 'amber', pilot_live: 'green', pilot_review: 'gold',
 }
 
 export const SITE_TONE: Record<string, string> = {

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { useApp } from '../context'
 import type { Lead, SocialState } from '../data/types'
-import { approve, setSocialState, skip, SKIP_REASONS, unapprove } from '../lib/actions'
+import { approve, setAdsOverride, setSocialState, skip, SKIP_REASONS, unapprove } from '../lib/actions'
 import { label } from '../lib/format'
 import { FileImg } from './FileImg'
-import { CharCount, FactList, LeadHeader, ScoreChips, SocialLinks } from './LeadBits'
+import { AdsLine, CharCount, FactList, LeadHeader, ScoreChips, SocialLinks } from './LeadBits'
 import { Badge, Button, Card, cx } from './ui'
 
 const SOCIAL: SocialState[] = ['none', 'stale', 'active', 'polished']
@@ -14,18 +14,16 @@ export function ReviewCard({ lead }: { lead: Lead }) {
   const [variant, setVariant] = useState(lead.chosen_variant ?? 0)
   const [text, setText] = useState(lead.message_final ?? lead.message_variants[0]?.message ?? '')
   const [skipping, setSkipping] = useState(false)
-  const len = settings.messaging?.length ?? { min: 280, max: 480 }
+  const len = settings.messaging?.length ?? { min: 380, max: 700 }
   const approved = lead.status === 'approved'
   const done = lead.status !== 'shortlisted' && lead.status !== 'reserve' && !approved
-  const bonus = lead.social_state ? settings.scoring?.social_state_bonus?.[lead.social_state] ?? 0 : 0
-  const polished = lead.social_state && settings.scoring?.social_state_skip?.includes(lead.social_state)
 
   if (approved || done)
     return (
       <Card className="flex items-center justify-between gap-3 p-3">
         <div className="min-w-0">
           <div className="truncate font-semibold text-navy">{lead.business.display_name}</div>
-          <div className="text-xs text-navy/50">{lead.area} · {lead.track === 'web' ? 'Website' : 'Content'} #{lead.rank}</div>
+          <div className="text-xs text-navy/50">{lead.area} · {lead.subcategory === 'land_developers' ? 'Land' : 'Agency'} #{lead.rank}</div>
         </div>
         {approved ? (
           <div className="flex items-center gap-2"><Badge tone="gold">Approved ✓</Badge>
@@ -49,20 +47,23 @@ export function ReviewCard({ lead }: { lead: Lead }) {
         </figure>
       </div>
       <FactList lead={lead} />
-      {lead.track === 'content' && (
-        <div className="space-y-2 rounded-xl bg-gold-100/60 p-3">
-          <div className="text-xs font-semibold uppercase tracking-wide text-navy/50">Check their socials</div>
-          <SocialLinks lead={lead} />
-          <div className="flex flex-wrap gap-1">
-            {SOCIAL.map((s) => (
-              <button key={s} onClick={() => act(lead, setSocialState(s))}
-                className={cx('rounded-lg px-3 py-1 text-sm font-semibold', lead.social_state === s ? 'bg-navy text-white' : 'bg-white text-navy/70')}>{s}</button>
-            ))}
-          </div>
-          {bonus > 0 && <div className="text-xs text-green-800">+{bonus} on the displayed score ({lead.social_state})</div>}
-          {polished && <div className="text-xs font-semibold text-red-700">Polished socials: they probably have an agency. Skip it.</div>}
+      <div className="space-y-2 rounded-xl bg-gold-100/60 p-3">
+        <AdsLine lead={lead} />
+        <div className="flex flex-wrap items-center gap-1 text-xs">
+          <span className="font-semibold text-navy/60">Ads running?</span>
+          {(['active', 'none', 'unknown'] as const).map((s_) => (
+            <button key={s_} onClick={() => act(lead, setAdsOverride(lead, s_))}
+              className={cx('rounded-lg px-2.5 py-1 font-semibold', (lead.brand?.ads_override ?? lead.business.ads_status ?? 'unknown') === s_ ? 'bg-navy text-white' : 'bg-white text-navy/70')}>{s_}</button>
+          ))}
         </div>
-      )}
+        <SocialLinks lead={lead} />
+        <div className="flex flex-wrap gap-1">
+          {SOCIAL.map((s_) => (
+            <button key={s_} onClick={() => act(lead, setSocialState(s_))}
+              className={cx('rounded-lg px-3 py-1 text-sm font-semibold', lead.social_state === s_ ? 'bg-navy text-white' : 'bg-white text-navy/70')}>{s_}</button>
+          ))}
+        </div>
+      </div>
       <div className="space-y-2">
         <div className="flex gap-2">
           {lead.message_variants.map((v, i) => (
@@ -96,7 +97,7 @@ export function ReviewCard({ lead }: { lead: Lead }) {
           <Button className="flex-1" onClick={() => setSkipping(true)}>Skip</Button>
         </div>
       )}
-      {lead.status === 'reserve' && <p className="text-xs text-navy/50">Reserve: it's promoted automatically when a lead in this track is skipped or has no WhatsApp.</p>}
+      {lead.status === 'reserve' && <p className="text-xs text-navy/50">Reserve: it's promoted automatically when a lead in this list is skipped or has no WhatsApp.</p>}
     </Card>
   )
 }

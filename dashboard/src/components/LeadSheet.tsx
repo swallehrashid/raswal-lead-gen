@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useApp, useData } from '../context'
 import type { EventRow, Lead, Track } from '../data/types'
 import {
-  logReply, LOST_REASONS, markInterested, markLost, negotiating, optOut, REPLY_TYPES, setNotes, snooze, won,
+  logReply, LOST_REASONS, markInterested, markLost, negotiating, optOut, REPLY_TYPES, setNotes, snooze, startPilot, won,
 } from '../lib/actions'
 import { fill } from '../lib/followups'
 import { label, niceDate, niceTime } from '../lib/format'
@@ -48,6 +48,10 @@ function LeadDetail({ lead, events }: { lead: Lead; events: EventRow[] }) {
   }
   const interested = async (t: Track) => {
     await act(lead, markInterested(lead, t, now), 'Moved to the demo queue')
+  }
+  const startThePilot = async () => {
+    await api.savePilot({ lead_id: lead.id, budget_kes: settings.pilot?.budget_kes ?? 5000 })
+    await act(lead, startPilot(now), 'Pilot started: see the Pilots tab')
   }
   const quick = async (q: { text: string; action?: string | null }) => {
     const t = fill(q.text, lead)
@@ -101,11 +105,18 @@ function LeadDetail({ lead, events }: { lead: Lead; events: EventRow[] }) {
 
       {!closed && !['demo_queued', 'demo_sent', 'negotiating'].includes(lead.status) && (
         <section className="space-y-2 rounded-2xl bg-white p-3">
-          <div className="font-semibold text-navy">Mark interested → demo queue</div>
+          <div className="font-semibold text-navy">Mark interested → plan queue</div>
           <div className="flex gap-2">
-            <Button variant="gold" className="flex-1" onClick={() => interested('web')}>Website demo</Button>
-            <Button variant="gold" className="flex-1" onClick={() => interested('content')}>Content demo</Button>
+            <Button variant="gold" className="flex-1" onClick={() => interested('ads')}>Send the pilot plan</Button>
+            <Button className="flex-1" onClick={() => interested('web')}>Website demo</Button>
           </div>
+        </section>
+      )}
+
+      {['demo_sent', 'negotiating', 'replied', 'demo_queued'].includes(lead.status) && lead.track === 'ads' && (
+        <section className="space-y-2 rounded-2xl bg-white p-3">
+          <div className="font-semibold text-navy">They said yes to the pilot?</div>
+          <Button variant="wa" className="w-full" onClick={startThePilot}>Start the pilot (collect offer, access, KES {settings.pilot?.budget_kes?.toLocaleString() ?? '5,000'})</Button>
         </section>
       )}
 

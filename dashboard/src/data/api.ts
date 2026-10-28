@@ -1,6 +1,6 @@
 import type { Action } from '../lib/actions'
 import type {
-  ApiUsageRow, CellSummary, EventRow, Lead, LeadStatus, Run, Settings, Suppression, Track, UsageStats,
+  ApiUsageRow, CellSummary, EventRow, Lead, LeadStatus, Pilot, PilotDay, Run, Settings, Suppression, Track, UsageStats,
 } from './types'
 
 export interface LeadFilter {
@@ -37,6 +37,10 @@ export interface Api {
   usageStats(): Promise<UsageStats | null>
   suppression(): Promise<Suppression[]>
   fileUrl(path: string | null | undefined): Promise<string | null>
+  pilots(): Promise<Pilot[]>
+  pilotDays(pilotId: string): Promise<PilotDay[]>
+  savePilot(p: Partial<Pilot> & { lead_id: string }): Promise<Pilot>
+  savePilotDay(d: PilotDay): Promise<void>
 
   apply(lead: Lead, action: Action): Promise<{ promoted: string | null }>
   addSuppression(row: { phone_e164: string; place_id?: string | null; reason: string; note?: string | null }): Promise<void>
@@ -60,5 +64,5 @@ export function getApi(): Promise<Api> {
 }
 
 export const CONTACTED: LeadStatus[] = [
-  'sent', 'replied', 'interested', 'demo_queued', 'demo_sent', 'negotiating', 'won', 'lost', 'no_response', 'snoozed', 'opted_out',
+  'sent', 'replied', 'interested', 'demo_queued', 'demo_sent', 'negotiating', 'pilot_onboarding', 'pilot_live', 'pilot_review', 'won', 'lost', 'no_response', 'snoozed', 'opted_out',
 ]

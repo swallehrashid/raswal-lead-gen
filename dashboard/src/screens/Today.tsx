@@ -21,21 +21,23 @@ export function Today() {
     return { date: d, leads: d ? await api.leadsForList(d) : [] }
   }, [api])
   const [mode, setMode] = useState<'review' | 'send' | null>(null)
-  const [tab, setTab] = useState<'web' | 'content' | 'reserves'>('web')
+  const [tab, setTab] = useState<string>('')
   const [flow, setFlow] = useState<Flow>(canShareFiles() ? 'phone' : 'desktop')
 
   if (error) return <Empty title="Could not load today's list">{error}</Empty>
   if (!data) return <Spinner />
   if (!data.date) return <Empty title="No list yet">The first nightly run creates it.</Empty>
   const leads = data.leads
-  const sub = leads[0]?.subcategory ?? ''
-  const active = (t: string) => leads.filter((l) => l.track === t && !['reserve', 'skipped', 'no_whatsapp'].includes(l.status))
+  const subs = Object.keys(settings.daily_mix ?? {}).filter((k) => leads.some((l) => l.subcategory === k))
+  const active = (k: string) => leads.filter((l) => l.subcategory === k && !['reserve', 'skipped', 'no_whatsapp'].includes(l.status))
+  const current = tab && (tab === 'reserves' || subs.includes(tab)) ? tab : (subs[0] ?? 'reserves')
   const reserves = leads.filter((l) => l.status === 'reserve')
   const toReview = leads.filter((l) => l.status === 'shortlisted')
-  const approved = leads.filter((l) => l.status === 'approved').sort((a, b) => a.track.localeCompare(b.track) || a.rank - b.rank)
+  const approved = leads.filter((l) => l.status === 'approved').sort((a, b) => a.subcategory.localeCompare(b.subcategory) || a.rank - b.rank)
   const sentHere = leads.filter((l) => l.sent_at)
   const currentMode = mode ?? (toReview.length ? 'review' : 'send')
-  const targets = settings.daily_targets ?? { web: 20, content: 10 }
+  const mix = settings.daily_mix ?? {}
+  const short = (k: string) => (k === 'land_developers' ? 'Land' : k === 'property_agency' ? 'Agency' : settings.subcategories[k]?.label ?? k)
 
   return (
     <div className="space-y-3">
@@ -43,11 +45,10 @@ export function Today() {
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wide text-navy/50">List for {niceDate(data.date)}</div>
-            <div className="text-xl font-extrabold text-navy">{settings.subcategories[sub]?.label ?? sub}</div>
+            <div className="text-xl font-extrabold text-navy">{subs.map(short).join(' + ') || 'Today'}</div>
           </div>
           <div className="flex flex-wrap gap-1.5 text-sm">
-            <Badge tone="navy">Web {active('web').length}/{targets.web}</Badge>
-            <Badge tone="gold">Content {active('content').length}/{targets.content}</Badge>
+            {subs.map((k) => <Badge key={k} tone={k === 'land_developers' ? 'green' : 'navy'}>{short(k)} {active(k).length}/{mix[k] ?? '?'}</Badge>)}
             <Badge>Reserves {reserves.length}</Badge>
           </div>
         </div>
@@ -61,10 +62,10 @@ export function Today() {
 
       {currentMode === 'review' ? (
         <>
-          <Tabs value={tab} onChange={setTab} items={[
-            { value: 'web', label: 'Website' }, { value: 'content', label: 'Content' }, { value: 'reserves', label: `Reserves (${reserves.length})` },
+          <Tabs value={current} onChange={setTab} items={[
+            ...subs.map((k) => ({ value: k, label: short(k) })), { value: 'reserves', label: `Reserves (${reserves.length})` },
           ]} />
-          <ReviewList leads={tab === 'reserves' ? reserves : leads.filter((l) => l.track === tab && l.status !== 'reserve')} />
+          <ReviewList leads={current === 'reserves' ? reserves : leads.filter((l) => l.subcategory === current && l.status !== 'reserve')} />
         </>
       ) : (
         <>

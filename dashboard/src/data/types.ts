@@ -3,8 +3,9 @@ export type LeadStatus =
   | 'sent' | 'no_whatsapp' | 'replied' | 'interested'
   | 'demo_queued' | 'demo_sent' | 'negotiating'
   | 'won' | 'lost' | 'no_response' | 'snoozed' | 'opted_out'
+  | 'pilot_onboarding' | 'pilot_live' | 'pilot_review'
 
-export type Track = 'web' | 'content'
+export type Track = 'web' | 'content' | 'ads'
 export type SiteStatus = 'none' | 'social_as_site' | 'dead' | 'insecure' | 'free_builder' | 'weak' | 'good'
 export type SocialState = 'none' | 'stale' | 'active' | 'polished'
 
@@ -14,7 +15,7 @@ export interface Fact {
   strength: 'strong' | 'medium'
   text: string
   evidence: Record<string, unknown>
-  track: 'web' | 'content' | 'any'
+  track: 'web' | 'content' | 'any' | 'upsell'
   source: string
 }
 
@@ -57,6 +58,12 @@ export interface Business {
   branch_count: number
   manages_listings: number
   audit: Audit | null
+  ads_status?: 'active' | 'none' | 'unknown' | null
+  ads_active_count?: number | null
+  ads_longest_days?: number | null
+  social?: Record<string, unknown> | null
+  scam_flag?: 'hard' | 'soft' | null
+  scam_terms?: string[] | null
 }
 
 export interface Evaluation {
@@ -72,7 +79,11 @@ export interface Brand {
   accent?: string
   /** Set by `pipeline generate` (Phase 5) once the demo is built + deployed. */
   demo_message?: string
-  demo_kind?: 'web' | 'content'
+  demo_kind?: 'web' | 'content' | 'pilot'
+  angle?: 'A' | 'B' | 'C'
+  ads_override?: 'active' | 'none' | 'unknown'
+  offer?: Record<string, unknown>
+  listings?: Array<Record<string, unknown>>
   demo_generated_at?: string
 }
 
@@ -173,14 +184,16 @@ export interface CalendarSettings {
 
 export interface Settings {
   calendar: CalendarSettings
-  subcategories: Record<string, { label: string; list_day: string; template: string }>
-  scoring: { web_min_score: number; content_min_score: number; social_state_bonus: Record<string, number>; social_state_skip: string[] }
+  subcategories: Record<string, { label: string; active: boolean; template: string }>
+  scoring: { ads_min_score: number }
+  pilot?: PilotConfig
   messaging: { signoff: string; length: { min: number; max: number } }
   budget: { places_calls_per_month: number; places_calls_per_night: number; psi_calls_per_night: number; gemini_calls_per_night: number; db_cap_mb: number; storage_cap_mb: number }
   quick_replies: QuickReply[]
   followup_templates: Record<string, string>
-  demo_cap: { web: number; content: number }
-  daily_targets: { web: number; content: number }
+  demo_cap: Record<string, number>
+  daily_mix: Record<string, number>
+  outreach_whatsapp: string
   pause_list: Array<{ start: string; end: string; note?: string }>
 }
 
@@ -188,3 +201,49 @@ export interface ApiUsageRow { month: string; api: string; sku: string; count: n
 export interface CellSummary { subcategory: string; tier1_active: number; tier1_total: number }
 export interface UsageStats { db_bytes: number; storage_bytes: number; storage_files: number }
 export interface Suppression { phone_e164: string; place_id: string | null; reason: string; note: string | null; added_at: string }
+
+export interface PilotConfig {
+  pilot_days: number
+  budget_kes: number
+  vat_note: string
+  stop_rule: { max_cost_per_chat_kes: number; after_hours: number }
+  reply_rule: string
+  estimates: Record<string, unknown>
+  pricing: { engine_intro_kes: number; engine_standard_kes: number; website_setup_kes: number; website_monthly_kes: number; december_pack_kes: number }
+}
+
+export type PilotRoute = 'A' | 'B' | 'C' | 'backup'
+
+export interface Pilot {
+  id: string
+  lead_id: string
+  route: PilotRoute | null
+  offer: Record<string, unknown> | null
+  budget_kes: number
+  mpesa_ref: string | null
+  paid_at: string | null
+  access_granted_at: string | null
+  submitted_at: string | null
+  live_at: string | null
+  ends_at: string | null
+  targets: { chats?: number; visits?: number } | null
+  winner_ad: string | null
+  outcome: 'converted' | 'declined' | 'extended' | null
+  plan_price_kes: number | null
+  notes: string | null
+  created_at: string
+  updated_at: string
+}
+
+export interface PilotDay {
+  pilot_id: string
+  day: number
+  date: string | null
+  spend_kes: number | null
+  reach: number | null
+  chats: number | null
+  serious: number | null
+  visits: number | null
+  ad_breakdown: Record<string, unknown> | null
+  note: string | null
+}

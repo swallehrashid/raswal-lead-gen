@@ -43,6 +43,53 @@ class Sim:
         self.s, self.cfg = store, cfg
         self.cal = WorkCalendar.from_config(cfg.calendar)
         self.rng = random.Random(1610)
+        self.pilots: list[dict] = []
+        self.pilot_days: list[dict] = []
+
+    def seed_pilots(self, n: int = 4) -> None:
+        """Walk a few sent leads all the way to a pilot so the Pilots screen has every stage to click through."""
+        sent = sorted([r for r in self.s.tables["leads"].values() if r["status"] == "sent"],
+                      key=lambda r: (r["list_date"], r["rank"]))
+        for lead in sent[:n]:
+            sd = date.fromisoformat(lead["list_date"])
+            at = _at(sd, 12, 0)
+            self.ev(lead, "reply", at, reply_type="interested", text="Yes please send the plan")
+            self.status(lead, "demo_queued", at, demo_type="ads", demo_queued_at=at, replied_at=at)
+            link = f"https://{lead['slug']}.raswaltechsolutions.co.ke/pilot/"
+            self.status(lead, "demo_sent", at, demo_sent_at=at, demo_link=link)
+            self.status(lead, "negotiating", at)
+            self.start_pilot(lead, sd)
+
+    def start_pilot(self, lead: dict, sd: date) -> None:
+        """A pilot at a random stage, with realistic day rows for the live ones (mock data for the Pilots screen)."""
+        stage = self.rng.choice(["onboarding", "live", "live", "review", "converted"])
+        at = _at(self.work(sd, 2), 11, 0)
+        pid = f"pilot-{len(self.pilots) + 1}"
+        offer = {"project": f"{lead['area']} Gardens", "price_cash": 750000, "deposit": 100000, "months": 12,
+                 "title_label": "READY TITLE", "visit_day": "Saturday"}
+        pilot = {"id": pid, "lead_id": lead["id"], "route": self.rng.choice(["A", "B", "B", "C"]),
+                 "offer": offer if stage != "onboarding" else None, "budget_kes": 5000, "mpesa_ref": None,
+                 "paid_at": None, "access_granted_at": None, "submitted_at": None, "live_at": None, "ends_at": None,
+                 "targets": {"chats": 40, "visits": 3}, "winner_ad": None, "outcome": None, "plan_price_kes": None,
+                 "notes": None, "created_at": at, "updated_at": at}
+        self.status(lead, "pilot_onboarding", at)
+        if stage != "onboarding":
+            pilot.update(access_granted_at=at, paid_at=at, mpesa_ref="SJK4X9Q2LM", submitted_at=at, live_at=at,
+                         ends_at=_at(self.work(sd, 2) + timedelta(days=7), 11, 0), winner_ad="The Offer")
+            self.status(lead, "pilot_live", at)
+            n = 7 if stage in ("review", "converted") else 3
+            for day in range(1, n + 1):
+                chats = self.rng.randint(5, 12)
+                self.pilot_days.append({
+                    "pilot_id": pid, "day": day, "date": (sd + timedelta(days=day)).isoformat(), "spend_kes": 700,
+                    "reach": self.rng.randint(4000, 9000), "chats": chats, "serious": self.rng.randint(0, 3),
+                    "visits": self.rng.randint(0, 1), "ad_breakdown": None, "note": None})
+        if stage in ("review", "converted"):
+            self.status(lead, "pilot_review", at)
+        if stage == "converted":
+            pilot.update(outcome="converted", plan_price_kes=10000)
+            self.status(lead, "won", at, outcome_value_kes=10000, closed_at=at)
+        self.pilots.append(pilot)
 
     def ev(self, lead: dict, type_: str, at: str, **payload) -> None:
         self.s.events.append({"lead_id": lead["id"], "type": type_, "at": at, "payload": payload})
@@ -103,12 +150,12 @@ class Sim:
             self.ev(lead, "reply", at, reply_type=kind, text=text)
             lead.update(replied_at=at, reply_type=kind)
             if kind == "interested":
-                self.status(lead, "demo_queued", at, demo_type=lead["track"], demo_queued_at=at)
-                self.ev(lead, "interested", at, demo_type=lead["track"])
+                self.status(lead, "demo_queued", at, demo_type="ads", demo_queued_at=at)
+                self.ev(lead, "interested", at, demo_type="ads")
                 if d <= date(2026, 10, 13) and self.rng.random() < 0.75:
                     sd = self.work(rd, 0) if rd < TODAY else rd
                     st = _at(sd, 17, 30)
-                    link = f"https://{lead['slug']}.raswaltechsolutions.com"
+                    link = f"https://{lead['slug']}.raswaltechsolutions.co.ke/pilot/"
                     lead["demo_link"] = link
                     self.ev(lead, "demo_link", st, link=link)
                     self.status(lead, "demo_sent", st, demo_sent_at=st, demo_fu1_due=self.work(sd, 1).isoformat(),
@@ -118,9 +165,8 @@ class Sim:
                         self.ev(lead, "demo_fu1_sent", lead["demo_fu1_sent_at"])
                     if d == date(2026, 10, 12) and self.rng.random() < 0.7:
                         self.status(lead, "negotiating", _at(self.work(sd, 1), 15, 0))
-                        if self.rng.random() < 0.6:
-                            self.status(lead, "won", _at(self.work(sd, 2), 12, 0), outcome_value_kes=45000,
-                                        closed_at=_at(self.work(sd, 2), 12, 0))
+                        if self.rng.random() < 0.7:
+                            self.start_pilot(lead, sd)
             elif kind in ("price", "question"):
                 self.status(lead, "replied", at)
             elif kind == "not_now":
@@ -215,7 +261,7 @@ def export_mock(cfg: Config, env: Env, args) -> int:
         start = datetime(d.year, d.month, d.day, tzinfo=EAT) - timedelta(hours=2, minutes=30)
         run.update(started_at=start.astimezone(timezone.utc).isoformat(),
                    finished_at=(start + timedelta(minutes=31)).astimezone(timezone.utc).isoformat())
-        print(f"{d} {res.subcategory}: {res.stats.get('shipped_web')} web / {res.stats.get('shipped_content')} content")
+        print(f"{d} {res.subcategory}: {res.stats.get('shipped')} leads")
     # created events at list time
     for e in store.events:
         lead = store.tables["leads"][e["lead_id"]]
@@ -224,6 +270,8 @@ def export_mock(cfg: Config, env: Env, args) -> int:
     for d in DAYS[:-1]:
         sim.run_list(d)
     sim.storyline()
+    sim.seed_pilots()
+    store._sim_pilots, store._sim_pilot_days = sim.pilots, sim.pilot_days
 
     # files: today's list + anything in the demo pipeline gets full assets
     if OUT.exists():
@@ -306,6 +354,7 @@ def build_dataset(store: MemoryStore, cfg: Config, files: dict[str, str]) -> dic
         "settings": {k: v["value"] for k, v in t["settings"].items()},
         "runs": list(t["runs"].values()), "leads": leads, "events": events, "api_usage": usage, "cells": cells,
         "suppression": list(t["suppression"].values()),
+        "pilots": getattr(store, "_sim_pilots", []), "pilot_days": getattr(store, "_sim_pilot_days", []),
         "usage_stats": {"db_bytes": 41_500_000, "storage_bytes": 96_000_000, "storage_files": 412},
         "files": files,
     }

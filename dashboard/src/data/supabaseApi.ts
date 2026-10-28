@@ -2,7 +2,7 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import type { Action } from '../lib/actions'
 import { todayIn } from '../lib/workdays'
 import type { Api, LeadFilter } from './api'
-import type { Lead, Settings } from './types'
+import type { Lead, Pilot, PilotDay, Settings } from './types'
 
 const LEAD_SELECT =
   '*, business:businesses(*, audit:audits(*)), evaluation:evaluations(score, breakdown, facts(facts, review_facts))'
@@ -109,6 +109,21 @@ export function createSupabaseApi(): Api {
       if (error || !data) return null
       urlCache.set(path, { url: data.signedUrl, exp: Date.now() + 50 * 60 * 1000 })
       return data.signedUrl
+    },
+
+    async pilots() {
+      return must(await sb.from('pilots').select('*').order('created_at', { ascending: false })) as Pilot[]
+    },
+    async pilotDays(pilotId) {
+      return must(await sb.from('pilot_days').select('*').eq('pilot_id', pilotId).order('day')) as PilotDay[]
+    },
+    async savePilot(p) {
+      const row = { ...p, updated_at: new Date().toISOString() }
+      const r = p.id ? await sb.from('pilots').update(row).eq('id', p.id).select('*') : await sb.from('pilots').insert(row).select('*')
+      return (must(r) as Pilot[])[0]
+    },
+    async savePilotDay(d) {
+      must(await sb.from('pilot_days').upsert(d, { onConflict: 'pilot_id,day' }).select('pilot_id'))
     },
 
     async apply(lead: Lead, a: Action) {

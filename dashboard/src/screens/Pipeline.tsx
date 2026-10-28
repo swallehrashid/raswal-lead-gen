@@ -6,11 +6,11 @@ import type { LeadStatus, Track } from '../data/types'
 import { label, niceDate, STATUS_TONE } from '../lib/format'
 
 const STATUSES: LeadStatus[] = ['shortlisted', 'approved', 'sent', 'replied', 'snoozed', 'demo_queued', 'demo_sent', 'negotiating',
-  'won', 'lost', 'no_response', 'opted_out', 'skipped', 'no_whatsapp', 'reserve']
+  'pilot_onboarding', 'pilot_live', 'pilot_review', 'won', 'lost', 'no_response', 'opted_out', 'skipped', 'no_whatsapp', 'reserve']
 
 export function Pipeline() {
   const { api, settings } = useApp()
-  const [statuses, setStatuses] = useState<LeadStatus[]>(['sent', 'replied', 'snoozed', 'demo_queued', 'demo_sent', 'negotiating'])
+  const [statuses, setStatuses] = useState<LeadStatus[]>(['sent', 'replied', 'snoozed', 'demo_queued', 'demo_sent', 'negotiating', 'pilot_onboarding', 'pilot_live', 'pilot_review'])
   const [sub, setSub] = useState('')
   const [track, setTrack] = useState<'' | Track>('')
   const [from, setFrom] = useState('')
@@ -39,7 +39,7 @@ export function Pipeline() {
           {Object.entries(settings.subcategories).map(([k, v]) => <option key={k} value={k}>{v.label}</option>)}
         </select>
         <select className={inputCls} value={track} onChange={(e) => setTrack(e.target.value as Track | '')}>
-          <option value="">Both tracks</option><option value="web">Website</option><option value="content">Content</option>
+          <option value="">All tracks</option><option value="ads">Ads</option><option value="web">Website</option>
         </select>
         <input type="date" className={inputCls} value={from} onChange={(e) => setFrom(e.target.value)} title="Listed from" />
       </div>

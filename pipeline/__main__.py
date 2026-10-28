@@ -5,7 +5,7 @@
                              [--offline] [--no-db]
   python -m pipeline rerender --lead-id ID          (or --offline [--subcategory KEY])
   python -m pipeline redraft  --lead-id ID
-  python -m pipeline generate [--lead-id ID] [--track web|pilot] [--limit N] [--dry-run]
+  python -m pipeline generate [--lead-id ID] [--track web|pilot] [--limit N] [--dry-run] [--final --offer FILE]
   python -m pipeline cells    --subcategory KEY
   python -m pipeline usage
   python -m pipeline heartbeat
@@ -59,6 +59,8 @@ def build_parser() -> argparse.ArgumentParser:
     g.add_argument("--track", choices=["web", "pilot"], help="only this demo kind")
     g.add_argument("--limit", type=int, help="process at most N queued leads")
     g.add_argument("--dry-run", action="store_true", help="build locally; no deploy, no DB writes")
+    g.add_argument("--final", action="store_true", help="pilot launch: final-quality ads + the Ads Manager kit (needs --offer)")
+    g.add_argument("--offer", help="offer.json from the client's offer form")
 
     c = sub.add_parser("cells", help="show search-cell rotation state")
     c.add_argument("--subcategory", required=True)

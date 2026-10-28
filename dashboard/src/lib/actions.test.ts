@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { EventRow, Lead } from '../data/types'
-import { demoSent, followupSent, logReply, markInterested, markSent, optOut, skip } from './actions'
+import { demoSent, followupSent, logReply, markInterested, markSent, optOut, pilotLive, pilotReview, skip, startPilot } from './actions'
 import { dueFollowups } from './followups'
 import { buildLeadPack } from './leadpack'
 import { normalizeKe } from './phone'
@@ -92,7 +92,7 @@ describe('stats funnel matches the events log', () => {
       ev('a', 'status', { to: 'demo_queued' }), ev('a', 'status', { to: 'demo_sent' }), ev('a', 'status', { to: 'won' }),
       ev('b', 'status', { to: 'sent' }), ev('c', 'status', { to: 'sent' }), ev('c', 'reply', {}),
     ]
-    expect(funnel(['a', 'b', 'c'], stagesFromEvents(events))).toEqual({ sent: 3, replied: 2, interested: 1, demo: 1, won: 1 })
+    expect(funnel(['a', 'b', 'c'], stagesFromEvents(events))).toEqual({ sent: 3, replied: 2, interested: 1, demo: 1, pilot: 0, won: 1 })
     expect([...stagesFromLead(lead({ sent_at: 'x', replied_at: 'y' }))]).toEqual(['sent', 'replied'])
   })
 })
@@ -104,5 +104,20 @@ describe('phones', () => {
     expect(normalizeKe('+254 110 123456')).toBe('+254110123456')
     expect(normalizeKe('722123456')).toBe('+254722123456')
     expect(normalizeKe('12')).toBeNull()
+  })
+})
+
+describe('pilot actions', () => {
+  it('starting a pilot moves the lead to onboarding and logs it', () => {
+    const a = startPilot('2026-11-04T09:00:00Z')
+    expect(a.patch.status).toBe('pilot_onboarding')
+    expect(a.event?.type).toBe('pilot_started')
+    expect(pilotLive().patch.status).toBe('pilot_live')
+    expect(pilotReview().patch.status).toBe('pilot_review')
+  })
+  it('an ads lead is queued as an ads demo and counts as a pilot stage in the funnel', () => {
+    expect(markInterested(lead(), 'ads', 'n').patch).toMatchObject({ status: 'demo_queued', demo_type: 'ads' })
+    const events = [{ id: 1, lead_id: 'a', at: '', type: 'status', payload: { to: 'pilot_onboarding' } }]
+    expect(stagesFromEvents(events as never).get('a')?.has('pilot')).toBe(true)
   })
 })

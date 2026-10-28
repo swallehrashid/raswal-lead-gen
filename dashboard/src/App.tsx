@@ -8,6 +8,7 @@ import { DemoQueue } from './screens/DemoQueue'
 import { FollowUps } from './screens/FollowUps'
 import { Inbox } from './screens/Inbox'
 import { Login } from './screens/Login'
+import { Pilots } from './screens/Pilots'
 import { Pipeline } from './screens/Pipeline'
 import { SettingsScreen } from './screens/Settings'
 import { Stats } from './screens/Stats'
@@ -17,7 +18,8 @@ const NAV = [
   { to: '/', label: 'Today', icon: '◉' },
   { to: '/followups', label: 'Follow-ups', icon: '↻' },
   { to: '/inbox', label: 'Inbox', icon: '✉' },
-  { to: '/demos', label: 'Demos', icon: '★' },
+  { to: '/demos', label: 'Plans', icon: '★' },
+  { to: '/pilots', label: 'Pilots', icon: '▶' },
   { to: '/pipeline', label: 'Pipeline', icon: '☰' },
   { to: '/stats', label: 'Stats', icon: '▤' },
   { to: '/settings', label: 'Settings', icon: '⚙' },
@@ -72,6 +74,7 @@ export default function App() {
               <Route path="/followups" element={<FollowUps />} />
               <Route path="/inbox" element={<Inbox />} />
               <Route path="/demos" element={<DemoQueue />} />
+              <Route path="/pilots" element={<Pilots />} />
               <Route path="/pipeline" element={<Pipeline />} />
               <Route path="/stats" element={<Stats />} />
               <Route path="/settings" element={<SettingsScreen />} />

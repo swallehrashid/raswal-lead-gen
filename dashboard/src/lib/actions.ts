@@ -110,6 +110,19 @@ export function demoSent(now: string, today: string, cal: Cal, extraPauses: Paus
   }
 }
 
+/** Start the pilot: the client said yes to the plan and we are collecting the offer form, access and the KES budget. */
+export function startPilot(now: string): Action {
+  return { patch: { status: 'pilot_onboarding' }, event: { type: 'pilot_started', payload: { at: now } } }
+}
+
+export function pilotLive(): Action {
+  return { patch: { status: 'pilot_live' }, event: { type: 'pilot_live', payload: {} } }
+}
+
+export function pilotReview(): Action {
+  return { patch: { status: 'pilot_review' }, event: { type: 'pilot_day7', payload: {} } }
+}
+
 export function negotiating(): Action {
   return { patch: { status: 'negotiating' } }
 }
@@ -120,6 +133,10 @@ export function won(value: number | null, now: string): Action {
 
 export function setNotes(notes: string): Action {
   return { patch: { notes } }
+}
+
+export function setAdsOverride(lead: Lead, v: 'active' | 'none' | 'unknown'): Action {
+  return { patch: { brand: { ...lead.brand, ads_override: v } } }
 }
 
 export function setSocialState(state: Lead['social_state']): Action {

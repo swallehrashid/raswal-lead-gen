@@ -9,7 +9,7 @@ export function Banner() {
   }, [api])
   if (!data) return null
   const { run, cells } = data
-  const low = cells.filter((c) => c.tier1_total && c.tier1_active <= Math.max(1, Math.floor(c.tier1_total / 5)))
+  const low = cells.filter((c) => settings.subcategories[c.subcategory]?.active !== false && c.tier1_total && c.tier1_active <= Math.max(1, Math.floor(c.tier1_total / 5)))
   const pause = settings.pause_list?.find((p) => p.start <= today && today <= p.end)
   return (
     <div className="space-y-2">
@@ -27,7 +27,7 @@ export function Banner() {
       )}
       {run && run.status === 'ok' && run.list_date > today && (
         <div className="rounded-xl bg-green-100 px-3 py-2 text-sm text-green-900">
-          <b>{niceDate(run.list_date)}'s list ready:</b> {run.shipped_web} web / {run.shipped_content} content
+          <b>{niceDate(run.list_date)}'s list ready:</b> {run.shipped_web} leads ({settings.subcategories[run.subcategory ?? '']?.label ?? run.subcategory})
           {run.errors?.length ? ` · ${run.errors.length} warning(s)` : ''}
         </div>
       )}

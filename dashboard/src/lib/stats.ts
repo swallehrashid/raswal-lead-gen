@@ -1,7 +1,7 @@
 import type { EventRow, Lead } from '../data/types'
 import { hourIn } from './workdays'
 
-export const STAGES = ['sent', 'replied', 'interested', 'demo', 'won'] as const
+export const STAGES = ['sent', 'replied', 'interested', 'demo', 'pilot', 'won'] as const
 export type Stage = (typeof STAGES)[number]
 
 /** Stages each lead reached, derived from the events log (the audit trail). */
@@ -17,6 +17,7 @@ export function stagesFromEvents(events: EventRow[]): Map<string, Set<Stage>> {
     if (e.type === 'reply' || ['replied', 'demo_queued', 'snoozed'].includes(to)) add(e.lead_id, 'replied')
     if (e.type === 'interested' || to === 'demo_queued') add(e.lead_id, 'interested')
     if (to === 'demo_sent') add(e.lead_id, 'demo')
+    if (['pilot_onboarding', 'pilot_live', 'pilot_review'].includes(to)) add(e.lead_id, 'pilot')
     if (to === 'won') add(e.lead_id, 'won')
   }
   return m
@@ -29,6 +30,7 @@ export function stagesFromLead(l: Lead): Set<Stage> {
   if (l.replied_at) s.add('replied')
   if (l.demo_queued_at) s.add('interested')
   if (l.demo_sent_at) s.add('demo')
+  if (['pilot_onboarding', 'pilot_live', 'pilot_review'].includes(l.status)) s.add('pilot')
   if (l.status === 'won') s.add('won')
   return s
 }
@@ -36,13 +38,14 @@ export function stagesFromLead(l: Lead): Set<Stage> {
 export type Funnel = Record<Stage, number>
 
 export function funnel(leadIds: string[], stages: Map<string, Set<Stage>>): Funnel {
-  const f = { sent: 0, replied: 0, interested: 0, demo: 0, won: 0 }
+  const f = { sent: 0, replied: 0, interested: 0, demo: 0, pilot: 0, won: 0 }
   for (const id of leadIds) for (const s of stages.get(id) ?? []) f[s] += 1
   return f
 }
 
 export const DIMENSIONS: Record<string, { label: string; key: (l: Lead, tz: string) => string }> = {
   subcategory: { label: 'Subcategory', key: (l) => l.subcategory },
+  angle: { label: 'Angle', key: (l) => l.brand?.angle ?? '—' },
   track: { label: 'Track', key: (l) => l.track },
   site_status: { label: 'Site status', key: (l) => l.site_status ?? 'none' },
   top_fact: { label: 'Top fact', key: (l) => l.top_fact_code ?? '—' },

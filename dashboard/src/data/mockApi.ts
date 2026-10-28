@@ -3,7 +3,7 @@
 // Review → Send → Follow-ups → Demo queue → Stats. Settings → "Reset mock data" starts over.
 import type { Action } from '../lib/actions'
 import type { Api, LeadFilter } from './api'
-import type { ApiUsageRow, CellSummary, EventRow, Lead, Run, Settings, Suppression, UsageStats } from './types'
+import type { ApiUsageRow, CellSummary, EventRow, Lead, Pilot, PilotDay, Run, Settings, Suppression, UsageStats } from './types'
 
 interface Dataset {
   generated_at: string
@@ -15,6 +15,8 @@ interface Dataset {
   api_usage: ApiUsageRow[]
   cells: CellSummary[]
   suppression: Suppression[]
+  pilots?: Pilot[]
+  pilot_days?: PilotDay[]
   usage_stats: UsageStats
   files: Record<string, string>
 }
@@ -39,6 +41,8 @@ export async function createMockApi(): Promise<Api> {
       /* storage full or blocked: keep working in memory */
     }
   }
+  state.pilots ??= []
+  state.pilot_days ??= []
   let eventId = Math.max(0, ...state.events.map((e) => Number(e.id) || 0)) + 1
   const clone = <T>(x: T): T => structuredClone(x)
   const addEvent = (lead_id: string, type: string, payload: Record<string, unknown>, at: string) =>
@@ -104,6 +108,33 @@ export async function createMockApi(): Promise<Api> {
     },
     async fileUrl(path) {
       return path ? (state.files[path] ?? null) : null
+    },
+
+    async pilots() {
+      return clone(state.pilots ?? [])
+    },
+    async pilotDays(pilotId) {
+      return clone((state.pilot_days ?? []).filter((d) => d.pilot_id === pilotId).sort((a, b) => a.day - b.day))
+    },
+    async savePilot(p) {
+      const now = nowIso()
+      const list = (state.pilots ??= [])
+      let row = p.id ? list.find((x) => x.id === p.id) : undefined
+      if (row) Object.assign(row, p, { updated_at: now })
+      else {
+        row = { id: `pilot-${list.length + 1}`, route: null, offer: null, budget_kes: 5000, mpesa_ref: null, paid_at: null, access_granted_at: null, submitted_at: null,
+          live_at: null, ends_at: null, targets: null, winner_ad: null, outcome: null, plan_price_kes: null, notes: null, created_at: now, ...p, updated_at: now } as Pilot
+        list.push(row)
+      }
+      save()
+      return clone(row)
+    },
+    async savePilotDay(d) {
+      const list = (state.pilot_days ??= [])
+      const i = list.findIndex((x) => x.pilot_id === d.pilot_id && x.day === d.day)
+      if (i >= 0) list[i] = d
+      else list.push(d)
+      save()
     },
 
     async apply(lead: Lead, a: Action) {

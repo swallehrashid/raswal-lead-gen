@@ -17,9 +17,11 @@ export function SettingsScreen() {
     <div className="space-y-4">
       <h1 className="text-xl font-extrabold text-navy">Settings</h1>
       <SuppressionBox />
-      <NumbersBox title="Demo cap per day" value={settings.demo_cap} onSave={(v) => save('demo_cap', v)} />
-      <NumbersBox title="Daily targets" value={settings.daily_targets} onSave={(v) => save('daily_targets', v)}
-        hint="Used by the next nightly run (overrides config/scoring.yaml)." />
+      <OutreachBox value={settings.outreach_whatsapp ?? ''} onSave={(v) => save('outreach_whatsapp', v)} />
+      <NumbersBox title="Daily mix (leads per day)" value={settings.daily_mix ?? {}} onSave={(v) => save('daily_mix', v)} max={40}
+        labels={{ land_developers: 'Land developers', property_agency: 'Property agencies' }}
+        hint="Used by the next nightly run. Start 20 land + 10 agencies; adjust weekly from the reply rates in Stats." />
+      <NumbersBox title="Plans per day" value={{ pilot: 5, ...(settings.demo_cap ?? {}) }} onSave={(v) => save('demo_cap', v)} labels={{ pilot: 'Pilot plans', web: 'Website demos' }} />
       <PauseBox />
       <QuickRepliesBox items={settings.quick_replies} onSave={(v) => save('quick_replies', v)} />
       <TemplatesBox items={settings.followup_templates} onSave={(v) => save('followup_templates', v)} />
@@ -77,16 +79,36 @@ function SuppressionBox() {
   )
 }
 
-function NumbersBox({ title, value, onSave, hint }: { title: string; value: { web: number; content: number }; onSave: (v: { web: number; content: number }) => void; hint?: string }) {
+function OutreachBox({ value, onSave }: { value: string; onSave: (v: string) => void }) {
   const [v, setV] = useState(value)
+  const digits = v.replace(/\D/g, '')
+  return (
+    <Card className="space-y-2 p-4">
+      <div className="font-bold text-navy">Outreach WhatsApp number</div>
+      <p className="text-sm text-navy/60">The number clients message when they tap Start on their plan. International format, digits only.</p>
+      <div className="flex flex-wrap items-end gap-2">
+        <input className={`${inputCls} w-56`} inputMode="numeric" placeholder="254114129809" value={v} onChange={(e) => setV(e.target.value)} />
+        <Button disabled={digits.length < 11 || digits === value} onClick={() => onSave(digits)}>Save</Button>
+        {digits && <a className="text-sm font-semibold text-cyan underline" href={`https://wa.me/${digits}`} target="_blank" rel="noreferrer">Test link ↗</a>}
+      </div>
+    </Card>
+  )
+}
+
+function NumbersBox({ title, value, onSave, hint, labels, max }: { title: string; value: Record<string, number>; onSave: (v: Record<string, number>) => void; hint?: string; labels?: Record<string, string>; max?: number }) {
+  const [v, setV] = useState(value)
+  const total = Object.values(v).reduce((a, b) => a + (Number(b) || 0), 0)
+  const over = max != null && total > max
   return (
     <Card className="space-y-2 p-4">
       <div className="font-bold text-navy">{title}</div>
       <div className="flex flex-wrap items-end gap-2">
-        <Field label="Website"><input type="number" min={0} className={`${inputCls} w-24`} value={v.web} onChange={(e) => setV({ ...v, web: Number(e.target.value) })} /></Field>
-        <Field label="Content"><input type="number" min={0} className={`${inputCls} w-24`} value={v.content} onChange={(e) => setV({ ...v, content: Number(e.target.value) })} /></Field>
-        <Button onClick={() => onSave(v)}>Save</Button>
+        {Object.keys(v).map((k) => (
+          <Field key={k} label={labels?.[k] ?? label(k)}><input type="number" min={0} className={`${inputCls} w-24`} value={v[k]} onChange={(e) => setV({ ...v, [k]: Math.max(0, Number(e.target.value)) })} /></Field>
+        ))}
+        <Button disabled={over} onClick={() => onSave(v)}>Save</Button>
       </div>
+      {max != null && <p className={`text-xs ${over ? 'font-semibold text-red-700' : 'text-navy/50'}`}>Total {total}{over ? ` (max ${max} a day keeps the number safe)` : ` of ${max}`}</p>}
       {hint && <p className="text-xs text-navy/50">{hint}</p>}
     </Card>
   )

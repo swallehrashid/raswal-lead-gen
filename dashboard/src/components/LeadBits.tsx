@@ -4,6 +4,8 @@ import { label, SITE_TONE, STATUS_TONE } from '../lib/format'
 import { displayPhone } from '../lib/phone'
 import { Badge, cx } from './ui'
 
+const ANGLE = { A: 'A · not advertising', B: 'B · advertising', C: 'C · no site' } as const
+
 export function LeadHeader({ lead, showStatus = true }: { lead: Lead; showStatus?: boolean }) {
   const b = lead.business
   return (
@@ -20,7 +22,9 @@ export function LeadHeader({ lead, showStatus = true }: { lead: Lead; showStatus
       </div>
       <div className="flex flex-wrap gap-1">
         {lead.site_status && <Badge tone={SITE_TONE[lead.site_status]}>{label(lead.site_status)}</Badge>}
-        <Badge tone={lead.track === 'web' ? 'navy' : 'gold'}>{lead.track === 'web' ? 'Website' : 'Content'} #{lead.rank}</Badge>
+        <Badge tone={lead.subcategory === 'land_developers' ? 'green' : 'navy'}>{lead.subcategory === 'land_developers' ? 'Land' : lead.subcategory === 'property_agency' ? 'Agency' : label(lead.subcategory)} #{lead.rank}</Badge>
+        {lead.brand?.angle && <Badge tone={lead.brand.angle === 'B' ? 'gold' : 'cyan'}>{ANGLE[lead.brand.angle]}</Badge>}
+        {lead.business.scam_flag && <Badge tone={lead.business.scam_flag === 'hard' ? 'red' : 'amber'}>scam words in reviews</Badge>}
         {showStatus && <Badge tone={STATUS_TONE[lead.status]}>{label(lead.status)}</Badge>}
       </div>
     </div>
@@ -43,7 +47,7 @@ export function ScoreChips({ lead }: { lead: Lead }) {
 }
 
 export function FactList({ lead }: { lead: Lead }) {
-  const facts = (lead.evaluation?.facts?.facts ?? []).filter((f) => f.track === lead.track || f.track === 'any')
+  const facts = (lead.evaluation?.facts?.facts ?? []).filter((f) => f.track !== 'upsell')
   const used = new Set(lead.message_variants.flatMap((v) => v.used_fact_ids))
   const [open, setOpen] = useState<string | null>(null)
   if (!facts.length) return null
@@ -66,6 +70,23 @@ export function FactList({ lead }: { lead: Lead }) {
   )
 }
 
+export function AdsLine({ lead }: { lead: Lead }) {
+  const b = lead.business
+  const q = encodeURIComponent(b.display_name || b.name)
+  const url = `https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KE&q=${q}`
+  const status = lead.brand?.ads_override ?? b.ads_status ?? 'unknown'
+  return (
+    <div className="flex flex-wrap items-center gap-2 text-sm">
+      <span className="font-semibold text-navy">Ads:</span>
+      {status === 'active'
+        ? <span>running {b.ads_active_count ?? ''} {b.ads_longest_days ? `· longest ${b.ads_longest_days} days` : ''}</span>
+        : <span className="text-navy/60">{status === 'none' ? 'none found' : 'not checked'}</span>}
+      <a className="font-semibold text-cyan underline" href={url} target="_blank" rel="noreferrer">Ad Library ↗</a>
+      {b.scam_terms?.length ? <span className="text-red-700">Review words: {b.scam_terms.join(', ')}</span> : null}
+    </div>
+  )
+}
+
 export function SocialLinks({ lead }: { lead: Lead }) {
   const links = lead.business.audit?.social_links ?? {}
   const entries = Object.entries(links)
@@ -79,7 +100,7 @@ export function SocialLinks({ lead }: { lead: Lead }) {
   )
 }
 
-export function CharCount({ text, min = 280, max = 480 }: { text: string; min?: number; max?: number }) {
+export function CharCount({ text, min = 380, max = 700 }: { text: string; min?: number; max?: number }) {
   const n = text.length
   const ok = n >= min && n <= max
   return <span className={cx('text-xs font-semibold', ok ? 'text-green-700' : 'text-red-600')}>{n} / {min}–{max}</span>

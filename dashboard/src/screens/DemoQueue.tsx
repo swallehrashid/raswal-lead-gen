@@ -4,7 +4,7 @@ import { fetchFileBlob, FileImg } from '../components/FileImg'
 import { LeadSheet } from '../components/LeadSheet'
 import { Badge, Button, Card, CopyButton, Empty, inputCls, Spinner, useToast } from '../components/ui'
 import { useApp, useData } from '../context'
-import type { Lead, Track } from '../data/types'
+import type { Lead } from '../data/types'
 import { demoSent, setDemoLink } from '../lib/actions'
 import { niceTime } from '../lib/format'
 import { buildLeadPack } from '../lib/leadpack'
@@ -19,22 +19,23 @@ export function DemoQueue() {
   const tz = settings.calendar.timezone
   const today = api.today()
   const [queued, done] = data
-  const sentToday = (t: Track) => done.filter((l) => l.demo_type === t && l.demo_sent_at && todayIn(tz, new Date(l.demo_sent_at)) === today).length
-  const cap = settings.demo_cap ?? { web: 3, content: 3 }
+  const kindOf = (l: Lead) => (l.demo_type === 'web' ? 'web' : 'pilot')
+  const sentToday = (t: string) => done.filter((l) => kindOf(l) === t && l.demo_sent_at && todayIn(tz, new Date(l.demo_sent_at)) === today).length
+  const cap: Record<string, number> = { pilot: 5, web: 3, ...(settings.demo_cap ?? {}) }
   const order = [...queued].sort((a, b) => (a.demo_queued_at ?? '').localeCompare(b.demo_queued_at ?? ''))
-  const slots: Record<Track, number> = { web: Math.max(0, cap.web - sentToday('web')), content: Math.max(0, cap.content - sentToday('content')) }
+  const slots: Record<string, number> = { web: Math.max(0, cap.web - sentToday('web')), pilot: Math.max(0, cap.pilot - sentToday('pilot')) }
   const holding = settings.quick_replies.find((q) => q.key === 'holding')?.text ?? "Thanks! I'll have it ready for you tomorrow morning."
   return (
     <div className="space-y-3">
-      <h1 className="text-xl font-extrabold text-navy">Demo queue</h1>
+      <h1 className="text-xl font-extrabold text-navy">Plans</h1>
       <Card className="flex flex-wrap gap-2 p-3 text-sm">
-        <Badge tone="navy">Website today {sentToday('web')}/{cap.web}</Badge>
-        <Badge tone="gold">Content today {sentToday('content')}/{cap.content}</Badge>
+        <Badge tone="green">Plans today {sentToday('pilot')}/{cap.pilot}</Badge>
+        <Badge tone="navy">Website demos today {sentToday('web')}/{cap.web}</Badge>
         <span className="text-navy/60">A yes before {settings.calendar.same_day_demo_cutoff} gets its link the same day.</span>
       </Card>
-      {!order.length && <Empty title="No demos queued">Mark a lead interested from the Inbox log.</Empty>}
+      {!order.length && <Empty title="No plans queued">Mark a lead interested from the Inbox log, then run <code>python -m pipeline generate</code> on your PC.</Empty>}
       {order.map((l) => {
-        const t = (l.demo_type ?? l.track) as Track
+        const t = kindOf(l)
         const today_ = slots[t] > 0
         if (today_) slots[t] -= 1
         return <DemoCard key={l.id} lead={l} today={today_} holding={holding} onOpen={() => setOpen(l.id)} />
@@ -83,7 +84,7 @@ function DemoCard({ lead, today, holding, onOpen }: { lead: Lead; today: boolean
         <div className="min-w-0 flex-1">
           <button onClick={onOpen} className="text-left text-lg font-bold text-navy hover:underline">{lead.business.display_name}</button>
           <div className="flex flex-wrap items-center gap-1 text-xs">
-            <Badge tone={lead.demo_type === 'content' ? 'gold' : 'navy'}>{lead.demo_type === 'content' ? 'Content demo' : 'Website demo'}</Badge>
+            <Badge tone={lead.demo_type === 'web' ? 'navy' : 'green'}>{lead.demo_type === 'web' ? 'Website demo' : 'Pilot plan'}</Badge>
             <span className="text-navy/50">yes at {niceTime(lead.demo_queued_at)}</span>
             {today ? <Badge tone="green">today</Badge> : <Badge tone="amber">tomorrow</Badge>}
           </div>
@@ -98,8 +99,8 @@ function DemoCard({ lead, today, holding, onOpen }: { lead: Lead; today: boolean
       {lead.brand?.demo_generated_at ? (
         <div className="space-y-2 rounded-xl bg-green-50 p-3">
           <div className="flex items-center gap-2 text-sm font-semibold text-green-800">
-            <Badge tone="green">✓ Demo generated</Badge>
-            <span className="text-green-900/70">Link is live — send it and mark sent.</span>
+            <Badge tone="green">✓ Generated</Badge>
+            <span className="text-green-900/70">Link is live: send it and mark sent.</span>
           </div>
           {lead.brand.demo_message && (
             <div className="rounded-lg bg-white/70 p-2 text-sm text-navy whitespace-pre-line">{lead.brand.demo_message}</div>
@@ -120,7 +121,7 @@ function DemoCard({ lead, today, holding, onOpen }: { lead: Lead; today: boolean
         <input className={inputCls} placeholder={`https://${lead.slug}.raswaltechsolutions.co.ke`} value={link} onChange={(e) => setLink(e.target.value)} />
         {link && <CopyButton size="sm" text={link} label="Copy" />}
       </div>
-      <Button variant="gold" className="w-full" onClick={markSent}>Mark demo sent</Button>
+      <Button variant="gold" className="w-full" onClick={markSent}>Mark plan sent</Button>
     </Card>
   )
 }
