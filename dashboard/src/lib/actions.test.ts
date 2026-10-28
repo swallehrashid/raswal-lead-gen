@@ -80,7 +80,7 @@ describe('lead pack', () => {
     const p = buildLeadPack(lead({ demo_type: 'web' }))
     expect(Object.keys(p)).toEqual(['lead_id', 'track', 'subcategory', 'template_id', 'business', 'brand', 'facts', 'review_themes', 'poster_lines', 'preview_domain'])
     expect(p.business.name).toBe('Kilima Homes')
-    expect(p.preview_domain).toBe('kilima-homes.raswaltechsolutions.com')
+    expect(p.preview_domain).toBe('kilima-homes.raswaltechsolutions.co.ke')
   })
 })
 
