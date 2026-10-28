@@ -10,7 +10,7 @@ Executor: Sonnet 5.5. Plan: `/home/swalleh/Content/RASWAL-ADS-PIVOT-EXECUTION.md
 - ⬜ 5. Warm-up click-to-WhatsApp ad for Raswal itself (KES 1–2k)
 - ⬜ 6. M-Pesa till/paybill for client ad budgets
 - ⬜ 7. Apify account + `APIFY_TOKEN` in `.env` and GitHub secret; $10/month limit
-- ⬜ 8. Google Flow images from `raswal-pipeline/ads/assets/flow-prompts.md` (not written yet, P3.2)
+- ⬜ 8. Google Flow images from `raswal-pipeline/ads/assets/flow-prompts.md` (written; 16 land + 16 agency images, save into `land/final/` and `agency/final/`)
 - ⬜ 9. Record the 4 access-guide screen recordings (P8.3)
 - ⬜ 10. Tell Sonnet the outreach WhatsApp number (needed for P2.1 `outreach_whatsapp` setting)
 - ⬜ 11. Confirm wildcard HTTPS on a brand-new slug after the first pilot deploy
@@ -32,6 +32,10 @@ Executor: Sonnet 5.5. Plan: `/home/swalleh/Content/RASWAL-ADS-PIVOT-EXECUTION.md
 ## Removal ledger
 | Path | Repo | Why removed | References fixed |
 |---|---|---|---|
+| `_logo_tmp.py`, `_posters_tmp.py`, `_retry_baraka.py`, `brands/content-baraka.json`, `_staging/`, `_content_out/`, `__pycache__/` | raswal-pipeline | one-off Baraka debug leftovers | only self-references and `build_content.py` |
+| `build_content.py` | raswal-pipeline | content demo track retired | `generate.py` content kind removed; `--track` choices now `web|pilot` |
+| `content/templates/` (5 demo kits), `content/businesses/tpl-*` (5), `content/businesses/baraka-homes/` | content-creation-pipeline | demo templates retired; archived first to `~/Projects/_archive-pre-ads-pivot/content-demo-templates.tar.gz` (baraka-homes was a throwaway test client, not archived) | registry regenerated (`demo`, `raswal`, `sahilpay` still resolve); `tsc` clean; README note added |
+| web/content scoring (`web_score`, `content_score`, `content_gap`, `content_eligible`), `web:`/`content:` blocks of `scoring.yaml`, `bridges`, per-track `questions`/`fallback`, `price_web`/`price_content` quick replies, `fu2_web`/`fu2_content`, `list_day`/`subcategory_for_day`, `daily_targets` use | raswal-lead-gen | replaced by the single ads score, angle-based messages and the daily mix | tests rewritten; dashboard follow-ups use `fu2` |
 
 ## Decisions & deviations
 - **P1.3 deferred.** Removing the old web/poster teaser code before the new teaser is wired would leave Sunday's nightly with no working teaser. Old teaser code and `teasers/{web,content,frames}` stay until G0 is approved and `render_teasers` is switched to `render_ad_teasers`; `teaser.py` temporarily renders ads leads with the existing poster set.
