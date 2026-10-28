@@ -50,7 +50,8 @@ def test_each_subcategory_has_a_direction_and_photos(cfg):
 
 def test_payload(cfg):
     lead = ad_lead_payload(sample(cfg), cfg)
-    want = {"business_name", "area", "subcategory", "logo_data_url", "primary", "accent", "ad_bg_data_url", "ad_post_data_url", "ad"}
+    want = {"business_name", "area", "subcategory", "logo_data_url", "primary", "accent", "ad_bg_data_url",
+            "ad_post_data_url", "ad"}
     assert want <= set(lead)
     assert lead["ad_bg_data_url"].startswith("data:image/jpeg;base64,") and lead["logo_data_url"] is None
     assert lead["ad"]["badge"] and "{area}" in lead["ad"]["bubbles"][0]
