@@ -56,7 +56,8 @@ building_types: [apartment_building, apartment_complex, condominium_complex, hou
 
 # BUILDING_NOT_BUSINESS: name matches a building word AND has no business word.
 # "estate" counts as a building word unless the name also contains agent/agents.
-building_words: [apartment, apartments, court, heights, residence, residences, residency, suites, tower, towers, villa, villas, garden, gardens, plaza, mall, estate]
+building_words: [apartment, apartments, court, heights, residence, residences, residency, suites, tower, towers, villa, villas, garden, gardens, plaza, mall, estate,
+                 park, paradise, gate, complex, bnb, airbnb, stays, cottages]
 building_word_exceptions:
   estate: [agent, agents]
 business_words:
@@ -99,3 +100,21 @@ business_words:
   - tiles
 
 gov_ngo_words: [county, government, ministry, authority, board, ngo, church, mosque, parish, diocese, cathedral, national housing corporation, kenya urban roads, kenya rural roads, kenha, kura, kerra, nca, nema]
+
+# Stricter rule for the active ad verticals: a name with NO business word must come from a Places
+# primaryType that looks like a firm, otherwise it is a building/estate/place (BUILDING_NOT_BUSINESS).
+# ("service" is deliberately not allowed: it is what most estates and complexes come back as.)
+strict_subcategories: [land_developers, property_agency]
+allowed_primary_types: [real_estate_agency, real_estate_developer, property_management_company, consultant, corporate_office]
+
+# Scam check (needs Place Details reviews, so it runs in enrichment). Whole words/phrases, case-insensitive.
+#   hard: a review rated ≤ 2 contains one of these → SCAM_RISK gate (excluded)
+#   soft: a review rated ≤ 3 contains one of these → score penalty + red chip in the dashboard
+# Places returns at most 5 reviews per business, so this catches visible problems, not all of them.
+scam_terms:
+  hard: [scam, scammer, scammers, fraud, fraudster, fraudsters, conman, con men, conmen, stole, stolen,
+         thieves, thief, lost my money, never refunded, dci, police, court case,
+         matapeli, tapeli, utapeli, wezi, mwizi, wameniibia, pesa yangu]
+  soft: [refund, no title, title deed delay, still waiting for title, still waiting for my title,
+         beware, avoid, not genuine, fake]
+scam_blocklist: []        # business names Swalleh adds by hand (exact normalised name) → SCAM_RISK

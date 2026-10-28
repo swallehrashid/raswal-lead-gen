@@ -107,6 +107,10 @@ class ExclusionsConfig(_M):
     building_word_exceptions: dict[str, list[str]] = {}
     business_words: list[str]
     gov_ngo_words: list[str]
+    strict_subcategories: list[str] = []
+    allowed_primary_types: list[str] = []
+    scam_terms: dict[str, list[str]] = {}
+    scam_blocklist: list[str] = []
 
 
 # ---------------------------------------------------------------- scoring

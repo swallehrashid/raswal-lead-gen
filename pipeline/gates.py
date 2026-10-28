@@ -11,7 +11,7 @@ from pipeline.utils.urls import host, host_matches
 
 ORDER = ["NOT_OPERATIONAL", "NO_MOBILE", "SUPPRESSED", "ALREADY_CONTACTED", "PREVIOUSLY_LISTED", "EXCLUDED_TYPE",
          "BUILDING_NOT_BUSINESS", "BIG_BRAND", "PORTAL_OR_CLASSIFIED", "GOV_NGO", "TOO_SMALL", "DORMANT",
-         "LOW_RATING", "NO_HOOK"]
+         "LOW_RATING", "SCAM_RISK", "NO_HOOK"]
 
 
 @dataclass
@@ -43,6 +43,12 @@ def business_word(norm: str, excl) -> str | None:
 def is_building_name(norm: str, excl) -> bool:
     """Name looks like a building/estate and contains no business word."""
     return building_word(norm, excl) is not None and business_word(norm, excl) is None
+
+
+def not_a_firm(c: Candidate, norm: str, excl) -> bool:
+    """Strict rule for the ad verticals: no business word in the name AND a Places type that isn't a firm."""
+    return (c.subcategory in excl.strict_subcategories and business_word(norm, excl) is None
+            and c.primary_type not in excl.allowed_primary_types)
 
 
 def brand_match(norm: str, excl) -> str | None:
@@ -94,8 +100,10 @@ def cheap_gates(c: Candidate, cfg, ctx: GateContext, now: datetime | None = None
         codes.append("PREVIOUSLY_LISTED")
     if set(c.types) & set(excl.excluded_types) or (c.primary_type in excl.excluded_types):
         codes.append("EXCLUDED_TYPE")
-    if is_building_name(norm, excl):
+    if is_building_name(norm, excl) or not_a_firm(c, norm, excl):
         codes.append("BUILDING_NOT_BUSINESS")
+    if norm in {basic_norm(n) for n in excl.scam_blocklist}:
+        codes.append("SCAM_RISK")
     if brand_match(norm, excl):
         codes.append("BIG_BRAND")
     if portal_match(norm, c.website_url, excl):

@@ -103,3 +103,53 @@ def test_suppression_contacted_and_listed(cfg):
     assert "ALREADY_CONTACTED" in cheap_gates(cand(), cfg, ctx, NOW)
     ctx = GateContext(listed_place_ids={"p1"})
     assert "PREVIOUSLY_LISTED" in cheap_gates(cand(), cfg, ctx, NOW)
+
+
+# ---------------------------------------------------------------- ads pivot: stricter estate / building filter
+
+CENSUS_LEAKS = [
+    ("Phenom Park", "service"),
+    ("Five Star Paradise Runda", "service"),
+    ("Ineza Runda Gate A", "service"),
+    ("Westlands Business Park", "service"),
+    ("The Cycads", "service"),
+    ("Kwa Wangari", "service"),
+    ("Mbandu Complex", "service"),
+    ("PrestigeHomes Bnb", "service"),
+]
+LEGIT = [
+    ("Kenya Homes", "real_estate_agency"),
+    ("Fanaka Real Estate", "real_estate_agency"),
+    ("Kings Developers", "service"),
+    ("Username Properties", "real_estate_agency"),
+    ("LM Realtors", "real_estate_agency"),
+    ("Coral Property International", "consultant"),
+]
+
+
+@pytest.mark.parametrize("sub", ["land_developers", "property_agency"])
+@pytest.mark.parametrize("name,ptype", CENSUS_LEAKS)
+def test_census_leaks_are_rejected(cfg, sub, name, ptype):
+    c = cand(name, subcategory=sub, primary_type=ptype, types=[ptype])
+    assert "BUILDING_NOT_BUSINESS" in cheap_gates(c, cfg, GateContext(), NOW)
+
+
+@pytest.mark.parametrize("sub", ["land_developers", "property_agency"])
+@pytest.mark.parametrize("name,ptype", LEGIT)
+def test_legit_firms_pass_the_estate_filter(cfg, sub, name, ptype):
+    c = cand(name, subcategory=sub, primary_type=ptype, types=[ptype])
+    assert "BUILDING_NOT_BUSINESS" not in cheap_gates(c, cfg, GateContext(), NOW)
+
+
+def test_strict_rule_only_applies_to_the_ad_verticals(cfg):
+    c = cand("Kwa Wangari", subcategory="hardware_supplies", primary_type="service", types=["service"])
+    assert "BUILDING_NOT_BUSINESS" not in cheap_gates(c, cfg, GateContext(), NOW)
+
+
+def test_blocklisted_name_is_scam_risk(cfg):
+    import copy
+    c2 = copy.deepcopy(cfg)
+    c2.exclusions.scam_blocklist = ["Bad Plots Ltd"]
+    c = cand("Bad Plots Ltd", subcategory="land_developers")
+    assert "SCAM_RISK" in cheap_gates(c, c2, GateContext(), NOW)
+    assert "SCAM_RISK" not in cheap_gates(cand("Good Plots Ltd", subcategory="land_developers"), c2, GateContext(), NOW)

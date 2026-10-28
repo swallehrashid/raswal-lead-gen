@@ -10,6 +10,7 @@ from pipeline.audit_site import audit_website, finalize_status, needs_psi
 from pipeline.models import Audit, Candidate
 from pipeline.normalise import parse_reviews
 from pipeline.psi import run_psi_batch
+from pipeline.scam import scam_check
 from pipeline.score import pre_score
 
 log = logging.getLogger(__name__)
@@ -47,6 +48,8 @@ def enrich(passed: list[Candidate], cfg, fetcher, psi_client, budget, store, now
     top = sorted(passed, key=lambda c: -c.pre_score)[:n]
     log.info("enrich: auditing %d of %d gate-passers (enrich_limit %d)", len(top), len(passed), n)
     _fetch_reviews(top, places, budget)
+    for c in top:
+        scam_check(c, cfg)
 
     def audit(c: Candidate) -> None:
         try:
