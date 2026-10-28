@@ -457,7 +457,7 @@ def load_config(config_dir: Path = CONFIG_DIR) -> Config:
 # variable → (SETUP_CHECKLIST section that explains how to get it, is_secret)
 ENV_VARS: dict[str, tuple[str, bool]] = {
     "GOOGLE_PLACES_API_KEY": ("§2 Google Cloud: Places API + PageSpeed Insights", True),
-    "PSI_API_KEY": ("§2 Google Cloud: Places API + PageSpeed Insights", True),
+    "PSI_API_KEY": ("§2 Google Cloud: PageSpeed Insights (optional, off by default)", True),
     "APIFY_TOKEN": ("§7 Apify (optional: ad-library + Instagram signals)", True),
     "GEMINI_API_KEY": ("§3 Gemini API", True),
     "GEMINI_MODEL": ("§3 Gemini API", False),

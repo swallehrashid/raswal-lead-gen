@@ -57,7 +57,7 @@ def build_clients(env, cfg, *, offline: bool, use_llm: bool, subcategory: str | 
             llm=FixtureLlm(cfg) if use_llm else None,
             offline=True,
         )
-    names = ["GOOGLE_PLACES_API_KEY", "PSI_API_KEY"] + (["GEMINI_API_KEY"] if use_llm else [])
+    names = ["GOOGLE_PLACES_API_KEY"] + (["GEMINI_API_KEY"] if use_llm else [])
     env.require(*names)
     from pipeline.discover import LivePlacesClient
     from pipeline.llm import GeminiClient
@@ -66,7 +66,7 @@ def build_clients(env, cfg, *, offline: bool, use_llm: bool, subcategory: str | 
     return Clients(
         places=LivePlacesClient(env.google_places_api_key, cfg),
         fetcher=LiveFetcher(cfg),
-        psi=LivePsiClient(env.psi_api_key, cfg),
+        psi=LivePsiClient(env.psi_api_key or "", cfg),
         llm=GeminiClient(env.gemini_api_key, env.gemini_model, cfg) if use_llm else None,
         offline=False,
     )

@@ -63,8 +63,8 @@ def test_dry_run_defaults_to_5_calls_and_override_cannot_exceed_nightly(cfg):
 def test_budget_records_usage(cfg):
     s = MemoryStore()
     b = Budget.from_config(cfg, s, date(2026, 10, 12))
-    b.spend("places"); b.spend("psi")
-    assert s.get_usage("2026-10", "places") == 1 and s.get_usage("2026-10", "psi") == 1
+    b.spend("places"); b.spend("gemini")
+    assert s.get_usage("2026-10", "places") == 1 and s.get_usage("2026-10", "gemini") == 1
 
 
 def _plan(cfg, sub="property_agency"):

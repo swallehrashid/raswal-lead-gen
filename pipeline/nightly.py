@@ -115,7 +115,7 @@ def paused_by_dashboard(settings: dict, d: date) -> str | None:
 def required_env(opts: NightlyOptions) -> list[str]:
     if opts.offline:
         return []
-    names = ["GOOGLE_PLACES_API_KEY", "PSI_API_KEY"]
+    names = ["GOOGLE_PLACES_API_KEY"]
     if not opts.no_llm:
         names.append("GEMINI_API_KEY")
     if not (opts.dry_run and opts.no_db):

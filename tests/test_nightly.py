@@ -88,14 +88,14 @@ def test_holiday_is_skipped(cfg, tmp_path):
 def test_live_run_without_keys_fails_fast_naming_everything(cfg, tmp_path):
     with pytest.raises(MissingSecrets) as e:
         run_nightly(cfg, Env(), opts(tmp_path, offline=False, dry_run=False))
-    assert set(e.value.names) == {"GOOGLE_PLACES_API_KEY", "PSI_API_KEY", "GEMINI_API_KEY", "SUPABASE_URL",
+    assert set(e.value.names) == {"GOOGLE_PLACES_API_KEY", "GEMINI_API_KEY", "SUPABASE_URL",
                                   "SUPABASE_SERVICE_ROLE_KEY"}
 
 
 def test_dry_run_no_db_needs_no_supabase(cfg, tmp_path):
     with pytest.raises(MissingSecrets) as e:
         run_nightly(cfg, Env(), opts(tmp_path, offline=False, no_db=True, no_llm=True))
-    assert set(e.value.names) == {"GOOGLE_PLACES_API_KEY", "PSI_API_KEY"}
+    assert set(e.value.names) == {"GOOGLE_PLACES_API_KEY"}
 
 
 def test_cli_exit_code_and_message(capsys, monkeypatch):

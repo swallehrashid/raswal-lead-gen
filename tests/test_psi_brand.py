@@ -38,6 +38,7 @@ def test_psi_batch_dedupes_by_domain_and_caches(cfg):
     store = MemoryStore()
     psi = FixturePsi()
     budget = Budget.from_config(cfg, store, date(2026, 10, 12))
+    budget.caps["psi"].per_night = 150            # PSI is off by default in config; this tests the batch itself
     a, b = _cand("a", "https://www.x.co.ke/"), _cand("b", "https://x.co.ke/about")
     run_psi_batch([a, b], psi, budget, store, cfg, sleep=lambda s: None)
     assert len(psi.calls) == 1 and a.audit.psi_perf == b.audit.psi_perf
@@ -91,3 +92,12 @@ def test_colour_extraction_ignores_white_black_and_grey():
     assert contrast((255, 255, 255), hex_to_rgb(col["primary"])) >= 4.5   # darkened
     assert "accent" in col
     assert extract_colours(Image.new("RGBA", (50, 50), (0, 0, 0, 0))) is None
+
+
+def test_psi_is_off_by_default_and_costs_nothing(cfg):
+    store = MemoryStore()
+    psi = FixturePsi()
+    budget = Budget.from_config(cfg, store, date(2026, 10, 12))
+    assert cfg.budget.psi.calls_per_night == 0
+    run_psi_batch([_cand("a", "https://x.co.ke/")], psi, budget, store, cfg, sleep=lambda s: None)
+    assert psi.calls == [] and budget.used("psi") == 0

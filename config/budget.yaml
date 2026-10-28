@@ -17,7 +17,8 @@ places:
   details_per_month: 1000
 
 psi:
-  calls_per_night: 150
+  # PageSpeed checks are OFF (0): the ads pitch doesn't use them and they stalled on slow Kenyan sites. Raise to re-enable.
+  calls_per_night: 0
   concurrency: 4
   attempts: 2
   cache_days: 30
