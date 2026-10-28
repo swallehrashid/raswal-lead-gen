@@ -6,7 +6,7 @@ from pipeline.budget import Budget, BudgetExhausted, Cap
 from pipeline.discover import FIELD_MASK, LivePlacesClient, discover
 from pipeline.fakes import FixturePlaces
 from pipeline.models import Cell
-from pipeline.plan import Plan, make_plan, order_cells
+from pipeline.plan import make_day_plan, order_cells
 from pipeline.store import MemoryStore
 
 
@@ -67,8 +67,8 @@ def test_budget_records_usage(cfg):
     assert s.get_usage("2026-10", "places") == 1 and s.get_usage("2026-10", "psi") == 1
 
 
-def _plan(cfg):
-    return make_plan(cfg, MemoryStore(), list_date=date(2026, 10, 12))
+def _plan(cfg, sub="property_agency"):
+    return make_day_plan(cfg, MemoryStore(), list_date=date(2026, 10, 12), subcategory=sub).plans[0]
 
 
 def test_discovery_stops_at_cap_and_paginates(cfg):
@@ -114,8 +114,21 @@ def test_tier_progression(cfg):
     assert [c.area for c in order_cells(cfg, sub, cells)][-1] == "C"
 
 
-def test_plan_skips_holiday_and_records_low_cells(cfg):
-    p = make_plan(cfg, MemoryStore(), list_date=date(2026, 10, 20))
-    assert isinstance(p, Plan) and "Mashujaa" in p.skip_reason
-    p = make_plan(cfg, MemoryStore(), list_date=date(2026, 10, 12))
-    assert p.subcategory.key == "property_agency" and p.cells and all(c.tier == 1 for c in p.cells)
+def test_day_plan_skips_holiday_and_plans_both_active_subcategories(cfg):
+    d = make_day_plan(cfg, MemoryStore(), list_date=date(2026, 10, 20))
+    assert "Mashujaa" in d.skip_reason and d.plans == []
+    d = make_day_plan(cfg, MemoryStore(), list_date=date(2026, 10, 12))
+    assert [p.subcategory.key for p in d.plans] == ["property_agency", "land_developers"]
+    assert all(p.cells and all(c.tier == 1 for c in p.cells) for p in d.plans)
+
+
+def test_paused_verticals_are_never_planned(cfg):
+    d = make_day_plan(cfg, MemoryStore(), list_date=date(2026, 10, 12))
+    assert not {"construction", "hardware_supplies", "roofing_steel"} & {p.subcategory.key for p in d.plans}
+
+
+def test_discovery_respects_per_subcategory_call_share(cfg):
+    plan = _plan(cfg)
+    res = discover(cfg, plan, FixturePlaces("property_agency"), _budget(night=40), set(), sleep=lambda s: None,
+                   max_calls=3)
+    assert res.calls == 3 and "share" in res.stopped_reason

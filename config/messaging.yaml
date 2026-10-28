@@ -1,30 +1,36 @@
-# Message rules, fact texts, fallbacks, follow-ups and quick replies (brief §11, §12).
+# Message rules, fact texts, openings, follow-ups and quick replies (ads pivot).
+# This file is the SINGLE source of outbound copy. Numbers (pilot budget, prices) live in pilot.yaml;
+# placeholders like {engine_intro} are filled from it when the dashboard settings are seeded.
 # Follow-up templates and quick replies are copied to Supabase `settings` on the first run;
 # after that, edits made in the dashboard win.
 
 signoff: "— Swalleh, Raswal Tech Solutions"
-length: {min: 280, max: 480}
+length: {min: 380, max: 700}
 max_emoji: 1
-swahili_touch_rate: 0.3
 review_copy_max_words: 5          # 6 or more consecutive words copied from a review → reject
 paraphrase_max_words: 12
 
+# Every first message must contain ALL of these (case-insensitive). Spell it "enquiries", never "inquiries".
+required_phrases:
+  - "enquiries on your WhatsApp"
+  - "free {days}-day pilot"
+  - "KES {budget}"
+forbidden_phrases: ["inquir"]
+core_promise: "We put more enquiries on your WhatsApp."
+
 greetings:
-  english: "Hi {business} team 👋"
-  english_plain: "Hi {business} team."
-  swahili: "Habari {business} 👋"
-  swahili_plain: "Habari {business}."
+  swahili: "Habari {business} team, hope business is going well."
+  english: "Hello {business} team, hope your week is going well."
 
-bridges:
-  web: "I put together a quick preview of how {business_possessive} website could look. It's in the image."
-  content: "I mocked up a few posts in your colours. Have a look."
+# What the business sells, per subcategory.
+nouns:
+  land_developers: "plots"
+  property_agency: "listings"
+  construction: "projects"
+  hardware_supplies: "products"
+  roofing_steel: "products"
 
-questions:
-  web: ["Want me to send you the live preview link?", "Should I send the full preview?"]
-  content: ["Should I send you the full set?", "Want me to send the full preview?"]
-
-swahili_closers: ["Asante!", "Karibu!"]
-
+# Banned in outbound copy (the pilot is "free" and has a price in KES, so those words are allowed).
 banned_phrases:
   - revolutionary
   - skyrocket
@@ -41,14 +47,29 @@ banned_phrases:
   - "% off"
   - offer ends
   - guaranteed
+  - guarantee
+  - risk-free
+  - "100%"
+  - returns
+  - roi
+  - investment opportunity
+  - double your
   - cheap
   - best price
-  - free website
   - click here
 
-# Deterministic fact catalogue (§11.2). The LLM may rephrase but not change the claim.
+# Deterministic fact catalogue. The LLM may rephrase but not change the claim.
 # Placeholders are filled from the fact's evidence.
 fact_texts:
+  ADS_ACTIVE: "Your ads are running on Facebook and Instagram right now."
+  ADS_LONG_RUNNING: "One of your ads has been running for about {weeks} weeks."
+  NO_SITE_HIGH_REVIEWS: "{n} Google reviews, but no website on your listing."
+  RECENT_REVIEWS: "At least {k} new Google reviews recently."
+  HIGH_RATING: "{rating}★ from {n} reviews."
+  REVIEWS_COUNT: "{rating}★ from {n} reviews."
+  MANAGES_LISTINGS: "Your number is on {n} property listings on Google Maps."
+  BRANCHES: "{n} branches on Google Maps."
+  # Website-upsell signals (never used in the first message; shown in the dashboard)
   SITE_DEAD: "{domain}, the website on your Google listing, isn't loading. It shows {marker}."
   SOCIAL_AS_SITE: "The Website button on your Google listing opens your {platform} page."
   SITE_INSECURE: "Chrome shows a 'Not secure' warning on {domain}."
@@ -57,56 +78,74 @@ fact_texts:
   NO_VIEWPORT: "{domain} isn't set up for phones; it shows the desktop layout shrunk down."
   OLD_COPYRIGHT: "Your site footer still says © {year}."
   NO_WHATSAPP_BUTTON: "There's no WhatsApp button on {domain}."
-  NO_SITE_HIGH_REVIEWS: "{n} Google reviews, but no website on your listing."
-  RECENT_REVIEWS: "At least {k} new Google reviews in the last 3 months."
-  HIGH_RATING: "{rating}★ from {n} reviews."
-  MANAGES_LISTINGS: "Your number is on {n} property listings on Google Maps."
-  BRANCHES: "{n} branches on Google Maps."
   GOOD_SITE: "Your website is solid: it loads fast on mobile and looks current."
   NO_SOCIAL_LINKS: "Your website doesn't link to any social pages."
   NO_VIDEO: "There's no video anywhere on your site."
   STALE_BLOG: "The latest post on your news page is from {month_year}."
 
-# Order used to pick the "top hook" when strengths tie (strongest first).
-fact_priority: [SITE_DEAD, SOCIAL_AS_SITE, SITE_INSECURE, FREE_BUILDER, NO_SITE_HIGH_REVIEWS, REVIEW_PAIN, REVIEW_THEME, NO_SOCIAL_LINKS, SLOW_MOBILE, NO_VIEWPORT, OLD_COPYRIGHT, NO_WHATSAPP_BUTTON, MANAGES_LISTINGS, BRANCHES, RECENT_REVIEWS, HIGH_RATING, GOOD_SITE, NO_VIDEO, STALE_BLOG]
+# Order used to pick the opening fact when strengths tie (best opener first).
+fact_priority: [ADS_ACTIVE, ADS_LONG_RUNNING, NO_SITE_HIGH_REVIEWS, REVIEW_THEME, HIGH_RATING, RECENT_REVIEWS, MANAGES_LISTINGS, BRANCHES, REVIEWS_COUNT, SITE_DEAD, SOCIAL_AS_SITE, SITE_INSECURE, FREE_BUILDER, SLOW_MOBILE, NO_VIEWPORT, OLD_COPYRIGHT, NO_WHATSAPP_BUTTON, NO_SOCIAL_LINKS, GOOD_SITE, NO_VIDEO, STALE_BLOG]
 
-# Deterministic fallback (§12.5): used when the LLM output fails validation twice, the
-# Gemini budget is spent, or --no-llm. {observation} is the fact text, lightly adapted.
-# {extra} is a second fact, added only when needed to reach the minimum length.
-fallback:
-  default_web: "{greeting} {observation} {extra}I put together a quick preview of how {business_possessive} website could look. It's in the image, with your name and colours. {question}\n{signoff}"
-  default_content: "{greeting} {observation} {extra}I mocked up a few posts in your colours for {business}. Have a look at the image. {question}\n{signoff}"
-  by_code:
-    SITE_DEAD: "{greeting} I tried {domain} from your Google listing and it isn't loading; it shows {marker}. {extra}I put together a quick preview of how {business_possessive} website could look. It's in the image. {question}\n{signoff}"
-    SOCIAL_AS_SITE: "{greeting} The Website button on your Google listing opens your {platform} page, so people searching on Google can't see much about {business}. {extra}I mocked up what a proper {business} site could look like (in the image). {question}\n{signoff}"
-    NO_SITE_HIGH_REVIEWS: "{greeting} {business} has {n} Google reviews, but there's no website on your listing to send people to. {extra}I put together a preview of how a {business} website could look. It's in the image. {question}\n{signoff}"
-    NO_SOCIAL_LINKS: "{greeting} Your website doesn't link to any social pages, which is where a lot of people scroll before they call. {extra}I mocked up a few posts in your colours for {business}. Have a look at the image. {question}\n{signoff}"
-  # Used to pad a short fallback (generic, makes no specific claim).
-  filler:
-    web: "Most people check a business on their phone before they call, so it helps to have a page that shows your work clearly. "
-    content: "Regular posts are an easy way to stay in front of people who are comparing options. "
+# ---------------------------------------------------------------- first message
+# Message = greeting / opening / body / offer / question / sign-off, joined by line breaks.
+#   greeting  : greetings.swahili for variant 1, greetings.english for variant 2
+#   opening   : one sentence from the opening fact (the LLM may rephrase it; fallback uses these)
+#   body      : by angle  A not advertising · B already advertising · C no or broken website
+#   Angle C never leads with the website criticism.
+openings:
+  default: "I came across {business} on Google. {observation}"
+  ADS_ACTIVE: "I saw your ads running on Facebook, good to see you're already reaching buyers."
+  ADS_LONG_RUNNING: "I noticed one of your ads has been running for about {weeks} weeks."
+  HIGH_RATING: "I came across {business} on Google, {rating}★ from {n} reviews; that trust is well earned."
+  REVIEWS_COUNT: "I came across {business} on Google, {rating}★ from {n} reviews."
+  RECENT_REVIEWS: "I came across {business} on Google and saw new reviews coming in recently, good to see the momentum."
+  NO_SITE_HIGH_REVIEWS: "{business} has {n} Google reviews, which is strong trust to build on."
+  MANAGES_LISTINGS: "I see your number on {n} property listings on Google Maps."
+  BRANCHES: "I see {business} has {n} branches on Google Maps, good to see the growth."
 
-# Follow-ups (§12.6). {weekday} = weekday of the first message.
+bodies:
+  A: "I'm Swalleh from Raswal Tech Solutions. We put more enquiries on your WhatsApp. We design and run Facebook and Instagram ads for your {noun}, and buyers tap straight into your WhatsApp chat. I've mocked up how your ad could look (see the image)."
+  B: "I'm Swalleh from Raswal Tech Solutions. We put more enquiries on your WhatsApp from the same kind of budget: fresh, premium ads every week, with three hooks tested against each other so the money follows what works. I've mocked up one for {business} (see the image)."
+  C: "I'm Swalleh from Raswal Tech Solutions. We put more enquiries on your WhatsApp. We run Facebook and Instagram ads that send buyers straight into your WhatsApp, no website needed to start. I've mocked up how your ad could look (see the image)."
+
+offers:
+  A: "If you're open to it, we can run a free {days}-day pilot: you only put KES {budget} into the ads, and we handle the design, targeting and setup."
+  B: "Would you be open to a free {days}-day pilot on KES {budget} of ad spend, side by side with what you're running now?"
+  C: "We can run a free {days}-day pilot: you put only KES {budget} into the ads, and we do the rest."
+
+questions:                        # variant 1, variant 2
+  A: ["May I send you the full plan? Asante.", "Shall I send you the full plan? Asante sana."]
+  B: ["Shall I send you the full plan? Asante sana.", "May I send you the full plan? Asante."]
+  C: ["May I send you the full plan? Asante.", "Shall I send you the full plan? Asante sana."]
+
+# ---------------------------------------------------------------- follow-ups
+# {weekday} = weekday of the first message. plan_delivery is sent with the pilot-plan link.
 followups:
-  fu1: "Hi {business} team, just checking you saw the preview I sent on {weekday}? Happy to share the live link; it takes a minute to look through. — Swalleh"
-  fu2_web: "Hi {business} team, one last note from me. If a website isn't a priority right now, the preview is yours to keep. If you'd like, I can send the live version so you can click through it on your phone. If now isn't the right time, no problem at all, I won't keep messaging. — Swalleh"
-  fu2_content: "Hi {business} team, one last note from me. I can send the full sample set (posters and a short video idea) so you can see how it would look on your pages week to week. If now isn't the right time, no problem at all, I won't keep messaging. — Swalleh"
-  demo_fu1: "Hi {business} team, did you get a chance to open the preview link? Happy to change anything you'd like to see. — Swalleh"
-  demo_fu2: "Hi {business} team, just following up on the preview. Shall we go ahead, or is there anything you'd like adjusted first? — Swalleh"
+  fu1: "Habari {business} team, just checking you saw the ad mockup I sent on {weekday}? The free {days}-day pilot is still open. I can share the full plan: your 3 ads, who they'll reach and exactly how the KES {budget} is used. Asante. — Swalleh"
+  fu2: "Habari {business} team, a last note from me. If ads aren't a priority right now, no problem at all; the mockup is yours to keep. Whenever you'd like the full plan, just reply \"plan\". Asante, and all the best with sales. — Swalleh"
+  plan_delivery: "Habari {business} team 👋 Here's your {days}-day enquiry pilot plan: your 3 ads, who will see them, and how the KES {budget} is used: {link} It's best on your phone, just scroll. Asante! — Swalleh, Raswal Tech Solutions"
+  demo_fu1: "Habari {business} team, did you get a chance to scroll through your pilot plan? Happy to adjust anything: the ads, the areas or the budget. — Swalleh"
+  demo_fu2: "Habari {business} team, shall we start your free {days}-day pilot this week? Once we have a few details and the KES {budget}, your ads can be live within 24 hours. — Swalleh"
 
-# Quick replies (§12.7). action: what the dashboard does when you use it.
+# ---------------------------------------------------------------- quick replies
+# Tokens in {curly} that are NOT {business} are filled from pilot.yaml when seeded.
 quick_replies:
-  - {key: price_web, label: "How much? (website)", text: "Websites like the preview start from KES 30,000 depending on pages and features. Should I send the live preview first so you can see exactly what you'd get?"}
-  - {key: price_content, label: "How much? (content)", text: "Content packages start from KES 6,000 a month, or per piece. Want to see the full sample set first?"}
-  - {key: who, label: "Who is this?", text: "I'm Swalleh from Raswal Tech Solutions, a web and content studio in Nairobi. I found {business} on Google Maps; your number is on the listing. If you'd prefer I don't message again, just say so."}
-  - {key: has_provider, label: "We already have someone", text: "Great, glad you're covered. Keep the preview, and all the best!", action: lost_has_provider}
-  - {key: not_now, label: "Not now", text: "No problem at all. Should I check back in January?", action: snooze}
-  - {key: stop, label: "Stop / not interested", text: "Sorry for the bother, I won't message again.", action: opt_out}
-  - {key: holding, label: "Demo tomorrow (over cap)", text: "Thanks! I'll have it ready for you tomorrow morning."}
+  - {key: price, label: "How much?", text: "The pilot itself is free. You only fund the ads: KES {budget} all-in, and it goes to Facebook, not to us. If you like the results, the Enquiry Engine is KES {engine_intro}/month (introductory; standard KES {engine_standard}) plus your ad budget: new ads every week, testing, targeting, WhatsApp setup and a weekly report."}
+  - {key: how_5k, label: "How is the 5k used?", text: "From your KES {budget}, {vat_note}. Days 1–2 we test 3 ads; days 3–7 we put the money behind the winner. You get a short WhatsApp update every day."}
+  - {key: results, label: "What results?", text: "Honest answer: we promise enquiries, not sales. From KES {budget} we'd expect roughly {chats_low}–{chats_high} WhatsApp chats and a few site visits booked, depending on your offer. We agree targets with you before we start."}
+  - {key: safe, label: "Is it safe?", text: "Your Page, your WhatsApp and your buyers stay yours. We only get permission to advertise on your Page, with no passwords, and you can remove us any time in one tap."}
+  - {key: no_page, label: "No Facebook Page", text: "No problem. We'll create your Facebook Page together on a 10-minute call, on your phone, so it's fully yours."}
+  - {key: start_pilot, label: "Start the pilot", text: "Karibu! 🙏 To set up your pilot, please send: (1) the project or plots to advertise and the exact location, (2) plot size and price, cash and instalment, (3) deposit and number of months, (4) title status, be honest, we only say ready title if it is, (5) site-visit days and pickup point, (6) 5–10 photos or short videos (drone clips are gold)."}
+  - {key: website, label: "Websites?", text: "Websites are KES {website_setup} setup + KES {website_monthly}/month ({website_min_months}-month plan): hosting, updates and a WhatsApp button included."}
+  - {key: december, label: "December pack", text: "For December we have a Diaspora pack: KES {december_pack} one-off. We create December ads aimed at Kenyans abroad who are planning to buy at home, and run them for you. Ad budget is separate."}
+  - {key: who, label: "Who is this?", text: "I'm Swalleh from Raswal Tech Solutions in Nairobi. We run Facebook and Instagram ads that send buyer enquiries straight to WhatsApp. I found {business} on Google Maps; your number is on the listing. If you'd prefer I don't message again, just say so."}
+  - {key: has_provider, label: "We already have someone", text: "Great, glad you're covered! Keep the mockup, and all the best. If you ever want a second opinion on your ads, I'm here.", action: lost_has_provider}
+  - {key: not_now, label: "Not now", text: "No problem at all. December is a busy month for buyers coming home. Shall I check back with you early December?", action: snooze}
+  - {key: stop, label: "Stop / not interested", text: "Sorry for the bother, I won't message again. Asante.", action: opt_out}
+  - {key: holding, label: "Plan tomorrow (over cap)", text: "Asante! I'll have your plan ready by tomorrow morning."}
 
-# Few-shot examples for the prompt (§12.4, fictional businesses).
+# Few-shot examples for the prompt (fictional businesses). One per angle.
 examples:
-  - "Habari Kilima Homes 👋 I tried kilimahomes.co.ke from your Google listing and it's showing an \"account suspended\" page, which is a shame with 62 reviews mostly praising your viewings. I put together a quick preview of how Kilima Homes' site could look (in the image). Want me to send you the live link?\n— Swalleh, Raswal Tech Solutions"
-  - "Hi Mwangaza Hardware team. The Website button on your Google listing opens your Facebook page, so people searching \"hardware Ruiru\" can't see your stock or prices. I mocked up what a Mwangaza Hardware site with WhatsApp ordering could look like (attached). Should I send the full preview?\n— Swalleh, Raswal Tech Solutions"
-  - "Hi Tausi Builders team 👋 87 Google reviews and several mention how neat your finishing is, but there's no website to show that work. I put together a preview of a Tausi Builders portfolio site (in the image). Want me to send you the live link?\n— Swalleh, Raswal Tech Solutions"
-  - "Hi Savanna Plots team. Your website is genuinely solid and fast on mobile, but it doesn't link to any social pages, which is where most plot buyers scroll. I made a few sample posts in your colours (attached). Should I send you the full set, including a short video?\n— Swalleh, Raswal Tech Solutions"
+  - "Habari Kilima Plots team, hope business is going well.\nI came across Kilima Plots on Google, 4.8★ from 91 reviews; that trust is well earned.\nI'm Swalleh from Raswal Tech Solutions. We put more enquiries on your WhatsApp. We design and run Facebook and Instagram ads for your plots, and buyers tap straight into your WhatsApp chat. I've mocked up how your ad could look (see the image).\nIf you're open to it, we can run a free 7-day pilot: you only put KES 5,000 into the ads, and we handle the design, targeting and setup.\nMay I send you the full plan? Asante.\n— Swalleh, Raswal Tech Solutions"
+  - "Hello Savanna Homes team, hope your week is going well.\nI saw your ads running on Facebook, good to see you're already reaching buyers.\nI'm Swalleh from Raswal Tech Solutions. We put more enquiries on your WhatsApp from the same kind of budget: fresh, premium ads every week, with three hooks tested against each other so the money follows what works. I've mocked up one for Savanna Homes (see the image).\nWould you be open to a free 7-day pilot on KES 5,000 of ad spend, side by side with what you're running now?\nShall I send you the full plan? Asante sana.\n— Swalleh, Raswal Tech Solutions"
+  - "Habari Mwangaza Land team, hope business is going well.\nMwangaza Land has 62 Google reviews, which is strong trust to build on.\nI'm Swalleh from Raswal Tech Solutions. We put more enquiries on your WhatsApp. We run Facebook and Instagram ads that send buyers straight into your WhatsApp, no website needed to start. I've mocked up how your ad could look (see the image).\nWe can run a free 7-day pilot: you put only KES 5,000 into the ads, and we do the rest.\nMay I send you the full plan? Asante.\n— Swalleh, Raswal Tech Solutions"

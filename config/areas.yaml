@@ -54,6 +54,16 @@ areas:
   - {name: Kiserian,         lat: -1.4250, lng: 36.6830, radius_m: 3500, tier: 2, sets: [], flags: []}
   - {name: Kamulu,           lat: -1.3110, lng: 37.0390, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
 
+  - {name: Joska,            lat: -1.2841, lng: 37.0974, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
+  - {name: Malaa,            lat: -1.2713, lng: 37.1374, radius_m: 4000, tier: 2, sets: [], flags: [growth]}
+  - {name: Mlolongo,         lat: -1.3935, lng: 36.9430, radius_m: 3500, tier: 2, sets: [], flags: [growth]}
+  - {name: Kangundo Road,    lat: -1.2746, lng: 36.8934, radius_m: 3500, tier: 2, sets: [], flags: [growth]}
+  - {name: Matuu,            lat: -1.1438, lng: 37.5485, radius_m: 5000, tier: 2, sets: [], flags: []}
+  - {name: Konza,            lat: -1.7403, lng: 37.1333, radius_m: 5000, tier: 2, sets: [], flags: [growth]}
+  - {name: Kajiado Town,     lat: -1.8520, lng: 36.7760, radius_m: 5000, tier: 2, sets: [], flags: []}
+  - {name: Kenol,            lat: -0.9393, lng: 37.1228, radius_m: 4000, tier: 2, sets: [], flags: []}
+  - {name: Makuyu,           lat: -0.9006, lng: 37.1865, radius_m: 4000, tier: 2, sets: [], flags: []}
+
   # ---------- Tier 3: other towns (only with tier3_enabled) ----------
   - {name: Nakuru,           lat: -0.3031, lng: 36.0800, radius_m: 8000, tier: 3, sets: [], flags: []}
   - {name: Mombasa,          lat: -4.0435, lng: 39.6682, radius_m: 8000, tier: 3, sets: [], flags: []}
@@ -64,3 +74,6 @@ areas:
   - {name: Naivasha,         lat: -0.7167, lng: 36.4333, radius_m: 6000, tier: 3, sets: [], flags: []}
   - {name: Nanyuki,          lat:  0.0167, lng: 37.0667, radius_m: 6000, tier: 3, sets: [], flags: []}
   - {name: Meru,             lat:  0.0500, lng: 37.6500, radius_m: 6000, tier: 3, sets: [], flags: []}
+  - {name: Malindi,          lat: -3.2138, lng: 40.1169, radius_m: 6000, tier: 3, sets: [], flags: []}
+  - {name: Kilifi,           lat: -3.6305, lng: 39.8499, radius_m: 6000, tier: 3, sets: [], flags: []}
+  - {name: Diani,            lat: -4.2945, lng: 39.5712, radius_m: 6000, tier: 3, sets: [], flags: []}

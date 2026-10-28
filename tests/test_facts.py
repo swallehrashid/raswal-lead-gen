@@ -10,7 +10,7 @@ def codes(c, cfg):
 
 def test_site_dead_fact(cfg):
     f = codes(make(status="dead", website="http://www.kilimahomes.co.ke/"), cfg)["SITE_DEAD"]
-    assert f.strength == "strong" and f.track == "web"
+    assert f.strength == "strong" and f.track == "upsell"
     assert f.text == "kilimahomes.co.ke, the website on your Google listing, isn't loading. It shows an 'account suspended' page."
     assert f.evidence["url"] == "http://www.kilimahomes.co.ke/"
 
@@ -50,7 +50,7 @@ def test_places_facts(cfg):
     c.manages_listings = 4
     fs = codes(c, cfg)
     assert fs["HIGH_RATING"].text == "4.7★ from 62 reviews."
-    assert fs["RECENT_REVIEWS"].text == "At least 3 new Google reviews in the last 3 months."
+    assert fs["RECENT_REVIEWS"].text == "At least 3 new Google reviews recently."
     assert fs["BRANCHES"].text == "3 branches on Google Maps."
     assert fs["MANAGES_LISTINGS"].text == "Your number is on 4 property listings on Google Maps."
     c.subcategory = "hardware_supplies"
@@ -59,14 +59,37 @@ def test_places_facts(cfg):
 
 def test_content_facts(cfg):
     fs = codes(make(status="good", social_links={}, has_video=False, psi_perf=91, blog_last_date=date(2025, 2, 14)), cfg)
-    assert fs["NO_SOCIAL_LINKS"].strength == "strong" and fs["NO_SOCIAL_LINKS"].track == "content"
-    assert fs["GOOD_SITE"].track == "content"
+    assert fs["NO_SOCIAL_LINKS"].strength == "strong" and fs["NO_SOCIAL_LINKS"].track == "upsell"
+    assert fs["GOOD_SITE"].track == "upsell"
     assert fs["STALE_BLOG"].text == "The latest post on your news page is from February 2025."
     assert "NO_VIDEO" in fs
     assert "GOOD_SITE" not in codes(make(status="good", psi_perf=55), cfg)
 
 
-def test_ids_strongest_first(cfg):
+def test_ids_follow_opener_priority(cfg):
     facts = build_facts(make(status="dead", rating=4.8, reviews=62), cfg, NOW)
-    assert facts[0].id == "F1" and facts[0].code == "SITE_DEAD"
-    assert [f.strength for f in facts] == sorted([f.strength for f in facts], key=lambda s: s != "strong")
+    assert facts[0].id == "F1" and facts[0].code == "HIGH_RATING"        # a true opener beats the website signal
+    assert [f.code for f in facts].index("SITE_DEAD") > 0
+
+
+def test_ads_facts(cfg):
+    fs = codes(make(ads="active", ads_days=70), cfg)
+    assert fs["ADS_ACTIVE"].strength == "strong" and fs["ADS_ACTIVE"].track == "any"
+    assert fs["ADS_LONG_RUNNING"].text == "One of your ads has been running for about 10 weeks."
+    assert "ADS_LONG_RUNNING" not in codes(make(ads="active", ads_days=10), cfg)
+    assert "ADS_ACTIVE" not in codes(make(ads="none"), cfg)
+    first = build_facts(make(ads="active", ads_days=70), cfg, NOW)[0]
+    assert first.code == "ADS_ACTIVE"
+
+
+def test_every_rated_business_has_a_usable_opener(cfg):
+    fs = codes(make(status="good", rating=4.1, reviews=40), cfg)
+    assert fs["REVIEWS_COUNT"].text == "4.1★ from 40 reviews." and "HIGH_RATING" not in fs
+    assert all(f.track == "upsell" for c_, f in fs.items() if c_ in {"GOOD_SITE", "NO_SOCIAL_LINKS", "NO_VIDEO"})
+
+
+def test_site_facts_are_not_first_message_facts(cfg):
+    c = make(status="dead")
+    c.facts = build_facts(c, cfg, NOW)
+    codes_ads = {f.code for f in c.facts_for("ads")}
+    assert "SITE_DEAD" not in codes_ads and "HIGH_RATING" in codes_ads

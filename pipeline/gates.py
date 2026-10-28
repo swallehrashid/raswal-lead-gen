@@ -116,10 +116,9 @@ def cheap_gates(c: Candidate, cfg, ctx: GateContext, now: datetime | None = None
 
 
 def hook_gate(c: Candidate) -> list[str]:
-    """NO_HOOK: fewer than 1 strong fact for the routed track (evaluated last)."""
-    track = c.track or "web"
-    strong = [f for f in c.facts_for(track) if f.strength == "strong"]
-    return [] if strong else ["NO_HOOK"]
+    """NO_HOOK: no true fact at all to open the message with (evaluated last). Any strength will do:
+    the ads pitch is the offer, the fact is just a polite, specific opener."""
+    return [] if c.facts_for("ads") else ["NO_HOOK"]
 
 
 def name_is_business_like(name: str, excl) -> int:

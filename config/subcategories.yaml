@@ -6,13 +6,15 @@
 #
 # headline / subline / generic_poster_lines must make NO claims (brief §13.1): no "verified",
 # "genuine", "best", "new stock", counts or prices. They appear on every teaser for this subcategory.
-# list_day: the weekday the list is SENT (mon..fri). Sunday night builds Monday's list.
+# active: only active subcategories are planned. The daily mix (how many leads of each per day) is
+#   scoring.yaml selection.daily_mix, overridable from the dashboard (settings.daily_mix).
+# ad_hero / ad_palette: the ad-mockup teaser and ad-video template look for this vertical (ads pivot).
 # area_set: which tier-1 area list from areas.yaml to use (tier 2/3 are shared by all).
 
 subcategories:
   property_agency:
     label: Property agencies
-    list_day: mon
+    active: true
     template: property_agency
     area_set: property
     min_reviews: 8
@@ -32,20 +34,25 @@ subcategories:
       - "Homes to rent and buy"
       - "Talk to us about managing your property"
     default_palette: {primary: "#0F3D5E", accent: "#D4970F", ink: "#0B1B2B", bg: "#F7F5F0"}
+    ad_hero: key
+    ad_palette: {primary: "#0F2A44", accent: "#C8A04A", bg: "#F7F4EE", muted: "#5B6B7C", ink: "#0A1420"}
 
   land_developers:
     label: Land & developers
-    list_day: tue
+    active: true
     template: land_developers
     area_set: property
     min_reviews: 8
-    tier3_enabled: false
+    tier3_enabled: true
     ability_bonus: 3
     manages_listings_is_positive: false
     queries:
       - "land for sale company {area}"
       - "real estate developers {area}"
       - "plots for sale {area}"
+      - "land for sale {area}"
+      - "real estate company {area}"
+      - "land selling company {area}"
     headline: "Plots for sale around {area}"
     subline: "See available plots and book a site visit on WhatsApp."
     cta: "Book a site visit"
@@ -55,10 +62,12 @@ subcategories:
       - "Ask us how the buying process works"
       - "Visit our office before you buy"
     default_palette: {primary: "#1F5135", accent: "#D4970F", ink: "#14231A", bg: "#F6F4EC"}
+    ad_hero: beacon
+    ad_palette: {primary: "#0E4D3A", accent: "#D4A537", bg: "#F6F1E4", muted: "#B5532E", ink: "#0B1A14"}
 
   construction:
     label: Construction
-    list_day: wed
+    active: false          # paused until 2027-01-04
     template: construction
     area_set: property
     min_reviews: 8
@@ -81,7 +90,7 @@ subcategories:
 
   hardware_supplies:
     label: Hardware & supplies
-    list_day: thu
+    active: false          # paused until 2027-01-04
     template: hardware_supplies
     area_set: hardware
     min_reviews: 10
@@ -105,7 +114,7 @@ subcategories:
 
   roofing_steel:
     label: Roofing & steel
-    list_day: fri
+    active: false          # paused until 2027-01-04
     template: roofing_steel
     area_set: hardware
     min_reviews: 8

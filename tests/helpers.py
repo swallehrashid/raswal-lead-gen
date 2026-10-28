@@ -10,7 +10,8 @@ _n = [0]
 
 
 def make(name="Kilima Homes", *, sub="property_agency", reviews=60, rating=4.6, newest_days=10, area="Kilimani",
-         flags=(), status="dead", phone=None, website="http://kilimahomes.co.ke/", review_texts=None, **audit_kw):
+         flags=(), status="dead", phone=None, website="http://kilimahomes.co.ke/", review_texts=None,
+         ads=None, ads_days=None, scam=None, **audit_kw):
     _n[0] += 1
     norm = name_norm(name)
     texts = review_texts or ["They arranged a viewing the same afternoon I called.", "Smooth process, deposit refunded."]
@@ -21,6 +22,9 @@ def make(name="Kilima Homes", *, sub="property_agency", reviews=60, rating=4.6, 
                   phone_type="MOBILE", website_url=None if status == "none" else website, rating=rating,
                   review_count=reviews, reviews=revs, area=area, area_flags=list(flags), name_key=name_key(norm),
                   display_name=display_name(name))
+    c.ads_status, c.ads_longest_days = ads, ads_days
+    c.ads_active_count = 2 if ads == "active" else None
+    c.scam_flag = scam
     defaults = dict(website_url=c.website_url, final_url=c.website_url, https_ok=True, meta_viewport=True,
                     has_whatsapp_link=True, has_tel_link=True, word_count=500, copyright_year=NOW.year,
                     social_links={}, has_video=False, psi_perf=80.0, psi_lcp_s=2.0)

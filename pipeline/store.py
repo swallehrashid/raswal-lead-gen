@@ -45,6 +45,10 @@ def business_row(c: Candidate) -> dict[str, Any]:
         "newest_review_at": _iso(c.newest_review_at), "branch_count": c.branch_count,
         "manages_listings": c.manages_listings, "merged_place_ids": c.merged_place_ids,
         "last_seen_at": _now().isoformat(),
+        **({"ads_status": c.ads_status, "ads_active_count": c.ads_active_count, "ads_longest_days": c.ads_longest_days,
+            "ads_sample": c.ads_sample or None} if c.ads_status else {}),
+        **({"social": c.social} if c.social else {}),
+        **({"scam_flag": c.scam_flag, "scam_terms": c.scam_terms} if c.scam_flag else {}),
     }
 
 
@@ -71,7 +75,7 @@ def evaluation_row(c: Candidate, run_id: str | None, list_date: date) -> dict[st
         "id": c.evaluation_id, "run_id": run_id, "place_id": c.place_id, "list_date": list_date.isoformat(),
         "subcategory": c.subcategory, "track": c.track, "site_status": c.audit.site_status if c.audit else None,
         "pre_score": round(c.pre_score, 2), "score": round(s.total, 2) if s else None,
-        "breakdown": s.breakdown if s else {},
+        "breakdown": {**(s.breakdown if s else {}), **({"angle": c.angle} if c.angle else {})},
         "scores": {t: {"total": sc.total, "eligible": sc.eligible, "breakdown": sc.breakdown} for t, sc in c.scores.items()},
         "gate_codes": c.gate_codes, "selected": c.selection is not None,
     }
@@ -92,7 +96,8 @@ def lead_row(c: Candidate, list_date: date) -> dict[str, Any]:
         "used_fact_ids": c.variants[0].used_fact_ids if c.variants else [],
         "variant_source": c.variant_source, "poster_lines": c.poster_lines, "teaser_path": c.teaser_path,
         "slug": c.slug,
-        "brand": {"logo_path": c.logo_path, "hero_path": c.hero_path, **(a.colours if a else {})},
+        "social_state": c.social_state,
+        "brand": {"logo_path": c.logo_path, "hero_path": c.hero_path, "angle": c.angle, **(a.colours if a else {})},
     }
 
 

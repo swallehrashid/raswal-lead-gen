@@ -1,8 +1,37 @@
 {
-  "review_facts": [],
-  "variants": [
-    {"message": "Hi Kilima Homes team! Check out https://kilima.raswaltechsolutions.com for a revolutionary new site, only KES 30,000 this week!\n— Swalleh, Raswal Tech Solutions", "used_fact_ids": []},
-    {"message": "Hi Kilima Homes team.", "used_fact_ids": ["F9"]}
-  ],
-  "poster_lines": ["Only KES 30,000!", "Visit kilima.co.ke", "Rated 5 stars by 300 clients"]
+ "review_facts": [
+  {
+   "review_index": 1,
+   "theme": "fast viewings",
+   "sentiment": "positive",
+   "paraphrase": "Several reviews mention how quickly you arrange viewings",
+   "addressable_by": "none"
+  },
+  {
+   "review_index": 3,
+   "theme": "units hard to find",
+   "sentiment": "negative",
+   "paraphrase": "A reviewer struggled to find your available units online",
+   "addressable_by": "none"
+  }
+ ],
+ "variants": [
+  {
+   "message": "Habari Kilima Homes team, hope business is going well.\nI came across Kilima Homes on Google. Several reviews mention how quickly you arrange viewings.\nI'm Swalleh from Raswal Tech Solutions. We put more enquiries on your WhatsApp. We run Facebook and Instagram ads that send buyers straight into your WhatsApp, no website needed to start. I've mocked up how your ad could look (see https://kilima.raswaltechsolutions.co.ke).\nWe can run a free 7-day pilot: you put only KES 5,000 into the ads, and we do the rest.\nMay I send you the full plan? Asante.\n— Swalleh, Raswal Tech Solutions",
+   "used_fact_ids": [
+    "R1"
+   ]
+  },
+  {
+   "message": "Hello Kilima Homes team, hope your week is going well.\nI came across Kilima Homes on Google, 4.6★ from 62 reviews; that trust is well earned.\nI'm Swalleh from Raswal Tech Solutions. We put more enquiries on your WhatsApp. We run Facebook and Instagram ads that send buyers straight into your WhatsApp, no website needed to start. I've mocked up how your ad could look (see the image).\nWe can run a free 7-day pilot: you put only KES 5,000 into the ads, and we do the rest.\nShall I send you the full plan? Asante sana.\n— Swalleh, Raswal Tech Solutions",
+   "used_fact_ids": [
+    "F1"
+   ]
+  }
+ ],
+ "poster_lines": [
+  "From KES 30,000 only",
+  "kilima-homes.com",
+  "Over 500 happy clients"
+ ]
 }

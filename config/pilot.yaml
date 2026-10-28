@@ -1,0 +1,30 @@
+# The free 7-day ad pilot: single source of truth for every number the pitch page, quick replies,
+# dashboard and messages quote. Change numbers HERE, nowhere else.
+
+pilot_days: 7
+budget_kes: 5000                  # all-in: ~KES 4,300 reaches the ads, the rest is VAT Meta charges
+vat_note: "about KES 4,300 goes to the ads; the rest is VAT that Meta charges"
+split:
+  test_days: [1, 2]               # 3 ads share the budget
+  winner_days: [3, 7]             # the winner gets the rest
+  test_share: 0.45
+stop_rule: {max_cost_per_chat_kes: 250, after_hours: 48}
+reply_rule: "reply within 15 minutes, 8am-8pm"
+
+# ESTIMATES, always labelled as such on the page. Recalibrate after the first 3 real pilots.
+estimates:
+  land_developers: {reach: [25000, 60000], chats: [30, 100], serious: [5, 15], visits: [1, 5]}
+  property_agency: {reach: [25000, 60000], chats: [40, 120], serious: [8, 20], visits: [2, 8]}   # visits = viewings
+  budget_multipliers: {5000: 1.0, 10000: 1.8, 20000: 3.2}
+
+pricing:
+  engine_intro_kes: 10000
+  engine_standard_kes: 15000
+  website_setup_kes: 5000
+  website_monthly_kes: 4000
+  website_min_months: 12
+  december_pack_kes: 12000
+
+targeting:
+  pilot: {mode: radius, radius_km: 40, country: KE}
+  december_pack_countries: [AE, SA, QA, GB, US]

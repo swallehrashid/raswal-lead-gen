@@ -61,7 +61,7 @@ describe('transitions', () => {
 })
 
 describe('follow-up queue', () => {
-  const settings = { followup_templates: { fu1: 'FU1 {business} {weekday}', fu2_web: 'FU2W', fu2_content: 'FU2C', demo_fu1: 'D1', demo_fu2: 'D2' } } as never
+  const settings = { followup_templates: { fu1: 'FU1 {business} {weekday}', fu2: 'FU2W', demo_fu1: 'D1', demo_fu2: 'D2' } } as never
   it('lists FU1 due today with the weekday of the first message', () => {
     const l = lead({ status: 'sent', sent_at: '2026-10-16T07:00:00Z', fu1_due: '2026-10-22', fu2_due: '2026-10-29' })
     expect(dueFollowups([l], '2026-10-21', settings)).toHaveLength(0)

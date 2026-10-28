@@ -38,5 +38,5 @@ pacing:
     - {start: "09:30", end: "11:00"}
     - {start: "14:00", end: "15:30"}
 
-demo_cap: {web: 3, content: 3}
+demo_cap: {pilot: 5}            # max pilot-plan pages generated per day
 same_day_demo_cutoff: "17:00"

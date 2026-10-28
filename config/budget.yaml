@@ -12,6 +12,9 @@ places:
   exhausted_new_ratio: 0.2        # a run below this counts toward exhaustion
   exhausted_after_runs: 2
   sku: text_search_enterprise_atmosphere
+  split: proportional_to_daily_mix   # the night's Places calls are shared across active subcategories by their mix
+  details_per_night: 45              # Place Details (reviews) for every finalist + reserve
+  details_per_month: 1000
 
 psi:
   calls_per_night: 150

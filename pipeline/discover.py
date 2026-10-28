@@ -82,7 +82,7 @@ class DiscoveryResult:
 
 
 def discover(cfg, plan, places_client, budget: Budget, known_place_ids: set[str], *, now: datetime | None = None,
-             sleep=time.sleep) -> DiscoveryResult:
+             sleep=time.sleep, max_calls: int | None = None) -> DiscoveryResult:
     pb = cfg.budget.places
     res = DiscoveryResult()
     now = now or datetime.now(timezone.utc)
@@ -100,6 +100,10 @@ def discover(cfg, plan, places_client, budget: Budget, known_place_ids: set[str]
         cell_total = cell_new = pages = 0
         stop_all = False
         for _page in range(pb.max_pages_per_cell):
+            if max_calls is not None and res.calls >= max_calls:
+                res.stopped_reason = f"subcategory call share {max_calls} used"
+                stop_all = True
+                break
             try:
                 budget.spend("places")
             except BudgetExhausted as e:

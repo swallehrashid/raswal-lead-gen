@@ -48,7 +48,7 @@ def kilima(cfg):
 
 
 def test_schema_contract():
-    for name in ("valid_web_dead_site.json", "valid_content_no_social.json", "invalid_first_then_valid.json"):
+    for name in ("valid_ads.json", "invalid_first_then_valid.json"):
         GeminiOutput.model_validate(fixture(name))
     with pytest.raises(ValidationError):
         GeminiOutput.model_validate(fixture("malformed.json"))
@@ -59,27 +59,30 @@ def test_schema_contract():
 def test_prompt_contains_rules_facts_and_no_reviewer_names(cfg):
     c = kilima(cfg)
     c.reviews[0].author = "Wanjiru Kamau"
-    p = user_prompt(c, cfg, opening=["F1", "F2"], swahili=[True, False])
-    assert "Kilima Homes" in p and "F1" in p and "account suspended" in p
+    p = user_prompt(c, cfg, opening=["F1", "F2"])
+    assert "Kilima Homes" in p and "F1" in p and "Angle: C" in p
+    assert "account suspended" not in p                # website problems are never first-message material
+    assert "Habari Kilima Homes team" in p and "Hello Kilima Homes team" in p and "free 7-day pilot" in p
     assert "Wanjiru" not in p
     s = system_prompt(cfg)
-    assert "— Swalleh, Raswal Tech Solutions" in s and "280-480" in s
+    assert "— Swalleh, Raswal Tech Solutions" in s and "380-700" in s and "never \"inquiries\"" in s
 
 
 def test_valid_llm_output(cfg):
     c = kilima(cfg)
-    llm = Scripted(fixture("valid_web_dead_site.json"))
+    llm = Scripted(fixture("valid_ads.json"))
     d = Drafter(cfg, llm, budget(), sleep=lambda s: None)
     d.draft(c)
     assert c.variant_source == "llm" and all(v.source == "llm" for v in c.variants)
-    assert {f.code for f in c.facts} >= {"REVIEW_THEME", "REVIEW_PAIN"}
+    assert "REVIEW_THEME" in {f.code for f in c.facts}
+    assert "REVIEW_PAIN" not in {f.code for f in c.facts}
     assert len(llm.prompts) == 1
     assert c.poster_lines[0] == "Book a viewing on WhatsApp"
 
 
 def test_retry_with_errors_then_valid(cfg):
     c = kilima(cfg)
-    llm = Scripted(fixture("invalid_first_then_valid.json"), fixture("valid_web_dead_site.json"))
+    llm = Scripted(fixture("invalid_first_then_valid.json"), fixture("valid_ads.json"))
     d = Drafter(cfg, llm, budget(), sleep=lambda s: None)
     d.draft(c)
     assert c.variant_source == "llm" and len(llm.prompts) == 2
@@ -98,7 +101,7 @@ def test_two_failures_use_fallback(cfg):
 
 def test_malformed_json_retried(cfg):
     c = kilima(cfg)
-    d = Drafter(cfg, Scripted(fixture("malformed.json"), fixture("valid_web_dead_site.json")), budget(),
+    d = Drafter(cfg, Scripted(fixture("malformed.json"), fixture("valid_ads.json")), budget(),
                 sleep=lambda s: None)
     d.draft(c)
     assert c.variant_source == "llm"
@@ -116,7 +119,7 @@ def test_unavailable_and_budget_use_fallback(cfg):
 
 def test_rate_limit_retried(cfg):
     c = kilima(cfg)
-    llm = Scripted(RateLimited("429"), fixture("valid_web_dead_site.json"))
+    llm = Scripted(RateLimited("429"), fixture("valid_ads.json"))
     b = budget()
     Drafter(cfg, llm, b, sleep=lambda s: None).draft(c)
     assert c.variant_source == "llm" and b.used("gemini") == 2
@@ -128,24 +131,25 @@ def test_no_llm_fallback(cfg):
     assert c.variant_source == "fallback" and len(c.variants) == 2
 
 
-def test_finalizer_review_theme_can_supply_the_hook(cfg):
-    c = make("Tausi Builders", sub="construction", status="none", reviews=25, rating=4.7,
+def test_finalizer_review_theme_can_supply_the_opener(cfg):
+    c = make("Tausi Builders", sub="construction", status="good", reviews=25, rating=4.7,
              review_texts=["They built our house and the finishing is very neat.", "Finished on time."])
     c.facts = build_facts(c, cfg, NOW)
     score_candidate(c, cfg, NOW)
-    assert not any(f.strength == "strong" for f in c.facts_for("web"))
     fin = make_draft_finalizer(cfg, Drafter(cfg, FixtureLlm(cfg), budget(), sleep=lambda s: None), NOW)
     assert fin(c) is True
     assert any(f.code == "REVIEW_THEME" and f.strength == "strong" for f in c.facts)
+    assert len(c.variants) == 2 and all(not v.errors for v in c.variants)
+    assert "for your projects" in c.variants[0].message
 
 
 def test_finalizer_rejects_unhooked_without_llm(cfg):
-    c = make("Plain Homes", status="none", reviews=25)
+    c = make("Plain Homes", status="good", reviews=25, rating=None, review_texts=["ok"])   # nothing true to open with
     c.facts = build_facts(c, cfg, NOW)
     score_candidate(c, cfg, NOW)
-    llm = Scripted()
+    assert c.facts_for("ads") == []
     fin = make_draft_finalizer(cfg, Drafter(cfg, None, budget(), sleep=lambda s: None), NOW)
-    assert fin(c) is False and llm.prompts == []
+    assert fin(c) is False
 
 
 def test_gemini_client_daily_quota_trips_breaker(cfg):

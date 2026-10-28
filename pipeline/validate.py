@@ -5,13 +5,13 @@ A variant is rejected if ANY rule fails. Every specific claim must trace to a st
 
 from __future__ import annotations
 
-import random
 import re
 from dataclasses import dataclass, field
 from typing import Any
 
 from pipeline.models import Candidate, Fact, Variant
-from pipeline.utils.text import basic_norm, possessive
+from pipeline.pilotcopy import fill
+from pipeline.utils.text import basic_norm
 from pipeline.utils.urls import host
 
 # ---------------------------------------------------------------- patterns
@@ -72,7 +72,8 @@ def _words(s: str) -> list[str]:
 @dataclass
 class LeadContext:
     business: str                        # exact display name that must appear
-    track: str
+    angle: str                           # A | B | C
+    noun: str                            # plots | listings ...
     domain: str | None                   # the lead's own domain (may be mentioned)
     area: str
     facts: dict[str, Fact]
@@ -81,13 +82,14 @@ class LeadContext:
     own_domains: set[str] = field(default_factory=set)
 
     @classmethod
-    def from_candidate(cls, c: Candidate) -> LeadContext:
+    def from_candidate(cls, c: Candidate, cfg=None) -> LeadContext:
         own: set[str] = set()
         if c.audit and c.audit.site_status not in ("none", "social_as_site"):
             own = {h for h in (host(c.website_url), host(c.audit.final_url), c.audit.free_host) if h}
-        return cls(business=c.display_name, track=c.track or "web", domain=host(c.website_url) or None,
+        noun = (cfg.messaging.nouns.get(c.subcategory) if cfg else None) or "listings"
+        return cls(business=c.display_name, angle=c.angle or "A", noun=noun, domain=host(c.website_url) or None,
                    own_domains=own, area=c.area,
-                   facts={f.id: f for f in c.facts_for(c.track or "web")},
+                   facts={f.id: f for f in c.facts_for("ads")},
                    review_texts=[r.text for r in c.reviews if r.text],
                    reviewer_names=[r.author for r in c.reviews if r.author])
 
@@ -126,10 +128,20 @@ def validate_variant(message: str, used_fact_ids: list[str], ctx: LeadContext, c
         errors.append(f"the sign-off '{m.signoff}' is missing")
     if _URL.search(message):
         errors.append("contains a URL or link (no links in the first message)")
-    if any(p.search(message) for p in _MONEY):
-        errors.append("mentions money or a price (KES/Ksh/amount)")
     low = message.lower()
-    banned = [b for b in m.banned_phrases if b.lower() in low]
+    for req in m.required_phrases:
+        if fill(req, cfg).lower() not in low:
+            errors.append(f"required phrase missing: '{fill(req, cfg)}'")
+    for bad in m.forbidden_phrases:
+        if bad.lower() in low:
+            errors.append(f"contains '{bad}' (spell it 'enquiries')")
+    # the pilot's own numbers (KES 5,000 / 7-day) are the only money and numbers allowed without a fact
+    scrubbed = message
+    for own_text in (f"KES {fill('{budget}', cfg)}", f"{fill('{days}', cfg)}-day"):
+        scrubbed = scrubbed.replace(own_text, " ")
+    if any(p.search(scrubbed) for p in _MONEY):
+        errors.append("mentions money or a price other than the pilot budget")
+    banned = [b for b in m.banned_phrases if re.search(rf"(?<![a-z]){re.escape(b.lower())}(?![a-z])", low)]
     if banned:
         errors.append(f"contains banned phrase(s): {', '.join(banned)}")
     if count_emoji(message) > m.max_emoji:
@@ -144,7 +156,7 @@ def validate_variant(message: str, used_fact_ids: list[str], ctx: LeadContext, c
     for f in used:
         allowed |= _numbers_in(f.text) | _numbers_in(f.evidence)
     allowed |= _numbers_in(ctx.business) | _numbers_in(ctx.area)
-    stray = sorted({_norm_num(x) for x in _NUMBER.findall(message.replace(m.signoff, ""))} - allowed)
+    stray = sorted({_norm_num(x) for x in _NUMBER.findall(scrubbed.replace(m.signoff, ""))} - allowed)
     if stray:
         errors.append(f"number(s) {', '.join(stray)} are not in the cited facts")
     for d in {d.lower() for d in _DOMAIN.findall(message)}:
@@ -194,18 +206,15 @@ def validate_review_fact(rf: dict, ctx: LeadContext, cfg, n_reviews: int) -> lis
 
 
 def review_fact_to_fact(rf: dict, fid: str, track: str, cfg) -> Fact | None:
+    """Positive/neutral review themes become REVIEW_THEME facts. Negative themes are never used
+    in the ads pitch (they stay in review_facts for the dashboard)."""
     sentiment = rf.get("sentiment")
+    if sentiment == "negative":
+        return None
     theme = (rf.get("theme") or "").strip()
     para = rf["paraphrase"].strip()
     if not para.endswith((".", "!")):
         para += "."
-    if sentiment == "negative":
-        fixable = rf.get("addressable_by")
-        want = "website" if track == "web" else "content"
-        return Fact(id=fid, code="REVIEW_PAIN", strength="strong" if fixable == want else "medium", text=para,
-                    evidence={"review_index": rf["review_index"], "theme": theme, "sentiment": sentiment,
-                              "addressable_by": fixable}, track="web" if fixable == "website" else "content",
-                    source="llm")
     generic = basic_norm(theme) in {basic_norm(g) for g in cfg.scoring.facts.generic_themes}
     strong = sentiment == "positive" and not generic and len(para.split()) >= 4
     return Fact(id=fid, code="REVIEW_THEME", strength="strong" if strong else "medium", text=para,
@@ -225,65 +234,55 @@ def validate_poster_line(line: str, ctx: LeadContext) -> bool:
     return not _name_hits(line, ctx.reviewer_names, exclude=ctx.business)
 
 
-# ---------------------------------------------------------------- deterministic fallback
+# ---------------------------------------------------------------- deterministic message
 
-def swahili_flags(place_id: str, rate: float) -> list[bool]:
-    return [random.Random(f"{place_id}:{i}").random() < rate for i in range(2)]
+def swahili_flags() -> list[bool]:
+    """Variant 1 greets in Swahili, variant 2 in English (config/messaging.yaml greetings)."""
+    return [True, False]
 
 
 def is_swahili(message: str) -> bool:
     return bool(re.search(r"\b(habari|asante|karibu)\b", message, re.I))
 
 
-def _greeting(cfg, business: str, swahili: bool, emoji: bool) -> str:
-    g = cfg.messaging.greetings
-    key = ("swahili" if swahili else "english") + ("" if emoji else "_plain")
-    return g[key].format(business=business)
+def opening_sentence(fact: Fact, ctx: LeadContext, cfg) -> str:
+    """One opening sentence for a fact, from config/messaging.yaml `openings` (default for review themes)."""
+    tpl = cfg.messaging.openings.get(fact.code) or cfg.messaging.openings["default"]
+    fields = {**{k: v for k, v in fact.evidence.items() if v is not None}, "business": ctx.business,
+              "observation": fact.text}
+    try:
+        return tpl.format(**fields)
+    except KeyError:
+        return cfg.messaging.openings["default"].format(**fields)
 
 
-def fallback_message(fact: Fact, extra: list[Fact], ctx: LeadContext, cfg, *, swahili: bool, question_idx: int,
-                     emoji: bool = True) -> Variant:
+def scaffold(ctx: LeadContext, cfg, idx: int) -> dict[str, str]:
+    """The fixed parts of variant `idx` (0 or 1): greeting, body, offer, closing question, sign-off."""
     m = cfg.messaging
-    track = ctx.track
-    tpl = m.fallback.by_code.get(fact.code) or (m.fallback.default_web if track == "web" else m.fallback.default_content)
-    question = m.questions[track][question_idx % len(m.questions[track])]
-    if swahili:
-        question = f"{question} {m.swahili_closers[question_idx % len(m.swahili_closers)]}"
-    fields = {**{k: v for k, v in fact.evidence.items() if v is not None},
-              "greeting": _greeting(cfg, ctx.business, swahili, emoji), "observation": fact.text,
-              "business": ctx.business, "business_possessive": possessive(ctx.business), "question": question,
-              "signoff": m.signoff}
-    used = [fact.id]
+    qs = m.questions[ctx.angle]
+    fields = {"business": ctx.business, "noun": ctx.noun}
+    return {"greeting": m.greetings["swahili" if idx == 0 else "english"].format(**fields),
+            "body": fill(m.bodies[ctx.angle], cfg).format(**fields),
+            "offer": fill(m.offers[ctx.angle], cfg).format(**fields),
+            "question": qs[idx % len(qs)], "signoff": m.signoff}
 
-    def render(extra_text: str) -> str:
-        return re.sub(r"[ \t]+", " ", tpl.format(**{**fields, "extra": extra_text})).replace(" \n", "\n").strip()
 
-    extra_text = ""
-    msg = render("")
-    for e in extra:                                   # add facts until it's long enough
-        if len(msg) >= m.length["min"]:
-            break
-        longer = render(f"{extra_text}{e.text} ")
-        if len(longer) <= m.length["max"]:
-            extra_text, msg = f"{extra_text}{e.text} ", longer
-            used.append(e.id)
-    if len(msg) < m.length["min"]:                    # still short: generic filler (makes no claim)
-        msg = render(f"{extra_text}{m.fallback.filler[track]}")
-    if len(msg) > m.length["max"] and emoji:
-        return fallback_message(fact, [], ctx, cfg, swahili=swahili, question_idx=question_idx, emoji=False)
-    v = Variant(message=msg, used_fact_ids=used, source="fallback", swahili_touch=is_swahili(msg))
+def render_message(ctx: LeadContext, cfg, opening: str, idx: int) -> str:
+    sc = scaffold(ctx, cfg, idx)
+    return "\n".join([sc["greeting"], opening, sc["body"], sc["offer"], sc["question"], sc["signoff"]])
+
+
+def fallback_message(fact: Fact, ctx: LeadContext, cfg, idx: int) -> Variant:
+    msg = render_message(ctx, cfg, opening_sentence(fact, ctx, cfg), idx)
+    v = Variant(message=msg, used_fact_ids=[fact.id], source="fallback", swahili_touch=is_swahili(msg))
     v.errors = validate_variant(v.message, v.used_fact_ids, ctx, cfg)
     return v
 
 
 def fallback_variants(ctx: LeadContext, cfg, place_id: str, ordered: list[Fact]) -> list[Variant]:
-    """Two variants opening with different facts (strongest first)."""
-    sw = swahili_flags(place_id, cfg.messaging.swahili_touch_rate)
+    """Two variants opening with different facts (best opener first)."""
     if not ordered:
         return []
     first = ordered[0]
     second = ordered[1] if len(ordered) > 1 else ordered[0]
-    a = fallback_message(first, [f for f in ordered if f is not first], ctx, cfg, swahili=sw[0], question_idx=0)
-    b = fallback_message(second, [f for f in ordered if f not in (first, second)] or ([first] if second is not first else []),
-                         ctx, cfg, swahili=sw[1], question_idx=1)
-    return [a, b]
+    return [fallback_message(first, ctx, cfg, 0), fallback_message(second, ctx, cfg, 1)]

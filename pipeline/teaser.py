@@ -368,7 +368,7 @@ def to_jpeg(img: Image.Image, cfg) -> bytes:
 
 def template_paths(c: Candidate, cfg) -> list[Path]:
     tpl = cfg.subcategories[c.subcategory].template
-    if c.track == "content":
+    if c.track in ("content", "ads"):   # ads: interim poster set until the ad-mockup teaser (P4)
         return [TEASERS_DIR / "content" / tpl / f"poster-{i}.html" for i in (1, 2, 3)]
     return [TEASERS_DIR / "web" / tpl / "index.html"]
 
@@ -387,7 +387,7 @@ def render_teasers(cands: list[Candidate], cfg) -> dict[str, bytes]:
         if missing:
             log.error("missing teaser template(s) for %s: %s", c.subcategory, [str(p) for p in missing])
             continue
-        if c.track == "content":
+        if c.track in ("content", "ads"):   # ads: interim poster set until the ad-mockup teaser (P4)
             for i, p in enumerate(paths):
                 shots.append(Shot(f"{c.place_id}|p{i}", inject_lead(inline_template(p), lead), 1080, 1350))
         else:
@@ -400,7 +400,7 @@ def render_teasers(cands: list[Candidate], cfg) -> dict[str, bytes]:
     for c in cands:
         lead = leads[c.place_id]
         try:
-            if c.track == "content":
+            if c.track in ("content", "ads"):   # ads: interim poster set until the ad-mockup teaser (P4)
                 pngs = [by_key.get(f"{c.place_id}|p{i}") for i in range(3)]
                 if not all(pngs):
                     continue

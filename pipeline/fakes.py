@@ -233,21 +233,17 @@ class FixtureLlm:
         variants = []
         for i in range(2):
             open_id = ctx["opening"][i] if ctx["opening"][i] in facts else ids[0]
-            second = next((x for x in ids if x != open_id and x != ctx["opening"][1 - i]), None)
-            greet = (f"Habari {ctx['business']}" if ctx["swahili"][i] else f"Hi {ctx['business']} team") + (
-                " 👋" if i == 0 else ".")
-            body = texts[open_id]
-            used = [open_id]
-            msg = f"{greet} {body} {ctx['bridge']} {ctx['questions'][i % len(ctx['questions'])]}"
-            if second and len(msg) + len(ctx["signoff"]) < 330:
-                msg = f"{greet} {body} {texts[second]} {ctx['bridge']} {ctx['questions'][i % len(ctx['questions'])]}"
-                used.append(second)
-            if ctx["swahili"][i]:
-                msg += " Asante!"
-            if len(msg) + len(ctx["signoff"]) + 1 < 280:
-                msg += " It only takes a minute to look through, and you can tell me what you would change."
+            fields = {"business": ctx["business"], "observation": texts[open_id],
+                      **(facts[open_id]["evidence"] if open_id in facts else {})}
+            tpl = ctx["openings"].get(facts[open_id]["code"] if open_id in facts else "default", ctx["openings"]["default"])
+            try:
+                opening = tpl.format(**fields)
+            except KeyError:
+                opening = ctx["openings"]["default"].format(**fields)
+            sc = ctx["scaffolds"][i]
+            msg = "\n".join([sc["greeting"], opening, sc["body"], sc["offer"], sc["question"]])
             if broken and i == 0:
-                msg += " See https://raswaltechsolutions.com"
-            variants.append({"message": f"{msg}\n{ctx['signoff']}", "used_fact_ids": used})
+                msg += " See https://raswaltechsolutions.co.ke"
+            variants.append({"message": f"{msg}\n{ctx['signoff']}", "used_fact_ids": [open_id]})
         posters = (posters + ctx["generic_poster_lines"])[:3]
         return {"review_facts": review_facts, "variants": variants, "poster_lines": posters}

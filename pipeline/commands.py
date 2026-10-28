@@ -34,6 +34,11 @@ def candidate_from_bundle(b: dict, store) -> Candidate:
     c.display_name = biz.get("display_name") or c.name
     c.name_key = name_key(c.name_norm)
     c.track, c.rank, c.lead_id = lead["track"], lead["rank"], lead["id"]
+    c.angle = (lead.get("brand") or {}).get("angle")
+    c.social_state = lead.get("social_state")
+    c.ads_status = biz.get("ads_status")
+    c.ads_active_count = biz.get("ads_active_count")
+    c.ads_longest_days = biz.get("ads_longest_days")
     c.selection = "finalist" if lead["status"] != "reserve" else "reserve"
     c.slug = lead.get("slug") or slugify(c.name_norm)
     c.poster_lines = lead.get("poster_lines") or []
@@ -84,25 +89,21 @@ def rerender_samples(cfg: Config, env: Env, only: str | None = None) -> int:
     from pipeline.teaser import render_teasers
     out_dir = OUT_DIR / "teasers" / "samples"
     out_dir.mkdir(parents=True, exist_ok=True)
-    subs = [only] if only else list(cfg.subcategories)
+    subs = [only] if only else [s.key for s in cfg.active_subcategories]
     written = []
     for sub in subs:
-        day = cfg.subcategories[sub].list_day
-        d = {"mon": 12, "tue": 13, "wed": 14, "thu": 15, "fri": 16}[day]
-        res = run_nightly(cfg, env, NightlyOptions(list_date=date(2026, 10, d), subcategory=sub, dry_run=True,
+        res = run_nightly(cfg, env, NightlyOptions(list_date=date(2026, 10, 13), subcategory=sub, dry_run=True,
                                                     offline=True, no_render=True, max_places_calls=10,
                                                     out_dir=OUT_DIR / "samples-run"))
-        picks = []
-        for track in ("web", "content"):
-            sel = [c for c in res.candidates if c.track == track and c.selection == "finalist"]
-            with_logo = [c for c in sel if c.audit and c.audit.logo_bytes]
-            without = [c for c in sel if not (c.audit and c.audit.logo_bytes)]
-            picks += (with_logo[:1] + without[:1]) if sel else []
+        sel = [c for c in res.candidates if c.subcategory == sub and c.selection == "finalist"]
+        with_logo = [c for c in sel if c.audit and c.audit.logo_bytes]
+        without = [c for c in sel if not (c.audit and c.audit.logo_bytes)]
+        picks = (with_logo[:1] + without[:1]) if sel else []
         jpegs = render_teasers(picks, cfg)
         for c in picks:
             if c.place_id in jpegs:
                 kind = "logo" if c.audit.logo_bytes else "wordmark"
-                f = out_dir / f"{sub}-{c.track}-{kind}.jpg"
+                f = out_dir / f"{sub}-{c.angle or 'x'}-{kind}.jpg"
                 f.write_bytes(jpegs[c.place_id])
                 written.append(f)
     for f in written:

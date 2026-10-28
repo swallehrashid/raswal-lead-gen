@@ -11,7 +11,7 @@ import os
 from datetime import date
 from functools import cached_property
 from pathlib import Path
-from typing import Any, Literal
+from typing import Any
 
 import yaml
 from pydantic import BaseModel, ConfigDict, model_validator
@@ -42,7 +42,7 @@ class Palette(_M):
 class Subcategory(_M):
     key: str = ""
     label: str
-    list_day: Literal["mon", "tue", "wed", "thu", "fri"]
+    active: bool = True
     template: str = ""
     area_set: str
     min_reviews: int = 8
@@ -56,6 +56,8 @@ class Subcategory(_M):
     nav: list[str]
     generic_poster_lines: list[str]
     default_palette: Palette
+    ad_hero: str = ""
+    ad_palette: dict[str, str] = {}
 
 
 # ---------------------------------------------------------------- areas
@@ -138,31 +140,18 @@ class Ability(_M):
     multi_branch_min: int
     manages_listings_min: int
     cap: float
-    content_multiplier: float
-    content_cap: float
 
 
-class WebScoring(_M):
-    pain: dict[str, float]
-    hook_points: list[Band]
+class AdsScoring(_M):
     min_score: float
-
-
-class ContentGap(_M):
-    no_social_links: float
-    no_instagram_or_tiktok: float
-    no_video_bonus: float
-    stale_blog_bonus: float
-    stale_blog_months: int
-    cap: float
-
-
-class ContentScoring(_M):
-    gap: ContentGap
-    hook_points: list[Band]
-    min_score: float
-    social_state_bonus: dict[str, float]
-    social_state_skip: list[str]
+    website_points: float
+    website_statuses: list[str]
+    ads_active_points: float
+    ads_long_running_days: int
+    ads_long_running_bonus: float
+    social_points: dict[str, float]
+    scam_soft_penalty: float
+    angle_c_statuses: list[str]
 
 
 class WeakSite(_M):
@@ -181,14 +170,15 @@ class FactRules(_M):
     high_rating_min: float
     high_rating_min_reviews: int
     good_site_min_perf: float
+    stale_blog_months: int = 6
     generic_themes: list[str]
 
 
 class Selection(_M):
-    targets: dict[str, int]
+    daily_mix: dict[str, int]
     reserves: dict[str, int]
-    max_per_area_per_track: int
-    max_top_hook_share: float
+    max_per_area_per_subcategory: int
+    max_angle_share: float
 
 
 class ScoringConfig(_M):
@@ -199,8 +189,7 @@ class ScoringConfig(_M):
     ability: Ability
     activity_bands: list[Band]
     reputation_bands: list[Band]
-    web: WebScoring
-    content: ContentScoring
+    ads: AdsScoring
     weak_site: WeakSite
     facts: FactRules
     selection: Selection
@@ -216,28 +205,24 @@ class QuickReply(_M):
     action: str | None = None
 
 
-class Fallback(_M):
-    default_web: str
-    default_content: str
-    by_code: dict[str, str]
-    filler: dict[str, str]
-
-
 class MessagingConfig(_M):
     signoff: str
     length: dict[str, int]
     max_emoji: int
-    swahili_touch_rate: float
     review_copy_max_words: int
     paraphrase_max_words: int
+    required_phrases: list[str]
+    forbidden_phrases: list[str]
+    core_promise: str
     greetings: dict[str, str]
-    bridges: dict[str, str]
-    questions: dict[str, list[str]]
-    swahili_closers: list[str]
+    nouns: dict[str, str]
     banned_phrases: list[str]
     fact_texts: dict[str, str]
     fact_priority: list[str]
-    fallback: Fallback
+    openings: dict[str, str]
+    bodies: dict[str, str]
+    offers: dict[str, str]
+    questions: dict[str, list[str]]
     followups: dict[str, str]
     quick_replies: list[QuickReply]
     examples: list[str]
@@ -257,6 +242,9 @@ class PlacesBudget(_M):
     exhausted_new_ratio: float
     exhausted_after_runs: int
     sku: str
+    split: str = "proportional_to_daily_mix"
+    details_per_night: int = 50
+    details_per_month: int = 1000
 
 
 class PsiBudget(_M):
@@ -338,6 +326,21 @@ class CalendarConfig(_M):
     same_day_demo_cutoff: str
 
 
+# ---------------------------------------------------------------- pilot
+
+
+class PilotConfig(_M):
+    pilot_days: int
+    budget_kes: int
+    vat_note: str
+    split: dict[str, Any]
+    stop_rule: dict[str, Any]
+    reply_rule: str
+    estimates: dict[str, Any]
+    pricing: dict[str, int]
+    targeting: dict[str, Any]
+
+
 # ---------------------------------------------------------------- audit
 
 
@@ -380,21 +383,25 @@ class Config(BaseModel):
     budget: BudgetConfig
     calendar: CalendarConfig
     audit: AuditConfig
+    pilot: PilotConfig
 
     @model_validator(mode="after")
     def _check(self):
-        days = [s.list_day for s in self.subcategories.values()]
-        dupes = {d for d in days if days.count(d) > 1}
-        if dupes:
-            raise ValueError(f"two subcategories share a list_day: {sorted(dupes)}")
+        mix = self.scoring.selection.daily_mix
+        unknown = [k for k in mix if k not in self.subcategories]
+        if unknown:
+            raise ValueError(f"daily_mix names unknown subcategories: {unknown}")
         sets = {s for a in self.areas.areas for s in a.sets}
         for key, sub in self.subcategories.items():
             if sub.area_set not in sets:
                 raise ValueError(f"subcategory {key}: area_set '{sub.area_set}' has no tier-1 areas")
         return self
 
-    def subcategory_for_day(self, weekday: str) -> Subcategory | None:
-        return next((s for s in self.subcategories.values() if s.list_day == weekday), None)
+    @property
+    def active_subcategories(self) -> list[Subcategory]:
+        """Active subcategories that have a daily-mix quota, in config order."""
+        mix = self.scoring.selection.daily_mix
+        return [s for s in self.subcategories.values() if s.active and mix.get(s.key, 0) > 0]
 
     @cached_property
     def holiday_dates(self) -> dict[date, str]:
@@ -422,6 +429,7 @@ def load_config(config_dir: Path = CONFIG_DIR) -> Config:
         budget=BudgetConfig(**_read_yaml(config_dir / "budget.yaml")),
         calendar=CalendarConfig(**_read_yaml(config_dir / "calendar.yaml")),
         audit=AuditConfig(**_read_yaml(config_dir / "audit.yaml")),
+        pilot=PilotConfig(**_read_yaml(config_dir / "pilot.yaml")),
     )
 
 

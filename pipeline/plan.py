@@ -8,7 +8,7 @@ from datetime import date, datetime, timezone
 from pipeline.models import Cell
 from pipeline.seed import config_cells
 from pipeline.settings import Config, Subcategory
-from pipeline.utils.dates import WorkCalendar, weekday_key
+from pipeline.utils.dates import WorkCalendar
 
 
 @dataclass
@@ -25,28 +25,39 @@ def resolve_list_date(cfg: Config, list_date: date | None, today: date | None = 
     return list_date or cal.next_list_date(today)
 
 
-def make_plan(cfg: Config, store, *, list_date: date | None = None, subcategory: str | None = None,
-              today: date | None = None) -> Plan:
+@dataclass
+class DayPlan:
+    """What tonight's run builds: one Plan per subcategory in the daily mix."""
+    list_date: date
+    skip_reason: str | None
+    plans: list[Plan]
+
+
+def make_day_plan(cfg: Config, store, *, list_date: date | None = None, subcategory: str | None = None,
+                  today: date | None = None) -> DayPlan:
     cal = WorkCalendar.from_config(cfg.calendar)
     d = resolve_list_date(cfg, list_date, today)
     if subcategory:
         if subcategory not in cfg.subcategories:
             raise SystemExit(f"Unknown subcategory '{subcategory}'. Known: {', '.join(cfg.subcategories)}")
-        sub = cfg.subcategories[subcategory]
+        subs = [cfg.subcategories[subcategory]]
         # an explicit --subcategory is a manual run: only refuse holidays/pauses, not weekends
         skip = cal.skip_reason(d) if (d in cal.holidays or cal.pause_for(d)) else None
     else:
         skip = cal.skip_reason(d)
-        sub = cfg.subcategory_for_day(weekday_key(d))
-        if sub is None and not skip:
-            skip = f"no subcategory is assigned to {weekday_key(d)}"
-    if skip or sub is None:
-        return Plan(d, sub, skip, [])
-    cells = order_cells(cfg, sub, sync_cells(cfg, store, sub))
-    active = [c for c in cells if not c.exhausted]
-    tier1 = [c for c in cells if c.tier == 1]
-    low = bool(tier1) and sum(not c.exhausted for c in tier1) <= max(1, len(tier1) // 5)
-    return Plan(d, sub, None, active, low_on_cells=low)
+        subs = cfg.active_subcategories
+        if not subs and not skip:
+            skip = "no active subcategory has a daily-mix quota"
+    if skip:
+        return DayPlan(d, skip, [])
+    plans = []
+    for sub in subs:
+        cells = order_cells(cfg, sub, sync_cells(cfg, store, sub))
+        active = [c for c in cells if not c.exhausted]
+        tier1 = [c for c in cells if c.tier == 1]
+        low = bool(tier1) and sum(not c.exhausted for c in tier1) <= max(1, len(tier1) // 5)
+        plans.append(Plan(d, sub, None, active, low_on_cells=low))
+    return DayPlan(d, None, plans)
 
 
 def sync_cells(cfg: Config, store, sub: Subcategory) -> list[Cell]:

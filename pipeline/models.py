@@ -102,7 +102,7 @@ class Fact:
     strength: str                   # strong | medium
     text: str
     evidence: dict[str, Any]
-    track: str                      # web | content | any
+    track: str                      # any | upsell (site facts, kept for the website upsell)
     source: str                     # audit | places | psi | llm
 
     def to_dict(self) -> dict[str, Any]:
@@ -180,6 +180,16 @@ class Candidate:
     hero_path: str | None = None
     lead_id: str | None = None
     evaluation_id: str | None = None
+    # ads-pivot signals (filled by enrichment; None/empty = unknown)
+    angle: str | None = None            # A not advertising | B advertising | C no/broken site
+    ads_status: str | None = None       # active | none | unknown
+    ads_active_count: int | None = None
+    ads_longest_days: int | None = None
+    ads_sample: list[dict[str, Any]] = field(default_factory=list)
+    social: dict[str, Any] = field(default_factory=dict)
+    social_state: str | None = None     # none | stale | active
+    scam_flag: str | None = None        # hard | soft
+    scam_terms: list[str] = field(default_factory=list)
 
     @property
     def newest_review_at(self) -> datetime | None:

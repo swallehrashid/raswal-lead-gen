@@ -1,12 +1,10 @@
-"""Website- and content-track scores with breakdowns (brief §10.2, §10.3)."""
+"""The single ads score (out of 100) with a breakdown, plus the message angle (ads pivot)."""
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from pipeline.models import Candidate, Score
-
-WEB_STATUSES = {"none", "social_as_site", "dead", "insecure", "free_builder", "weak"}
 
 
 def review_points(n: int, cfg) -> float:
@@ -36,14 +34,8 @@ def reputation_points(rating: float | None, cfg) -> float:
     return 0.0
 
 
-def _bands(n_strong: int, bands) -> float:
-    for b in bands:
-        if n_strong >= b.min_strong:
-            return b.points
-    return 0.0
-
-
-def ability_points(c: Candidate, cfg, *, content: bool = False) -> tuple[float, dict[str, float]]:
+def ability_points(c: Candidate, cfg) -> tuple[float, dict[str, float]]:
+    """Scale + area + branches (+ subcategory bonus), capped. Used for the pre-score only."""
     ab = cfg.scoring.ability
     sub = cfg.subcategories[c.subcategory]
     parts = {"reviews": review_points(c.review_count, cfg)}
@@ -53,79 +45,74 @@ def ability_points(c: Candidate, cfg, *, content: bool = False) -> tuple[float, 
         parts["branches_or_listings"] = ab.multi_branch_or_listings
     if sub.ability_bonus:
         parts["subcategory"] = sub.ability_bonus
-    total = min(sum(parts.values()), ab.cap)
-    if content:
-        total = min(total * ab.content_multiplier, ab.content_cap)
-    return total, parts
+    return min(sum(parts.values()), ab.cap), parts
 
 
 def pre_score(c: Candidate, cfg, now: datetime) -> float:
-    """Orders gate-passers for enrichment: reviews, recency, rating (no pain/hook yet)."""
+    """Orders gate-passers for enrichment: reviews, recency, rating (no ads/social signals yet)."""
     return ability_points(c, cfg)[0] + activity_points(c, cfg, now) + reputation_points(c.rating, cfg)
 
 
-def strong_count(c: Candidate, track: str) -> int:
-    return sum(1 for f in c.facts_for(track) if f.strength == "strong")
+def derive_social_state(c: Candidate, now: datetime) -> str:
+    """active: ads running or an Instagram post in the last 30 days; stale: a social link but no
+    sign of recent activity; none: no social links at all."""
+    if c.social_state:
+        return c.social_state
+    if c.ads_status == "active":
+        return "active"
+    last = (c.social or {}).get("ig_last_post_at")
+    if last:
+        try:
+            if datetime.fromisoformat(str(last)) >= now - timedelta(days=30):
+                return "active"
+        except ValueError:
+            pass
+    links = (c.audit.social_links if c.audit else None) or {}
+    if links or any((c.social or {}).get(k) for k in ("facebook", "instagram", "tiktok")):
+        return "stale"
+    return "none"
 
 
-def web_score(c: Candidate, cfg, now: datetime) -> Score:
-    w = cfg.scoring.web
+def derive_angle(c: Candidate, cfg) -> str:
+    """B already advertising; C no or broken website (and not advertising); A everything else."""
+    if c.ads_status == "active":
+        return "B"
     status = c.audit.site_status if c.audit else "none"
-    eligible = status in WEB_STATUSES
-    ability, _ = ability_points(c, cfg)
-    br = {
-        "pain": w.pain.get(status, 0.0) if eligible else 0.0,
-        "ability": ability,
+    return "C" if status in cfg.scoring.ads.angle_c_statuses else "A"
+
+
+def ads_score(c: Candidate, cfg, now: datetime) -> Score:
+    a = cfg.scoring.ads
+    status = c.audit.site_status if c.audit else "none"
+    ab = cfg.scoring.ability
+    sub = cfg.subcategories[c.subcategory]
+    br: dict[str, float] = {
+        "reviews": review_points(c.review_count, cfg),
         "activity": activity_points(c, cfg, now),
         "reputation": reputation_points(c.rating, cfg),
-        "hook": _bands(strong_count(c, "web"), w.hook_points),
     }
-    return Score("web", round(sum(br.values()), 1), br, eligible, w.min_score)
-
-
-def content_eligible(c: Candidate) -> bool:
-    a = c.audit
-    if not a:
-        return False
-    return a.site_status == "good" or (a.site_status == "weak" and bool(a.https_ok) and bool(a.meta_viewport))
-
-
-def content_gap(c: Candidate, cfg, now: datetime) -> float:
-    g = cfg.scoring.content.gap
-    a = c.audit
-    links = a.social_links or {}
-    pts = 0.0
-    if not links:
-        pts += g.no_social_links
-    elif not ({"instagram", "tiktok"} & set(links)):
-        pts += g.no_instagram_or_tiktok
-    if not a.has_video:
-        pts += g.no_video_bonus
-    if a.blog_last_date and (now.date() - a.blog_last_date).days > g.stale_blog_months * 30:
-        pts += g.stale_blog_bonus
-    return min(pts, g.cap)
-
-
-def content_score(c: Candidate, cfg, now: datetime) -> Score:
-    cs = cfg.scoring.content
-    eligible = content_eligible(c)
-    ability, _ = ability_points(c, cfg, content=True)
-    br = {
-        "gap": content_gap(c, cfg, now) if eligible else 0.0,
-        "ability": round(ability, 1),
-        "activity": activity_points(c, cfg, now),
-        "reputation": reputation_points(c.rating, cfg),
-        "hook": _bands(strong_count(c, "content"), cs.hook_points),
-    }
-    return Score("content", round(sum(br.values()), 1), br, eligible, cs.min_score)
+    if status in a.website_statuses:
+        br["website"] = a.website_points
+    if c.ads_status == "active":
+        br["ads_active"] = a.ads_active_points + (
+            a.ads_long_running_bonus if (c.ads_longest_days or 0) >= a.ads_long_running_days else 0.0)
+    social = a.social_points.get(derive_social_state(c, now), 0.0)
+    if social:
+        br["social"] = social
+    if c.branch_count >= ab.multi_branch_min or c.manages_listings >= ab.manages_listings_min:
+        br["branches_or_listings"] = ab.multi_branch_or_listings
+    if set(c.area_flags) & {"premium", "growth"}:
+        br["area"] = ab.premium_or_growth_area
+    if sub.ability_bonus:
+        br["subcategory"] = float(sub.ability_bonus)
+    if c.scam_flag == "soft":
+        br["scam_soft"] = a.scam_soft_penalty
+    total = round(max(0.0, min(100.0, sum(br.values()))), 1)
+    return Score("ads", total, br, True, a.min_score)
 
 
 def score_candidate(c: Candidate, cfg, now: datetime) -> None:
-    """Score both tracks and route to the eligible track with the larger margin over its threshold."""
-    c.scores = {"web": web_score(c, cfg, now), "content": content_score(c, cfg, now)}
-    eligible = [s for s in c.scores.values() if s.eligible]
-    if not eligible:
-        c.track = None
-        return
-    best = max(eligible, key=lambda s: (s.margin, s.track == "web"))
-    c.track = best.track
+    c.social_state = derive_social_state(c, now)
+    c.angle = derive_angle(c, cfg)
+    c.scores = {"ads": ads_score(c, cfg, now)}
+    c.track = "ads"

@@ -21,7 +21,7 @@ export function dueFollowups(leads: Lead[], today: string, settings: Settings): 
     if (l.status === 'sent') {
       if (!l.fu1_sent_at) add(l, 'fu1', l.fu1_due, t.fu1)
       if (!l.fu2_sent_at && (l.fu1_sent_at || (l.fu2_due ?? '') <= today))
-        add(l, 'fu2', l.fu2_due, l.track === 'content' ? t.fu2_content : t.fu2_web)
+        add(l, 'fu2', l.fu2_due, t.fu2)
     }
     if (l.status === 'demo_sent') {
       if (!l.demo_fu1_sent_at) add(l, 'demo_fu1', l.demo_fu1_due, t.demo_fu1)

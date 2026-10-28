@@ -6,12 +6,13 @@ import json
 from pathlib import Path
 
 from pipeline.models import Cell
+from pipeline.pilotcopy import fill
 from pipeline.settings import ROOT, Config
 
 ADMIN_EMAIL = "swallehmtawazo@gmail.com"
 
 # Keys the dashboard can edit: the pipeline only inserts them if missing (dashboard edits win).
-DASHBOARD_OWNED_KEYS = {"quick_replies", "followup_templates", "demo_cap", "daily_targets", "pause_list"}
+DASHBOARD_OWNED_KEYS = {"quick_replies", "followup_templates", "demo_cap", "daily_mix", "outreach_whatsapp", "pause_list"}
 
 
 def settings_payload(cfg: Config) -> dict[str, object]:
@@ -28,15 +29,11 @@ def settings_payload(cfg: Config) -> dict[str, object]:
             "same_day_demo_cutoff": cal.same_day_demo_cutoff,
         },
         "subcategories": {
-            k: {"label": s.label, "list_day": s.list_day, "template": s.template}
+            k: {"label": s.label, "active": s.active, "template": s.template}
             for k, s in cfg.subcategories.items()
         },
-        "scoring": {
-            "web_min_score": cfg.scoring.web.min_score,
-            "content_min_score": cfg.scoring.content.min_score,
-            "social_state_bonus": cfg.scoring.content.social_state_bonus,
-            "social_state_skip": cfg.scoring.content.social_state_skip,
-        },
+        "scoring": {"ads_min_score": cfg.scoring.ads.min_score},
+        "pilot": cfg.pilot.model_dump(),
         "messaging": {
             "signoff": cfg.messaging.signoff,
             "length": cfg.messaging.length,
@@ -50,10 +47,11 @@ def settings_payload(cfg: Config) -> dict[str, object]:
             "storage_cap_mb": cfg.budget.retention.storage_cap_mb,
         },
         # dashboard-owned (seeded once)
-        "quick_replies": [q.model_dump() for q in cfg.messaging.quick_replies],
-        "followup_templates": cfg.messaging.followups,
+        "quick_replies": [{**q.model_dump(), "text": fill(q.text, cfg)} for q in cfg.messaging.quick_replies],
+        "followup_templates": {k: fill(v, cfg) for k, v in cfg.messaging.followups.items()},
         "demo_cap": cfg.calendar.demo_cap,
-        "daily_targets": cfg.scoring.selection.targets,
+        "daily_mix": cfg.scoring.selection.daily_mix,
+        "outreach_whatsapp": "",
         "pause_list": [],
     }
 
