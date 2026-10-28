@@ -37,6 +37,8 @@ Monday works without any of these (see "What still works if you do nothing"); do
 ## Approval log
 | Gate | Item | Version | Date | Swalleh's notes |
 |---|---|---|---|---|
+| G0 | Teaser direction (land d1, agency d3) | v1 | 2026-10-28 | built, awaiting review |
+| G1-G6 | L1 Plot Tour, L2 The Offer, L3 Before You Buy, A1 New Listings, A2 Viewing Day, A3 Budget & Area | v1 (`ads/approved/<id>/v1`) | 2026-10-28 | built, awaiting review (Swalleh asked for everything end to end; photos approved) |
 
 ## Removal ledger
 | Path | Repo | Why removed | References fixed |
@@ -76,7 +78,7 @@ Monday works without any of these (see "What still works if you do nothing"); do
 ## Test results
 | Suite | Baseline | Now |
 |---|---|---|
-| pytest (`-m "not render"`) | 278 | **367 passed** |
+| pytest (`-m "not render"`) | 278 | **386 passed** |
 | pytest (`-m render`) | 2 | 2 passed |
 | ruff | clean | clean |
 | dashboard vitest | 24 | 24 passed |
@@ -85,6 +87,16 @@ Monday works without any of these (see "What still works if you do nothing"); do
 ## Live checks
 - Migrations applied to project `ribexxgkqmwyqfwspxje`: `ads_enums`, `ads_pivot`, `ads_pivot_touch_search_path`. Counts unchanged: leads 25, businesses 245, evaluations 245, events 27. RLS on `ad_library_ads`, `pilots`, `pilot_days`. Advisors: no new ERROR (one WARN on `pilots_touch` search_path was fixed).
 - Offline nightly (daily mix): 20 land + 10 agency finalists, all variants valid, 5 Places calls, 2 CSVs. Angles in the offline data: A and C only (no ad-library data yet).
+- Final videos (all six, `--final`): QA passes on each (duration, bt709, AAC, faststart, <=9 Mbps, peak about -0.9 dBFS, sub-bass on every impact cue). Sizes: L2 10 MB, L1 19 MB, L3 22 MB; web versions 1.9-4.1 MB.
+- `scripts/e2e.py` (`docs/E2E_LAST_RUN.md`): ALL CHECKS PASSED. 30 finalists (20 land + 10 agency), 60 messages valid (526-640 chars), 30 teasers (max 200 KB), land and agency pilot pages built from offline fixtures: 9.6 MB total, 0.6 MB before videos, no console errors, 11 chapters reached, Start button opens wa.me/254114129809, 3 videos wired.
+- NOT done live: no page was deployed to the real host in this run, so HTTPS on a brand-new wildcard slug is still unverified (USER ACTION 9).
 - Teaser render time: 4 test brands per direction in ~4 s; JPEGs 126–177 KB (limit 350 KB).
 
 ## Known gaps / risks
+- The six videos and the teaser direction are built, not reviewed by Swalleh.
+- P3.1 winning-ads research was not done (no Apify token).
+- Without an Apify token every lead's "already advertising?" is unknown; angle B never fires.
+- Agency finalists in the live dry run were few because of the small Places allocation (5 calls); the nightly's full 45-call budget is split by daily-mix quota.
+- Estate filter may drop a real one-word firm typed `service`; the dry-run CSV shows rejected names.
+- Page videos are rendered per lead at web quality (about 5-7 minutes per vertical) on the PC running `generate`.
+- The 25 pre-pivot test leads remain in the database (unsent, ignored for re-listing).
