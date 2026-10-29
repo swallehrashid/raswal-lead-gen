@@ -14,4 +14,5 @@ Business Portfolio, a working card plus a backup). Two things you don't control:
 Rules for running client money through your account:
 - The budget is prepaid by M-Pesa before any spend.
 - Keep a backup card and a second ad account ready, so one declined card or one restricted account doesn't stop every client.
-- Meta adds Kenyan VAT: say "KES 5,000 all-in" (about KES 4,300 reaches the ads).
+- Say: "KES 5,000 for the Meta ads. It all goes into the ads; our work is free during the pilot." Don't break it down for the client.
+  (Internal: Meta adds Kenyan VAT on top of spend, so set the campaign budget so the total charged stays at KES 5,000.)
