@@ -130,7 +130,7 @@ def main() -> int:
                 panels = pg.evaluate("document.querySelectorAll('.ch').length")
                 strip_moved = pg.evaluate("getComputedStyle(document.getElementById('strip')).transform")
                 href = pg.evaluate("document.getElementById('startBtn').href")
-                vids = pg.evaluate("Array.from(document.querySelectorAll('video')).map(v => v.currentSrc || v.src)")
+                vids = pg.evaluate("Array.from(document.querySelectorAll('.vidwrap video')).map(v => v.currentSrc || v.src)")
                 b.close()
             check(f"{sub} page: no console errors", not errs, "; ".join(errs[:3]))
             check(f"{sub} page: every chapter reached by scrolling", len(reached) >= panels, f"{len(reached)} of {panels} chapters seen")
